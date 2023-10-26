@@ -31,9 +31,9 @@ module.exports = {
         sub: { ...colors.purple, DEFAULT: colors.purple[500] },
       },
       backgroundImage: {
-        header: "url('../assets/header_bg.webp')",
-        menu: "url('../assets/menu_bg.webp')",
-        footer: "url('../assets/footer_bg.webp')",
+        header: "url('/assets/header_bg.webp')",
+        menu: "url('/assets/menu_bg.webp')",
+        footer: "url('/assets/footer_bg.webp')",
       },
       fontSize: {
         clamp_heading: "clamp(1rem, 10vw, 2rem)",
