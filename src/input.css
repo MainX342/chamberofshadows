@@ -23,7 +23,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   border: 1px solid #d0d0d0;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 pre copy-code-button {
@@ -32,7 +32,10 @@ pre copy-code-button {
   right: 4px;
 }
 
-.q1, .q2, .q3, .q4 {
-  color: #00D7B9 !important;
+.q1,
+.q2,
+.q3,
+.q4 {
+  color: #00d7b9 !important;
   font-weight: 400 !important;
 }
