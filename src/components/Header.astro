@@ -11,10 +11,14 @@ import {
 } from "astro-navbar";
 ---
 
-<header class="grid font-bold fixed w-full top-0 z-50 bg-header">
+<header
+  class="grid font-bold fixed w-full top-0 z-50 bg-[url('/images/header_bg.webp')]"
+>
   <Astronav closeOnClick>
     <Navigation client:load>
-      <ul class="list-none hidden md:flex md:justify-end md:gap-[4px] md:first:pl-[4px]">
+      <ul
+        class="list-none hidden md:flex md:justify-end md:gap-[4px] md:first:pl-[4px]"
+      >
         <SocialList />
       </ul>
       <div class="flex items-center md:hidden hover:opacity-80">
@@ -26,7 +30,7 @@ import {
       class="absolute hidden text-white w-[7.5rem] mt-[60px] justify-self-end"
     >
       <ul
-        class="flex flex-col items-center md:hidden bg-menu bg-[length:100%_35px] outline outline-1 outline-[#242424]"
+        class="flex flex-col items-center md:hidden bg-[url('/images/menu_bg.webp')] bg-[length:100%_35px] outline outline-1 outline-[#242424]"
       >
         <Navigate />
         <Dropdown

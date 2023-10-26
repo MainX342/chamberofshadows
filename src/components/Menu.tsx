@@ -17,7 +17,7 @@ export default function Menu(props: MenuProps) {
         isOpen
           ? "opacity-100 visible [transition:transform_.2s_ease-in-out_.2s,opacity_.2s_ease-in-out_0.2s,visibility_0s] -translate-y-4"
           : "opacity-0 invisible [transition:transform_.2s_ease-in-out_.2s,opacity_.2s_ease-in-out_0.2s,visibility_0s_.5s] translate-y-0"
-      } flex flex-col items-center justify-center z-40 fixed bottom-[48px] max-w-clamp_menu w-full right-[12px] text-white bg-menu bg-[length:100%_35px] neon-gray border border-1 border-[#242424] rounded-xl`}
+      } flex flex-col items-center justify-center z-40 fixed bottom-[48px] max-w-clamp_menu w-full right-[12px] text-white bg-[url('/images/menu_bg.webp')] bg-[length:100%_35px] neon-gray border border-1 border-[#242424] rounded-xl`}
     >
       <nav className="w-full h-full">
         <ul className={`w-full flex flex-col justify-center items-center`}>

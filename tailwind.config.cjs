@@ -30,11 +30,6 @@ module.exports = {
         outlaw: { ...colors.red, DEFAULT: colors.red[500] },
         sub: { ...colors.purple, DEFAULT: colors.purple[500] },
       },
-      backgroundImage: {
-        header: "url('/assets/header_bg.webp')",
-        menu: "url('/assets/menu_bg.webp')",
-        footer: "url('/assets/footer_bg.webp')",
-      },
       fontSize: {
         clamp_heading: "clamp(1rem, 10vw, 2rem)",
         clamp_text: "clamp(0.5em, 10vw, 0.6em)",
