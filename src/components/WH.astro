@@ -1,0 +1,20 @@
+---
+type Props = {
+  text: string;
+  href: string;
+};
+
+const { text, href } = Astro.props;
+---
+
+<a
+  href={href}
+  class="text-secondary font-bold group hover:opacity-80"
+  rel="noopener"
+  target="_blank"
+>
+  <span
+    class="leading-normal bg-left-bottom bg-gradient-to-r from-[#38bdf8] to-[#38bdf8] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+    >{text}</span
+  ></a
+>

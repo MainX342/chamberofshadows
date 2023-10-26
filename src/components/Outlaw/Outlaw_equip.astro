@@ -1,0 +1,128 @@
+---
+import H2 from "../H2.astro";
+import WH from "../WH.astro";
+import { outlawMenuItems } from "../../constants/content";
+---
+
+<section
+  id={outlawMenuItems[3].to}
+  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[40px] text-clamp_heading text-secondary text-center"
+>
+  <H2 text={outlawMenuItems[3].label} />
+  <div class="flex flex-col gap-[16px] text-clamp_text">
+    <p>
+      Как и всегда, есть несколько (10) зарезервированных слотов, которые
+      определены заранее. 4 вещи из комплекта (без головы), 2 для оружия, 2 для
+      аксессуаров, 2 крафта. Поэтому подбирать характеристики вы сможете лишь 6
+      оставшимися вещами и 1 крафтом из зарезервированного слота. Главное
+      условие, чтобы на них не было искусности и вы не выходили за оптимальные
+      значения из раздела выше. Оставшиеся 6 вещей могут быть заменены крафтами,
+      однако проблема заключается в том, что крафтовые вещи сейчас имеют на 3
+      уровня предметов ниже чем вещи из рейда / хранилища. Поэтому в BiS
+      экипировке всего 3 крафта (2 обязательных + кольцо).
+    </p>
+    <ul
+      class="list-inside list-decimal flex flex-col xl:items-center gap-[10px]"
+    >
+      <li>
+        Голова: <WH
+          text="Шлем Черноводья"
+          href="https://www.wowhead.com/ptr-2/item=109979/blackwater-helm?bonus=1808&ilvl=489"
+        />
+      </li>
+      <li>
+        Шея: <WH
+          text="Ouroboreal Necklet"
+          href="https://www.wowhead.com/ptr-2/item=210214/ouroboreal-necklet?bonus=8782&ilvl=489"
+        />
+      </li>
+      <li>
+        Плечи: <WH
+          text="Lucid Shadewalker's Bladed Spaulders"
+          href="https://www.wowhead.com/ptr-2/item=207234/lucid-shadewalkers-bladed-spaulders?ilvl=489"
+        />
+      </li>
+      <li>
+        Грудь: <WH
+          text="Lucid Shadewalker's Cuirass"
+          href="https://www.wowhead.com/ptr-2/item=207239/lucid-shadewalkers-cuirass?ilvl=489"
+        />
+      </li>
+      <li>
+        Пояс: <WH
+          text="Belt of Gleaming Determination"
+          href="https://www.wowhead.com/ptr-2/item=158306/belt-of-gleaming-determination?bonus=1808&ilvl=489"
+        />
+      </li>
+      <li>
+        Ноги: <WH
+          text="Lucid Shadewalker's Chausses"
+          href="https://www.wowhead.com/ptr-2/item=207235/lucid-shadewalkers-chausses?ilvl=489"
+        />
+      </li>
+      <li>
+        Ступни: <WH
+          text="Toxic Thorn Footwraps"
+          href="https://www.wowhead.com/ptr-2/item=193452/toxic-thorn-footwraps?ilvl=486"
+        />
+      </li>
+      <li>
+        Запястья: <WH
+          text="Life-Bound Bindings"
+          href="https://www.wowhead.com/ptr-2/item=193419/life-bound-bindings?bonus=8780:8797:8960&crafted-stats=32:40&ilvl=486"
+        />
+      </li>
+      <li>
+        Кисти рук: <WH
+          text="Lucid Shadewalker's Clawgrips"
+          href="https://www.wowhead.com/ptr-2/item=207237/lucid-shadewalkers-clawgrips?ilvl=489"
+        />
+      </li>
+      <li>
+        Кольцо 1: <WH
+          text="Signet of Titanic Insight"
+          href="https://www.wowhead.com/ptr-2/item=192999/signet-of-titanic-insight?crafted-stats=40:32&ilvl=486"
+        />
+      </li>
+      <li>
+        Кольцо 2: <WH
+          text="Signet of the Last Elder"
+          href="https://www.wowhead.com/ptr-2/item=207162/signet-of-the-last-elder?bonus=1808&ilvl=489"
+        />
+      </li>
+      <li>
+        Аксессуар 1: <WH
+          text="Cataclysmic Signet Brand"
+          href="https://www.wowhead.com/ptr-2/item=207166/cataclysmic-signet-brand?ilvl=489"
+        />
+      </li>
+      <li>
+        Аксессуар 2: Рейд - <WH
+          text="Coiled Serpent Idol"
+          href="https://www.wowhead.com/ptr-2/item=207175/coiled-serpent-idol?ilvl=489"
+        />. Ключи - <WH
+          text="Bandolier of Twisted Blades"
+          href="https://www.wowhead.com/ptr-2/item=207165/bandolier-of-twisted-blades?bonus=6652:8783:8784:9599:9600:10244:10245&class=4&ilvl=489&spec=260"
+        />
+      </li>
+      <li>
+        Плащ: <WH
+          text="Inflammable Drapeleaf"
+          href="https://www.wowhead.com/ptr-2/item=207160/inflammable-drapeleaf?ilvl=489"
+        />
+      </li>
+      <li>
+        Оружие (МХ): <WH
+          text="Thorncaller Claw"
+          href="https://www.wowhead.com/ptr-2/item=207784/thorncaller-claw?ilvl=489"
+        />
+      </li>
+      <li>
+        Оружие (ОХ): <WH
+          text="Nick of Time"
+          href="https://www.wowhead.com/ptr-2/item=207996/nick-of-time?ilvl=489"
+        />
+      </li>
+    </ul>
+  </div>
+</section>

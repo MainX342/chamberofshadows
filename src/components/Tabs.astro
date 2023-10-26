@@ -1,0 +1,41 @@
+---
+type Props = {
+  title: string;
+  id: string;
+  name: string;
+  checked?: string;
+};
+
+const { title, id, checked, name } = Astro.props;
+
+const tabVariants: { [key: string]: string } = {
+  opener_0: "peer-checked/opener_0:text-hover peer-checked/opener_0:neon-hover",
+  opener_1: "peer-checked/opener_1:text-hover peer-checked/opener_1:neon-hover",
+};
+
+const peerId: { [key: string]: string } = {
+  opener_0: "peer/opener_0",
+  opener_1: "peer/opener_1",
+};
+
+const tabBlocks: { [key: string]: string } = {
+  opener_0: "peer-checked/opener_0:block",
+  opener_1: "peer-checked/opener_1:block",
+};
+---
+
+<input
+  type="radio"
+  id={id}
+  name={name}
+  checked={checked}
+  class={`${peerId[id]} hidden p-[20px]`}
+/>
+<label
+  for={id}
+  class={`max-h-[70px] p-[20px] w-[50%] select-none outline outline-1 outline-gray-800 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray ${tabVariants[id]}`}
+  >{title}</label
+>
+<div class={`pt-[16px] w-full order-1 hidden ${tabBlocks[id]}`}>
+  <slot />
+</div>

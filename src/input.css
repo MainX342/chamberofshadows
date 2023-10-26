@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.iconsmall del {
+  background-image: none !important;
+  width: 18px !important;
+  height: 18px !important;
+  background-position: center !important;
+}
+
+.iconsmall ins {
+  left: 4px !important;
+  top: 3px !important;
+  outline: 1px solid black;
+}
+
+pre {
+  position: relative;
+  max-width: 100%;
+  padding: 10px 40px 10px 10px;
+  overflow: visible;
+  white-space: pre-wrap;
+  word-break: break-all;
+  border: 1px solid #d0d0d0;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+pre copy-code-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.q1, .q2, .q3, .q4 {
+  color: #00D7B9 !important;
+  font-weight: 400 !important;
+}

@@ -1,0 +1,40 @@
+---
+const links = [
+  { url: "/", title: "Главная", path: "" },
+  { url: "/assassination", title: "Ликвидация", path: "assassination" },
+  { url: "/outlaw", title: "Головорез", path: "outlaw" },
+  { url: "/subtlety", title: "Скрытность", path: "subtlety" },
+];
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.split("/").filter(Boolean)[0];
+---
+
+{
+  links.map((link) => (
+    <li class="flex items-center w-full min-h-[2.1875rem] px-[4px]">
+      <a
+        href={link.url}
+        class:list={[
+          "group flex items-center justify-center text-base w-full h-full rounded-md hover:opacity-80",
+          {
+            "text-assa neon-green":
+              link.path === "assassination" && currentPath === "assassination",
+          },
+          {
+            "text-outlaw neon-red":
+              link.path === "outlaw" && currentPath === "outlaw",
+          },
+          {
+            "text-sub neon-purple":
+              link.path === "subtlety" && currentPath === "subtlety",
+          },
+        ]}
+      >
+        <span class="bg-left-bottom bg-gradient-to-r from-hover to-hover bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          {link.title}
+        </span>
+      </a>
+    </li>
+  ))
+}

@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/lit": "^3.0.2",
+    "@astrojs/netlify": "^3.0.2",
+    "@astrojs/react": "^3.0.3",
+    "@astrojs/tailwind": "^5.0.1",
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^18.2.13",
+    "@webcomponents/template-shadowroot": "^0.2.1",
+    "astro": "^3.3.2",
+    "astro-navbar": "^2.2.1",
+    "lit": "^2.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "react-scroll": "^1.9.0",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.8"
+  }
+}

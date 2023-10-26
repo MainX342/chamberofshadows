@@ -1,0 +1,63 @@
+---
+import SocialList from "../components/SocialList.astro";
+import Navigation from "./Navigation.tsx";
+import Navigate from "./Navigate.astro";
+import {
+  Astronav,
+  MenuItems,
+  MenuIcon,
+  Dropdown,
+  DropdownItems,
+} from "astro-navbar";
+---
+
+<header class="grid font-bold fixed w-full top-0 z-50 bg-header">
+  <Astronav closeOnClick>
+    <Navigation client:load>
+      <ul class="list-none hidden md:flex md:justify-end md:gap-[4px] md:first:pl-[4px]">
+        <SocialList />
+      </ul>
+      <div class="flex items-center md:hidden hover:opacity-80">
+        <MenuIcon class="w-[36px] h-[36px] text-white" />
+      </div>
+    </Navigation>
+
+    <MenuItems
+      class="absolute hidden text-white w-[7.5rem] mt-[60px] justify-self-end"
+    >
+      <ul
+        class="flex flex-col items-center md:hidden bg-menu bg-[length:100%_35px] outline outline-1 outline-[#242424]"
+      >
+        <Navigate />
+        <Dropdown
+          class="group flex flex-col items-center justify-center w-full px-[4px] min-h-[2.1875rem]"
+        >
+          <button
+            class="flex justify-center items-center gap-1 min-h-[2.1875rem] w-full h-full"
+          >
+            <span>Контакты</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor"
+              class="w-3 h-3 mt-0.5 group-open:rotate-180"
+            >
+              <path d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+            </svg>
+          </button>
+          <DropdownItems
+            class="relative flex items-center justify-center min-h-[2.1875rem] w-full h-full"
+          >
+            <ul
+              class="list-none flex justify-between md:hidden px-[4px] min-h-[2.1875rem] w-full h-full"
+            >
+              <SocialList />
+            </ul>
+          </DropdownItems>
+        </Dropdown>
+      </ul>
+    </MenuItems>
+  </Astronav>
+</header>

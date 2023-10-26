@@ -1,0 +1,49 @@
+---
+import {
+  assaMenuItems,
+  outlawMenuItems,
+  subMenuItems,
+} from "../constants/content";
+
+function menuItemsList() {
+  let menuItems = assaMenuItems;
+  const pathname = new URL(Astro.request.url).pathname;
+  const currentPath = pathname.split("/").filter(Boolean)[0];
+  if (currentPath === "outlaw") {
+    menuItems = outlawMenuItems;
+  } else if (currentPath === "subtlety") {
+    menuItems = subMenuItems;
+  }
+  return menuItems;
+}
+---
+
+<aside
+  class="hidden lg:flex flex-col items-center z-40 sticky top-[35%] h-menu w-menu text-white bg-[#121112]"
+>
+  <nav class="w-full h-full">
+    <ul class="w-full h-full flex flex-col items-center gap-y-[2px]">
+      {
+        menuItemsList().map((item) => (
+          <li class="w-full h-full flex items-center">
+            <a
+              href={`#${item.to}`}
+              class="group transition ease-in-out delay-100 duration-150 translate-x-0 cursor-pointer w-full h-full flex justify-start items-center gap-[8px] outline outline-1 outline-[#242424] hover:bg-[#26394b] hover:outline hover:outline-1 hover:outline-hover text-base"
+            >
+              <img
+                src={item.img}
+                alt={`Иконка ${item.label}`}
+                class="h-[35px] w-[35px] outline outline-[2px] outline-[#242424] m-1"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="group-hover:text-hover group-hover:translate-x-[2px] transition ease-in-out delay-100 duration-150 text-secondary">
+                {item.label}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</aside>

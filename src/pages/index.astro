@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import H1 from "../components/H1.astro";
+import Main from "../components/Main.astro";
+import H2 from "../components/H2.astro";
+import WH from "../components/WH.astro";
+---
+
+<Layout title="Палата теней">
+  <Main>
+    <div
+      class="col-span-2 h-[calc(100vw/3)] max-h-[550px] bg-[url('src/assets/main_logo.webp')] w-full bg-top bg-no-repeat bg-cover shadow-[inset_0_0_50px_-3px_rgba(0,0,0,1)]"
+    >
+    </div>
+    <article
+      class="pt-[40px] mx-auto max-w-clamp_content flex flex-col justify-center items-center"
+    >
+      <section
+        class="w-full h-full flex flex-col justify-center items-center pb-[40px] text-clamp_heading text-secondary text-center"
+      >
+        <H2 text="Последние обновления" />
+        <div class="pt-[16px] flex flex-col gap-[16px] text-clamp_text">
+          <h3 class="underline decoration-1 underline-offset-4">
+            Обновление сайта и гайдов под 10.2
+          </h3>
+          <p>
+            Гайды и сайт обновлены под 10.2. Буду благодарен если заполните
+            фидбек форму тут: <WH
+              text="Скрытая возможность"
+              href="https://www.wowhead.com/ru/spell=383281/скрытая-возможность"
+            />
+          </p>
+        </div>
+      </section>
+    </article>
+  </Main>
+</Layout>

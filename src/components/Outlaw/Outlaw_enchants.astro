@@ -1,0 +1,134 @@
+---
+import H2 from "../H2.astro";
+import WH from "../WH.astro";
+import { outlawMenuItems } from "../../constants/content";
+---
+
+<section
+  id={outlawMenuItems[4].to}
+  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[40px] text-clamp_heading text-secondary text-center"
+>
+  <H2 text={outlawMenuItems[4].label} />
+  <ul
+    class="list-inside list-decimal flex flex-col xl:items-center gap-[10px] text-clamp_text"
+  >
+    <li>
+      Шея - <WH
+        text="Сложная оправа для медальона"
+        href="https://www.wowhead.com/ru/item=192994/сложная-оправа-для-медальона"
+      /> х3
+    </li>
+    <li>
+      Плащ — <WH
+        text="Чары для плаща – грациозное избежание"
+        href="https://www.wowhead.com/ru/item=200031/чары-для-плаща-грациозное-избежание"
+      />
+    </li>
+    <li>
+      Грудь - <WH
+        text="Чары для нагрудника – пробужденные характеристики"
+        href="https://www.wowhead.com/ru/item=200030/чары-для-нагрудника-пробужденные-характеристики"
+      />
+    </li>
+    <li>
+      Запястья - <WH
+        text="Чары для наручей – посвящение избежания"
+        href="https://www.wowhead.com/ru/item=200021/чары-для-наручей-посвящение-избежания"
+      />
+    </li>
+    <li>
+      Пояс - <WH
+        text="Затененная поясная застежка"
+        href="https://www.wowhead.com/ru/item=205039/затененная-поясная-застежка"
+      />
+    </li>
+    <li>
+      Ноги - <WH
+        text="Лютые накладки для брони"
+        href="https://www.wowhead.com/ru/item=193565/лютые-накладки-для-брони"
+      /> или <WH
+        text="Лучистые накладки для брони"
+        href="https://www.wowhead.com/ru/item=204702/лучистые-накладки-для-брони"
+      />
+    </li>
+    <li>
+      Ступни - <WH
+        text="Чары для обуви – глина дозорного"
+        href="https://www.wowhead.com/ru/item=200020/чары-для-обуви-глина-дозорного"
+      />
+    </li>
+    <li>
+      Кольца - <WH
+        text="Чары для кольца – посвящение критического удара"
+        href="https://www.wowhead.com/ru/item=200037/чары-для-кольца-посвящение-критического-удара"
+      /> или <WH
+        text="Чары для кольца – посвящение скорости"
+        href="https://www.wowhead.com/ru/item=200038/чары-для-кольца-посвящение-скорости"
+      /> или <WH
+        text="Чары для кольца – посвящение универсальности"
+        href="https://www.wowhead.com/ru/item=200040/чары-для-кольца-посвящение-универсальности"
+      />. Камни и чары на кольца зависят от вашей текущей экипировки, так что
+      проверяйте в <a
+        href="https://www.raidbots.com/simbot/topgear"
+        class="text-hover hover:opacity-80"
+        >Raidbots - Top Gear
+      </a>
+    </li>
+    <li>
+      Оружие -<WH
+        text="Чары для оружия – посвящение мудрости"
+        href="https://www.wowhead.com/ru/item=200054/чары-для-оружия-посвящение-мудрости"
+      /> х2 или <WH
+        text="Чары для оружия – веющее посвящение"
+        href="https://www.wowhead.com/ru/item=200058/чары-для-оружия-веющее-посвящение"
+      /> в оффхенд. Воющее может быть особенно сильно пока у вас мало скорости.
+    </li>
+    <li>
+      Камни - <WH
+        text="Глянцевый бесконечный алмаз"
+        href="https://www.wowhead.com/ru/item=192991/глянцевый-бесконечный-алмаз?crafting-quality=6"
+      />. Остальные камни зависят от вашей текущей экипировки, так что
+      проверяйте в <a
+        href="https://www.raidbots.com/simbot/topgear"
+        class="text-hover hover:opacity-80"
+        >Raidbots - Top Gear
+      </a>
+    </li>
+    <li>
+      Флаконы - <WH
+        text="Замерзший флакон оскверняющей ярости"
+        href="https://www.wowhead.com/ru/item=191329/замерзший-флакон-оскверняющей-ярости"
+      />. Он является лучшим, так как имеет ~85% аптайм в рейде и ~90% в ключах,
+      но если вы хотите больше выживаемости, тогда ваш выбор - <WH
+        text="Флакон сдержанной универсальности"
+        href="https://www.wowhead.com/ru/item=191341/флакон-сдержанной-универсальности"
+      />
+    </li>
+    <li>
+      Еда - <WH
+        text="Жестоко фаршированные яйца"
+        href="https://www.wowhead.com/ru/item=204072/жестоко-фаршированные-яйца"
+      />. Или любая другая на основную характеристику.
+    </li>
+    <li>
+      Зелья - <WH
+        text="Зелье великой мощи стихий"
+        href="https://www.wowhead.com/ru/item=191383/зелье-великой-мощи-стихий"
+      /> стандартный выбор для 99% ситуаций, однако, если целей 12 и больше, то
+      можно пить - <WH
+        text="Зелье шокирующего разоблачения"
+        href="https://www.wowhead.com/ru/item=191401/зелье-шокирующего-разоблачения"
+      />
+    </li>
+    <li>
+      Руны - <WH
+        text="Воющая руна"
+        href="https://www.wowhead.com/ru/item=194820/воющая-руна"
+      /> почти всегда, однако если у вас слишком много скорости (или в ключах),
+      то - <WH
+        text="Жужжащая руна"
+        href="https://www.wowhead.com/ru/item=194823/жужжащая-руна"
+      />
+    </li>
+  </ul>
+</section>
