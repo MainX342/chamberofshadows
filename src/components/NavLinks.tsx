@@ -37,11 +37,11 @@ export default function NavLinks(props: NavLinksProps) {
       <li className="w-full max-w-[150px] h-[35px]">
         <a
           href="/assassination"
-          className={`group flex items-center justify-center w-full h-full rounded-md hover:opacity-80 ${
+          className={`group flex items-center justify-center w-full h-full rounded-md hover:text-assa ${
             isAssa ? "text-assa neon-green" : ""
           }`}
         >
-          <span className="text-[18px] leading-normal bg-left-bottom bg-gradient-to-r from-hover to-hover bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          <span className="text-[18px] leading-normal bg-left-bottom bg-gradient-to-r from-assa to-assa bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
             Ликвидация
           </span>
         </a>
@@ -49,11 +49,11 @@ export default function NavLinks(props: NavLinksProps) {
       <li className="w-full max-w-[150px] h-[35px]">
         <a
           href="/outlaw"
-          className={`group flex items-center justify-center w-full h-full rounded-md hover:opacity-80 ${
+          className={`group flex items-center justify-center w-full h-full rounded-md hover:text-outlaw ${
             isOutlaw ? "text-outlaw neon-red" : ""
           }`}
         >
-          <span className="text-[18px] leading-normal bg-left-bottom bg-gradient-to-r from-hover to-hover bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          <span className="text-[18px] leading-normal bg-left-bottom bg-gradient-to-r from-outlaw to-outlaw bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
             Головорез
           </span>
         </a>
@@ -61,11 +61,11 @@ export default function NavLinks(props: NavLinksProps) {
       <li className="w-full max-w-[150px] h-[35px]">
         <a
           href="/subtlety"
-          className={`group flex items-center justify-center w-full h-full rounded-md hover:opacity-80 ${
+          className={`group flex items-center justify-center w-full h-full rounded-md hover:text-sub ${
             isSub ? "text-sub neon-purple" : ""
           }`}
         >
-          <span className="text-[18px] leading-normal bg-left-bottom bg-gradient-to-r from-hover to-hover bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          <span className="text-[18px] leading-normal bg-left-bottom bg-gradient-to-r from-sub to-sub bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
             Скрытность
           </span>
         </a>

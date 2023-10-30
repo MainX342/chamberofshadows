@@ -3,16 +3,12 @@ import { Image } from "astro:assets";
 import WH from "../WH.astro";
 import outlawStHo from "../../assets/guide/outlaw_st_ho.png";
 import outlawStHo2 from "../../assets/guide/outlaw_st_ho2.png";
-import outlawStHoFull from "../../assets/guide/outlaw_st_ho_full.png";
 import outlawStKir from "../../assets/guide/outlaw_st_kir.png";
 import outlawStKir2 from "../../assets/guide/outlaw_st_kir2.png";
-import outlawStKirFull from "../../assets/guide/outlaw_st_kir_full.png";
 import outlawMplusHo from "../../assets/guide/outlaw_mplus_ho.png";
 import outlawMplusHo2 from "../../assets/guide/outlaw_mplus_ho2.png";
-import outlawMplusHoFull from "../../assets/guide/outlaw_mplus_ho_full.png";
 import outlawMplusKir from "../../assets/guide/outlaw_mplus_kir.png";
 import outlawMplusKir2 from "../../assets/guide/outlaw_mplus_kir2.png";
-import outlawMplusKirFull from "../../assets/guide/outlaw_mplus_kir_full.png";
 ---
 
 <div
@@ -37,31 +33,67 @@ import outlawMplusKirFull from "../../assets/guide/outlaw_mplus_kir_full.png";
         href="https://www.wowhead.com/ru/spell=383281/скрытая-возможность"
       />
     </p>
-    <pre><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAEkkEJCSSIJCSkkmkEtkIlkAAAAAAAaJJxBSEFSKpFAAAASCA</code></pre>
+    <pre><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAEkkEJCSSIJCSkkmkElkIlkAAAAAAAaJJRSEFyBKpFAAAASCA</code></pre>
     <embed
       class="h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://mimiron.raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAEkkEJCSSIJCSkkmkEtkIlkAAAAAAAaJJcgERhkSaBAAAQSCA?width=1024&hideHeader=1&locale=ru_RU"
+      src="https://mimiron.raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAEkkEJCSSIJCSkkmkElkIlkAAAAAAAaJJRSEFyBKpFAAAASCA?width=1024&hideHeader=1&locale=ru_RU"
     />
-    <div class="flex flex-col justify-center items-center">
+    <div
+      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+    >
       <Image
-        class="xl:hidden mt-[15px]"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         quality="100"
         src={outlawStHo}
         alt="Рейдовый билд головореза через Скрытую возможность"
       />
       <Image
-        class="xl:hidden mt-[15px]"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         quality="100"
         src={outlawStHo2}
         alt="Рейдовый билд головореза через Скрытую возможность"
       />
-      <Image
-        class="hidden xl:block desktop:hidden mt-[15px]"
-        quality="100"
-        src={outlawStHoFull}
-        alt="Рейдовый билд головореза через Скрытую возможность"
-      />
     </div>
+    <p class="pt-[30px]">
+      В одну цель практически нету замен. Единственное, что вы можете поменять <WH
+        text="Смертоносность"
+        href="https://www.wowhead.com/ru/spell=382238/смертоносность"
+      /> на <WH
+        text="Неутомимость"
+        href="https://www.wowhead.com/ru/spell=14983/неутомимость"
+      /> (-1% дпс / 2.5к) или <WH
+        text="Смертоносность"
+        href="https://www.wowhead.com/ru/spell=382238/смертоносность"
+      /> на <WH
+        text="Акробатические удары"
+        href="https://www.wowhead.com/ru/spell=196924/акробатические-удары"
+      /> (-1.6% / 4к). <WH
+        text="Акробатические удары"
+        href="https://www.wowhead.com/ru/spell=196924/акробатические-удары"
+      /> могут "перекрыть" 4к дпс, но вы должны быть уверены, что не сможете
+      бить без них.
+    </p>
+    <p class="pt-[16px]">
+      Если же вам требуется добавить АоЕ на боссе, то <WH
+        text="Натиск клинка"
+        href="https://www.wowhead.com/ru/spell=271877/натиск-клинка"
+      /> + <WH
+        text="Быстрая нарезка"
+        href="https://www.wowhead.com/ru/spell=381988/быстрая-нарезка"
+      /> меняются на <WH
+        text="Точные удары"
+        href="https://www.wowhead.com/ru/spell=381985/точные-удары"
+      /> + <WH
+        text="Танцующая сталь"
+        href="https://www.wowhead.com/ru/spell=272026/танцующая-сталь"
+      />, опционально <WH
+        text="Тяжелые удары"
+        href="https://www.wowhead.com/ru/spell=381885/тяжелые-удары"
+      /> на <WH
+        text="Ловкие маневры"
+        href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
+      /> (если АоЕ постоянное).
+    </p>
   </div>
 
   <input
@@ -82,31 +114,52 @@ import outlawMplusKirFull from "../../assets/guide/outlaw_mplus_kir_full.png";
         href="https://www.wowhead.com/ru/spell=381989/призовая-игра"
       />
     </p>
-    <pre><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAElEJRiIJJhkIIRolkElkItkAAAAAAAaJJxBSSUgWaBAAAgkAA</code></pre>
+    <pre><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAElEJRiIJJhkIIRolkElkItkAAAAAAAaJJxBSSUgSaBAAAgkAA</code></pre>
     <embed
       class="h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://mimiron.raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAElEJRiIJJhkIIRolkElkItkAAAAAAAaJJxBSSUgWaBAAAgkAA?width=1024&hideHeader=1&locale=ru_RU"
+      src="https://mimiron.raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAElEJRiIJJhkIIRolkElkItkAAAAAAAaJJxBSSUgSaBAAAgkAA?width=1024&hideHeader=1&locale=ru_RU"
     />
-    <div class="flex flex-col justify-center items-center">
+    <div
+      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+    >
       <Image
-        class="xl:hidden mt-[15px]"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         quality="100"
         src={outlawStKir}
         alt="Рейдовый билд головореза через Призовую игру"
       />
       <Image
-        class="xl:hidden mt-[15px]"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         quality="100"
         src={outlawStKir2}
         alt="Рейдовый билд головореза через Призовую игру"
       />
-      <Image
-        class="hidden xl:block desktop:hidden mt-[15px]"
-        quality="100"
-        src={outlawStKirFull}
-        alt="Рейдовый билд головореза через Призовую игру"
-      />
     </div>
+    <p class="pt-[30px]">
+      К сожалению или к счастью, в этом билде нету вообще никаких адекватных
+      замен.
+    </p>
+    <p class="pt-[16px]">
+      Если же вам требуется добавить АоЕ на боссе, то <WH
+        text="Натиск клинка"
+        href="https://www.wowhead.com/ru/spell=271877/натиск-клинка"
+      /> + <WH
+        text="Быстрая нарезка"
+        href="https://www.wowhead.com/ru/spell=381988/быстрая-нарезка"
+      /> меняются на <WH
+        text="Точные удары"
+        href="https://www.wowhead.com/ru/spell=381985/точные-удары"
+      /> + <WH
+        text="Танцующая сталь"
+        href="https://www.wowhead.com/ru/spell=272026/танцующая-сталь"
+      />, опционально <WH
+        text="Тяжелые удары"
+        href="https://www.wowhead.com/ru/spell=381885/тяжелые-удары"
+      /> на <WH
+        text="Ловкие маневры"
+        href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
+      /> (если АоЕ постоянное).
+    </p>
   </div>
 
   <input
@@ -132,26 +185,62 @@ import outlawMplusKirFull from "../../assets/guide/outlaw_mplus_kir_full.png";
       class="h-[650px] w-full pt-[16px] hidden desktop:block"
       src="https://mimiron.raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAAJEJBSSIhEJJJpJJRJJSJJAAAAAAItWSCSSUIpkSAAAAIJA?width=1024&hideHeader=1&locale=ru_RU"
     />
-    <div class="flex flex-col justify-center items-center">
+    <div
+      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+    >
       <Image
-        class="xl:hidden mt-[15px]"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         quality="100"
         src={outlawMplusHo}
         alt="Билд для ключей головореза через Скрытую возможность"
       />
       <Image
-        class="xl:hidden mt-[15px]"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         quality="100"
         src={outlawMplusHo2}
         alt="Билд для ключей головореза через Скрытую возможность"
       />
-      <Image
-        class="hidden xl:block desktop:hidden mt-[15px]"
-        quality="100"
-        src={outlawMplusHoFull}
-        alt="Билд для ключей головореза через Скрытую возможность"
-      />
     </div>
+    <p class="pt-[16px]">
+      Основная замена, это 1 очко из <WH
+        text="Неутомимости"
+        href="https://www.wowhead.com/ru/spell=14983/неутомимость"
+      /> в <WH
+        text="Смертоносность"
+        href="https://www.wowhead.com/ru/spell=382238/смертоносность"
+      />, особой роли не играет, зависит от количества скорости у вас + с <WH
+        text="Неутомимостью"
+        href="https://www.wowhead.com/ru/spell=14983/неутомимость"
+      /> немного комфортнее играть.
+    </p>
+    <p class="pt-[16px]">
+      <WH
+        text="Замедляющий яд"
+        href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
+      /> обычно используется на укрепленных неделях, а <WH
+        text="Атрофический яд"
+        href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
+      /> на тиранических или высоких укрепленных неделях.
+    </p>
+    <p class="pt-[16px]">
+      Если вам требуется чаще использовать <WH
+        text="Скрывающий покров"
+        href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
+      /> или требуются усиленные яды (например на тиранической неделе), то
+      замените <WH
+        text="Отравляющий укол"
+        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+      /> (если в ключе не требуется снимать енрейдж) или <WH
+        text="Крепкий желудок"
+        href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
+      /> (если требуется) на <WH
+        text="Stillshroud"
+        href="https://www.wowhead.com/ptr-2/spell=423662/stillshroud"
+      /> | <WH
+        text="Мастер ядоварения"
+        href="https://www.wowhead.com/ru/spell=378436/мастер-ядоварения"
+      />.
+    </p>
   </div>
 
   <input
@@ -177,25 +266,49 @@ import outlawMplusKirFull from "../../assets/guide/outlaw_mplus_kir_full.png";
       class="h-[650px] w-full pt-[16px] hidden desktop:block"
       src="https://mimiron.raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAQJBRSIJJhESkkEaJJRJJSLJAAAAAAItWSCHIJRBKpEAAAASCA?width=1024&hideHeader=1&locale=ru_RU"
     />
-    <div class="flex flex-col justify-center items-center">
+    <div
+      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+    >
       <Image
-        class="xl:hidden mt-[15px]"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         quality="100"
         src={outlawMplusKir}
         alt="Билд для ключей головореза через Призовую игру"
       />
       <Image
-        class="xl:hidden mt-[15px]"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         quality="100"
         src={outlawMplusKir2}
         alt="Билд для ключей головореза через Призовую игру"
       />
-      <Image
-        class="hidden xl:block desktop:hidden mt-[15px]"
-        quality="100"
-        src={outlawMplusKirFull}
-        alt="Билд для ключей головореза через Призовую игру"
-      />
     </div>
+    <p class="pt-[16px]">
+      <WH
+        text="Замедляющий яд"
+        href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
+      /> обычно используется на укрепленных неделях, а <WH
+        text="Атрофический яд"
+        href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
+      /> на тиранических или высоких укрепленных неделях.
+    </p>
+    <p class="pt-[16px]">
+      Если вам требуется чаще использовать <WH
+        text="Скрывающий покров"
+        href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
+      /> или требуются усиленные яды (например на тиранической неделе), то
+      замените <WH
+        text="Отравляющий укол"
+        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+      /> (если в ключе не требуется снимать енрейдж) или <WH
+        text="Крепкий желудок"
+        href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
+      /> (если требуется енрейдж) на <WH
+        text="Stillshroud"
+        href="https://www.wowhead.com/ptr-2/spell=423662/stillshroud"
+      /> | <WH
+        text="Мастер ядоварения"
+        href="https://www.wowhead.com/ru/spell=378436/мастер-ядоварения"
+      />.
+    </p>
   </div>
 </div>

@@ -29,6 +29,9 @@ module.exports = {
         assa: { ...colors.green, DEFAULT: colors.green[500] },
         outlaw: { ...colors.red, DEFAULT: colors.red[500] },
         sub: { ...colors.purple, DEFAULT: colors.purple[500] },
+        link: "#00d7b9",
+        rogue: "#fff468",
+        100: "#e5cc80",
       },
       fontSize: {
         clamp_heading: "clamp(1rem, 10vw, 2rem)",
