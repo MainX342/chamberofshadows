@@ -6,10 +6,12 @@ import Accordion from "../Accordion.astro";
 
 <section
   id={outlawMenuItems[7].to}
-  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[40px] text-clamp_heading text-secondary text-center"
+  class="w-full h-full flex flex-col gap-[16px] justify-center items-center text-clamp_heading text-secondary text-center"
 >
   <H2 text={outlawMenuItems[7].label} />
-  <ul class="list-none flex flex-col xl:items-center gap-[10px] w-full text-clamp_text">
+  <ul
+    class="list-none flex flex-col xl:items-center gap-[10px] w-full text-clamp_text"
+  >
     <li class="w-full">
       <Accordion title="1. Фокус по маусоверу">
         <p class="border-x-[1px] p-[5px]">

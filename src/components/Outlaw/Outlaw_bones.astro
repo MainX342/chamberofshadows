@@ -7,7 +7,7 @@ import { outlawMenuItems } from "../../constants/content";
 
 <section
   id={outlawMenuItems[5].to}
-  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[40px] text-clamp_heading text-secondary text-center"
+  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-center"
 >
   <H2 text={outlawMenuItems[5].label} />
   <div
@@ -45,7 +45,7 @@ import { outlawMenuItems } from "../../constants/content";
         href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
       />. Если же совпали, то они просто обновляются.
     </p>
-    <p>
+    <p class="pb-[40px]">
       4 части комплекта работают почти так же как и <WH
         text="Шулерские кости"
         href="https://www.wowhead.com/ru/spell=256170/шулерские-кости"
@@ -56,7 +56,7 @@ import { outlawMenuItems } from "../../constants/content";
       />.
     </p>
     <H3 text="Список костей:" />
-    <ul class="list-inside list-decimal flex flex-col items-center gap-[10px]">
+    <ul class="list-inside list-decimal flex flex-col items-center gap-[10px] pb-[40px]">
       <li>
         <WH
           text="Бортовой залп"
@@ -104,14 +104,19 @@ import { outlawMenuItems } from "../../constants/content";
         href="https://www.wowhead.com/ru/spell=381989/призовая-игра"
       />. Условия будут написаны с учетом наличия 4 частей комплекта. Вы всегда
       должны реролить кости ДО их спадения, чтобы получить бонус от комплекта.
-      Желательно не реролить во время окон <WH
+      Нельзя реролить во время окон <WH
         text="Увертки"
         href="https://www.wowhead.com/ru/spell=115192/увертка"
       /> и <WH
         text="Танца теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />. Если видите, что придется реролить кости во время стелс окон -
-      рерольните за 1 гкд до их использования.
+      />. Если видите, что время действия костей ≤ 7 секунд и у вас готово <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> или <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />, то обновите кости прямо перед использованием.
     </p>
 
     <span
@@ -122,29 +127,11 @@ import { outlawMenuItems } from "../../constants/content";
       />:</span
     >
     <ul class="list-inside list-disc flex flex-col items-center gap-[10px]">
+      <li>Если у вас 1 любая кость</li>
       <li>
-        Если у вас только 1 кость и это <WH
-          text="Истинный азимут"
-          href="https://www.wowhead.com/ru/spell=193359/истинный-азимут"
-        />. Делается это для того, чтобы комплект 100% вам дал эту же кость +
-        новую
-      </li>
-      <li>
-        Если у вас любые 1-2 кости и нету <WH
-          text="Истинный азимут"
-          href="https://www.wowhead.com/ru/spell=193359/истинный-азимут"
-        />. Цель как можно раньше получить <WH
-          text="Истинный азимут"
-          href="https://www.wowhead.com/ru/spell=193359/истинный-азимут"
-        />
-      </li>
-      <li>
-        Если у вас активен бафф от <WH
+        Если у вас любые 2 кости и есть бафф <WH
           text="Шулерские кости"
           href="https://www.wowhead.com/ru/spell=256170/шулерские-кости"
-        /> и 1-3 кости без <WH
-          text="Истинный азимут"
-          href="https://www.wowhead.com/ru/spell=193359/истинный-азимут"
         />
       </li>
     </ul>
@@ -156,18 +143,9 @@ import { outlawMenuItems } from "../../constants/content";
       />:</span
     >
     <ul class="list-inside list-disc flex flex-col items-center gap-[10px]">
+      <li>Если у вас 1 любая кость</li>
       <li>
-        Если у вас только 1 кость и это <WH
-          text="Бортовой залп"
-          href="https://www.wowhead.com/ru/spell=193356/бортовой-залп"
-        />. Делается это для того, чтобы комплект 100% вам дал эту же кость +
-        новую
-      </li>
-      <li>
-        Если у вас любые 1-2 кости и нету <WH
-          text="Бортовой залп"
-          href="https://www.wowhead.com/ru/spell=193356/бортовой-залп"
-        />. Цель как можно раньше получить <WH
+        Если у вас любые 2 кости и нету <WH
           text="Бортовой залп"
           href="https://www.wowhead.com/ru/spell=193356/бортовой-залп"
         />
