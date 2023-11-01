@@ -6,6 +6,9 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      content: {
+        raidbots: 'url("../src/assets/raidbots.svg")',
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0 },
@@ -21,6 +24,7 @@ module.exports = {
       },
       fontFamily: {
         philosopher: ["Philosopher", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
         primary: { ...colors.stone, DEFAULT: colors.stone[900] },
@@ -32,6 +36,7 @@ module.exports = {
         link: "#00d7b9",
         rogue: "#fff468",
         100: "#e5cc80",
+        border: { ...colors.neutral, DEFAULT: colors.neutral[700] },
       },
       fontSize: {
         clamp_heading: "clamp(1rem, 10vw, 2rem)",

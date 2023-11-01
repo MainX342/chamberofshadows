@@ -3,6 +3,7 @@ import H2 from "../H2.astro";
 import WH from "../WH.astro";
 import { outlawMenuItems } from "../../constants/content";
 import Tabs from "./Outlaw_tabs.astro";
+import Sim from "../Sim.astro";
 ---
 
 <section
@@ -10,28 +11,38 @@ import Tabs from "./Outlaw_tabs.astro";
   class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-center"
 >
   <H2 text={outlawMenuItems[1].label} />
-  <p class="text-clamp_text">
-    У головореза существует 2 основных билда, названия которых происходят от
-    сокращений главных способностей (капстоунов) на английском языке, все
-    остальные билды являются их производными с небольшими отличиями:
-  </p>
-  <ul class="flex flex-col gap-[16px] text-clamp_text">
-    <li>
-      1. HO (Hidden Opportunity) билд <WH
-        text="Скрытая возможность"
-        href="https://www.wowhead.com/ru/spell=383281/скрытая-возможность"
+  <div class="text-clamp_text flex flex-col gap-[16px]">
+    <p>
+      У головореза существует 2 основных билда, названия которых происходят от
+      сокращений главных способностей (капстоунов) на английском языке, все
+      остальные билды являются их производными с небольшими отличиями:
+    </p>
+    <ul class="flex flex-col gap-[16px]">
+      <li>
+        1. HO (Hidden Opportunity) билд <WH
+          text="Скрытая возможность"
+          href="https://www.wowhead.com/ru/spell=383281/скрытая-возможность"
+        />
+      </li>
+      <li>
+        2. KiR (Keep It Rolling) билд <WH
+          text="Призовая игра"
+          href="https://www.wowhead.com/ru/spell=381989/призовая-игра"
+        />
+      </li>
+    </ul>
+    <p>
+      Оба этих билда подходят для рейда и ключей. Ниже будут представлены симы
+      для рейда (одна цель) и нескольких ключей, а также варианты замены
+      талантов.
+    </p>
+    <Tabs />
+    <Sim title="Одна цель 5 минут">
+      <img
+        src="../../assets/guide/outlaw_st_builds.png"
+        alt="Сим билдов в одну цель 5 минут"
+        class="mx-auto"
       />
-    </li>
-    <li>
-      2. KiR (Keep It Rolling) билд <WH
-        text="Призовая игра"
-        href="https://www.wowhead.com/ru/spell=381989/призовая-игра"
-      />
-    </li>
-  </ul>
-  <p class="text-clamp_text">
-    Оба этих билда подходят для рейда и ключей. Ниже будут представлены симы для
-    рейда (одна цель) и нескольких ключей, а также варианты замены талантов.
-  </p>
-  <Tabs />
+    </Sim>
+  </div>
 </section>

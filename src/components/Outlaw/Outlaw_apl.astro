@@ -3,14 +3,20 @@ import H3 from "../H3.astro";
 import WH from "../WH.astro";
 ---
 
-<div class="pt-[60px] flex flex-col gap-[56px] text-clamp_text">
-  <ul class="list-inside list-decimal flex flex-col gap-[10px]">
-    <H3 text="Приоритет способностей для набора кп HO билд (builders):" />
+<div class="pt-[60px] flex flex-col gap-[20px] text-clamp_text">
+  <H3 text="Приоритет способностей для набора кп HO билд (builders):" />
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+  >
     <li>
       <WH
         text="Призрачный удар"
         href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
-      /> - по откату
+      /> - используется по откату, не имеет гкд, поэтому можно добавить в макрос
+      к <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      />
     </li>
     <li>
       <WH
@@ -52,13 +58,19 @@ import WH from "../WH.astro";
       />
     </li>
   </ul>
-  <ul class="list-inside list-decimal flex flex-col gap-[5px]">
-    <H3 text="Приоритет способностей для набора кп KiR билд (builders):" />
+  <H3 text="Приоритет способностей для набора кп KiR билд (builders):" />
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+  >
     <li>
       <WH
         text="Призрачный удар"
         href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
-      /> - по откату
+      /> - используется по откату, не имеет гкд, поэтому можно добавить в макрос
+      к <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      />
     </li>
     <li>
       <WH
@@ -93,9 +105,17 @@ import WH from "../WH.astro";
         href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
       />
     </li>
+    <li>
+      <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> - не используется в KiR билде, вообще.
+    </li>
   </ul>
-  <ul class="list-inside list-decimal flex flex-col gap-[5px]">
-    <H3 text="Приоритет завершающих способностей (finishers):" />
+  <H3 text="Приоритет завершающих способностей (finishers):" />
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+  >
     <li>
       <WH
         text="Промеж глаз"
@@ -134,8 +154,10 @@ import WH from "../WH.astro";
       /> из п.1.
     </li>
   </ul>
-  <ul class="list-inside list-decimal flex flex-col gap-[5px]">
-    <H3 text="Приоритет кулдаунов (cooldowns):" />
+  <H3 text="Приоритет кулдаунов (cooldowns):" />
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+  >
     <li>
       <WH
         text="Бросок костей"
@@ -149,7 +171,7 @@ import WH from "../WH.astro";
       <WH
         text="Шквал клинков"
         href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
-      /> - должен быть всегда и в одну цель и в AoE (из-за таланта <WH
+      /> - бафф должен быть всегда, и в одну цель, и в AoE (из-за таланта <WH
         text="Underhanded Upper Hand"
         href="https://www.wowhead.com/ptr-2/spell=424044/underhanded-upper-hand"
       />). Используется по откату в AoE, если целей 5 и больше (из-за таланта <WH
@@ -161,7 +183,17 @@ import WH from "../WH.astro";
       <WH
         text="Выброс адреналина"
         href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
-      /> - используется по откату, на 0-2 кп.
+      /> - используется по откату, на 0-2 кп. Иногда бывают ситуации, когда <WH
+        text="Выброс адреналина"
+        href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
+      /> откатился до спадения баффа предыдущего. В таких случаях новый <WH
+        text="Выброс адреналина"
+        href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
+      /> можно использовать ТОЛЬКО в стелс окнах, вне стелс окон сначала нужно
+      дождаться спадения предыдущего <WH
+        text="Выброс адреналина"
+        href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
+      />.
     </li>
     <li>
       <WH

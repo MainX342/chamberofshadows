@@ -2,9 +2,8 @@
 import H2 from "../H2.astro";
 import WH from "../WH.astro";
 import { outlawMenuItems } from "../../constants/content";
-import { Image } from "astro:assets";
-import Accordion from "../Accordion.astro";
-import OutlawRaidTalents from "../../assets/guide/outlaw_raid_races.png";
+import Sim from "../Sim.astro";
+import Race from "../Race.astro";
 ---
 
 <section
@@ -16,19 +15,20 @@ import OutlawRaidTalents from "../../assets/guide/outlaw_raid_races.png";
     <p>
       На данный момент разница между расами составляет 1-2%. Так что, если вы не
       стремитесь к максимизации эффективности, смело можете выбирать того, кто
-      нравится визуально. Однако в каждом контенте (рейды/ключи/пвп) есть расы,
-      которые сильно упростят вашу жизнь благодаря утилити/защитным
+      нравится визуально. Однако в каждом контенте (рейды | ключи | пвп) есть
+      расы, которые сильно упростят вашу жизнь благодаря утилити/защитным
       способностям. Не существует лучшей расы для всего, и вам придется
-      выбирать, что вам важнее (рейд/ключи/пвп/визуальная составляющая). При
-      этом, если вы собираетесь играть в других специализациях, желательно также
-      ознакомиться с ними. Ниже я напишу лучшие, по моему мнению, расы.
+      выбирать, что вам важнее (рейд | ключи | пвп | визуальная составляющая).
+      При этом, если вы собираетесь играть в других специализациях, желательно
+      также ознакомиться с ними. Ниже я напишу лучшие, по моему мнению, расы.
     </p>
     <ul class="flex flex-col gap-[16px]">
-      <li>
-        <span
-          class="underline font-bold decoration-2 underline-offset-4 decoration-hover"
-          >Дворфы</span
-        > - лучшая раса на данный момент для всего пве контента и всех
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <Race
+          title="Дворфы"
+          url="/src/assets/guide/races.webp"
+          href="https://www.wowhead.com/ru/race=3/дворф"
+        /> - лучшая раса на данный момент для всего пве контента и всех
         специализаций. Помимо того, что являются очень сильной дпс расой (топ
         1-2 у всех специализаций) <WH
           text="Мощь гор"
@@ -41,66 +41,69 @@ import OutlawRaidTalents from "../../assets/guide/outlaw_raid_races.png";
         Поэтому, если вы хотите максимальной эффективности и не планируете
         играть на высоких рейтингах арены, дворфы - лучший выбор на данный
         момент.
-      </li>
-      <li>
-        <span
-          class="underline font-bold decoration-2 underline-offset-4 decoration-hover"
-          >Люди</span
-        > - с каждым новым рейдом становятся всё сильнее (<WH
-          text="Человеческий дух"
-          href="https://www.wowhead.com/ru/spell=20598/человеческий-дух"
-        />). И уже в этом рейде стали топ дпс расой для ликвидации и скрытности,
-        для головореза слабее чем дворфы и таурены. Утилити способность довольно
-        посредственная для пве контента.
-      </li>
-      <li>
-        <span
-          class="underline font-bold decoration-2 underline-offset-4 decoration-outlaw"
-          >Таурены</span
-        > - хоть и имеют такую же дпс способность <WH
-          text="Грубая сила"
-          href="https://www.wowhead.com/ru/spell=154743/грубая-сила"
-        /> как у дворфов, остальные способности у них намного слабее,
-        <WH
-          text="Громовая поступь"
-          href="https://www.wowhead.com/ru/spell=20549/громовая-поступь"
-        /> может немного помочь в ключах, но в большинстве случаев практически
-        бесполезна.
-      </li>
-      <li>
-        <span
-          class="underline font-bold decoration-2 underline-offset-4 decoration-hover"
-          >Ночные эльфы</span
-        > - лучшая раса для пвп и ключей в ликвидации благодаря дополнительной
-        невидимости от <WH
-          text="Слиться с тенью"
-          href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
-        />. Для рейдов не имеет ничего полезного ни в одной специализации.
-      </li>
-      <li>
-        <span
-          class="underline font-bold decoration-2 underline-offset-4 decoration-outlaw"
-          >Орки</span
-        > - лучшая раса для пвп за орду <WH
-          text="Твердость	"
-          href="https://www.wowhead.com/ru/spell=20573/твердость"
-        />. Для пве, особо полезного ничего не имеет. Дпс способность <WH
-          text="Кровавое неистовство"
-          href="https://www.wowhead.com/ru/spell=20572/кровавое-неистовство"
-        /> довольно слабая.
-      </li>
-      <li>
-        Остальные расы можно объединить, так как они не являются лучшими ни в
-        пве, ни в пвп и обычно выбираются из-за визуальной составляющей.
+        <li class="border border-1 p-[20px] rounded-md border-border">
+          <Race
+            title="Люди"
+            url="/src/assets/guide/race_human.webp"
+            href="https://www.wowhead.com/ru/race=1/человек"
+          /> - с каждым новым рейдом становятся всё сильнее (<WH
+            text="Человеческий дух"
+            href="https://www.wowhead.com/ru/spell=20598/человеческий-дух"
+          />). И уже в этом рейде стали топ дпс расой для ликвидации и
+          скрытности, для головореза слабее чем дворфы и таурены. Утилити
+          способность довольно посредственная для пве контента.
+        </li>
+        <li class="border border-1 p-[20px] rounded-md border-border">
+          <Race
+            title="Таурены"
+            url="/src/assets/guide/race_tauren.webp"
+            href="https://www.wowhead.com/ru/race=6/таурен"
+          /> - хоть и имеют такую же дпс способность <WH
+            text="Грубая сила"
+            href="https://www.wowhead.com/ru/spell=154743/грубая-сила"
+          /> как у дворфов, остальные способности у них намного слабее,
+          <WH
+            text="Громовая поступь"
+            href="https://www.wowhead.com/ru/spell=20549/громовая-поступь"
+          /> может немного помочь в ключах, но в большинстве случаев практически
+          бесполезна.
+        </li>
+        <li class="border border-1 p-[20px] rounded-md border-border">
+          <Race
+            title="Ночные эльфы"
+            url="/src/assets/guide/race_nightelf.webp"
+            href="https://www.wowhead.com/ru/race=4/ночной-эльф"
+          /> - лучшая раса для пвп и ключей в ликвидации благодаря
+          дополнительной невидимости от <WH
+            text="Слиться с тенью"
+            href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
+          />. Для рейдов не имеет ничего полезного ни в одной специализации.
+        </li>
+        <li class="border border-1 p-[20px] rounded-md border-border">
+          <Race
+            title="Орки"
+            url="/src/assets/guide/race_orc.webp"
+            href="https://www.wowhead.com/ru/race=2/орк"
+          /> - лучшая раса для пвп за орду <WH
+            text="Твердость	"
+            href="https://www.wowhead.com/ru/spell=20573/твердость"
+          />. Для пве, особо полезного ничего не имеет. Дпс способность <WH
+            text="Кровавое неистовство"
+            href="https://www.wowhead.com/ru/spell=20572/кровавое-неистовство"
+          /> довольно слабая.
+        </li>
+        <li>
+          Остальные расы можно объединить, так как они не являются лучшими ни в
+          пве, ни в пвп и обычно выбираются из-за визуальной составляющей.
+        </li>
       </li>
     </ul>
-    <Accordion title="Сим 5 минут 1 цель (рейд)">
-      <Image
-        class="mt-[15px] mx-auto"
-        quality="100"
-        src={OutlawRaidTalents}
-        alt="Сим рас головореза в рейде"
+    <Sim title="Сим рас (одна цель 5 минут)">
+      <img
+        src="../../assets/guide/outlaw_raid_races.png"
+        alt="Сим рас в одну цель 5 минут"
+        class="mx-auto"
       />
-    </Accordion>
+    </Sim>
   </div>
 </section>

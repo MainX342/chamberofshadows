@@ -2,6 +2,8 @@
 import H2 from "../H2.astro";
 import WH from "../WH.astro";
 import { outlawMenuItems } from "../../constants/content";
+import H3 from "../H3.astro";
+import Sim from "../Sim.astro";
 ---
 
 <section
@@ -19,10 +21,138 @@ import { outlawMenuItems } from "../../constants/content";
       значения из раздела выше. Оставшиеся 6 вещей могут быть заменены крафтами,
       однако проблема заключается в том, что крафтовые вещи сейчас имеют на 3
       уровня предметов ниже чем вещи из рейда / хранилища. Поэтому в BiS
-      экипировке всего 3 крафта (2 обязательных + кольцо).
+      экипировке всего 2 крафта.
+    </p>
+    <H3 text="Комплект" />
+    <ul
+      class="list-inside list-decimal p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
+    >
+      <li>
+        <WH
+          text="Lucid Shadewalker's Deathmask"
+          href="https://www.wowhead.com/ptr-2/item=207236/lucid-shadewalkers-deathmask?ilvl=489"
+        />
+      </li>
+      <li>
+        <WH
+          text="Lucid Shadewalker's Bladed Spaulders"
+          href="https://www.wowhead.com/ptr-2/item=207234/lucid-shadewalkers-bladed-spaulders?ilvl=489"
+        />
+      </li>
+      <li>
+        <WH
+          text="Lucid Shadewalker's Cuirass"
+          href="https://www.wowhead.com/ptr-2/item=207239/lucid-shadewalkers-cuirass?ilvl=489"
+        />
+      </li>
+      <li>
+        <WH
+          text="Lucid Shadewalker's Clawgrips"
+          href="https://www.wowhead.com/ptr-2/item=207237/lucid-shadewalkers-clawgrips?ilvl=489"
+        />
+      </li>
+      <li>
+        <WH
+          text="Lucid Shadewalker's Chausses"
+          href="https://www.wowhead.com/ptr-2/item=207235/lucid-shadewalkers-chausses?ilvl=489"
+        />
+      </li>
+    </ul>
+    <p>
+      2 части комплекта дают ~8.7% урона, 4 части - 15%. Это довольно много по
+      сравнению с предыдущими комплектами, поэтому вам нужно как можно быстрее
+      получить весь комплект. Вы можете собирать комплект без головы или без
+      кистей, так как на них худшие характеристики. Одну вещь можно сделать
+      через катализатор уже на первой неделе 10.2 (второй заряд будет на 2-ой
+      рейдовой неделе), вторую за убийство последнего босса в героическом режиме
+      (или 2000 рио). Останется получить 2 вещи с поиска рейда / обычной /
+      героической сложности.
+    </p>
+    <H3 text="Крафт" />
+    <p>
+      Первую искру вы получите сразу с релизом 10.2, затем по 1 искре каждые 2
+      недели. Так как по началу очень мало искр, к крафту нужно подходить
+      ответственно и обдумать все варианты и возможные специализации / контент,
+      которым вы хотите заниматься.
     </p>
     <ul
-      class="list-inside list-decimal flex flex-col xl:items-center gap-[10px]"
+      class="list-inside list-disc p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
+    >
+      <li>
+        Головорез 1 цель:
+        <WH
+          text="Обмотки с ядовитыми шипами"
+          href="https://www.wowhead.com/ru/item=193452/обмотки-с-ядовитыми-шипами?class=4&ilvl=486&spec=260"
+        /> + <WH
+          text="Запястья / пояс с пропитанной ядом броневой пластиной"
+          href="https://www.wowhead.com/ru/item=193555/пропитанная-ядом-броневая-пластина"
+        />
+      </li>
+      <li>
+        Головорез ключи:
+        <WH
+          text="Пульсирующий плащ из спор"
+          href="https://www.wowhead.com/ru/item=205025/пульсирующий-плащ-из-спор?bonus=8960:8840:8836:8902&class=4&ilvl=486&spec=260"
+        /> + <WH
+          text="Аркан стихий"
+          href="https://www.wowhead.com/ru/item=193001/аркан-стихий?bonus=8782&crafted-stats=32:40&ilvl=486&spec=260"
+        /> или любые ботинки / новые украшения
+      </li>
+      <li>
+        Ликвидация 1 цель: <WH
+          text="Пульсирующий плащ из спор"
+          href="https://www.wowhead.com/ru/item=205025/пульсирующий-плащ-из-спор?bonus=8960:8840:8836:8902&class=4&ilvl=486&spec=260"
+        /> +
+        <WH
+          text="Обмотки с ядовитыми шипами"
+          href="https://www.wowhead.com/ru/item=193452/обмотки-с-ядовитыми-шипами?class=4&ilvl=486&spec=260"
+        />
+      </li>
+      <li>
+        Ликвидация ключи: <WH
+          text="Пульсирующий плащ из спор"
+          href="https://www.wowhead.com/ru/item=205025/пульсирующий-плащ-из-спор?bonus=8960:8840:8836:8902&class=4&ilvl=486&spec=260"
+        /> +
+        <WH
+          text="Запястья / пояс с подкладкой из синего шелка"
+          href="https://www.wowhead.com/ru/item=193944/подкладка-из-синего-шелка"
+        />
+      </li>
+      <li>
+        Скрытность 1 цель: <WH
+          text="Пульсирующий плащ из спор"
+          href="https://www.wowhead.com/ru/item=205025/пульсирующий-плащ-из-спор?bonus=8960:8840:8836:8902&class=4&ilvl=486&spec=260"
+        /> +
+        <WH
+          text="Запястья / пояс с подкладкой из синего шелка"
+          href="https://www.wowhead.com/ru/item=193944/подкладка-из-синего-шелка"
+        />
+      </li>
+      <li>
+        Скрытность ключи: <WH
+          text="Пульсирующий плащ из спор"
+          href="https://www.wowhead.com/ru/item=205025/пульсирующий-плащ-из-спор?bonus=8960:8840:8836:8902&class=4&ilvl=486&spec=260"
+        /> +
+        <WH
+          text="Запястья / пояс с подкладкой из синего шелка"
+          href="https://www.wowhead.com/ru/item=193944/подкладка-из-синего-шелка"
+        />
+      </li>
+    </ul>
+    <p>
+      Резюмируя информацию выше, я бы рекомендовал первым крафтом делать <WH
+        text="Пульсирующий плащ из спор"
+        href="https://www.wowhead.com/ru/item=205025/пульсирующий-плащ-из-спор?bonus=8960:8840:8836:8902&class=4&ilvl=486&spec=260"
+      />, он всего на 2к урона проигрывает лучшему варианту у головореза, но
+      является лучшим в ключи и для остальных специализаций, а так же является
+      лучшим выбором на освоении рейда. Второй крафт зависит от ваших целей и в
+      каких специализациях вы играете.
+    </p>
+    <Sim title="Одна цель 5 минут" />
+    <Sim title="Ключи" />
+    <H3 text="Лучшая экипировка (BiS list)" />
+    <ul
+      class="list-inside list-decimal font-medium p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
     >
       <li>
         Голова: <WH
@@ -67,10 +197,10 @@ import { outlawMenuItems } from "../../constants/content";
         />
       </li>
       <li>
-        Запястья: <WH
+        Запястья: Рейд - <WH
           text="Life-Bound Bindings"
           href="https://www.wowhead.com/ptr-2/item=193419/life-bound-bindings?bonus=8780:8797:8960&crafted-stats=32:40&ilvl=486"
-        />
+        /> | Ключи - любые без искусности
       </li>
       <li>
         Кисти рук: <WH
@@ -80,8 +210,8 @@ import { outlawMenuItems } from "../../constants/content";
       </li>
       <li>
         Кольцо 1: <WH
-          text="Signet of Titanic Insight"
-          href="https://www.wowhead.com/ptr-2/item=192999/signet-of-titanic-insight?crafted-stats=40:32&ilvl=486"
+          text="Thornwoven Band"
+          href="https://www.wowhead.com/ptr-2/item=162548/thornwoven-band?bonus=523&ilvl=489&spec=260"
         />
       </li>
       <li>
@@ -91,24 +221,36 @@ import { outlawMenuItems } from "../../constants/content";
         />
       </li>
       <li>
-        Аксессуар 1: <WH
+        Аксессуары: <WH
           text="Cataclysmic Signet Brand"
           href="https://www.wowhead.com/ptr-2/item=207166/cataclysmic-signet-brand?ilvl=489"
-        />
-      </li>
-      <li>
-        Аксессуар 2: Рейд - <WH
+        /> | <WH
           text="Coiled Serpent Idol"
           href="https://www.wowhead.com/ptr-2/item=207175/coiled-serpent-idol?ilvl=489"
-        />. Ключи - <WH
+        /> | <WH
           text="Bandolier of Twisted Blades"
           href="https://www.wowhead.com/ptr-2/item=207165/bandolier-of-twisted-blades?bonus=6652:8783:8784:9599:9600:10244:10245&class=4&ilvl=489&spec=260"
-        />
+        />. Это лучшие варианты и для рейда и для ключей.
       </li>
+      <span
+        >Пока не получите рейдовые аксессуары, хорошим выбором будут: <WH
+          text="Ускоряющие песочные часы"
+          href="https://www.wowhead.com/ru/item=207566/ускоряющие-песочные-часы?class=4&ilvl=489&spec=260"
+        />, <WH
+          text="Зеркало разбитого будущего"
+          href="https://www.wowhead.com/ru/item=207581/зеркало-разбитого-будущего?class=4&ilvl=489&spec=260"
+        /> или <WH
+          text="Коробочка с картами Новолуния Танец"
+          href="https://www.wowhead.com/ru/item=198478/коробочка-с-картами-новолуния-танец?bonus=8840:8836:8902&class=4&ilvl=486&spec=260"
+        /> (но я не рекомендую тратить на нее первые искры)</span
+      >
       <li>
-        Плащ: <WH
+        Плащ: Рейд - <WH
           text="Inflammable Drapeleaf"
           href="https://www.wowhead.com/ptr-2/item=207160/inflammable-drapeleaf?ilvl=489"
+        /> | Ключи - <WH
+          text="Пульсирующий плащ из спор"
+          href="https://www.wowhead.com/ru/item=205025/пульсирующий-плащ-из-спор?bonus=8960:8840:8836:8902&class=4&ilvl=486&spec=260"
         />
       </li>
       <li>

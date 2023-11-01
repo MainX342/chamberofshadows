@@ -15,12 +15,12 @@ import OutlawApl from "./Outlaw_apl.astro";
 >
   <H2 text={outlawMenuItems[6].label} />
   <H3 text="Условия использования финишеров | трата очков серии приемов (кп)" />
+  <span class="font-medium text-clamp_text">Все завершающие приемы используются на:</span>
   <ul
-    class="text-clamp_text pt-[10px] list-inside list-square flex flex-col items-center gap-[5px] pb-[40px]"
+    class="text-clamp_text pt-[10px] list-inside list-square flex flex-col items-start gap-[5px] p-[20px] border border-border rounded-md text-left"
   >
-    <span class="font-bold">Все завершающие приемы используются на:</span>
     <li>
-      5 кп, если активен бафф <WH
+      На 5 кп, если активен бафф <WH
         text="Увертки"
         href="https://www.wowhead.com/ru/spell=115192/увертка"
       /> или <WH
@@ -31,15 +31,15 @@ import OutlawApl from "./Outlaw_apl.astro";
         href="https://www.wowhead.com/ptr-2/spell=423703/crackshot?def=122160&rank=1"
       />
     </li>
-    <li>6 кп во всех остальных случаях</li>
+    <li>На 6 кп во всех остальных случаях</li>
     <li>
       7 кп добивать не нужно, никакие билдеры не должны уходить в "оверкап" кп
     </li>
   </ul>
   <H3 text="Начало боя (опенеры)" />
   <p class="text-clamp_text pt-[10px] pb-[40px]">
-    Начало боя у говореза сильно отличается в зависимости от "проков" и костей,
-    поэтому ниже будут представлены усредненные опенеры с комментариями
+    Начало боя у головореза сильно отличается в зависимости от "проков" и
+    костей, поэтому ниже будут представлены усредненные опенеры с комментариями
   </p>
   <div
     class="flex flex-wrap max-w-[1024px] min-h-[565px] w-full text-clamp_text content-baseline"

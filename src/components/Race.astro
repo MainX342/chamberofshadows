@@ -1,0 +1,18 @@
+---
+type Props = {
+  title: string;
+  url: string;
+  href: string;
+};
+
+const { title, url, href } = Astro.props;
+---
+
+<div class="inline-block">
+  <img
+    src={url}
+    alt={title}
+    class="float-left w-[18px] h-[18px] mr-[5px] relative top-[5px]"
+  />
+  <a href={href} class="text-white font-medium inline"> {title}</a>
+</div>

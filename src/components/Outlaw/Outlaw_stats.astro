@@ -2,6 +2,8 @@
 import H2 from "../H2.astro";
 import { outlawMenuItems } from "../../constants/content";
 import Accordion from "../Accordion.astro";
+import H3 from "../H3.astro";
+import WH from "../WH.astro";
 ---
 
 <section
@@ -11,29 +13,25 @@ import Accordion from "../Accordion.astro";
   <H2 text={outlawMenuItems[2].label} />
   <div class="flex flex-col gap-[16px] text-clamp_text">
     <Accordion title="Таблица штрафов и характеристик">
-      <div
-        class="flex flex-col gap-[10px] p-[10px] border border-secondary border-t-0"
-      >
-        <p>
-          На вторичные характеристики распростроняется механика Diminishing
-          Returns (DR), ниже приведена таблица со штрафами в зависимости от %
-          характеристик. Базовые характеристики, ваши таланты и баффы не
-          учитываются в расчётах, только проценты (рейтинг) полученные с вещей.
-          Чтобы не считать самому, вы можете воспользоваться аддоном <a
-            href="https://www.curseforge.com/wow/addons/true-stat-values"
-            class="text-hover hover:opacity-80">True Stat Values</a
-          >
-        </p>
-        <ul class="list-inside list-disc flex flex-col items-center">
-          <li>от 0 до 30% — нету штрафа</li>
-          <li>от 30% до 39% — 10% штраф</li>
-          <li>от 39% до 47% — 20% штраф</li>
-          <li>от 47% до 54% — 30% штраф</li>
-          <li>от 54% до 66% — 40% штраф</li>
-          <li>от 66% до 126% — 50% штраф</li>
-        </ul>
-        <p>В большинстве случаев характеристики не выходят за 10% штраф</p>
-      </div>
+      <p>
+        На вторичные характеристики распростроняется механика Diminishing
+        Returns (DR), ниже приведена таблица со штрафами в зависимости от %
+        характеристик. Базовые характеристики, ваши таланты и баффы не
+        учитываются в расчётах, только проценты (рейтинг) полученные с вещей.
+        Чтобы не считать самому, вы можете воспользоваться аддоном <a
+          href="https://www.curseforge.com/wow/addons/true-stat-values"
+          class="text-hover hover:opacity-80">True Stat Values</a
+        >
+      </p>
+      <ul class="list-inside list-disc flex flex-col items-center">
+        <li>от 0 до 30% — нету штрафа</li>
+        <li>от 30% до 39% — 10% штраф</li>
+        <li>от 39% до 47% — 20% штраф</li>
+        <li>от 47% до 54% — 30% штраф</li>
+        <li>от 54% до 66% — 40% штраф</li>
+        <li>от 66% до 126% — 50% штраф</li>
+      </ul>
+      <p>В большинстве случаев характеристики не выходят за 10% штраф</p>
     </Accordion>
 
     <p>
@@ -51,25 +49,41 @@ import Accordion from "../Accordion.astro";
       можете получить его у меня на <a
         href="https://boosty.to/mainx"
         class="text-hover hover:opacity-80">Boosty</a
+      >.
+    </p>
+    <H3 text="Приоритет характеристик" />
+    <ul
+      class="list-inside list-decimal font-medium border border-border rounded-md p-[20px] text-left flex flex-col gap-[20px]"
+    >
+      <li>Скорость (~10%)</li>
+      <li>Универсальность | Критический удар (~40%)</li>
+      <li>Скорость (до 15-17%)</li>
+      <li>Искусность (не требуется)</li>
+      <span
+        >Для ключей характеристики практически никак не меняются, разве что
+        Скорости можно 8-10%</span
       >
-    </p>
-    <p class="font-bold">
-      Приоритет для рейда: Скорость (~10%) &#8594; Универсальность &#8594;
-      Критический удар &#8594; Искусность (не требуется).
-    </p>
-    <p>
-      Судя по симуляциям, сначала оптимально собрать ~10% скорости, а затем всё
-      в критический удар и универсальность, а уже когда будет примерно по 40% -
-      добирать скорость.
-    </p>
-    <p class="font-bold">
-      Характеристики в BiS экипировке (со всеми баффами и крит. флаконом +
-      рунами на скорость + Веющее посвящение):<br />Критический удар 40.75% |
-      Универсальность 42.11% | Скорость 17.32% | Искусность 17.63%
-    </p>
-    <p>
-      Для ключей характеристики практически никак не меняются, разве что
-      Скорости можно 8-10%
-    </p>
+    </ul>
+    <H3 text="Характеристики в BiS экипировке" />
+    <ul
+      class="list-inside list-disc font-medium border border-border rounded-md p-[20px] text-left flex flex-col gap-[20px]"
+    >
+      <span
+        >Используется <WH
+          text="Замерзший флакон оскверняющей ярости"
+          href="https://www.wowhead.com/ru/item=191329/замерзший-флакон-оскверняющей-ярости"
+        /> + <WH
+          text="Воющая руна"
+          href="https://www.wowhead.com/ru/item=194820/воющая-руна"
+        /> x2 + <WH
+          text="Чары для оружия – веющее посвящение"
+          href="https://www.wowhead.com/ru/item=200058/чары-для-оружия-веющее-посвящение"
+        /></span
+      >
+      <li>Критический удар 40.75%</li>
+      <li>Универсальность 42.11%</li>
+      <li>Скорость 17.32%</li>
+      <li>Искусность 17.63%</li>
+    </ul>
   </div>
 </section>
