@@ -4,6 +4,12 @@ import WH from "../WH.astro";
 import { outlawMenuItems } from "../../constants/content";
 import Sim from "../Sim.astro";
 import Race from "../Race.astro";
+import StRaces from "../../assets/guide/outlaw_raid_races.webp";
+import Dwarf from "../../assets/guide/races.webp";
+import Tauren from "../../assets/guide/race_tauren.webp";
+import Human from "../../assets/guide/race_human.webp";
+import Orc from "../../assets/guide/race_orc.webp";
+import NightElf from "../../assets/guide/race_nightelf.webp";
 ---
 
 <section
@@ -26,7 +32,7 @@ import Race from "../Race.astro";
       <li class="border border-1 p-[20px] rounded-md border-border">
         <Race
           title="Дворфы"
-          url="/src/assets/guide/races.webp"
+          url={Dwarf.src}
           href="https://www.wowhead.com/ru/race=3/дворф"
         /> - лучшая раса на данный момент для всего пве контента и всех
         специализаций. Помимо того, что являются очень сильной дпс расой (топ
@@ -44,7 +50,7 @@ import Race from "../Race.astro";
         <li class="border border-1 p-[20px] rounded-md border-border">
           <Race
             title="Люди"
-            url="/src/assets/guide/race_human.webp"
+            url={Human.src}
             href="https://www.wowhead.com/ru/race=1/человек"
           /> - с каждым новым рейдом становятся всё сильнее (<WH
             text="Человеческий дух"
@@ -56,7 +62,7 @@ import Race from "../Race.astro";
         <li class="border border-1 p-[20px] rounded-md border-border">
           <Race
             title="Таурены"
-            url="/src/assets/guide/race_tauren.webp"
+            url={Tauren.src}
             href="https://www.wowhead.com/ru/race=6/таурен"
           /> - хоть и имеют такую же дпс способность <WH
             text="Грубая сила"
@@ -71,7 +77,7 @@ import Race from "../Race.astro";
         <li class="border border-1 p-[20px] rounded-md border-border">
           <Race
             title="Ночные эльфы"
-            url="/src/assets/guide/race_nightelf.webp"
+            url={NightElf.src}
             href="https://www.wowhead.com/ru/race=4/ночной-эльф"
           /> - лучшая раса для пвп и ключей в ликвидации благодаря
           дополнительной невидимости от <WH
@@ -82,7 +88,7 @@ import Race from "../Race.astro";
         <li class="border border-1 p-[20px] rounded-md border-border">
           <Race
             title="Орки"
-            url="/src/assets/guide/race_orc.webp"
+            url={Orc.src}
             href="https://www.wowhead.com/ru/race=2/орк"
           /> - лучшая раса для пвп за орду <WH
             text="Твердость	"
@@ -100,9 +106,11 @@ import Race from "../Race.astro";
     </ul>
     <Sim title="Сим рас (одна цель 5 минут)">
       <img
-        src="../../assets/guide/outlaw_raid_races.png"
+        src={StRaces.src}
         alt="Сим рас в одну цель 5 минут"
         class="mx-auto"
+        loading="lazy"
+        decoding="async"
       />
     </Sim>
   </div>

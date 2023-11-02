@@ -3,8 +3,8 @@ import { Image } from "astro:assets";
 import WH from "../WH.astro";
 import outlawStHo from "../../assets/guide/outlaw_st_ho.png";
 import outlawStHo2 from "../../assets/guide/outlaw_st_ho2.png";
-import outlawStKir from "../../assets/guide/outlaw_st_kir.png";
-import outlawStKir2 from "../../assets/guide/outlaw_st_kir2.png";
+import outlawStKir from "../../assets/guide/outlaw_st_kir.webp";
+import outlawStKir2 from "../../assets/guide/outlaw_st_kir2.webp";
 import outlawMplusHo from "../../assets/guide/outlaw_mplus_ho.png";
 import outlawMplusHo2 from "../../assets/guide/outlaw_mplus_ho2.png";
 import outlawMplusKir from "../../assets/guide/outlaw_mplus_kir.png";
@@ -122,17 +122,19 @@ import outlawMplusKir2 from "../../assets/guide/outlaw_mplus_kir2.png";
     <div
       class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
     >
-      <Image
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        quality="100"
-        src={outlawStKir}
+      <img
+        src={outlawStKir.src}
         alt="Рейдовый билд головореза через Призовую игру"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        loading="lazy"
+        decoding="async"
       />
-      <Image
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        quality="100"
-        src={outlawStKir2}
+      <img
+        src={outlawStKir2.src}
         alt="Рейдовый билд головореза через Призовую игру"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        loading="lazy"
+        decoding="async"
       />
     </div>
     <p class="pt-[30px]">

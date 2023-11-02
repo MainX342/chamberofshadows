@@ -4,6 +4,7 @@ import WH from "../WH.astro";
 import { outlawMenuItems } from "../../constants/content";
 import Tabs from "./Outlaw_tabs.astro";
 import Sim from "../Sim.astro";
+import SimSt from "../../assets/guide/outlaw_st_builds.png";
 ---
 
 <section
@@ -39,9 +40,11 @@ import Sim from "../Sim.astro";
     <Tabs />
     <Sim title="Одна цель 5 минут">
       <img
-        src="../../assets/guide/outlaw_st_builds.png"
+        src={SimSt.src}
         alt="Сим билдов в одну цель 5 минут"
         class="mx-auto"
+        loading="lazy"
+        decoding="async"
       />
     </Sim>
   </div>
