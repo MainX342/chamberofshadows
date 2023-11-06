@@ -1,4 +1,5 @@
-import { assaMenuItems } from "../constants/content";
+import { useEffect, useState } from "react";
+import { assaMenuItems, outlawMenuItems, subMenuItems } from "../constants/content";
 import { Link } from "react-scroll";
 
 interface MenuProps {
@@ -9,6 +10,18 @@ interface MenuProps {
 
 export default function Menu(props: MenuProps) {
   const { isOpen, setIsOpen, menuRef } = props;
+  const [currentPath, setCurrentPath] = useState("");
+
+  useEffect(() => {
+    setCurrentPath(window.location.pathname.split("/").filter(Boolean)[0]);
+  }, []);
+
+  let menuItems = assaMenuItems;
+  if (currentPath === "outlaw") {
+    menuItems = outlawMenuItems;
+  } else if (currentPath === "subtlety") {
+    menuItems = subMenuItems;
+  }
 
   return (
     <aside
@@ -21,10 +34,10 @@ export default function Menu(props: MenuProps) {
     >
       <nav className="w-full h-full">
         <ul className={`w-full flex flex-col justify-center items-center`}>
-          {assaMenuItems.map((item, index) => (
+          {menuItems.map((item, index) => (
             <li
               key={index}
-              className="w-full h-full flex justify-center items-center"
+              className="w-full h-full flex justify-center items-center text-center"
             >
               <Link
                 to={item.to}

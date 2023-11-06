@@ -22,22 +22,22 @@ function menuItemsList() {
   class="hidden lg:flex flex-col items-center z-40 sticky top-[30%] h-menu w-menu text-white bg-[#121112]"
 >
   <nav class="w-full h-full">
-    <ul class="w-full h-full flex flex-col items-center gap-y-[2px]">
+    <ul class="w-full h-full flex flex-col items-center gap-y-[1px]">
       {
         menuItemsList().map((item) => (
           <li class="w-full h-full flex items-center">
             <a
               href={`#${item.to}`}
-              class="group transition ease-in-out delay-100 duration-150 translate-x-0 cursor-pointer w-full h-full flex justify-start items-center gap-[8px] outline outline-1 outline-[#242424] hover:bg-[#26394b] hover:outline hover:outline-1 hover:outline-hover text-base"
+              class="group transition ease-in-out delay-0 duration-100 translate-x-0 cursor-pointer w-full h-full flex justify-start items-center gap-[8px] border border-1 border-border hover:bg-[#26394b] hover:border-hover text-base"
             >
               <img
                 src={item.img}
                 alt={`Иконка ${item.label}`}
-                class="h-[35px] w-[35px] outline outline-[2px] outline-[#242424] m-1"
+                class="h-[35px] w-[35px] m-1 group-hover:scale-110 transition ease-in-out delay-0 duration-100"
                 loading="lazy"
                 decoding="async"
               />
-              <span class="group-hover:text-hover group-hover:translate-x-[2px] transition ease-in-out delay-100 duration-150 text-secondary">
+              <span class="group-hover:text-hover group-hover:translate-x-[2px] transition ease-in-out delay-0 duration-100 text-secondary">
                 {item.label}
               </span>
             </a>

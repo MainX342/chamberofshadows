@@ -43,7 +43,7 @@ module.exports = {
         clamp_text: "clamp(0.5em, 10vw, 0.6em)",
       },
       maxWidth: {
-        clamp_content: "clamp(310px, 95%, 1024px)",
+        clamp_content: "clamp(310px, 90%, 1040px)",
         clamp_menu: "clamp(140px, 20%, 290px)",
       },
       width: {

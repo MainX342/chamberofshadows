@@ -1,27 +1,29 @@
 ---
 import H2 from "../H2.astro";
 import WH from "../WH.astro";
-import { outlawMenuItems } from "../../constants/content";
+import { assaMenuItems } from "../../constants/content";
 import H3 from "../H3.astro";
 import Sim from "../Sim.astro";
 ---
 
 <section
-  id={outlawMenuItems[3].to}
+  id={assaMenuItems[3].to}
   class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-left"
 >
-  <H2 text={outlawMenuItems[3].label} />
+  <H2 text={assaMenuItems[3].label} />
   <div class="flex flex-col gap-[16px] text-clamp_text">
     <p>
       Как и всегда, есть несколько (10) зарезервированных слотов, которые
-      определены заранее. 4 вещи из комплекта (без головы), 2 для оружия, 2 для
+      определены заранее. 4 вещи из комплекта (без ног), 2 для оружия, 2 для
       аксессуаров, 2 крафта. Поэтому подбирать характеристики вы сможете лишь 6
-      оставшимися вещами и 1 крафтом из зарезервированного слота. Главное
-      условие, чтобы на них не было искусности и вы не выходили за оптимальные
-      значения из раздела выше. Оставшиеся 6 вещей могут быть заменены крафтами,
-      однако проблема заключается в том, что крафтовые вещи сейчас имеют на 3
-      уровня предметов ниже чем вещи из рейда / хранилища. Поэтому в BiS
-      экипировке всего 2 крафта.
+      оставшимися вещами. Эти 6 вещей могут быть заменены крафтами, однако
+      проблема заключается в том, что крафтовые вещи сейчас имеют на 3 уровня
+      предметов ниже чем вещи из рейда / хранилища. Поэтому в BiS экипировке
+      всего 2 крафта. Так как характеристики у ликвидации очень близки -
+      вариантов наборов довольно много, поэтому вам часто придется пользоваться <a
+        href="https://www.raidbots.com/simbot/topgear"
+        class="text-hover hover:opacity-80">Raidbots - Top Gear</a
+      >. По другому никак.
     </p>
     <H3 text="Комплект" />
     <ul
@@ -59,11 +61,11 @@ import Sim from "../Sim.astro";
       </li>
     </ul>
     <p>
-      2 части комплекта дают ~8.7% урона, 4 части - 15%. Это довольно много по
-      сравнению с предыдущими комплектами, поэтому вам нужно как можно быстрее
-      получить весь комплект. Вы можете собирать комплект без головы или без
-      кистей (без кистей лучше на ~0.2%), так как на них худшие характеристики.
-      Одну вещь можно сделать через катализатор уже на первой неделе 10.2
+      На данный момент 2 части комплекта сломаны в симе, поэтому все цифры
+      некорректны. В целом, так как все характеристики очень близки, вам без
+      разницы сет из каких 4 частей собирать, "подогнать" характеристики можно
+      без любой вещи из комплекта, но в лучшем случае стоит собрать комплект без
+      ног. Одну вещь можно сделать через катализатор уже на первой неделе 10.2
       (второй заряд будет на 2-ой рейдовой неделе), вторую за убийство
       последнего босса в героическом режиме (или 2000 рио). Останется получить 2
       вещи с поиска рейда / обычной / героической сложности.
@@ -156,17 +158,14 @@ import Sim from "../Sim.astro";
     >
       <li>
         Голова: <WH
-          text="Шлем Черноводья"
-          href="https://www.wowhead.com/ptr-2/item=109979/blackwater-helm?bonus=1808&ilvl=489"
-        /> или <WH
-          text="Lucid Shadewalker's Deathmask"
+          text="Маска светлого тенехода"
           href="https://www.wowhead.com/ptr-2/item=207236/lucid-shadewalkers-deathmask?bonus=523&class=4&ilvl=489&spec=260"
-        /> (тогда берутся обычные кисти)
+        />
       </li>
       <li>
         Шея: <WH
-          text="Ouroboreal Necklet"
-          href="https://www.wowhead.com/ptr-2/item=210214/ouroboreal-necklet?bonus=8782&ilvl=489"
+          text="Око вздымающегося пламени"
+          href="https://www.wowhead.com/ptr-2/item=207163/eye-of-the-rising-flame?bonus=8782&ilvl=489&spec=259"
         />
       </li>
       <li>
@@ -183,8 +182,8 @@ import Sim from "../Sim.astro";
       </li>
       <li>
         Пояс: <WH
-          text="Belt of Gleaming Determination"
-          href="https://www.wowhead.com/ptr-2/item=158306/belt-of-gleaming-determination?bonus=1808&ilvl=489"
+          text="Пояс из окровавленной драконьей шкуры"
+          href="https://www.wowhead.com/ptr-2/item=207131/bloody-dragonhide-belt?bonus=523&class=4&ilvl=489&spec=259"
         />
       </li>
       <li>
@@ -201,31 +200,25 @@ import Sim from "../Sim.astro";
       </li>
       <li>
         Запястья: Рейд - <WH
-          text="Life-Bound Bindings"
-          href="https://www.wowhead.com/ptr-2/item=193419/life-bound-bindings?bonus=8780:8797:8960&crafted-stats=32:40&ilvl=486"
-        /> | Ключи - любые без искусности
+          text="Термические наручники"
+          href="https://www.wowhead.com/ru/item=134461/термические-наручники?bonus=523&class=4&ilvl=489&spec=259"
+        />
       </li>
       <li>
         Кисти рук: <WH
           text="Когтистые захваты светлого тенехода"
           href="https://www.wowhead.com/ptr-2/item=207237/lucid-shadewalkers-clawgrips?ilvl=489"
-        /> или <WH
-          text="Flamewaker's Grips"
-          href="https://www.wowhead.com/ptr-2/item=207130/flamewakers-grips?bonus=6652:8783:8784:9599:9600:10244:10245&class=4&ilvl=489&spec=260"
-        /> | <WH
-          text="Gauntlets of Burning Focus"
-          href="https://www.wowhead.com/ptr-2/item=109848/gauntlets-of-burning-focus?bonus=6652:8811:8812&class=4&ilvl=489&spec=260"
-        /> (если используете голову из комплекта)
+        />
       </li>
       <li>
         Кольцо 1: <WH
-          text="Thornwoven Band"
-          href="https://www.wowhead.com/ptr-2/item=162548/thornwoven-band?bonus=523&ilvl=489&spec=260"
+          text="Кольцо презрения"
+          href="https://www.wowhead.com/ru/item=134490/кольцо-презрения?bonus=523&ilvl=489&spec=259"
         />
       </li>
       <li>
         Кольцо 2: <WH
-          text="Signet of the Last Elder"
+          text="Перстень последнего старейшины"
           href="https://www.wowhead.com/ptr-2/item=207162/signet-of-the-last-elder?bonus=1808&ilvl=489"
         />
       </li>
@@ -234,41 +227,29 @@ import Sim from "../Sim.astro";
           text="Клеймо-печатка Катаклизма"
           href="https://www.wowhead.com/ptr-2/item=207166/cataclysmic-signet-brand?ilvl=489"
         /> + <WH
-          text="Coiled Serpent Idol"
-          href="https://www.wowhead.com/ptr-2/item=207175/coiled-serpent-idol?ilvl=489"
-        /> | <WH
-          text="Bandolier of Twisted Blades"
-          href="https://www.wowhead.com/ptr-2/item=207165/bandolier-of-twisted-blades?bonus=6652:8783:8784:9599:9600:10244:10245&class=4&ilvl=489&spec=260"
-        /> | <WH
-          text="Талисман Ми'даса"
-          href="https://www.wowhead.com/ru/item=158319/талисман-мидаса?bonus=6652:8811:8812&class=4&ilvl=489&spec=260"
+          text="Ветвь Сухокожего"
+          href="https://www.wowhead.com/ru/item=109999/ветвь-сухокожего?class=4&ilvl=489&spec=259"
         />. Это лучшие варианты и для рейда и для ключей.
       </li>
       <span
         >Пока не получите рейдовые аксессуары, хорошим выбором будут: <WH
           text="Ускоряющие песочные часы"
           href="https://www.wowhead.com/ru/item=207566/ускоряющие-песочные-часы?class=4&ilvl=489&spec=260"
-        />, <WH
+        /> или <WH
           text="Зеркало разбитого будущего"
           href="https://www.wowhead.com/ru/item=207581/зеркало-разбитого-будущего?class=4&ilvl=489&spec=260"
-        /> или <WH
-          text="Коробочка с картами Новолуния Танец"
-          href="https://www.wowhead.com/ru/item=198478/коробочка-с-картами-новолуния-танец?bonus=8840:8836:8902&class=4&ilvl=486&spec=260"
-        /> (но я не рекомендую тратить на нее первые искры)</span
+        />.</span
       >
       <li>
-        Плащ: Рейд - <WH
-          text="Inflammable Drapeleaf"
-          href="https://www.wowhead.com/ptr-2/item=207160/inflammable-drapeleaf?ilvl=489"
-        /> | Ключи - <WH
+        Плащ: <WH
           text="Пульсирующий плащ из спор"
           href="https://www.wowhead.com/ru/item=205025/пульсирующий-плащ-из-спор?bonus=8960:8840:8836:8902&class=4&ilvl=486&spec=260"
         />
       </li>
       <li>
         Оружие (МХ): <WH
-          text="Thorncaller Claw"
-          href="https://www.wowhead.com/ptr-2/item=207784/thorncaller-claw?ilvl=489"
+          text="Nick of Time"
+          href="https://www.wowhead.com/ptr-2/item=207996/nick-of-time?ilvl=489"
         />
       </li>
       <li>

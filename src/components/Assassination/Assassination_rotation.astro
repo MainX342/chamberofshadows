@@ -1,0 +1,54 @@
+---
+import H2 from "../H2.astro";
+import WH from "../WH.astro";
+import { assaMenuItems } from "../../constants/content";
+import Tabs from "../Tabs.astro";
+import H3 from "../H3.astro";
+import AssaOpenerSt from "./Assassination_opener_st.astro";
+import AssaOpenerAoe from "./Assassination_opener_aoe.astro";
+import AssaOpenerApl from "./Assassination_apl.astro";
+---
+
+<section
+  id={assaMenuItems[5].to}
+  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-center"
+>
+  <H2 text={assaMenuItems[5].label} />
+  <H3 text="Условия использования финишеров | трата очков серии приемов (кп)" />
+  <span class="font-medium text-clamp_text text-left w-full"
+    >Все завершающие приемы используются на:</span
+  >
+  <ul
+    class="text-clamp_text pt-[10px] list-inside list-square flex flex-col items-start gap-[5px] p-[20px] border border-border rounded-md text-left self-start"
+  >
+    <li>5 кп</li>
+    <li>6 кп добивать не нужно</li>
+  </ul>
+  <H3 text="Начало боя (опенеры)" />
+  <p class="text-clamp_text pt-[10px] pb-[40px] text-left">
+    Начало боя у ликвидации, как и все бурст окна строго фиксированные.
+    Единственное что меняется - это <WH
+      text="Расправа"
+      href="https://www.wowhead.com/ru/spell=1329/расправа"
+    /> на <WH
+      text="Внезапный удар"
+      href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+    /> при срабатывании <WH
+      text="Слепой зоны"
+      href="https://www.wowhead.com/ru/spell=121153/слепая-зона"
+    /> (теперь это происходит автоматически, никакие макросы и аддоны больше не
+    нужны).
+  </p>
+  <div
+    class="flex flex-wrap max-w-[1024px] min-h-[565px] w-full text-clamp_text content-baseline"
+  >
+    <Tabs title="Рейд" id="opener_0" checked="checked" name="opener">
+      <AssaOpenerSt />
+    </Tabs>
+
+    <Tabs title="АоЕ" id="opener_1" name="opener">
+      <AssaOpenerAoe />
+    </Tabs>
+  </div>
+  <AssaOpenerApl />
+</section>

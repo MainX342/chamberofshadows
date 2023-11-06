@@ -8,7 +8,7 @@ const { title } = Astro.props;
 
 <details class="group w-full">
   <summary
-    class="flex justify-between items-center font-medium bg-black px-[16px] py-[10px] cursor-pointer select-none border border-border list-none"
+    class="flex justify-between items-center font-medium bg-black px-[16px] py-[16px] cursor-pointer select-none border border-border list-none text-left"
   >
     <span class="text-start">{title}</span>
     <span class="transition group-open:rotate-180">
@@ -27,7 +27,7 @@ const { title } = Astro.props;
     </span></summary
   >
   <div
-    class="border border-t-0 border-border flex flex-col gap-[16px] p-[5px] xl:p-[10px]"
+    class="border border-t-0 border-border flex flex-col gap-[16px] p-[16px]"
   >
     <slot />
   </div>

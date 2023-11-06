@@ -22,8 +22,9 @@ pre {
   overflow: visible;
   white-space: pre-wrap;
   word-break: break-all;
-  border: 1px solid #d0d0d0;
   background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgb(64 64 64);
+  text-align: center;
 }
 
 pre copy-code-button {
@@ -36,5 +37,6 @@ pre copy-code-button {
 .q2,
 .q3,
 .q4 {
-  color: #a335ee !important;
+  /* color: #a335ee !important; */
+  color: #e5cc80 !important;
 }

@@ -1,11 +1,11 @@
 ---
 import H2 from "../H2.astro";
 import WH from "../WH.astro";
-import { outlawMenuItems } from "../../constants/content";
+import { assaMenuItems } from "../../constants/content";
 import Sim from "../Sim.astro";
 import Race from "../Race.astro";
 
-import SimRaces from "../../assets/guide/outlaw/sim/outlaw_raid_races.webp";
+import SimRaces from "../../assets/guide/assassination/sim/races.webp";
 import Dwarf from "../../assets/guide/races/race_dwarf.webp";
 import Tauren from "../../assets/guide/races/race_tauren.webp";
 import Human from "../../assets/guide/races/race_human.webp";
@@ -14,13 +14,13 @@ import NightElf from "../../assets/guide/races/race_nightelf.webp";
 ---
 
 <section
-  id={outlawMenuItems[0].to}
+  id={assaMenuItems[0].to}
   class="pt-[40px] w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-left"
 >
-  <H2 text={outlawMenuItems[0].label} />
+  <H2 text={assaMenuItems[0].label} />
   <div class="text-clamp_text flex flex-col gap-[16px]">
     <p>
-      На данный момент разница между расами составляет 1-2%. Так что, если вы не
+      На данный момент разница между расами составляет 0.2-1.5%. Так что, если вы не
       стремитесь к максимизации эффективности, смело можете выбирать того, кто
       нравится визуально. Однако в каждом контенте (рейды | ключи | пвп) есть
       расы, которые сильно упростят вашу жизнь благодаря утилити/защитным

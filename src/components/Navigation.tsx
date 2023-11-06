@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import ReactNode from "react";
 import NavLinks from "./NavLinks";
 import logo from "../assets/guide/logo.webp";
-import assassination from "../assets/guide/assassination.webp";
-import outlaw from "../assets/guide/outlaw.webp";
-import subtlety from "../assets/guide/subtlety.webp";
+import assassination from "../assets/guide/menu_icons/assassination.webp";
+import outlaw from "../assets/guide/menu_icons/outlaw.webp";
+import subtlety from "../assets/guide/menu_icons/subtlety.webp";
 type ReactNode = React.ReactNode;
 
 interface NavigateProps {

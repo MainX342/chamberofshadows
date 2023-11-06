@@ -1,0 +1,62 @@
+---
+import H2 from "../H2.astro";
+import WH from "../WH.astro";
+import { assaMenuItems } from "../../constants/content";
+import Tabs from "./Assassination_tabs.astro";
+import Sim from "../Sim.astro";
+---
+
+<section
+  id={assaMenuItems[1].to}
+  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-left"
+>
+  <H2 text={assaMenuItems[1].label} />
+  <div class="text-clamp_text flex flex-col gap-[16px]">
+    <p>
+      У ликвидации на данный момент всего 1 вариант рейдового билда с небольшими
+      изменениями под клив / аое (но когда починят <WH
+        text="Смертельную дозу"
+        href="https://www.wowhead.com/ru/spell=381640/смертельная-доза"
+      /> для <WH
+        text="Сепсиса"
+        href="https://www.wowhead.com/ru/spell=385408/сепсис"
+      /> и <WH
+        text="Зазубренного костяного шипа"
+        href="https://www.wowhead.com/ru/spell=385424/зазубренный-костяной-шип"
+      /> - появится второй). В ключах два основных билда:
+    </p>
+    <ul class="flex flex-col gap-[16px]">
+      <li>
+        1. DTB (Dragon-Tempered Blades) билд <WH
+          text="Закалка в огне драконов"
+          href="https://www.wowhead.com/ru/spell=381801/закалка-в-огне-драконов"
+        />
+      </li>
+      <li>
+        2. AP (Arterial Precision) билд <WH
+          text="Укол в артерию"
+          href="https://www.wowhead.com/ru/spell=400783/укол-в-артерию"
+        />
+      </li>
+    </ul>
+    <p>
+      В большинстве случаев лучше играть в DTB билде (<WH
+        text="Закалка в огне драконов"
+        href="https://www.wowhead.com/ru/spell=381801/закалка-в-огне-драконов"
+      />), так как в AP билде (<WH
+        text="Укол в артерию"
+        href="https://www.wowhead.com/ru/spell=400783/укол-в-артерию"
+      />) очень мало урона в одну цель, а разница между ними в целом очень мала.
+    </p>
+    <Tabs />
+    <Sim title="Одна цель 5 минут">
+      <!-- <img
+        src={SimSt.src}
+        alt="Сим билдов в одну цель 5 минут"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      /> -->
+    </Sim>
+  </div>
+</section>

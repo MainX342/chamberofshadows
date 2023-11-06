@@ -14,5 +14,13 @@ const { title, url, href } = Astro.props;
     alt={title}
     class="float-left w-[18px] h-[18px] mr-[5px] relative top-[5px]"
   />
-  <a href={href} class="text-white font-medium inline"> {title}</a>
+  <a
+    href={href}
+    class="text-100 font-regular group inline hover:opacity-80 active:text-secondary"
+  >
+    <span
+      class="py-[1px] leading-normal bg-left-bottom bg-gradient-to-r from-100 to-100 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out"
+      >{title}</span
+    >
+  </a>
 </div>

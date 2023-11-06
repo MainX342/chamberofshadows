@@ -8,7 +8,7 @@ import WH from "../WH.astro";
 
 <section
   id={outlawMenuItems[2].to}
-  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-center"
+  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-left"
 >
   <H2 text={outlawMenuItems[2].label} />
   <div class="flex flex-col gap-[16px] text-clamp_text">
@@ -23,7 +23,7 @@ import WH from "../WH.astro";
           class="text-hover hover:opacity-80">True Stat Values</a
         >
       </p>
-      <ul class="list-inside list-disc flex flex-col items-center">
+      <ul class="list-inside list-disc flex flex-col items-start">
         <li>от 0 до 30% — нету штрафа</li>
         <li>от 30% до 39% — 10% штраф</li>
         <li>от 39% до 47% — 20% штраф</li>
@@ -57,7 +57,10 @@ import WH from "../WH.astro";
     >
       <li>Скорость (~10%)</li>
       <li>Универсальность | Критический удар (~40%)</li>
-      <li>Скорость (до 15-17%)</li>
+      <li>
+        Скорость (до 15-17%), после того, как собрали по ~40% универсальности и
+        критического удара
+      </li>
       <li>Искусность (не требуется)</li>
       <span
         >Для ключей характеристики практически никак не меняются, разве что
