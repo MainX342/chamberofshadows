@@ -24,7 +24,7 @@ pre {
   word-break: break-all;
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid rgb(64 64 64);
-  text-align: center;
+  text-align: left;
 }
 
 pre copy-code-button {

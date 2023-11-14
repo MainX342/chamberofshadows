@@ -1,14 +1,14 @@
 ---
 import H2 from "../H2.astro";
 import WH from "../WH.astro";
-import { outlawMenuItems } from "../../constants/content";
+import { subMenuItems } from "../../constants/content";
 ---
 
 <section
-  id={outlawMenuItems[4].to}
+  id={subMenuItems[4].to}
   class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-left"
 >
-  <H2 text={outlawMenuItems[4].label} />
+  <H2 text={subMenuItems[4].label} />
   <ul
     class="list-inside list-decimal flex flex-col items-start gap-[10px] text-clamp_text border border-border rounded-md p-[20px]"
   >
@@ -67,6 +67,9 @@ import { outlawMenuItems } from "../../constants/content";
       /> или <WH
         text="Чары для кольца – посвящение универсальности"
         href="https://www.wowhead.com/ru/item=200040/чары-для-кольца-посвящение-универсальности"
+      /> или <WH
+        text="Чары для кольца – посвящение искусности"
+        href="https://www.wowhead.com/ru/item=200039/чары-для-кольца-посвящение-искусности"
       />. Камни и чары на кольца зависят от вашей текущей экипировки, так что
       проверяйте в <a
         href="https://www.raidbots.com/simbot/topgear"
@@ -75,18 +78,18 @@ import { outlawMenuItems } from "../../constants/content";
       </a>
     </li>
     <li>
-      Оружие:<WH
+      Оружие: <WH
         text="Чары для оружия – посвящение мудрости"
         href="https://www.wowhead.com/ru/item=200054/чары-для-оружия-посвящение-мудрости"
-      /> х2 или <WH
-        text="Чары для оружия – веющее посвящение"
-        href="https://www.wowhead.com/ru/item=200058/чары-для-оружия-веющее-посвящение"
-      /> в оффхенд. Воющее может быть особенно сильно пока у вас мало скорости.
+      /> х2
     </li>
     <li>
       Камни: <WH
         text="Глянцевый бесконечный алмаз"
-        href="https://www.wowhead.com/ru/item=192991/глянцевый-бесконечный-алмаз?crafting-quality=6"
+        href="https://www.wowhead.com/ru/item=192991/глянцевый-бесконечный-алмаз"
+      /> или <WH
+        text="Мастерский бесконечный алмаз"
+        href="https://www.wowhead.com/ru/item=192988/мастерский-бесконечный-алмаз"
       />. Остальные камни зависят от вашей текущей экипировки, так что
       проверяйте в <a
         href="https://www.raidbots.com/simbot/topgear"
@@ -106,6 +109,9 @@ import { outlawMenuItems } from "../../constants/content";
     </li>
     <li>
       Еда: <WH
+        text="Великое лазурное море"
+        href="https://www.wowhead.com/ru/item=197787/великое-лазурное-море"
+      /> | <WH
         text="Охлажденная месть"
         href="https://www.wowhead.com/ru/item=197785/охлажденная-месть"
       /> &gt; <WH
@@ -125,10 +131,13 @@ import { outlawMenuItems } from "../../constants/content";
     </li>
     <li>
       Руны: <WH
+        text="Шипящая руна"
+        href="https://www.wowhead.com/ru/item=204973/шипящая-руна"
+      /> - в идеале, но вы смело можете ровнять характеристики с помощью
+      <WH
         text="Воющая руна"
         href="https://www.wowhead.com/ru/item=194820/воющая-руна"
-      /> почти всегда, однако если у вас слишком много скорости (или в ключах),
-      то: <WH
+      /> или <WH
         text="Жужжащая руна"
         href="https://www.wowhead.com/ru/item=194823/жужжащая-руна"
       />

@@ -1,0 +1,143 @@
+---
+import WH from "../WH.astro";
+import ST from "../../assets/guide/subtlety/builds/ST.webp";
+import ST2 from "../../assets/guide/subtlety/builds/ST2.webp";
+import Keys from "../../assets/guide/subtlety/builds/Keys.webp";
+import Keys2 from "../../assets/guide/subtlety/builds/Keys2.webp";
+---
+
+<div
+  class="flex flex-wrap max-w-[1024px] min-h-[565px] text-secondary text-left"
+>
+  <input
+    type="radio"
+    id="tab_one"
+    name="mytabs"
+    checked="checked"
+    class="peer/tab_one hidden p-[20px]"
+  />
+  <label
+    for="tab_one"
+    class="p-[20px] w-[100%] sm:w-[50%] select-none border border-1 border-border border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one:text-sub peer-checked/tab_one:neon-sub"
+    >Рейд (IS)</label
+  >
+  <div class="peer-checked/tab_one:block w-full order-1 hidden">
+    <pre
+      class="mt-[16px]"><code class="text-base">BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlERSKFRICxBSSSISLSSiWSikkAokWAAAAIBB</code></pre>
+    <embed
+      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlERSKFRICxBSSSISLSSiWSikkAokWAAAAIBB?width=1024&hideHeader=1&locale=ru_RU"
+    />
+    <div
+      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+    >
+      <img
+        src={ST.src}
+        alt="Рейдовый билд головореза через Скрытую возможность"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={ST2.src}
+        alt="Рейдовый билд головореза через Скрытую возможность"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <p class="pt-[30px]">
+      Если нужен клив, то <WH
+        text="Умысел"
+        href="https://www.wowhead.com/ru/spell=343160/умысел"
+      /> меняется на <WH
+        text="Размножающиеся тени"
+        href="https://www.wowhead.com/ru/spell=382506/размножающиеся-тени"
+      /> дает -10к урона, остальные таланты дают еще больший минус.
+    </p>
+  </div>
+
+  <input
+    type="radio"
+    id="tab_two"
+    name="mytabs"
+    class="peer/tab_two hidden p-[20px]"
+  />
+  <label
+    for="tab_two"
+    class="p-[20px] w-[100%] sm:w-[50%] select-none border border-1 border-border flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two:text-hover peer-checked/tab_two:neon-hover"
+    >M+ (IS)</label
+  >
+  <div class="peer-checked/tab_two:block w-full order-1 hidden">
+    <pre
+      class="mt-[16px]"><code class="text-base">BUQAAAAAAAAAAAAAAAAAAAAAAAAElEAAAAAASJJJlEQKkkISSEJJRi0iEJaJJcgkAokWAAAAIBB</code></pre>
+    <embed
+      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/BUQAAAAAAAAAAAAAAAAAAAAAAAAElEAAAAAASJJJlEQKkkISSEJJRi0iEJaJJcgkAokWAAAAIBB?width=1024&hideHeader=1&locale=ru_RU"
+    />
+    <div
+      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+    >
+      <img
+        src={Keys.src}
+        alt="Рейдовый билд головореза через Призовую игру"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={Keys2.src}
+        alt="Рейдовый билд головореза через Призовую игру"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+<ul class="flex flex-col list-disc list-inside gap-[16px] pt-[30px]">
+      <li>Этот билд по симам отстает от билдов с чаем на ~0.6%, но в реальности <WH
+        text="Акробатические удары"
+        href="https://www.wowhead.com/ru/spell=196924/акробатические-удары"
+      /> легко перекроют эту разницу. При этом это топ дпс билд в одну цель среди билдов для ключей.</li>
+      <li>
+        <WH
+          text="Замедляющий яд"
+          href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
+        /> обычно используется на укрепленных неделях, а <WH
+          text="Атрофический яд"
+          href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
+        /> на тиранических или высоких укрепленных неделях.
+      </li>
+      <li>
+        Если вам требуется чаще использовать <WH
+          text="Скрывающий покров"
+          href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
+        /> или требуются усиленные яды (например на тиранической неделе), то
+        замените <WH
+          text="Отравляющий укол"
+          href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+        /> (если в ключе не требуется снимать енрейдж) или <WH
+          text="Крепкий желудок"
+          href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
+        /> (если требуется) на <WH
+          text="Надежный покров"
+          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
+        /> | <WH
+          text="Мастер ядоварения"
+          href="https://www.wowhead.com/ru/spell=378436/мастер-ядоварения"
+        />.
+      </li>
+      <li>
+        <WH
+          text="Обман смерти"
+          href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
+        /> можно заменить на <WH
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        /> в высоких тиранических ключах, где не работает обычная <WH
+          text="Уловка"
+          href="https://www.wowhead.com/ru/spell=1966/уловка"
+        />.
+      </li>
+    </ul>
+  </div>
+</div>

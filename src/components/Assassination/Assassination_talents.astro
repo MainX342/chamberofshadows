@@ -3,7 +3,6 @@ import H2 from "../H2.astro";
 import WH from "../WH.astro";
 import { assaMenuItems } from "../../constants/content";
 import Tabs from "./Assassination_tabs.astro";
-import Sim from "../Sim.astro";
 ---
 
 <section
@@ -46,17 +45,16 @@ import Sim from "../Sim.astro";
       />), так как в AP билде (<WH
         text="Укол в артерию"
         href="https://www.wowhead.com/ru/spell=400783/укол-в-артерию"
-      />) очень мало урона в одну цель, а разница между ними в целом очень мала.
+      />) меньше урона в одну цель, а разница между ними в целом очень мала.
+      Билды для ключей без <WH
+        text="Внезапная гибель"
+        href="https://www.wowhead.com/ru/spell=423136/внезапная-гибель"
+      /> (например AP + DTB) я не рассматриваю, так как невозможно просимить <WH
+        text="Внезапная гибель"
+        href="https://www.wowhead.com/ru/spell=423136/внезапная-гибель"
+      />, а в реальных ключах он дает 3%+ всегда, что делает билды с ним намного
+      сильнее.
     </p>
     <Tabs />
-    <Sim title="Одна цель 5 минут">
-      <!-- <img
-        src={SimSt.src}
-        alt="Сим билдов в одну цель 5 минут"
-        class="mx-auto"
-        loading="lazy"
-        decoding="async"
-      /> -->
-    </Sim>
   </div>
 </section>

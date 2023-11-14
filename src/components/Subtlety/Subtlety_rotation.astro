@@ -1,0 +1,59 @@
+---
+import H2 from "../H2.astro";
+import WH from "../WH.astro";
+import { subMenuItems } from "../../constants/content";
+import Tabs from "../Tabs.astro";
+import H3 from "../H3.astro";
+import SubOpenerSt from "./Subtlety_opener_st.astro";
+import SubOpenerAoe from "./Subtlety_opener_aoe.astro";
+import SubOpenerApl from "./Subtlety_apl.astro";
+---
+
+<section
+  id={subMenuItems[5].to}
+  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-center"
+>
+  <H2 text={subMenuItems[5].label} />
+  <H3 text="Условия использования финишеров | трата очков серии приемов (кп)" />
+  <span class="font-medium text-clamp_text text-left w-full"
+    >Все завершающие приемы используются на:</span
+  >
+  <ul
+    class="text-clamp_text pt-[10px] list-inside list-square flex flex-col items-start gap-[5px] p-[20px] border border-border rounded-md text-left self-start"
+  >
+    <li>
+      5 кп в <WH
+        text="Танца теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />
+    </li>
+    <li>
+      6 кп не в <WH
+        text="Танца теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />
+    </li>
+    <li>
+      Добивать 6-ой кп в <WH
+        text="Танца теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> не нужно, как и 7-ой вне <WH
+        text="Танца теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />.
+    </li>
+  </ul>
+  <H3 text="Начало боя (опенеры)" />
+  <div
+    class="flex flex-wrap max-w-[1024px] min-h-[565px] w-full text-clamp_text content-baseline"
+  >
+    <Tabs title="Рейд" id="opener_0" checked="checked" name="opener">
+      <SubOpenerSt />
+    </Tabs>
+
+    <Tabs title="АоЕ" id="opener_1" name="opener">
+      <SubOpenerAoe />
+    </Tabs>
+  </div>
+  <SubOpenerApl />
+</section>

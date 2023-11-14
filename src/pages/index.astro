@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
 import H2 from "../components/H2.astro";
-import WH from "../components/WH.astro";
+import mainimg from "../assets/main.webp"
+
 ---
 
 <Layout title="Палата теней">
@@ -23,11 +23,13 @@ import WH from "../components/WH.astro";
           <h3 class="underline decoration-1 underline-offset-4">
             Обновление сайта и гайдов под 10.2
           </h3>
-          <p>
-            Гайды и сайт обновлены под 10.2. Буду благодарен если заполните
-            фидбек форму тут:
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwDR01p9_t3bYxmRWggr1j7R8er_ccu0n4L7yC2_q67svtLw/viewform?embedded=true" width="640" height="1573" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-          </p>
+          <img
+          src={mainimg.src}
+          alt="Рейдовый билд головореза через Скрытую возможность"
+          class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+          loading="lazy"
+          decoding="async"
+        />
         </div>
       </section>
     </article>

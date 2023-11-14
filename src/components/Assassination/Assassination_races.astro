@@ -5,12 +5,14 @@ import { assaMenuItems } from "../../constants/content";
 import Sim from "../Sim.astro";
 import Race from "../Race.astro";
 
-import SimRaces from "../../assets/guide/assassination/sim/races.webp";
+import RacesRaid from "../../assets/guide/assassination/sim/races_raid.webp";
+import RacesKeys from "../../assets/guide/assassination/sim/races_keys.webp";
 import Dwarf from "../../assets/guide/races/race_dwarf.webp";
 import Tauren from "../../assets/guide/races/race_tauren.webp";
 import Human from "../../assets/guide/races/race_human.webp";
 import Orc from "../../assets/guide/races/race_orc.webp";
 import NightElf from "../../assets/guide/races/race_nightelf.webp";
+import VoidtElf from "../../assets/guide/races/race_voidelf.webp";
 ---
 
 <section
@@ -20,10 +22,10 @@ import NightElf from "../../assets/guide/races/race_nightelf.webp";
   <H2 text={assaMenuItems[0].label} />
   <div class="text-clamp_text flex flex-col gap-[16px]">
     <p>
-      На данный момент разница между расами составляет 0.2-1.5%. Так что, если вы не
-      стремитесь к максимизации эффективности, смело можете выбирать того, кто
-      нравится визуально. Однако в каждом контенте (рейды | ключи | пвп) есть
-      расы, которые сильно упростят вашу жизнь благодаря утилити/защитным
+      На данный момент разница между расами составляет 0.2-1.5%. Так что, если
+      вы не стремитесь к максимизации эффективности, смело можете выбирать того,
+      кто нравится визуально. Однако в каждом контенте (рейды | ключи | пвп)
+      есть расы, которые сильно упростят вашу жизнь благодаря утилити/защитным
       способностям. Не существует лучшей расы для всего, и вам придется
       выбирать, что вам важнее (рейд | ключи | пвп | визуальная составляющая).
       При этом, если вы собираетесь играть в других специализациях, желательно
@@ -56,7 +58,7 @@ import NightElf from "../../assets/guide/races/race_nightelf.webp";
           /> - с каждым новым рейдом становятся всё сильнее (<WH
             text="Человеческий дух"
             href="https://www.wowhead.com/ru/spell=20598/человеческий-дух"
-          />). И уже в этом рейде стали топ дпс расой для ликвидации и
+          />). И уже в этом рейде стали топ1 дпс расой для ликвидации и топ2 для
           скрытности, для головореза слабее чем дворфы и таурены. Утилити
           способность довольно посредственная для пве контента.
         </li>
@@ -80,11 +82,28 @@ import NightElf from "../../assets/guide/races/race_nightelf.webp";
             title="Ночные эльфы"
             url={NightElf.src}
             href="https://www.wowhead.com/ru/race=4/ночной-эльф"
-          /> - лучшая раса для пвп и ключей в ликвидации благодаря
-          дополнительной невидимости от <WH
+          /> - лучшая раса для пвп. Так же отлично подходит для ключей благодаря дополнительной невидимости от <WH
             text="Слиться с тенью"
             href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
-          />. Для рейдов не имеет ничего полезного ни в одной специализации.
+          />. Для рейдов не имеет ничего полезного ни в одной специализации (<WH
+            text="Слиться с тенью"
+            href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
+          /> не дает уйти в невидимость на боссах).
+        </li>
+        <li class="border border-1 p-[20px] rounded-md border-border">
+          <Race
+            title="Эльфы Бездны"
+            url={VoidtElf.src}
+            href="https://www.wowhead.com/ru/race=29/эльф-бездны"
+          /> - лучшая по урону раса для скрытности, так как <WH
+            text="Единство с энтропией"
+            href="https://www.wowhead.com/ru/spell=255669/единство-с-энтропией"
+          /> усиливается от талантов на магию и тёмную магию (хотя не должна). Срабатывает строго 1 раз в минуту.
+          Для остальных специализаций тоже неплохой вариант. Активная
+          способность <WH
+            text="Пространственный разлом"
+            href="https://www.wowhead.com/ru/spell=256948/пространственный-разлом"
+          /> очень редко, но может быть полезной в рейде и ключах.
         </li>
         <li class="border border-1 p-[20px] rounded-md border-border">
           <Race
@@ -107,7 +126,16 @@ import NightElf from "../../assets/guide/races/race_nightelf.webp";
     </ul>
     <Sim title="Сим рас (одна цель 5 минут)">
       <img
-        src={SimRaces.src}
+        src={RacesRaid.src}
+        alt="Сим рас в одну цель 5 минут"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
+    <Sim title="Сим рас (ключ)">
+      <img
+        src={RacesKeys.src}
         alt="Сим рас в одну цель 5 минут"
         class="mx-auto"
         loading="lazy"

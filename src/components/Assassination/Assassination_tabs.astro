@@ -1,13 +1,11 @@
 ---
 import WH from "../WH.astro";
-import ST_HO from "../../assets/guide/outlaw/builds/ST_HO.webp";
-import ST_HO2 from "../../assets/guide/outlaw/builds/ST_HO2.webp";
-import ST_KIR from "../../assets/guide/outlaw/builds/ST_KIR.webp";
-import ST_KIR2 from "../../assets/guide/outlaw/builds/ST_KIR2.webp";
-import M_HO from "../../assets/guide/outlaw/builds/M_HO.webp";
-import M_HO2 from "../../assets/guide/outlaw/builds/M_HO2.webp";
-import M_KIR from "../../assets/guide/outlaw/builds/M_KIR.webp";
-import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
+import ST from "../../assets/guide/assassination/builds/ST.webp";
+import ST2 from "../../assets/guide/assassination/builds/ST2.webp";
+import Cleave from "../../assets/guide/assassination/builds/Cleave.webp";
+import Keys from "../../assets/guide/assassination/builds/Keys.webp";
+import Keys2AP from "../../assets/guide/assassination/builds/Keys2AP.webp";
+import Keys2DTB from "../../assets/guide/assassination/builds/Keys2DTB.webp";
 ---
 
 <div
@@ -23,7 +21,7 @@ import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
   <label
     for="tab_one"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one:text-assa peer-checked/tab_one:neon-assa"
-    >Рейд HO</label
+    >Рейд</label
   >
   <div class="peer-checked/tab_one:block w-full order-1 hidden">
     <pre
@@ -36,14 +34,14 @@ import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
       class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
     >
       <img
-        src={ST_HO.src}
+        src={ST.src}
         alt="Рейдовый билд головореза через Скрытую возможность"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={ST_HO2.src}
+        src={ST2.src}
         alt="Рейдовый билд головореза через Скрытую возможность"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         loading="lazy"
@@ -102,14 +100,14 @@ import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
       class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
     >
       <img
-        src={ST_KIR.src}
+        src={ST.src}
         alt="Рейдовый билд головореза через Призовую игру"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={ST_KIR2.src}
+        src={Cleave.src}
         alt="Рейдовый билд головореза через Призовую игру"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         loading="lazy"
@@ -146,69 +144,78 @@ import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
   >
   <div class="peer-checked/tab_three:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAAJEJBSSIhEJJJpJJRJJSJJAAAAAAItWSCSSUIpkSAAAAIJA</code></pre>
+      class="mt-[16px]"><code class="text-base">BMQAAAAAAAAAAAAAAAAAAAAAAQSkkkEEAAAAAASJJSJJAAAAAAgWSCSgkkSaBRkEJJJJRTJSAA</code></pre>
     <embed
       class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://mimiron.raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAAJEJBSSIhEJJJpJJRJJSJJAAAAAAItWSCSSUIpkSAAAAIJA?width=1024&hideHeader=1&locale=ru_RU"
+      src="https://mimiron.raidbots.com/simbot/render/talents/BMQAAAAAAAAAAAAAAAAAAAAAAQSkkkEEAAAAAASJJSJJAAAAAAgWSCSgkkSaBRkEJJJJRTJSAA?width=1024&hideHeader=1&locale=ru_RU"
     />
     <div
       class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
     >
       <img
-        src={M_HO.src}
+        src={Keys.src}
         alt="Билд для ключей головореза через Скрытую возможность"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={M_HO2.src}
+        src={Keys2AP.src}
         alt="Билд для ключей головореза через Скрытую возможность"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <p class="pt-[16px]">
-      Основная замена, это 1 очко из <WH
-        text="Неутомимости"
-        href="https://www.wowhead.com/ru/spell=14983/неутомимость"
-      /> в <WH
-        text="Смертоносность"
-        href="https://www.wowhead.com/ru/spell=382238/смертоносность"
-      />, особой роли не играет, зависит от количества скорости у вас + с <WH
-        text="Неутомимостью"
-        href="https://www.wowhead.com/ru/spell=14983/неутомимость"
-      /> немного комфортнее играть.
-    </p>
-    <p class="pt-[16px]">
-      <WH
-        text="Замедляющий яд"
-        href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
-      /> обычно используется на укрепленных неделях, а <WH
-        text="Атрофический яд"
-        href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
-      /> на тиранических или высоких укрепленных неделях.
-    </p>
-    <p class="pt-[16px]">
-      Если вам требуется чаще использовать <WH
-        text="Скрывающий покров"
-        href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
-      /> или требуются усиленные яды (например на тиранической неделе), то
-      замените <WH
-        text="Отравляющий укол"
-        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-      /> (если в ключе не требуется снимать енрейдж) или <WH
-        text="Крепкий желудок"
-        href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
-      /> (если требуется) на <WH
-        text="Stillshroud"
-        href="https://www.wowhead.com/ptr-2/spell=423662/stillshroud"
-      /> | <WH
-        text="Мастер ядоварения"
-        href="https://www.wowhead.com/ru/spell=378436/мастер-ядоварения"
-      />.
-    </p>
+    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
+      <li>
+        К сожалению взять <WH
+          text="Акробатические удары"
+          href="https://www.wowhead.com/ru/spell=196924/акробатические-удары"
+        /> можно только потеряв 10к+ урона, поэтому не стоит их брать, да и в
+        ликвидации они не особо нужны из-за "умных" кровотечений
+      </li>
+      <li>
+        <WH
+          text="Замедляющий яд"
+          href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
+        /> обычно используется на укрепленных неделях, а <WH
+          text="Атрофический яд"
+          href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
+        /> на тиранических или высоких укрепленных неделях.
+      </li>
+      <li>
+        Если вам требуется чаще использовать <WH
+          text="Скрывающий покров"
+          href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
+        /> или требуются усиленные яды (например на тиранической неделе), то
+        замените <WH
+          text="Отравляющий укол"
+          href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+        /> (если в ключе не требуется снимать енрейдж) или <WH
+          text="Крепкий желудок"
+          href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
+        /> (если требуется) на <WH
+          text="Надежный покров"
+          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
+        /> | <WH
+          text="Мастер ядоварения"
+          href="https://www.wowhead.com/ru/spell=378436/мастер-ядоварения"
+        />.
+      </li>
+      <li>
+        <WH
+          text="Обман смерти"
+          href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
+        /> можно заменить на <WH
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        /> в высоких тиранических ключах, где не работает обычная <WH
+          text="Уловка"
+          href="https://www.wowhead.com/ru/spell=1966/уловка"
+        />.
+      </li>
+    </ul>
   </div>
 
   <input
@@ -224,56 +231,77 @@ import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
   >
   <div class="peer-checked/tab_four:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAQJBRSIJJhESkkEaJJRJJSLJAAAAAAItWSCHIJRBKpEAAAASCA</code></pre>
+      class="mt-[16px]"><code class="text-base">BMQAAAAAAAAAAAAAAAAAAAAAAQSkkkEEAAAAAASJJSJJAAAAAAgWSCSgkkSaRERSkESSSTJSAA</code></pre>
     <embed
       class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://mimiron.raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAQJBRSIJJhESkkEaJJRJJSLJAAAAAAItWSCHIJRBKpEAAAASCA?width=1024&hideHeader=1&locale=ru_RU"
+      src="https://mimiron.raidbots.com/simbot/render/talents/BMQAAAAAAAAAAAAAAAAAAAAAAQSkkkEEAAAAAASJJSJJAAAAAAgWSCSgkkSaRERSkESSSTJSAA?width=1024&hideHeader=1&locale=ru_RU"
     />
     <div
       class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
     >
       <img
-        src={M_KIR.src}
+        src={Keys.src}
         alt="Билд для ключей головореза через Призовую игру"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={M_KIR2.src}
+        src={Keys2DTB.src}
         alt="Билд для ключей головореза через Призовую игру"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <p class="pt-[16px]">
-      <WH
-        text="Замедляющий яд"
-        href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
-      /> обычно используется на укрепленных неделях, а <WH
-        text="Атрофический яд"
-        href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
-      /> на тиранических или высоких укрепленных неделях.
-    </p>
-    <p class="pt-[16px]">
-      Если вам требуется чаще использовать <WH
-        text="Скрывающий покров"
-        href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
-      /> или требуются усиленные яды (например на тиранической неделе), то
-      замените <WH
-        text="Отравляющий укол"
-        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-      /> (если в ключе не требуется снимать енрейдж) или <WH
-        text="Крепкий желудок"
-        href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
-      /> (если требуется енрейдж) на <WH
-        text="Stillshroud"
-        href="https://www.wowhead.com/ptr-2/spell=423662/stillshroud"
-      /> | <WH
-        text="Мастер ядоварения"
-        href="https://www.wowhead.com/ru/spell=378436/мастер-ядоварения"
-      />.
-    </p>
+    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
+      <li>
+        К сожалению взять <WH
+          text="Акробатические удары"
+          href="https://www.wowhead.com/ru/spell=196924/акробатические-удары"
+        /> можно только потеряв 10к+ урона, поэтому не стоит их брать, да и в
+        ликвидации они не особо нужны из-за "умных" кровотечений
+      </li>
+      <li>
+        <WH
+          text="Замедляющий яд"
+          href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
+        /> обычно используется на укрепленных неделях, а <WH
+          text="Атрофический яд"
+          href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
+        /> на тиранических или высоких укрепленных неделях.
+      </li>
+      <li>
+        Если вам требуется чаще использовать <WH
+          text="Скрывающий покров"
+          href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
+        /> или требуются усиленные яды (например на тиранической неделе), то
+        замените <WH
+          text="Отравляющий укол"
+          href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+        /> (если в ключе не требуется снимать енрейдж) или <WH
+          text="Крепкий желудок"
+          href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
+        /> (если требуется) на <WH
+          text="Надежный покров"
+          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
+        /> | <WH
+          text="Мастер ядоварения"
+          href="https://www.wowhead.com/ru/spell=378436/мастер-ядоварения"
+        />.
+      </li>
+      <li>
+        <WH
+          text="Обман смерти"
+          href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
+        /> можно заменить на <WH
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        /> в высоких тиранических ключах, где не работает обычная <WH
+          text="Уловка"
+          href="https://www.wowhead.com/ru/spell=1966/уловка"
+        />.
+      </li>
+    </ul>
   </div>
 </div>

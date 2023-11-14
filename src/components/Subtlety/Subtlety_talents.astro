@@ -1,0 +1,54 @@
+---
+import H2 from "../H2.astro";
+import WH from "../WH.astro";
+import { subMenuItems } from "../../constants/content";
+import Tabs from "./Subtlety_tabs.astro";
+---
+
+<section
+  id={subMenuItems[1].to}
+  class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-left"
+>
+  <H2 text={subMenuItems[1].label} />
+  <div class="text-clamp_text flex flex-col gap-[16px]">
+    <p>
+      У скрытности на данный момент 1 вариант билда для рейдов и 1 для ключей.
+    </p>
+    <ul class="flex flex-col gap-[16px]">
+      <li>
+        1. IS (Invigorating Shadowdust) билд <WH
+          text="Живительная темная пыльца"
+          href="https://www.wowhead.com/ru/spell=382523/живительная-темная-пыльца"
+        />
+      </li>
+      <li>
+        2. В некоторых местах вы можете увидеть, что советуют билд через DB
+        (Dark Brew) <WH
+          text="Темный отвар"
+          href="https://www.wowhead.com/ru/spell=382504/темный-отвар"
+        />
+      </li>
+    </ul>
+    <p>
+      Билд через <WH
+        text="Живительная темная пыльца"
+        href="https://www.wowhead.com/ru/spell=382523/живительная-темная-пыльца"
+      /> значительно сильнее как в рейде (~9к), так и в ключах (~50-75к, это не
+      шутка). Поэтому не стоит играть в билде через <WH
+        text="Темный отвар"
+        href="https://www.wowhead.com/ru/spell=382504/темный-отвар"
+      />. Однако, билд через <WH
+        text="Живительная темная пыльца"
+        href="https://www.wowhead.com/ru/spell=382523/живительная-темная-пыльца"
+      /> может быть довольно сложен для новичков, так как <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> очень важный кулдаун и его нужно нажать строго после того как
+      используешь определенные способности. Обычно это фиксированный тайминг
+      боя, но при любой нестандартной ситуации или механике - всё может пойти не
+      по плану и вы "потеряетесь" в кулдаунах. Стоит потратить некоторое время,
+      чтобы идеально отыгрывать ротацию хотя бы на манекене.
+    </p>
+    <Tabs />
+  </div>
+</section>

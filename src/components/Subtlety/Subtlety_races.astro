@@ -1,12 +1,12 @@
 ---
 import H2 from "../H2.astro";
 import WH from "../WH.astro";
-import { outlawMenuItems } from "../../constants/content";
+import { subMenuItems } from "../../constants/content";
 import Sim from "../Sim.astro";
 import Race from "../Race.astro";
 
-import RacesRaid from "../../assets/guide/outlaw/sim/races_raid.webp";
-import RacesKeys from "../../assets/guide/outlaw/sim/races_keys.webp";
+import RacesRaid from "../../assets/guide/subtlety/sim/races_raid.webp";
+import RacesKeys from "../../assets/guide/subtlety/sim/races_keys.webp";
 import Dwarf from "../../assets/guide/races/race_dwarf.webp";
 import Tauren from "../../assets/guide/races/race_tauren.webp";
 import Human from "../../assets/guide/races/race_human.webp";
@@ -16,16 +16,16 @@ import VoidtElf from "../../assets/guide/races/race_voidelf.webp";
 ---
 
 <section
-  id={outlawMenuItems[0].to}
+  id={subMenuItems[0].to}
   class="pt-[40px] w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-left"
 >
-  <H2 text={outlawMenuItems[0].label} />
+  <H2 text={subMenuItems[0].label} />
   <div class="text-clamp_text flex flex-col gap-[16px]">
     <p>
-      На данный момент разница между расами составляет 1-2%. Так что, если вы не
-      стремитесь к максимизации эффективности, смело можете выбирать того, кто
-      нравится визуально. Однако в каждом контенте (рейды | ключи | пвп) есть
-      расы, которые сильно упростят вашу жизнь благодаря утилити/защитным
+      На данный момент разница между расами составляет 0.3-1.5%. Так что, если
+      вы не стремитесь к максимизации эффективности, смело можете выбирать того,
+      кто нравится визуально. Однако в каждом контенте (рейды | ключи | пвп)
+      есть расы, которые сильно упростят вашу жизнь благодаря утилити/защитным
       способностям. Не существует лучшей расы для всего, и вам придется
       выбирать, что вам важнее (рейд | ключи | пвп | визуальная составляющая).
       При этом, если вы собираетесь играть в других специализациях, желательно
@@ -99,9 +99,10 @@ import VoidtElf from "../../assets/guide/races/race_voidelf.webp";
           /> - лучшая по урону раса для скрытности, так как <WH
             text="Единство с энтропией"
             href="https://www.wowhead.com/ru/spell=255669/единство-с-энтропией"
-          /> усиливается от талантов на магию и тёмную магию (хотя не должна).
-          Срабатывает строго 1 раз в минуту. Для остальных специализаций тоже
-          неплохой вариант. Активная способность <WH
+          /> усиливается от талантов на магию и тёмную магию (хотя не должна <span
+            class="text-neutral-900">и сим это тоже не учитывает</span
+          >). Срабатывает строго 1 раз в минуту. Для остальных специализаций
+          тоже неплохой вариант. Активная способность <WH
             text="Пространственный разлом"
             href="https://www.wowhead.com/ru/spell=256948/пространственный-разлом"
           /> очень редко, но может быть полезной в рейде и ключах.
@@ -137,7 +138,7 @@ import VoidtElf from "../../assets/guide/races/race_voidelf.webp";
     <Sim title="Сим рас (ключ)">
       <img
         src={RacesKeys.src}
-        alt="Сим рас в ключе"
+        alt="Сим рас в одну цель 5 минут"
         class="mx-auto"
         loading="lazy"
         decoding="async"

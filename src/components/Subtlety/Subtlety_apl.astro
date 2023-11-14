@@ -1,0 +1,211 @@
+---
+import H3 from "../H3.astro";
+import WH from "../WH.astro";
+---
+
+<div class="pt-[60px] flex flex-col gap-[20px] text-clamp_text">
+  <H3 text="Приоритет способностей для набора кп (builders) НЕ В ">
+    <WH
+      text="Танце теней"
+      href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+    />
+  </H3>
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+  >
+    <li>
+      <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> если 2 и больше целей
+    </li>
+    <li>
+      <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      /> если 1 цель
+    </li>
+  </ul>
+
+  <H3 text="Приоритет способностей для набора кп (builders) В ">
+    <WH
+      text="Танце теней"
+      href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+    />
+  </H3>
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+  >
+    <li>
+      <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      /> если осталось больше 3 секунд на <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> и вы не получали стак <WH
+        text="Пляски смерти"
+        href="https://www.wowhead.com/ru/spell=393969/пляска-смерти"
+      /> с него
+    </li>
+    <li>
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      /> - основной билдер
+    </li>
+    <li>
+      <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> если 4 и больше целей
+    </li>
+  </ul>
+
+  <H3 text="Приоритет завершающих способностей (finishers):" />
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+  >
+    <li>
+      <WH
+        text="Тайный прием"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      /> + <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      /> используются только в <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />. <WH
+        text="Тайный прием"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      /> может использоваться, если <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      /> откатывается, но <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      /> не может использоваться без <WH
+        text="Тайного приема"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      />.
+    </li>
+    <li>
+      <WH
+        text="Мясорубка"
+        href="https://www.wowhead.com/ru/spell=315496/мясорубка"
+      /> должна быть всегда, обновлять под самый конец, когда вы НЕ В <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> (в идеале)
+    </li>
+    <li>
+      <WH
+        text="Рваная рана"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      /> - должна быть весь бой на цели (если она одна). Если на вас есть бафф <WH
+        text="Завершение: рваная рана"
+        href="https://www.wowhead.com/ru/spell=385951/завершение-рваная-рана"
+      />, то нужно обновить <WH
+        text="Рваную рану"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      /> в <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />, независимо от оставшегося времени действия. В АоЕ должна быть на всех
+      целях, которые проживут хотя бы 14 сек.
+    </li>
+    <li>
+      <WH
+        text="Черный порох"
+        href="https://www.wowhead.com/ru/spell=319175/черный-порох"
+      /> если 3 и больше целей
+    </li>
+    <li>
+      <WH
+        text="Потрошение"
+        href="https://www.wowhead.com/ru/spell=196819/потрошение"
+      />
+    </li>
+  </ul>
+  <H3 text="Приоритет кулдаунов (cooldowns):" />
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+  >
+    <li>
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> - самый важный кулдаун. Сначала вы "сливаете" все кулдауны:<WH
+        text="Флагелляция"
+        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+      />, <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      />, <WH
+        text="Теневые клинки"
+        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+      />, <WH
+        text="Продолжительная отповедь"
+        href="https://www.wowhead.com/ru/spell=385616/продолжительная-отповедь"
+      /> (если взят), <WH
+        text="Торнадо из сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=277925/торнадо-из-сюрикэнов"
+      /> (если взят), а затем уже используете <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />. Примерные таймеры в хорошей ротации (без учета механик и прочего):
+      0:11, 1:10, 2:12, последний таймер зависит от таймера боя. Таймеры по сути
+      фиксированные, вы отыгрываете бурст - жмете <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />, через минуту отыгрываете бурст, используете <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />, затем повторяете. А последнее использование можно немного подогнать
+      под ваш таймер боя.
+    </li>
+    <li>
+      <WH
+        text="Флагелляция"
+        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+      /> - в большинстве случаев используется по откату (за исключением особых
+      таймеров или небольших задержек), когда 5+ кп.
+    </li>
+    <li>
+      <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      /> используются по откату. Если до <WH
+        text="Флагелляции"
+        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+      /> осталось меньше 10 сек - нужно придержать <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      />.
+    </li>
+    <li>
+      <WH
+        text="Теневые клинки"
+        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+      /> - используются под бафф (не обязательно с самого начала) <WH
+        text="Флагелляцию"
+        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+      />. При правильном отыгрыше это будет примерно: с пулла, на 1ой, 3ей и 5ой
+      минуте.
+    </li>
+    <li>
+      <WH
+        text="Продолжительная отповедь"
+        href="https://www.wowhead.com/ru/spell=385616/продолжительная-отповедь"
+      /> - по откату.
+    </li>
+    <li>
+      <WH
+        text="Торнадо из сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=277925/торнадо-из-сюрикэнов"
+      /> - в АоЕ можно использовать по откату. В одну цель использовать только
+      вне бурстов.
+    </li>
+  </ul>
+</div>
