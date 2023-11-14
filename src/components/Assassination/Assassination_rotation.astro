@@ -5,6 +5,7 @@ import { assaMenuItems } from "../../constants/content";
 import Tabs from "../Tabs.astro";
 import H3 from "../H3.astro";
 import AssaOpenerSt from "./Assassination_opener_st.astro";
+import AssaOpenerSBS from "./Assassination_opener_sbs.astro";
 import AssaOpenerAoe from "./Assassination_opener_aoe.astro";
 import AssaOpenerApl from "./Assassination_apl.astro";
 ---
@@ -51,6 +52,10 @@ import AssaOpenerApl from "./Assassination_apl.astro";
   >
     <Tabs title="Рейд" id="opener_0" checked="checked" name="opener">
       <AssaOpenerSt />
+    </Tabs>
+
+    <Tabs title="Рейд (SBS)" id="opener_2" name="opener">
+      <AssaOpenerSBS />
     </Tabs>
 
     <Tabs title="АоЕ" id="opener_1" name="opener">
