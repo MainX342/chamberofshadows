@@ -7,6 +7,7 @@ import H3 from "../H3.astro";
 import AssaOpenerSt from "./Assassination_opener_st.astro";
 import AssaOpenerSBS from "./Assassination_opener_sbs.astro";
 import AssaOpenerAoe from "./Assassination_opener_aoe.astro";
+import AssaOpenerAoe2 from "./Assassination_opener_aoe2.astro";
 import AssaOpenerApl from "./Assassination_apl.astro";
 ---
 
@@ -22,14 +23,16 @@ import AssaOpenerApl from "./Assassination_apl.astro";
   <ul
     class="text-clamp_text pt-[10px] list-inside list-square flex flex-col items-start gap-[5px] p-[20px] border border-border rounded-md text-left self-start"
   >
-    <li>5 кп</li>
-    <li>6 кп добивать не нужно</li>
+    <li>В АоЕ: 4+ кп</li>
     <li>
-      Разряжаться на 4 кп хуже на ~0.1%, но вы можете это иногда делать.
-      Например в последнюю секунду баффа <WH
-        text="Отравления"
-        href="https://www.wowhead.com/ru/spell=32645/отравление"
-      /> (чтобы сработали 4 части комплекта) или на опенере
+      В одну цель: 4+ кп пока активна <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> (в бурсте), 5+ кп вне бурста
+    </li>
+    <li>6-ой кп добивать не нужно (если выполнились условия выше)</li>
+    <li>
+      Всегда разряжаться на 4 кп (как делает сим) хуже на 0.3% (~700 дпс).
     </li>
   </ul>
   <H3 text="Начало боя (опенеры)" />
@@ -60,6 +63,10 @@ import AssaOpenerApl from "./Assassination_apl.astro";
 
     <Tabs title="АоЕ" id="opener_1" name="opener">
       <AssaOpenerAoe />
+    </Tabs>
+
+    <Tabs title="АоЕ (низкие ключи)" id="opener_3" name="opener">
+      <AssaOpenerAoe2 />
     </Tabs>
   </div>
   <AssaOpenerApl />

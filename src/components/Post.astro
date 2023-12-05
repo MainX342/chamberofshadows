@@ -1,0 +1,14 @@
+---
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<div class="pt-[16px] flex flex-col gap-[16px] text-clamp_text">
+  <h3 class="underline decoration-1 underline-offset-4">
+    {title}
+  </h3>
+  <div class="text-left flex flex-col gap-[10px]"><slot /></div>
+</div>

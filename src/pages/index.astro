@@ -2,8 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Main from "../components/Main.astro";
 import H2 from "../components/H2.astro";
-import mainimg from "../assets/main.webp"
-
+import mainimg from "../assets/main.webp";
+import Post from "../components/Post.astro";
 ---
 
 <Layout title="Палата теней">
@@ -19,17 +19,42 @@ import mainimg from "../assets/main.webp"
         class="w-full h-full flex flex-col justify-center items-center pb-[40px] text-clamp_heading text-secondary text-center"
       >
         <H2 text="Последние обновления" />
-        <div class="pt-[16px] flex flex-col gap-[16px] text-clamp_text">
-          <h3 class="underline decoration-1 underline-offset-4">
-            Обновление сайта и гайдов под 10.2
-          </h3>
-          <img
-          src={mainimg.src}
-          alt="Рейдовый билд головореза через Скрытую возможность"
-          class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-          loading="lazy"
-          decoding="async"
-        />
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
+          <Post title="Изменения от 06.12">
+            <span class="text-assa">Ликвидация:</span>
+            <ul class="text-[#00c0ff] list-disc list-inside">
+              <li>Урон "Погибели королей" уменьшен на 15%</li>
+              <li>
+                Вероятность срабатывания эффекта "Слепой зоны" уменьшена до 15%
+                (составляла ранее: 20%) и до 30% против целей с низким запасом
+                здоровья (составляла ранее: 40%)
+              </li>
+            </ul>
+            <span
+              >Суммарный нерф ~4.2% в ст, ~2.5% на тиранической неделе и 2% на
+              укрепленной</span
+            >
+            <span class="text-assa">Ликвидация:</span>
+            <ul class="list-disc list-inside">
+              <li>Обновлены таланты для ключей и комментарии к ним</li>
+              <li>Исправлены значения характеристик в бис гире</li>
+              <li>
+                Добавлено больше комментариев по бис гиру, в частности по
+                тринкетам
+              </li>
+              <li>Добавлен опенер для низких ключей + видео</li>
+              <li>Добавлены комментарии в АоЕ опенер</li>
+            </ul>
+          </Post>
+          <Post title="Обновление сайта и гайдов под 10.2">
+            <img
+              src={mainimg.src}
+              alt="Рейдовый билд головореза через Скрытую возможность"
+              class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+              loading="lazy"
+              decoding="async"
+            />
+          </Post>
         </div>
       </section>
     </article>
