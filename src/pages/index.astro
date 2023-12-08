@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Main from "../components/Main.astro";
 import H2 from "../components/H2.astro";
-import mainimg from "../assets/main.webp";
 import Post from "../components/Post.astro";
 ---
 
@@ -20,6 +19,15 @@ import Post from "../components/Post.astro";
       >
         <H2 text="Последние обновления" />
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
+          <Post title="Обновление гайда 08.12">
+            <span class="text-sub">Скрытность:</span>
+            <ul class="list-disc list-inside">
+              <li>Обновлены таланты для ключей и комментарии к ним</li>
+              <li>Добавлены комментарии по тринкетам в бис гир</li>
+              <li>Обновлен раздел расходников</li>
+              <li>Добавлено условие финишеров на 4кп в раздел ротации</li>
+            </ul>
+          </Post>
           <Post title="Изменения от 06.12">
             <span class="text-assa">Ликвидация:</span>
             <ul class="text-[#00c0ff] list-disc list-inside">
@@ -45,15 +53,6 @@ import Post from "../components/Post.astro";
               <li>Добавлен опенер для низких ключей + видео</li>
               <li>Добавлены комментарии в АоЕ опенер</li>
             </ul>
-          </Post>
-          <Post title="Обновление сайта и гайдов под 10.2">
-            <img
-              src={mainimg.src}
-              alt="Рейдовый билд головореза через Скрытую возможность"
-              class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-              loading="lazy"
-              decoding="async"
-            />
           </Post>
         </div>
       </section>
