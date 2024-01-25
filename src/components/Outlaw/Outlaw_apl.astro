@@ -8,48 +8,48 @@ import WH from "../WH.astro";
     <span class="text-outlaw">HO билде</span>
   </H3>
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
+    <span
+      >Способности выше имеют наивысший приоритет, так что если например у вас
+      выполняется п.2, то вы должны нажать его, а не п.3.</span
+    >
     <li>
       <WH
         text="Призрачный удар"
         href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
-      /> - используется по откату, не имеет гкд, поэтому можно добавить в макрос
-      к <WH
+      /> - используется по откату (в основную цель, желательно чтобы она прожила
+      все время действия или хотя бы стелс окна), не имеет гкд
+    </li>
+    <li>
+      <WH
         text="Внезапный удар"
         href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> - когда на вас бафф <WH
+        text="Дерзости"
+        href="https://www.wowhead.com/ru/spell=386270/дерзость"
+      /> (особенно с багом, см.видео в разделе талантов)
+    </li>
+    <li>
+      <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> - если есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      /> и нету баффа <WH
+        text="Дерзости"
+        href="https://www.wowhead.com/ru/spell=386270/дерзость"
       />
     </li>
     <li>
       <WH
-        text="Выстрел из пистоли"
-        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> - во время действия <WH
-        text="Увертки"
-        href="https://www.wowhead.com/ru/spell=115192/увертка"
-      /> | <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />, если есть 6 стаков <WH
-        text="Замечательной возможности"
-        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-      />, на вас <WH
-        text="Бортовой залп"
-        href="https://www.wowhead.com/ru/spell=193356/бортовой-залп"
-      /> и 0-1 кп.
-    </li>
-    <li>
-      <WH
         text="Внезапный удар"
         href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-      /> - используется всегда, когда есть возможность использования и п.2 не
-      выполняется
-    </li>
-    <li>
-      <WH
-        text="Выстрел из пистоли"
-        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> под любым количеством стаков <WH
+      /> - без баффа <WH
+        text="Дерзости"
+        href="https://www.wowhead.com/ru/spell=386270/дерзость"
+      /> и <WH
         text="Замечательной возможности"
         href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
       />
@@ -65,17 +65,14 @@ import WH from "../WH.astro";
     <span class="text-hover">KiR билде</span>
   </H3>
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
     <li>
       <WH
         text="Призрачный удар"
         href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
-      /> - используется по откату, не имеет гкд, поэтому можно добавить в макрос
-      к <WH
-        text="Коварный удар"
-        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
-      />
+      /> - используется по откату (в основную цель, желательно чтобы она прожила
+      все время действия или хотя бы стелс окна), не имеет гкд
     </li>
     <li>
       <WH
@@ -87,13 +84,11 @@ import WH from "../WH.astro";
       <WH
         text="Выстрел из пистоли"
         href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> - во время действия <WH
-        text="Увертки"
-        href="https://www.wowhead.com/ru/spell=115192/увертка"
-      /> | <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />, если есть 6 стаков и 0-3 кп.
+      /> - если на вас 6 стаков <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      /> или бафф скоро кончится (осталось меньше 2 сек). Чтобы не оверкапить стаки
+      и не терять бафф.
     </li>
     <li>
       <WH
@@ -102,7 +97,13 @@ import WH from "../WH.astro";
       /> под любым количеством стаков <WH
         text="Замечательной возможности"
         href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-      />
+      /> на 0-3 кп без кости <WH
+        text="Бортовой залп"
+        href="https://www.wowhead.com/ru/spell=193356/бортовой-залп"
+      /> или на 0-1 кп с костью <WH
+        text="Бортовой залп"
+        href="https://www.wowhead.com/ru/spell=193356/бортовой-залп"
+      />. Чтобы не уходить в оверкап по очкам серии приемов (кп).
     </li>
     <li>
       <WH
@@ -119,20 +120,20 @@ import WH from "../WH.astro";
   </ul>
   <H3 text="Приоритет завершающих способностей (finishers):" />
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
     <li>
       <WH
         text="Промеж глаз"
         href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-      /> - основной финишер, в стелс окнах не имеет перезарядки. Вне стелс окон
-      используется только если откат <WH
+      /> - основной финишер, в стелс окнах не имеет перезарядки. Вне стелс окон используется
+      только если откат <WH
         text="Исчезновения"
         href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      /> больше 45 сек или откат <WH
+      /> больше 40 сек или откат <WH
         text="Танца теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> больше 15 сек. Требуется это для того, чтобы <WH
+      /> больше 10 сек. Требуется это для того, чтобы <WH
         text="Промеж глаз"
         href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
       /> не оказался в откате, когда будет готово <WH
@@ -147,7 +148,8 @@ import WH from "../WH.astro";
       <WH
         text="Мясорубка"
         href="https://www.wowhead.com/ru/spell=315496/мясорубка"
-      /> - необходимо держать весь бой, обновлять по пандемику (ссылка)
+      /> - необходимо держать весь бой, обновлять по пандемику (10.8 сек, если вы
+      используете с 5 кп, 12.6с с 6кп, 14.4с с 7кп).
     </li>
     <li>
       <WH
@@ -161,7 +163,7 @@ import WH from "../WH.astro";
   </ul>
   <H3 text="Приоритет кулдаунов (cooldowns):" />
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
     <li>
       <WH
@@ -192,17 +194,23 @@ import WH from "../WH.astro";
       <WH
         text="Выброс адреналина"
         href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
-      /> - используется по откату, на 0-2 кп. Иногда бывают ситуации, когда <WH
+      /> - если неактивен, то используется по откату, на 0-4 кп. Иногда бывают ситуации,
+      когда <WH
         text="Выброс адреналина"
         href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
       /> откатился до спадения баффа предыдущего. В таких случаях новый <WH
         text="Выброс адреналина"
         href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
-      /> можно использовать ТОЛЬКО в стелс окнах, вне стелс окон сначала нужно
-      дождаться спадения предыдущего <WH
+      /> можно использовать ТОЛЬКО в стелс окнах, вне стелс окон сначала нужно дождаться
+      спадения предыдущего <WH
         text="Выброс адреналина"
         href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
-      />.
+      />. Это не бурст кулдаун, вы должны нажимать его по откату, между паками
+      вы находитесь в незаметности, так что он замораживается из-за таланта <WH
+        text="Козырь в рукаве"
+        href="https://www.wowhead.com/ru/spell=424044/козырь-в-рукаве"
+      /> (исключения составляют перелёты в Рассвете Бесконечности и лифты в Троне
+      Приливов).
     </li>
     <li>
       <WH
@@ -226,9 +234,9 @@ import WH from "../WH.astro";
       <WH
         text="Натиск клинка"
         href="https://www.wowhead.com/ru/spell=271877/натиск-клинка"
-      /> - используется если в ближайшие 4 секунды вы не уйдете в оверкап по
-      энергии. Для простоты можете спокойно нажимать при энергии меньше 100. В
-      АоЕ можете нажимать по откату.
+      /> - используется если в ближайшие 4 секунды вы не уйдете в оверкап по энергии.
+      Для простоты можете спокойно нажимать при энергии меньше 100. В АоЕ можете
+      нажимать по откату.
     </li>
   </ul>
 </div>
