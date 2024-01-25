@@ -10,22 +10,22 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/lit": "^3.0.2",
-    "@astrojs/netlify": "^3.0.2",
-    "@astrojs/react": "^3.0.3",
+    "@astrojs/lit": "^4.0.1",
+    "@astrojs/netlify": "^5.0.0",
+    "@astrojs/react": "^3.0.9",
     "@astrojs/tailwind": "^5.0.1",
     "@types/react": "^18.2.28",
-    "@types/react-dom": "^18.2.13",
+    "@types/react-dom": "^18.2.18",
     "@webcomponents/template-shadowroot": "^0.2.1",
     "astro": "^4.2.4",
-    "astro-navbar": "^2.2.1",
-    "lit": "^2.8.0",
+    "astro-navbar": "^2.3.0",
+    "lit": "^3.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0",
+    "react-router-dom": "^6.21.3",
     "react-scroll": "^1.9.0",
-    "tailwind-merge": "^1.14.0",
-    "tailwindcss": "^3.3.3"
+    "tailwind-merge": "^ 2.2.1",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.8"
