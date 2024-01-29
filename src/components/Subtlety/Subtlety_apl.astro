@@ -11,13 +11,19 @@ import WH from "../WH.astro";
     />
   </H3>
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
     <li>
       <WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 2 и больше целей
+      /> если 2 и больше целей (в 3 и больше целей, если вы под баффом <WH
+        text="Символов смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      /> и взят талант <WH
+        text="Быстрая смерть"
+        href="https://www.wowhead.com/ru/spell=394309/быстрая-смерть"
+      />)
     </li>
     <li>
       <WH
@@ -34,7 +40,7 @@ import WH from "../WH.astro";
     />
   </H3>
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
     <li>
       <WH
@@ -52,19 +58,28 @@ import WH from "../WH.astro";
       <WH
         text="Удар Тьмы"
         href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      /> - основной билдер
+      /> - если висит бафф <WH
+        text="Умысел"
+        href="https://www.wowhead.com/ru/spell=343173/умысел"
+      />
     </li>
     <li>
       <WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 4 и больше целей
+      /> если 3 и больше целей
+    </li>
+    <li>
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      /> - если 1-2 цели
     </li>
   </ul>
 
   <H3 text="Приоритет завершающих способностей (finishers):" />
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
     <li>
       <WH
@@ -88,7 +103,13 @@ import WH from "../WH.astro";
       /> не может использоваться без <WH
         text="Тайного приема"
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      />.
+      />. Клоны с <WH
+        text="Тайного приема"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      /> тоже должны попасть в бафф <WH
+        text="Танца теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />, полный урон от них проходит через 1.3 сек после использования.
     </li>
     <li>
       <WH
@@ -113,7 +134,7 @@ import WH from "../WH.astro";
         text="Танце теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
       />, независимо от оставшегося времени действия. В АоЕ должна быть на всех
-      целях, которые проживут хотя бы 14 сек.
+      целях, которые проживут хотя бы 12 сек.
     </li>
     <li>
       <WH
@@ -130,47 +151,62 @@ import WH from "../WH.astro";
   </ul>
   <H3 text="Приоритет кулдаунов (cooldowns):" />
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
     <li>
       <WH
         text="Исчезновение"
         href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      /> - самый важный кулдаун. Сначала вы "сливаете" все кулдауны:<WH
-        text="Флагелляция"
-        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-      />, <WH
-        text="Символы смерти"
-        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-      />, <WH
-        text="Теневые клинки"
-        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
-      />, <WH
-        text="Продолжительная отповедь"
-        href="https://www.wowhead.com/ru/spell=385616/продолжительная-отповедь"
-      /> (если взят), <WH
-        text="Торнадо из сюрикэнов"
-        href="https://www.wowhead.com/ru/spell=277925/торнадо-из-сюрикэнов"
-      /> (если взят), а затем уже используете <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />. Примерные таймеры в хорошей ротации (без учета механик и прочего):
-      0:11, 1:10, 2:12, последний таймер зависит от таймера боя. Таймеры по сути
-      фиксированные, вы отыгрываете бурст - жмете <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />, через минуту отыгрываете бурст, используете <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />, затем повторяете. А последнее использование можно немного подогнать
-      под ваш таймер боя.
+      /> - самый важный кулдаун. Основные правила использования:
+      <ul
+        class="pl-[30px] list-inside list-disc flex flex-col gap-[10px] text-left"
+      >
+        <li>
+          Вы либо используете его после использования основных кулдаунов <WH
+            text="Флагелляции"
+            href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+          /> и <WH
+            text="Теневых клинков"
+            href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+          />, либо между ними должно быть ~30 сек, чтобы после использования
+          одного из них + <WH
+            text="Исчезновение"
+            href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+          /> сразу был готов второй
+        </li>
+        <li>
+          По возможности нужно использовать все доступные кулдауны до <WH
+            text="Исчезновения"
+            href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+          />, такие как <WH
+            text="Символы смерти"
+            href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+          />, <WH
+            text="Тайный прием"
+            href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+          />, <WH
+            text="Хладнокровие"
+            href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+          />, <WH
+            text="Торнадо из сюрикэнов"
+            href="https://www.wowhead.com/ru/spell=277925/торнадо-из-сюрикэнов"
+          />
+        </li>
+        <li>
+          Тайминги сильно могут менять в зависимости от босса, таймера,
+          аксессуаров и прочего. Подробнее вы можете ознакомиться тут: <a
+            href="https://lorrgs.io/spec_ranking/rogue-subtlety/gnarlroot"
+            class="text-hover hover:opacity-80">Lorrgs.io</a
+          >
+        </li>
+      </ul>
     </li>
     <li>
       <WH
         text="Флагелляция"
         href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-      /> - в большинстве случаев используется по откату (за исключением особых
-      таймеров или небольших задержек), когда 5+ кп.
+      /> - в большинстве случаев используется по откату (за исключением особых таймеров
+      или небольших задержек), когда 5+ кп.
     </li>
     <li>
       <WH
@@ -189,10 +225,9 @@ import WH from "../WH.astro";
         text="Теневые клинки"
         href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
       /> - используются под бафф (не обязательно с самого начала) <WH
-        text="Флагелляцию"
+        text="Флагелляции"
         href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-      />. При правильном отыгрыше это будет примерно: с пулла, на 1ой, 3ей и 5ой
-      минуте.
+      />.
     </li>
     <li>
       <WH
@@ -204,8 +239,94 @@ import WH from "../WH.astro";
       <WH
         text="Торнадо из сюрикэнов"
         href="https://www.wowhead.com/ru/spell=277925/торнадо-из-сюрикэнов"
-      /> - в АоЕ можно использовать по откату. В одну цель использовать только
-      вне бурстов.
+      /> - в АоЕ можно использовать по откату. В одну цель использовать только вне
+      бурстов.
+    </li>
+  </ul>
+  <H3 text="Механика ">
+    <WH
+      text="Теневой техники"
+      href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
+    />
+  </H3>
+  <ul
+    class="list-inside list-disc flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
+  >
+    <span class="mb-[10px]"
+      >Каждая успешная автоатака увеличивает шанс срабатывания:</span
+    >
+    <li>
+      1 и 2 атаки не могут активировать <WH
+        text="Теневую технику"
+        href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
+      />
+    </li>
+    <li>
+      3 атака имеет 50% шанс срабатывания <WH
+        text="Теневой техники"
+        href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
+      />
+    </li>
+    <li>
+      4 атака гарантировано вызывает срабатывание <WH
+        text="Теневой техники"
+        href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
+      />
+    </li>
+    <li>
+      Всего может быть 14 зарядов <WH
+        text="Теневой техники"
+        href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
+      />
+    </li>
+    <li>
+      Заряды тратятся автоматически на последующие филлеры (генераторы очков
+      серии), добавляя дополнительные очки серии, равные зарядам <WH
+        text="Теневой техники"
+        href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
+      />
+    </li>
+    <li>
+      <WH
+        text="Тотем неистовства ветра"
+        href="https://www.wowhead.com/ru/spell=8512/тотем-неистовства-ветра"
+      /> и <WH
+        text="Жажда крови"
+        href="https://www.wowhead.com/ru/spell=2825/жажда-крови"
+      /> очень сильно увеличивают количество генерации зарядов <WH
+        text="Теневой техники"
+        href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
+      /> из-за быстрых автоатак (и дополнительных с тотема)
+    </li>
+    <span class="my-[10px]"
+      >Под действием <WH
+        text="Символов смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      /> и взятом таланте <WH
+        text="Незаметность"
+        href="https://www.wowhead.com/ru/spell=426594/незаметность"
+      />:</span
+    >
+    <li>Вы получаете два заряда вместо одного</li>
+    <li>Количество требуемых автоатак для срабатывания уменьшается на 1</li>
+    <li>
+      Заряды тратятся на только на филлеры, но и на финишеры (если они заполнят
+      фулл кп). Например у вас 1 кп и 6 зарядов <WH
+        text="Теневой техники"
+        href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
+      />, тогда нажав любой финишер - у вас будет фулл кп.
+    </li>
+    <li>
+      Желательно иметь викауру для отслеживания количества зарядов, чтобы знать,
+      что после финишера у вас будет фулл кп. Вы можете получить мою на <a
+        href="https://boosty.to/mainx"
+        class="text-hover hover:opacity-80">Boosty</a
+      > (во всеми остальные WA) или взять бесплатные тут: <a
+        href="https://wago.io/Mr-gSD7ru"
+        class="text-hover hover:opacity-80">полоской</a
+      > или <a
+        href="https://wago.io/E15Io7NqM"
+        class="text-hover hover:opacity-80">цифрами</a>
     </li>
   </ul>
 </div>

@@ -11,9 +11,7 @@ import Tabs from "./Subtlety_tabs.astro";
 >
   <H2 text={subMenuItems[1].label} />
   <div class="text-clamp_text flex flex-col gap-[16px]">
-    <p>
-      У скрытности на данный момент 2 основных варианта билдов:
-    </p>
+    <p>У скрытности на данный момент 2 основных варианта билдов:</p>
     <ul class="flex flex-col gap-[16px]">
       <li>
         1. IS (Invigorating Shadowdust) билд <WH
@@ -22,8 +20,7 @@ import Tabs from "./Subtlety_tabs.astro";
         />
       </li>
       <li>
-        2. DB
-        (Dark Brew) <WH
+        2. DB (Dark Brew) <WH
           text="Темный отвар"
           href="https://www.wowhead.com/ru/spell=382504/темный-отвар"
         />
@@ -33,10 +30,13 @@ import Tabs from "./Subtlety_tabs.astro";
       Билд через <WH
         text="Живительная темная пыльца"
         href="https://www.wowhead.com/ru/spell=382523/живительная-темная-пыльца"
-      /> значительно сильнее как в рейде (~9к). Билд через <WH
+      /> единственный вариант для рейда. Билд через <WH
         text="Темный отвар"
         href="https://www.wowhead.com/ru/spell=382504/темный-отвар"
-      /> может играться только в ключах и это самый простой вариант для ключей, при этом в симах он даже лучше сложного IS билда.
+      /> может играться в ключах, он сильнее IS билда по цифрам сима и по моим тестам,
+      особенно подойдет новичкам, так как он намного проще IS. IS может быть сильнее
+      если в ключе есть +дпс боссы, на которых вы сдадите больше бурстов чем в DB
+      билде. Пробуйте оба и сами решайте.
     </p>
     <Tabs />
   </div>
