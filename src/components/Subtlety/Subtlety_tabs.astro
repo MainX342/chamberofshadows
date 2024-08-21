@@ -1,15 +1,15 @@
 ---
 import WH from "../WH.astro";
-import Raid from "../../assets/guide/subtlety/builds/Raid.png";
-import RaidST from "../../assets/guide/subtlety/builds/RaidST.png";
-import RaidAoE from "../../assets/guide/subtlety/builds/RaidAoE.png";
-import Keys from "../../assets/guide/subtlety/builds/Keys.png";
-import KeysIS from "../../assets/guide/subtlety/builds/KeysIS.png";
-import KeysDB from "../../assets/guide/subtlety/builds/KeysDB.png";
-import Sim from "../Sim.astro";
-import EB from "../../assets/guide/subtlety/sim/EB29T.png";
-import DHT26F from "../../assets/guide/subtlety/sim/DHT26F.png";
-import DHT25T from "../../assets/guide/subtlety/sim/DHT25T.png";
+import T from "../../assets/guide/subtlety/builds/sub_trickster.webp";
+import DS from "../../assets/guide/subtlety/builds/sub_ds.webp";
+import ST_IS1 from "../../assets/guide/subtlety/builds/sub_st_is_t_1.webp";
+import ST_IS3 from "../../assets/guide/subtlety/builds/sub_st_is_t_3.webp";
+import ST_DB1 from "../../assets/guide/subtlety/builds/sub_st_db_t_1.webp";
+import ST_DB3 from "../../assets/guide/subtlety/builds/sub_st_db_t_3.webp";
+import KEYS_DB_T1 from "../../assets/guide/subtlety/builds/sub_keys_db_t_1.webp";
+import KEYS_DB_T3 from "../../assets/guide/subtlety/builds/sub_keys_db_t_3.webp";
+import KEYS_DB_DS1 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_1.webp";
+import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.webp";
 ---
 
 <div
@@ -25,36 +25,51 @@ import DHT25T from "../../assets/guide/subtlety/sim/DHT25T.png";
   <label
     for="tab_one"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one:text-sub peer-checked/tab_one:neon-sub"
-    >Рейд IS</label
+    >Рейд IS [T]</label
   >
-  <div class="peer-checked/tab_one:block w-full order-1 hidden mt-[10px]">
-    <pre><code class="text-base">BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlERSKFRICxBSSSISLSS0aJJSSCgSaBAAAgEEA</code></pre>
+  <div class="peer-checked/tab_one:block w-full order-1 hidden">
+    <pre
+      class="mt-[16px]"><code class="text-base">CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAWmZmlpxMLLzYmZMMMzMGGz2YMzYbmZmZmZAjlZbAAAAYGMAGzmhBGYW0CtYjZG</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlERSKFRICxBSSSISLSS0aJJSSCgSaBAAAgEEA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAWmZmlpxMLLzYmZMMMzMGGz2YMzYbmZmZmZAjlZbAAAAYGMAGzmhBGYW0CtYjZG?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+      class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={Raid.src}
-        alt="Рейдовый билд для одной цели"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={ST_IS1.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={RaidST.src}
-        alt="Рейдовый билд для одной цели"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={T.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={ST_IS3.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
-      <li class="pt-[30px]">
-        Единственный билд для рейда (одной цели), никаких вариантов замен. Если
-        нужен клив / аое, переходите в раздел Рейд IS (AoE).
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
+      <li>
+        <WH
+          text="Уверенная поступь"
+          href="https://www.wowhead.com/ru/spell=400804/уверенная-поступь"
+        /> можно заменить на <WH
+          text="Ослепление"
+          href="https://www.wowhead.com/ru/spell=2094/ослепление"
+        /> при необходимости
       </li>
     </ul>
   </div>
@@ -68,46 +83,60 @@ import DHT25T from "../../assets/guide/subtlety/sim/DHT25T.png";
   <label
     for="tab_two"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two:text-sub peer-checked/tab_two:neon-sub"
-    >Рейд IS (AoE)</label
+    >Рейд DB [T]</label
   >
-  <div class="peer-checked/tab_two:block w-full order-1 hidden mt-[10px]">
-    <pre><code class="text-base">BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlEQKFRSiExBSSEJSLSS0aJJSSCgSaBAAAgEEA</code></pre>
+  <div class="peer-checked/tab_two:block w-full order-1 hidden">
+    <pre
+      class="mt-[16px]"><code class="text-base">CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAWGzsMZYZBzMjhZmZmxMzY2GjZGbzMzMzMDGzsMbDAAAAzgBwY2MMwAziWoFbYG</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlEQKFRSiExBSSEJSLSS0aJJSSCgSaBAAAgEEA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAWGzsMZYZBzMjhZmZmxMzY2GjZGbzMzMzMDGzsMbDAAAAzgBwY2MMwAziWoFbYG?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+      class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={Raid.src}
-        alt="Рейдовый билд для аое"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={ST_DB1.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={RaidAoE.src}
-        alt="Рейдовый билд для аое"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={T.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={ST_DB3.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
-      <li class="pt-[30px]">
-        Обычно этот билд используется "для накрутки логов" или на освоении, если
-        вам реально нужен аое дпс. Может использоваться на Кривокорне, Игире,
-        Тиндрале и Фиракке.
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
+      <li>
+        Можно взять <WH
+          text="Сепсис"
+          href="https://www.wowhead.com/ru/spell=385408/сепсис"
+        /> вместо <WH
+          text="Неизбежности"
+          href="https://www.wowhead.com/ru/spell=382512/неизбежность"
+        /> если требуется больше бурстового урона, по дпсу эти 2 таланта одинаковы
       </li>
       <li>
-        На совете снов <WH
-          text="Торнадо из сюрикэнов"
-          href="https://www.wowhead.com/ru/spell=277925/торнадо-из-сюрикэнов"
-        /> меняется на <WH
-          text="Размножающиеся тени"
-          href="https://www.wowhead.com/ru/spell=382506/размножающиеся-тени"
-        />.
+        <WH
+          text="Уверенная поступь"
+          href="https://www.wowhead.com/ru/spell=400804/уверенная-поступь"
+        /> можно заменить на <WH
+          text="Ослепление"
+          href="https://www.wowhead.com/ru/spell=2094/ослепление"
+        /> при необходимости
       </li>
     </ul>
   </div>
@@ -121,75 +150,58 @@ import DHT25T from "../../assets/guide/subtlety/sim/DHT25T.png";
   <label
     for="tab_three"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-r-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three:text-hover peer-checked/tab_three:neon-hover"
-    >М+ IS</label
+    >М+ DB [T]</label
   >
-  <div class="peer-checked/tab_three:block w-full order-1 hidden mt-[10px]">
-    <pre><code class="text-base">BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlEQKFRSikEHIJRkItIS0aRikkAokSAAAAkEEA</code></pre>
+  <div class="peer-checked/tab_three:block w-full order-1 hidden">
+    <pre
+      class="mt-[16px]"><code class="text-base">CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAzyYmlJYBmZGzMzMzMjZmxsNGzMbLMjZmZwYmlZbAAAAMzgBwY2MMwAziWoFbYG</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlEQKFRSikEHIJRkItIS0aRikkAokSAAAAkEEA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAzyYmlJYBmZGzMzMzMjZmxsNGzMbLMjZmZwYmlZbAAAAMzgBwY2MMwAziWoFbYG?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+      class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={Keys.src}
-        alt="Билд для ключей через пыльцу"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={KEYS_DB_T1.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={KeysIS.src}
-        alt="Билд для ключей через пыльцу"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={T.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={KEYS_DB_T3.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
         <WH
-          text="Замедляющий яд"
-          href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
-        /> обычно используется на укрепленных неделях, а <WH
-          text="Атрофический яд"
-          href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
-        /> на тиранических или высоких укрепленных неделях.
-      </li>
-      <li>
-        Если вам требуется <WH
-          text="Улучшенный нейтрализующий яд"
-          href="https://www.wowhead.com/ru/spell=319066/улучшенный-нейтрализующий-яд"
-        /> для <WH
-          text="Кровавой"
-          href="https://www.wowhead.com/ru/affix=8/кровавый"
-        /> неделе, то можете заменить <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        /> (если уверены, что не потребуется), либо <WH
-          text="Изящный обман"
-          href="https://www.wowhead.com/ru/spell=423647/изящный-обман"
-        /> (в большинстве случаев второй заряд вам не потребуется).
-      </li>
-      <li>
-        Если вам требуется <WH
           text="Отравляющий укол"
           href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-        /> (например для Падения и в группе нету других снятий исступления), замените
-        <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        />.
+        /> можно заменить на любой другой талант если вам не требуется снимать исступления
       </li>
       <li>
+        <WH
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        /> можно заменить на
         <WH
           text="Обман смерти"
           href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
-        /> можно заменить на <WH
-          text="Неуловимость"
-          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
-        /> в высоких ключах. <a
+        /> в низких ключах. <a
           class="text-hover hover:opacity-80"
           href="https://not-even-close.vercel.app/"
           target="_blank">Здесь</a
@@ -210,75 +222,58 @@ import DHT25T from "../../assets/guide/subtlety/sim/DHT25T.png";
   <label
     for="tab_four"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_four:text-hover peer-checked/tab_four:neon-hover"
-    >М+ DB</label
+    >М+ DB [DS]</label
   >
-  <div class="peer-checked/tab_four:block w-full order-1 hidden mt-[10px]">
-    <pre><code class="text-base">BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlERiCkkIJJJJRISLlQ0aRikkAokSAAAAkEEA</code></pre>
+  <div class="peer-checked/tab_four:block w-full order-1 hidden">
+    <pre
+      class="mt-[16px]"><code class="text-base">CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAzyYmlJYBmZGzMzMzMjZmxsNGzMbLMjZmZwYmlZbAAAAMzghFzyMmtZYswwyMLTL0ysgZA</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BUQAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAASJJJlERiCkkIJJJJRISLlQ0aRikkAokSAAAAkEEA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAzyYmlJYBmZGzMzMzMjZmxsNGzMbLMjZmZwYmlZbAAAAMzghFzyMmtZYswwyMLTL0ysgZA?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+      class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={Keys.src}
-        alt="Билд для ключей через отвар"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={KEYS_DB_DS1.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={KeysDB.src}
-        alt="Билд для ключей через отвар"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={DS.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={KEYS_DB_DS3.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
         <WH
-          text="Замедляющий яд"
-          href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
-        /> обычно используется на укрепленных неделях, а <WH
-          text="Атрофический яд"
-          href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
-        /> на тиранических или высоких укрепленных неделях.
-      </li>
-      <li>
-        Если вам требуется <WH
-          text="Улучшенный нейтрализующий яд"
-          href="https://www.wowhead.com/ru/spell=319066/улучшенный-нейтрализующий-яд"
-        /> для <WH
-          text="Кровавой"
-          href="https://www.wowhead.com/ru/affix=8/кровавый"
-        /> неделе, то можете заменить <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        /> (если уверены, что не потребуется), либо <WH
-          text="Изящный обман"
-          href="https://www.wowhead.com/ru/spell=423647/изящный-обман"
-        /> (в большинстве случаев второй заряд вам не потребуется).
-      </li>
-      <li>
-        Если вам требуется <WH
           text="Отравляющий укол"
           href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-        /> (например для Падения и в группе нету других снятий исступления), замените
-        <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        />.
+        /> можно заменить на любой другой талант если вам не требуется снимать исступления
       </li>
       <li>
+        <WH
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        /> можно заменить на
         <WH
           text="Обман смерти"
           href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
-        /> можно заменить на <WH
-          text="Неуловимость"
-          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
-        /> в высоких ключах. <a
+        /> в низких ключах. <a
           class="text-hover hover:opacity-80"
           href="https://not-even-close.vercel.app/"
           target="_blank">Здесь</a
@@ -290,42 +285,3 @@ import DHT25T from "../../assets/guide/subtlety/sim/DHT25T.png";
     </ul>
   </div>
 </div>
-<Sim title="Сим билдов в ключах">
-  <ul class="list-inside list-decimal gap-[10px] flex flex-col">
-    <span>Учтите, что:</span>
-    <li>
-      Шёлк выставлен на 65%, увеличение процентов больше профита дает DB билду
-    </li>
-    <li>
-      В реальности дабл юз - лучше, так как вы можете придержать их под биг
-      пуллы / + дпс фазу босса. Но насколько - не узнать, так как слишком много
-      факторов.
-    </li>
-    <li>
-      Используется custom APL, который можно взять тут: <a
-        href="https://gist.github.com/MainX342/d376237a05d368645371db3a53ca353e"
-        class="text-hover hover:opacity-80">custom apl (ONLY M+)</a>
-    </li>
-  </ul>
-  <img
-    src={EB.src}
-    alt="Сим вечного цветения"
-    class="mx-auto"
-    loading="lazy"
-    decoding="async"
-  />
-  <img
-  src={DHT26F.src}
-  alt="Сим форти чащи"
-  class="mx-auto"
-  loading="lazy"
-  decoding="async"
-/>
-<img
-src={DHT25T.src}
-alt="Сим тираник чащи"
-class="mx-auto"
-loading="lazy"
-decoding="async"
-/>
-</Sim>

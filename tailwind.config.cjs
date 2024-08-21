@@ -52,7 +52,7 @@ module.exports = {
       },
       height: {
         clamp: "clamp(40px, 10vw, 60px)",
-        menu: "clamp(360px, 19.125rem, 540px)",
+        menu: "clamp(370px, 19.125rem, 540px)",
       },
       minHeight: {
         clamp: "clamp(306px, 19.125rem, 500px)",

@@ -1,0 +1,40 @@
+---
+import Boosty from "../assets/White1.svg";
+---
+
+<aside
+  class="hidden xl:flex flex-col justify-self-end z-40 sticky top-[30%] h-menu w-menu text-white bg-[#121112] outline outline-1 outline-border"
+>
+  <a href="https://boosty.to/mainx" target="_blank" class="w-full h-full">
+    <img src={Boosty.src} alt="boosty" loading="lazy" decoding="async" />
+  </a>
+  <script is:inline src="https://player.twitch.tv/js/embed/v1.js"></script>
+  <div id="twitch"></div>
+  <script type="text/javascript">
+    var options = {
+      width: 280,
+      height: 245,
+      channel: "main__x",
+      parent: ["localhost", "othersite.example.com"],
+      muted: true,
+    };
+    var player = new Twitch.Player("twitch", options);
+    player.setVolume(0.5);
+
+    // Проверка статуса стрима
+    player.addEventListener(Twitch.Player.ONLINE, function () {
+      document.getElementById("twitch").style.display = "block";
+    });
+
+    player.addEventListener(Twitch.Player.OFFLINE, function () {
+      document.getElementById("twitch").style.display = "none";
+    });
+
+    // Изначально скрыть плеер, если он оффлайн
+    player.getPlaybackStats().then(function (stats) {
+      if (stats.viewers === 0) {
+        document.getElementById("twitch").style.display = "none";
+      }
+    });
+  </script>
+</aside>

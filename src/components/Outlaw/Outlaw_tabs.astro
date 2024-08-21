@@ -1,13 +1,14 @@
 ---
 import WH from "../WH.astro";
-import ST_HO from "../../assets/guide/outlaw/builds/ST_HO.webp";
-import ST_HO2 from "../../assets/guide/outlaw/builds/ST_HO2.webp";
-import ST_KIR from "../../assets/guide/outlaw/builds/ST_KIR.webp";
-import ST_KIR2 from "../../assets/guide/outlaw/builds/ST_KIR2.webp";
-import M_HO from "../../assets/guide/outlaw/builds/M_HO.webp";
-import M_HO2 from "../../assets/guide/outlaw/builds/M_HO2.webp";
-import M_KIR from "../../assets/guide/outlaw/builds/M_KIR.webp";
-import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
+import FB2 from "../../assets/guide/outlaw/builds/outlaw_2.webp";
+import ST_KIR1 from "../../assets/guide/outlaw/builds/outlaw_st_fb_kir_1.webp";
+import ST_KIR3 from "../../assets/guide/outlaw/builds/outlaw_st_fb_kir_3.webp";
+import ST_HO1 from "../../assets/guide/outlaw/builds/outlaw_st_fb_ho_1.webp";
+import ST_HO3 from "../../assets/guide/outlaw/builds/outlaw_st_fb_ho_3.webp";
+import KEYS_KIR1 from "../../assets/guide/outlaw/builds/outlaw_keys_fb_kir_1.webp";
+import KEYS_KIR3 from "../../assets/guide/outlaw/builds/outlaw_keys_fb_kir_3.webp";
+import KEYS_HO1 from "../../assets/guide/outlaw/builds/outlaw_keys_fb_ho_1.webp";
+import KEYS_HO3 from "../../assets/guide/outlaw/builds/outlaw_keys_fb_ho_3.webp";
 ---
 
 <div
@@ -23,73 +24,53 @@ import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
   <label
     for="tab_one"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one:text-outlaw peer-checked/tab_one:neon-outlaw"
-    >Рейд HO</label
+    >Рейд HO [FB]</label
   >
   <div class="peer-checked/tab_one:block w-full order-1 hidden">
-    <p class="py-[16px] min-h-[62px] text-center">
-      Рейд HO <WH
-        text="Скрытая возможность"
-        href="https://www.wowhead.com/ru/spell=383281/скрытая-возможность"
-      />
-    </p>
-    <pre><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAEkkEJCSSIJCSkkmkElkIlkAAAAAAAtWSCSSUIpkWAAAAIJA</code></pre>
+    <pre
+      class="mt-[16px]"><code class="text-base">CQQA27SZpS4XnmFfcXRqkppuwDAMwMzYGDmZGmhBzYmZMzMtMjZZGAAAAAAYbmZGmZGLjZWmtBAAAgZmBMwGMjRjZDw2EWMD</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAEkkEJCSSIJCSkkmkElkIlkAAAAAAAtWSCSSUIpkWAAAAIJA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CQQA27SZpS4XnmFfcXRqkppuwDAMwMzYGDmZGmhBzYmZMzMtMjZZGAAAAAAYbmZGmZGLjZWmtBAAAgZmBMwGMjRjZDw2EWMD?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+      class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={ST_HO.src}
-        alt="Рейдовый билд головореза через Скрытую возможность"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={ST_HO1.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={ST_HO2.src}
-        alt="Рейдовый билд головореза через Скрытую возможность"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={FB2.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={ST_HO3.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
-      <li class="pt-[30px]">
-        Хоть <WH
-          text="Акробатические удары"
-          href="https://www.wowhead.com/ru/spell=196924/акробатические-удары"
-        /> и дают минус урон по сравнению с другими талантами, но играть в рейде
-        без них вы можете разве что на Вулкароссе и Лародаре. Если у вас ~15% скорости,
-        можете поменять 1 очко <WH
-          text="Неутомимость"
-          href="https://www.wowhead.com/ru/spell=14983/неутомимость"
-        /> на <WH
-          text="Смертоносность"
-          href="https://www.wowhead.com/ru/spell=382238/смертоносность"
-        />.
-      </li>
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
-        Если же вам требуется добавить АоЕ на боссе, то <WH
-          text="Натиск клинка"
-          href="https://www.wowhead.com/ru/spell=271877/натиск-клинка"
-        /> + <WH
-          text="Быстрая нарезка"
-          href="https://www.wowhead.com/ru/spell=381988/быстрая-нарезка"
-        /> меняются на <WH
+        Сейчас нету возможности легко взять <WH
           text="Точные удары"
           href="https://www.wowhead.com/ru/spell=381985/точные-удары"
-        /> + <WH
-          text="Танцующая сталь"
-          href="https://www.wowhead.com/ru/spell=272026/танцующая-сталь"
-        />, опционально <WH
-          text="Тяжелые удары"
-          href="https://www.wowhead.com/ru/spell=381885/тяжелые-удары"
-        /> на <WH
-          text="Ловкие маневры"
-          href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
-        /> (если АоЕ постоянное).
+        />, поэтому как такового клив билда для рейда нету. Если аое постоянное
+        - проще взять М+ билд.
+      </li>
+      <li>
+        Если вы по какой-то причине хотите играть в трикстере, то вам даже
+        ничего не нужно менять среди обычных талантов. Но лучше этого не делать.
       </li>
     </ul>
   </div>
@@ -103,63 +84,59 @@ import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
   <label
     for="tab_two"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two:text-hover peer-checked/tab_two:neon-hover"
-    >Рейд KiR</label
+    >Рейд KiR [FB]</label
   >
   <div class="peer-checked/tab_two:block w-full order-1 hidden">
-    <p class="py-[16px] min-h-[62px] text-center">
-      Рейд KiR <WH
-        text="Призовая игра"
-        href="https://www.wowhead.com/ru/spell=381989/призовая-игра"
-      />
-    </p>
-    <pre><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAElEJRiIJJhkIIRolkElkItkAAAAAAAaJJxBSSUgSaBAAAgkAA</code></pre>
+    <pre
+      class="mt-[16px]"><code class="text-base">CQQA27SZpS4XnmFfcXRqkppuwDAMWmxMjZMmZmZYGGjZMMzMz0yMmtZAAAAAAgtZmZ8AzMjFYZ2GAAAAmZAGYDmxoxsBYbCLmB</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAElEJRiIJJhkIIRolkElkItkAAAAAAAaJJxBSSUgSaBAAAgkAA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CQQA27SZpS4XnmFfcXRqkppuwDAMWmxMjZMmZmZYGGjZMMzMz0yMmtZAAAAAAgtZmZ8AzMjFYZ2GAAAAmZAGYDmxoxsBYbCLmB?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+      class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={ST_KIR.src}
-        alt="Рейдовый билд головореза через Призовую игру"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={ST_KIR1.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={ST_KIR2.src}
-        alt="Рейдовый билд головореза через Призовую игру"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={FB2.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={ST_KIR3.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
-      <li class="pt-[30px]">
-        К сожалению или к счастью, в этом билде нету вообще никаких адекватных
-        замен.
-      </li>
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
-        Если же вам требуется добавить АоЕ на боссе, то <WH
-          text="Натиск клинка"
-          href="https://www.wowhead.com/ru/spell=271877/натиск-клинка"
-        /> + <WH
-          text="Быстрая нарезка"
-          href="https://www.wowhead.com/ru/spell=381988/быстрая-нарезка"
-        /> меняются на <WH
+        Сейчас нету возможности легко взять <WH
           text="Точные удары"
           href="https://www.wowhead.com/ru/spell=381985/точные-удары"
-        /> + <WH
-          text="Танцующая сталь"
-          href="https://www.wowhead.com/ru/spell=272026/танцующая-сталь"
-        />, опционально <WH
-          text="Тяжелые удары"
-          href="https://www.wowhead.com/ru/spell=381885/тяжелые-удары"
+        />, поэтому как такового клив билда для рейда нету. Если аое постоянное
+        - проще взять М+ билд.
+      </li>
+      <li>
+        Если вы по какой-то причине хотите играть в трикстере, то вам нужно
+        заменить <WH
+          text="Правой, левой, правой"
+          href="https://www.wowhead.com/ru/spell=382746/правой-левой-правой"
         /> на <WH
-          text="Ловкие маневры"
-          href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
-        /> (если АоЕ постоянное).
+          text="Череду убийств"
+          href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+        />, но лучше этого не делать.
       </li>
     </ul>
   </div>
@@ -173,96 +150,62 @@ import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
   <label
     for="tab_three"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-r-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three:text-outlaw peer-checked/tab_three:neon-outlaw"
-    >М+ HO</label
+    >М+ HO [FB]</label
   >
   <div class="peer-checked/tab_three:block w-full order-1 hidden">
-    <p class="py-[16px] min-h-[62px] text-center">
-      М+ HO <WH
-        text="Скрытая возможность"
-        href="https://www.wowhead.com/ru/spell=383281/скрытая-возможность"
-      />
-    </p>
-    <pre><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAEkkEJgkESIRSkkmkElkIlkAAAAAAAtWkgkEFSKpEAAAAJJA</code></pre>
+    <pre
+      class="mt-[16px]"><code class="text-base">CQQA27SZpS4XnmFfcXRqkppuwDAMwwYmZwMzwMMMzMzMjZmplZMLzAAAAAAwstwMYmZsMmZZ2GAAAAzMDwAbwMGNmNAbTYxMA</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAEkkEJgkESIRSkkmkElkIlkAAAAAAAtWkgkEFSKpEAAAAJJA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CQQA27SZpS4XnmFfcXRqkppuwDAMwwYmZwMzwMMMzMzMjZmplZMLzAAAAAAwstwMYmZsMmZZ2GAAAAzMDwAbwMGNmNAbTYxMA?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+      class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={M_HO.src}
-        alt="Билд для ключей головореза через Скрытую возможность"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={KEYS_HO1.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={M_HO2.src}
-        alt="Билд для ключей головореза через Скрытую возможность"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={FB2.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={KEYS_HO3.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
-        <WH
-          text="Тяжелые удары"
-          href="https://www.wowhead.com/ru/spell=381885/тяжелые-удары"
-        /> + <WH
-          text="Ослепляющий порошок"
-          href="https://www.wowhead.com/ru/spell=256165/ослепляющий-порошок"
+        Если вы по какой-то причине хотите играть в трикстере, то вам нужно
+        заменить <WH
+          text="Быструю нарезку"
+          href="https://www.wowhead.com/ru/spell=381988/быстрая-нарезка"
         /> на <WH
-          text="Боевая выносливость"
-          href="https://www.wowhead.com/ru/spell=381877/боевая-выносливость"
-        /> + <WH
-          text="Ловкие маневры"
-          href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
-        />. По дпсу <WH
-          text="Тяжелые удары"
-          href="https://www.wowhead.com/ru/spell=381885/тяжелые-удары"
-        /> немного сильнее, чем <WH
-          text="Ловкие маневры"
-          href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
-        /> на всех неделях, однако некоторым может быть некомфортно без кп со <WH
-          text="Шквала клинков"
-          href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
-        />.
+          text="Череду убийств"
+          href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+        />, но лучше этого не делать.
       </li>
       <li>
         <WH
-          text="Замедляющий яд"
-          href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
-        /> обычно используется на укрепленных неделях, а <WH
-          text="Атрофический яд"
-          href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
-        /> на тиранических или высоких укрепленных неделях.
-      </li>
-      <li>
-        Если вам требуется <WH
-          text="Улучшенный нейтрализующий яд"
-          href="https://www.wowhead.com/ru/spell=319066/улучшенный-нейтрализующий-яд"
-        /> для <WH
-          text="Кровавой"
-          href="https://www.wowhead.com/ru/affix=8/кровавый"
-        /> неделе, то можете заменить <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        /> (если уверены, что не потребуется), либо <WH
-          text="Изящный обман"
-          href="https://www.wowhead.com/ru/spell=423647/изящный-обман"
-        /> (в 99% вам не нужен второй заряд, так как первый откатывается за время
-        действия баффа).
-      </li>
-      <li>
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        /> можно заменить на
         <WH
           text="Обман смерти"
           href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
-        /> можно заменить на <WH
-          text="Неуловимость"
-          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
-        /> в высоких ключах. <a
+        /> в низких ключах. <a
           class="text-hover hover:opacity-80"
           href="https://not-even-close.vercel.app/"
           target="_blank">Здесь</a
@@ -283,72 +226,62 @@ import M_KIR2 from "../../assets/guide/outlaw/builds/M_KIR2.webp";
   <label
     for="tab_four"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_four:text-hover peer-checked/tab_four:neon-hover"
-    >М+ KiR</label
+    >М+ KiR [FB]</label
   >
   <div class="peer-checked/tab_four:block w-full order-1 hidden">
-    <p class="py-[16px] min-h-[62px] text-center">
-      М+ KiR <WH
-        text="Призовая игра"
-        href="https://www.wowhead.com/ru/spell=381989/призовая-игра"
-      />
-    </p>
-    <pre><code class="text-base">BQQAAAAAAAAAAAAAAAAAAAAAAAAElEEJhkkESIRSSolkElkItkAAAAAAAtWkwBSSUgSKBAAAQSCA</code></pre>
+    <pre
+      class="mt-[16px]"><code class="text-base">CQQA27SZpS4XnmFfcXRqkppuwDAMWmBjZmxMzMDzwwMzMMzMz0yMmtZAAAAAAY2WYGegZmxCsMbDAAAgZmBYgNYGjGzGgtJsYG</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BQQAAAAAAAAAAAAAAAAAAAAAAAAElEEJhkkESIRSSolkElkItkAAAAAAAtWkwBSSUgSKBAAAQSCA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CQQA27SZpS4XnmFfcXRqkppuwDAMWmBjZmxMzMDzwwMzMMzMz0yMmtZAAAAAAY2WYGegZmxCsMbDAAAgZmBYgNYGjGzGgtJsYG?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
+      class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={M_KIR.src}
-        alt="Билд для ключей головореза через Призовую игру"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={KEYS_KIR1.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={M_KIR2.src}
-        alt="Билд для ключей головореза через Призовую игру"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
+        src={FB2.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src={KEYS_KIR3.src}
+        alt="Ловчий смерти рейдовый билд"
+        class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
         decoding="async"
       />
     </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
+      <li>
+        Если вы по какой-то причине хотите играть в трикстере, то вам нужно
+        заменить <WH
+          text="Быструю нарезку"
+          href="https://www.wowhead.com/ru/spell=381988/быстрая-нарезка"
+        /> на <WH
+          text="Череду убийств"
+          href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+        />, но лучше этого не делать.
+      </li>
       <li>
         <WH
-          text="Замедляющий яд"
-          href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
-        /> обычно используется на укрепленных неделях, а <WH
-          text="Атрофический яд"
-          href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
-        /> на тиранических или высоких укрепленных неделях.
-      </li>
-      <li>
-        Если вам требуется <WH
-          text="Улучшенный нейтрализующий яд"
-          href="https://www.wowhead.com/ru/spell=319066/улучшенный-нейтрализующий-яд"
-        /> для <WH
-          text="Кровавой"
-          href="https://www.wowhead.com/ru/affix=8/кровавый"
-        /> неделе, то можете заменить <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        /> (если уверены, что не потребуется), либо <WH
-          text="Изящный обман"
-          href="https://www.wowhead.com/ru/spell=423647/изящный-обман"
-        /> (в 99% вам не нужен второй заряд, так как первый откатывается за время
-        действия баффа).
-      </li>
-      <li>
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        /> можно заменить на
         <WH
           text="Обман смерти"
           href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
-        /> можно заменить на <WH
-          text="Неуловимость"
-          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
-        /> в высоких ключах. <a
+        /> в низких ключах. <a
           class="text-hover hover:opacity-80"
           href="https://not-even-close.vercel.app/"
           target="_blank">Здесь</a

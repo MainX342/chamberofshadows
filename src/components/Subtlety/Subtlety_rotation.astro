@@ -21,41 +21,39 @@ import SubOpenerApl from "./Subtlety_apl.astro";
   <ul
     class="text-clamp_text pt-[10px] list-inside list-square flex flex-col items-start gap-[5px] p-[20px] border border-border rounded-md text-left self-start"
   >
-    <li>4 кп - если вокруг 4 и больше цели (вне зависимости от того в <WH
-      text="Танца теней"
-      href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-    /> вы или нет)</li>
     <li>
-      5 кп в <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
+      Ловчий смерти: если активен бафф <WH
+        text="Непроглядная ночь"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      />, то только с 7-ми кп (пока не пофиксят баг с <WH
+        text="Продолжительная отповедь"
+        href="https://www.wowhead.com/ru/spell=385616/продолжительная-отповедь"
+      />, тогда можно будет разряжаться попадая в них)
     </li>
     <li>
-      6 кп не в <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
+      Ловчий смерти: если бафф <WH
+        text="Непроглядная ночь"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      /> неактивен, то всегда с 5+ кп
     </li>
+    <li>Ловкач: всегда с 6+ кп</li>
+    <li>Специально добивать 7-ой кп не нужно</li>
     <li>
-      Добивать 6-ой кп в <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> не нужно, как и 7-ой вне <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />.
+      В аое (4+ цели) можно разряжаться с 4+ кп (для ловчего бафф <WH
+        text="Непроглядная ночь"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      /> должен быть неактивен)
     </li>
   </ul>
   <H3 text="Начало боя (опенеры)" />
   <div
     class="flex flex-wrap max-w-[1024px] min-h-[565px] w-full text-clamp_text content-baseline"
   >
-    <Tabs title="Рейд" id="opener_0" checked="checked" name="opener">
+    <Tabs title="Рейд [T]" id="opener_0" checked="checked" name="opener">
       <SubOpenerSt />
     </Tabs>
 
-    <Tabs title="АоЕ" id="opener_1" name="opener">
+    <Tabs title="АоЕ [T]" id="opener_1" name="opener">
       <SubOpenerAoe />
     </Tabs>
   </div>

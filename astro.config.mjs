@@ -9,5 +9,8 @@ import lit from "@astrojs/lit";
 export default defineConfig({
   integrations: [tailwind(), react(), lit()],
   output: "hybrid",
-  adapter: netlify()
+  adapter: netlify(),
+  devToolbar: {
+    enabled: false,
+  },
 });

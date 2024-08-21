@@ -13,7 +13,7 @@ import WH from "../WH.astro";
     <WH
       text="Шквал клинков"
       href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
-    />
+    /> (если в бою будут дополнительные цели, в одну цель больше не требуется)
   </li>
   <li>
     <WH
@@ -33,30 +33,12 @@ import WH from "../WH.astro";
       href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
     />
   </li>
-  <li>
+  <li class="underline underline-offset-8 decoration-[#00D7B9]">
     <WH
       text="Мясорубка"
       href="https://www.wowhead.com/ru/spell=315496/мясорубка"
     />
   </li>
-  <span class="py-[16px]"
-    >Это требуется из-за таланта <WH
-      text="Козырь в рукаве"
-      href="https://www.wowhead.com/ru/spell=424044/козырь-в-рукаве"
-    />. При этом кости используются до <WH
-      text="Выброса адреналина"
-      href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
-    />, чтобы потом, как можно раньше использовать <WH
-      text="Бросок костей"
-      href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
-    /> под баффом <WH
-      text="Шулерских костей"
-      href="https://www.wowhead.com/ru/spell=256170/шулерские-кости"
-    /> и получить сразу 3 кости. В ключах вы можете делать наоборот, чтобы сразу получить 2 кости, так как пак может умереть быстрее чем вы откатите <WH
-    text="Бросок костей"
-    href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
-  />.</span
-  >
   <li>
     <WH
       text="Призрачный удар"
@@ -82,18 +64,26 @@ import WH from "../WH.astro";
     /> / <WH
       text="Промеж глаз"
       href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+    />, пока не закончится бафф <WH
+      text="Увертки"
+      href="https://www.wowhead.com/ru/spell=115192/увертка"
     />
   </li>
   <li>
     <WH
-      text="Внезапный удар"
-      href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-    /> / <WH
-      text="Промеж глаз"
-      href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-    />
+      text="Череда убийств"
+      href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+    /> с 5+ кп
   </li>
-  <li>---</li>
+  <li>
+    <WH
+      text="Коварный удар"
+      href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+    /> / <WH
+      text="Выстрел из пистоли"
+      href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+    /> до 5+ кп
+  </li>
   <li>
     <WH
       text="Исчезновение"
@@ -107,25 +97,23 @@ import WH from "../WH.astro";
     /> / <WH
       text="Промеж глаз"
       href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-    />
-  </li>
-  <li>---</li>
-  <li>
-    <WH
-      text="Танец теней"
-      href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+    /> во время действия <WH
+      text="Увертки"
+      href="https://www.wowhead.com/ru/spell=115192/увертка"
     />
   </li>
   <li>
     <WH
-      text="Внезапный удар"
-      href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-    /> / <WH
-      text="Промеж глаз"
-      href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-    />
+      text="Призрачный удар"
+      href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
+    /> (по откату)
   </li>
-  <li>---</li>
+  <li>
+    <WH
+      text="Череда убийств"
+      href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+    /> с 5+ кп, по откату
+  </li>
 </ul>
 <p class="pt-[16px] text-left">
   Благодаря синергии талантов <WH
@@ -144,9 +132,6 @@ import WH from "../WH.astro";
   />, пока вы под <WH
     text="Уверткой"
     href="https://www.wowhead.com/ru/spell=115192/увертка"
-  /> или в <WH
-    text="Танце теней"
-    href="https://www.wowhead.com/ru/spell=185313/танец-теней"
   />. Если <WH
     text="Туз в рукаве"
     href="https://www.wowhead.com/ru/spell=381828/туз-в-рукаве"
@@ -159,8 +144,5 @@ import WH from "../WH.astro";
   />, если у вас скоро будет <WH
     text="Исчезновение"
     href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-  /> / <WH
-    text="Танец теней"
-    href="https://www.wowhead.com/ru/spell=185313/танец-теней"
   />.
 </p>

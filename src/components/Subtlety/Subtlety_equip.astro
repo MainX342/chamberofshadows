@@ -2,9 +2,6 @@
 import H2 from "../H2.astro";
 import WH from "../WH.astro";
 import { subMenuItems } from "../../constants/content";
-import H3 from "../H3.astro";
-import Sim from "../Sim.astro";
-import Emb from "../../assets/guide/subtlety/sim/emb.png";
 ---
 
 <section
@@ -13,496 +10,482 @@ import Emb from "../../assets/guide/subtlety/sim/emb.png";
 >
   <H2 text={subMenuItems[3].label} />
   <div class="flex flex-col gap-[16px] text-clamp_text">
-    <H3 text="Комплект" />
-    <ul
-      class="list-inside list-decimal p-[20px] text-left flex flex-col gap-[20px] border border-border rounded-md"
-    >
-      <li>
-        <WH
-          text="Маска светлого тенехода"
-          href="https://www.wowhead.com/ru/item=207236/маска-светлого-тенехода?ilvl=528"
-        />
-      </li>
-      <li>
-        <WH
-          text="Режущий наплеч светлого тенехода"
-          href="https://www.wowhead.com/ru/item=207234/режущий-наплеч-светлого-тенехода?ilvl=528"
-        />
-      </li>
-      <li>
-        <WH
-          text="Кираса светлого тенехода"
-          href="https://www.wowhead.com/ru/item=207239/кираса-светлого-тенехода?ilvl=528"
-        />
-      </li>
-      <li>
-        <WH
-          text="Когтистые захваты светлого тенехода"
-          href="https://www.wowhead.com/ru/item=207237/когтистые-захваты-светлого-тенехода?ilvl=528"
-        />
-      </li>
-      <li>
-        <WH
-          text="Шоссы светлого тенехода"
-          href="https://www.wowhead.com/ru/item=207235/шоссы-светлого-тенехода?ilvl=528"
-        />
-      </li>
-      <span class="py-[16px]">
-        2 части (~10% урона): <WH
-          text="Потрошение"
-          href="https://www.wowhead.com/ru/spell=196819/потрошение"
-        />, <WH
-          text="Рваная рана"
-          href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
-        /> и <WH
-          text="Черный порох"
-          href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-        /> с некоторой вероятностью призывают вашу тень-двойника, которая повторяет
-        завершающий прием, дополнительно нанося 50% ед. урона от темной магии. Шансы
-        следующие: первый финишер имеет 0% шанс на прок, каждый последующий +33%,
-        на четвертом финишере гарантированно сработает комплект.
-      </span>
-      <span>
-        4 части (~25% урона): Атаки ваших теней-двойников наносят на 10% больше
-        урона. Каждая призванная тень продлевает серию приемов на 2.
-        Тени-двойники это те, что появляются от 2 частей комплекта + те 2 клона,
-        которые появляются от <WH
-          text="Тайного приёма"
-          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-        /> (то есть он гарантированно даст вам +4 кп после использования).
-      </span>
-    </ul>
-    <H3 text="Украшения" />
-    <div
-      class="list-inside list-disc p-[20px] text-left flex flex-col gap-[16px] border border-border rounded-md"
-    >
-      <ul class="list-inside list-decimal gap-[20px] flex flex-col mt-[10px]">
-        <span class="pb-[10px]">Рейд:</span>
-        <li>
-          <WH
-            text="Закаленная в пламени Тьмы броневая пластина"
-            href="https://www.wowhead.com/ru/item=204710/закаленная-в-пламени-тьмы-броневая-пластина"
-          /> x2 - универсальный вариант для освоения + бис вариант для головореза
-          в ключи и рейд. По дпсу немного уступает 2-ому варианту, но при аптайме
-          шёлка в ~50% они равны.
-        </li>
-        <li>
-          <WH
-            text="Подкладка из синего шелка"
-            href="https://www.wowhead.com/ru/item=193946/подкладка-из-синего-шелка"
-          /> x2 - лучший вариант по симу при 50%+ аптайма. Очень нестабильный вариант,
-          так что невозможно ориентироваться на сим. Важен не просто аптайм самого
-          баффа, а аптайм этого баффа под бурсты, а он иногда оставляет желать лучшего,
-          так как бурсты идут под фазы, где вас постоянно бьет. Отключается сразу
-          после падения хп меньше 90%, но появляется не сразу как вас вылечат. Вариант
-          подходит для логов людям на глубоком фарме, особенно если договоритесь
-          с монахом на личный кокон под ваши бурсты на дпс фазах :)
-        </li>
-      </ul>
-      <ul class="list-inside list-decimal gap-[10px] flex flex-col mt-[20px]">
-        <span class="pb-[10px]">Ключи:</span>
-        <li>
-          <WH
-            text="Подкладка из синего шелка"
-            href="https://www.wowhead.com/ru/item=193946/подкладка-из-синего-шелка"
-          /> x2 - лучший вариант. Почти всегда (с нормальными хилами) у вас будет
-          аптайм 65-75%, что делает намного сильнее любых других вариантов.
-        </li>
-      </ul>
-    </div>
-    <Sim title="Сим украшений для одной цели">
-      <ul class="list-inside list-decimal gap-[10px] flex flex-col">
-        <span>Учтите, что:</span>
-        <li>
-          Шёлк может быть как лучше, так и намного хуже, зависит от многих
-          факторов
-        </li>
-        <li>
-          Чем короче бой, тем хуже шф, так как ему нужно настакаться (в данном
-          случае сим стандартный, от 4 до 6 минут)
-        </li>
-        <li>
-          Используется custom APL, который можно взять тут: <a
-            href="https://gist.github.com/MainX342/5a5a170342ef17852506e424426385bb"
-            class="text-hover hover:opacity-80">CUSTOM APL (ST ONLY)</a
-          >
-        </li>
-      </ul>
-      <img
-        src={Emb.src}
-        alt="Сим украшений для одной цели"
-        class="mx-auto"
-        loading="lazy"
-        decoding="async"
-      />
-    </Sim>
-
-    <H3 text="Крафты" />
-    <div
-      class="list-inside list-disc p-[20px] text-left flex flex-col gap-[16px] border border-border rounded-md"
-    >
-      <ul class="list-inside list-decimal gap-[20px] flex flex-col">
-        <li>
-          <WH
-            text="Подкладка из синего шелка"
-            href="https://www.wowhead.com/ru/item=193946/подкладка-из-синего-шелка"
-          /> x2 (искусность + универсальность, запястья + кольцо / ботинки). Кольцо
-          совсем немного лучше по дпсу и идет сразу с сокетом, однако ботинки можно
-          переделывать в <WH
-            text="Закаленная в пламени Тьмы броневая пластина"
-            href="https://www.wowhead.com/ru/item=204710/закаленная-в-пламени-тьмы-броневая-пластина"
-          /> если на боссе низкий аптайм шёлка или вы планируете играть в головорезе.
-          А кольцо сделать с алхимическим мешочком.
-        </li>
-        <li>
-          <WH
-            text="Закаленная в пламени Тьмы броневая пластина"
-            href="https://www.wowhead.com/ru/item=204710/закаленная-в-пламени-тьмы-броневая-пластина"
-          /> x2 (искусность + универсальность, запястья + ботинки). Универсально
-          для освоения в скрытности / головорезе. Лучше на боссах где низкий аптайм
-          шёлка (ниже 50%).
-        </li>
-        <li>
-          Больше крафты в бис гире не используются, все можно купить за слитки.
-          Но вы можете скрафтить например инженерные очки для комбат реса в
-          ключах.
-        </li>
-      </ul>
-    </div>
-
-    <H3 text="Лучшая экипировка (BiS list)" />
-    <div
-      class="flex flex-wrap max-w-[1024px] min-h-[565px] text-secondary text-left"
-    >
+    <p>
+      В первом сезоне, на удивление, у ликвидации довольно мало
+      "зафиксированных" вещей. Почти все вещи (даже редкие) можно заменить
+      аналогами с потерей очень незначительного урона (или вообще без потерь).
+      По итогу, обязательны лишь 4 вещи из комплекта, 2 крафта, редкое кольцо и
+      аксессуар. Все остальные вещи в разных комбинациях можно сделать "бис
+      гиром", что увеличивает вариативность. Для своего персонажа всегда
+      пользуйтесь <a
+        href="https://www.raidbots.com/simbot/topgear"
+        class="text-hover hover:opacity-80">Raidbots - Top Gear</a
+      >.
+    </p>
+    <div class="flex flex-wrap max-w-[1024px] text-secondary text-left">
       <input
         type="radio"
-        id="gear_tab_one"
-        name="gear_tabs"
+        id="tab_one_1"
+        name="mytabs_equip"
         checked="checked"
-        class="peer/gear_tab_one hidden p-[20px]"
+        class="peer/tab_one_1 hidden p-[20px]"
       />
       <label
-        for="gear_tab_one"
-        class="p-[20px] w-[100%] sm:w-[50%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/gear_tab_one:text-sub peer-checked/gear_tab_one:neon-sub"
-        >Рейд</label
+        for="tab_one_1"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one_1:text-assa peer-checked/tab_one_1:neon-assa"
+        >Комплект</label
       >
-      <div class="peer-checked/gear_tab_one:block w-full order-1 hidden">
+      <div class="peer-checked/tab_one_1:block w-full order-1 hidden">
         <ul
-          class="list-inside list-decimal font-medium p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md mt-[10px]"
+          class="list-inside list-decimal p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
         >
-          <span
-            >Так как BiS гир можно составить несколькими способами, я укажу
-            сначала фиксированные слоты, а ниже комбинацию голова + шея + пояс,
-            которыми идентичные по дпсу</span
-          >
           <li>
-            Плечи: <WH
-              text="Наплечные лезвия призрака теней"
-              href="https://www.wowhead.com/ru/item=217210/наплечные-лезвия-призрака-теней?class=4&ilvl=528&spec=261"
+            <WH
+              text="Пустота фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212038/пустота-фантома-кареши?bonus=1808&ilvl=639"
             />
           </li>
           <li>
-            Грудь: <WH
-              text="Панцирь призрака теней"
-              href="https://www.wowhead.com/ru/item=217206/панцирь-призрака-теней?class=4&ilvl=528&spec=261"
+            <WH
+              text="Наплечники фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212036/наплечники-фантома-кареши?ilvl=639"
             />
           </li>
           <li>
-            Ноги: <WH
-              text="Трико призрака теней"
-              href="https://www.wowhead.com/ru/item=217209/трико-призрака-теней?class=4&ilvl=528&spec=261"
+            <WH
+              text="Обмотки нексуса фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212041/обмотки-нексуса-фантома-кареши?ilvl=639"
             />
           </li>
           <li>
-            Кисти рук: <WH
-              text="Боевые перчатки призрака теней"
-              href="https://www.wowhead.com/ru/item=217207/боевые-перчатки-призрака-теней?class=4&ilvl=528&spec=261"
+            <WH
+              text="Поножи фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212037/поножи-фантома-кареши?ilvl=639"
             />
           </li>
           <li>
-            Плащ: <WH
-              text="Голос тихой звезды"
-              href="https://www.wowhead.com/ru/item=204465/голос-тихой-звезды?class=4&ilvl=535&spec=261"
+            <WH
+              text="Захваты фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212039/захваты-фантома-кареши?ilvl=639"
             />
           </li>
-          <li>
-            Запястья: <WH
-              text="Зачарованные жизнью путы"
-              href="https://www.wowhead.com/ru/item=193419/зачарованные-жизнью-путы?bonus=8932:8960:523&class=4&crafted-stats=40:49&ilvl=525&spec=261"
+          <span class="pt-[16px]">
+            2 части (~2.6% урона): <WH
+              text="Символы смерти"
+              href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+            /> увеличивают урон от вашего следующего <WH
+              text="Тайный прием"
+              href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+            /> на 20%.
+          </span>
+          <span class="pt-[16px]">
+            4 части (~7.3% урона): <WH
+              text="Тайный прием"
+              href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+            /> увеличивает урон от остальных ваших завершающих приемов на 16% на
+            7 sec.
+          </span>
+          <span class="pt-[16px]">
+            Комплект полностью пассивный и не требует никакого отслеживания,
+            однако немного меняет приоритет <WH
+              text="Тайного приема"
+              href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
             />
-          </li>
-          <li>
-            Кольцо 1: <WH
-              text="Печать избранного Денны"
-              href="https://www.wowhead.com/ru/item=195480/печать-избранного-денны?bonus=523&ilvl=528&spec=261"
-            />
-          </li>
-          <li>
-            Кольцо 2: <WH
-              text="Печатка мудрости титанов"
-              href="https://www.wowhead.com/ru/item=192999/печатка-мудрости-титанов?bonus=8932:8960:523&crafted-stats=40:49&ilvl=525&spec=261"
-            />. Если вы скрафтили ботинки с шелком, тогда <WH
-              text="Перстень последнего старейшины"
-              href="https://www.wowhead.com/ru/item=207162/перстень-последнего-старейшины?bonus=523&ilvl=528&spec=261"
-            /> или <WH
-              text="Окровавленное обручальное кольцо"
-              href="https://www.wowhead.com/ru/item=193671/окровавленное-обручальное-кольцо?bonus=523&ilvl=528&spec=261"
-            />
-          </li>
-          <li>
-            Ступни: <WH
-              text="Гальванические краги"
-              href="https://www.wowhead.com/ru/item=202008/гальванические-краги?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Башмаки скованного пламенем охотника"
-              href="https://www.wowhead.com/ru/item=202574/башмаки-скованного-пламенем-охотника?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Ботфорты стремительности"
-              href="https://www.wowhead.com/ru/item=193817/ботфорты-стремительности?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Зачарованные жизнью сапоги"
-              href="https://www.wowhead.com/ru/item=193398/зачарованные-жизнью-сапоги?bonus=8840:8836:8902:10359:10249:1485:8932:8960&class=4&crafted-stats=49:40&crafting-quality=8&ilvl=525&spec=261"
-            /> (если не крафтили кольцо)
-          </li>
-          <li>
-            Аксессуар 1: <WH
-              text="Прах души угля"
-              href="https://www.wowhead.com/ru/item=207167/прах-души-угля?ilvl=528&spec=261"
-            />
-          </li>
-          <li>
-            Аксессуар 2: <WH
-              text="Злопамятный вихрь"
-              href="https://www.wowhead.com/ru/item=194309/злопамятный-вихрь?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Клеймо-печатка Катаклизма"
-              href="https://www.wowhead.com/ru/item=207166/клеймо-печатка-катаклизма?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Одержимый светоч горя"
-              href="https://www.wowhead.com/ru/item=194308/одержимый-светоч-горя?class=4&ilvl=528&spec=261"
-            />.
-          </li>
-          <span
-            ><WH
-              text="Одержимый светоч горя"
-              href="https://www.wowhead.com/ru/item=194308/одержимый-светоч-горя?class=4&ilvl=528&spec=261"
-            /> является лучшим универсальным выбором для всех спеков и в рейды и
-            в ключи, можно использовать его и вместо праха на старте.</span
-          >
-          <li>
-            Оружие 1: <WH
-              text="Коготь Расколотого Пламени"
-              href="https://www.wowhead.com/ru/item=202564/коготь-расколотого-пламени?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Жестокий резчик снов"
-              href="https://www.wowhead.com/ru/item=207783/жестокий-резчик-снов?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Расчленитель из огнекованной стали"
-              href="https://www.wowhead.com/ru/item=202557/расчленитель-из-огнекованной-стали?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Прочный осколок Терроса"
-              href="https://www.wowhead.com/ru/item=195503/прочный-осколок-терроса?class=4&ilvl=528&spec=261"
-            />
-          </li>
-          <li>
-            Оружие 2: <WH
-              text="Последний момент"
-              href="https://www.wowhead.com/ru/item=207996/последний-момент?bonus=9526&class=4&ilvl=515&spec=261"
-            /> (с м0, 515 илвл)
-          </li>
-          <li>
-            Голова + Шея + Пояс: <WH
-              text="Жуткая погребальная маска"
-              href="https://www.wowhead.com/ru/item=202602/жуткая-погребальная-маска?bonus=523&ilvl=528&spec=261"
-            /> + <WH
-              text="Комендантский медальон наваждения"
-              href="https://www.wowhead.com/ru/item=193647/комендантский-медальон-наваждения?bonus=6652:8783:8784:7936:7937:6808:4786:1643:8782&ilvl=528&spec=261"
-            /> + <WH
-              text="Пояс мстительного мечеклюва"
-              href="https://www.wowhead.com/ru/item=208432/пояс-мстительного-мечеклюва?bonus=523&ilvl=528&spec=261"
-            />.<br />
-            - <WH
-              text="Личина пожирающего пламени"
-              href="https://www.wowhead.com/ru/item=208420/личина-пожирающего-пламени?bonus=523&ilvl=528&spec=261"
-            /> или <WH
-              text="Корона ревущих бурь"
-              href="https://www.wowhead.com/ru/item=193751/корона-ревущих-бурь?bonus=6652:8783:8784:7936:7937:6808:4786:1643:523&ilvl=528&spec=261"
-            /> + <WH
-              text="Четвертый ошейник Магморакса"
-              href="https://www.wowhead.com/ru/item=204397/четвертый-ошейник-магморакса?bonus=8782&ilvl=528&spec=261"
-            /> + <WH
-              text="Боевой пояс из сросшегося сланца"
-              href="https://www.wowhead.com/ru/item=195501/боевой-пояс-из-сросшегося-сланца?bonus=523&ilvl=528&spec=261"
-            />.<br />
-            - <WH
-              text="Жуткая погребальная маска"
-              href="https://www.wowhead.com/ru/item=202602/жуткая-погребальная-маска?bonus=523&ilvl=528&spec=261"
-            /> + <WH
-              text="Ожерелье Уробороса"
-              href="https://www.wowhead.com/ru/item=210214/ожерелье-уробороса?bonus=8782&ilvl=528&spec=261"
-            /> + <WH
-              text="Пояс мстительного мечеклюва"
-              href="https://www.wowhead.com/ru/item=208432/пояс-мстительного-мечеклюва?bonus=523&ilvl=528&spec=261"
-            /> или <WH
-              text="Боевой пояс из сросшегося сланца"
-              href="https://www.wowhead.com/ru/item=195501/боевой-пояс-из-сросшегося-сланца?bonus=523&ilvl=528&spec=261"
-            />.
-          </li>
+          </span>
         </ul>
       </div>
 
       <input
         type="radio"
-        id="gear_tab_two"
-        name="gear_tabs"
-        class="peer/gear_tab_two hidden p-[20px]"
+        id="tab_two_2"
+        name="mytabs_equip"
+        class="peer/tab_two_2 hidden p-[20px]"
       />
       <label
-        for="gear_tab_two"
-        class="p-[20px] w-[100%] sm:w-[50%] select-none border border-1 border-border flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/gear_tab_two:text-hover peer-checked/gear_tab_two:neon-hover"
-        >Ключи</label
+        for="tab_two_2"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two_2:text-assa peer-checked/tab_two_2:neon-assa"
+        >Украшения</label
       >
-      <div class="peer-checked/gear_tab_two:block w-full order-1 hidden">
+      <div class="peer-checked/tab_two_2:block w-full order-1 hidden">
+        <div
+          class="list-inside list-disc p-[20px] text-left flex flex-col gap-[16px] border border-border rounded-md"
+        >
+          <ul class="list-inside list-decimal gap-[20px] flex flex-col">
+            <span class="pb-[10px] text-red-600"
+              >На момент написания гайда (до релиза игры) многие украшения не
+              работают ни в игре, ни в симе. Поэтому здесь не будет топа, пока
+              не будут добавлены все украшения в сим. Я лишь напишу
+              предполагаемый топ крафтов и причину.</span
+            >
+            <li>
+              <WH
+                text="Выкованный навеки пронзатель"
+                href="https://www.wowhead.com/ru/item=222438/выкованный-навеки-пронзатель?bonus=10421:9633:8902:11144:10222:1485:8795:11302:8960&class=4&crafted-stats=36:49&ilvl=636&spec=259"
+              /> + <WH
+                text="Поручи с руническим клеймом"
+                href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=11109:8960:8795:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
+              />. Выглядит как самый лучший первый крафт. Во первых, даггер
+              симится лучше всех украшений (у ликвидации даже 2, у остальных
+              специализаций по одному) + это самый сильный ап (по сравнению с
+              героическими вещами) и экономия гребней на оружии. Во вторых, мы
+              можем сделать наручи низкого уровня, чтобы сэкономить эпохальные
+              гребни и потратить их на улучшение других вещей (как было с
+              токсичной пластиной). Обязательно нужно крафтить Симбиоз или
+              Вознесение, так как они являются нерубским украшением и усиляются
+              пластиной. Желательно делать крит + универсальность, чтобы подошло
+              на все специализации.
+            </li>
+            <li>
+              <WH
+                text="Поручи с руническим клеймом"
+                href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=11303:8960:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
+              /> + <WH
+                text="Боевой пояс с руническим клеймом"
+                href="https://www.wowhead.com/ru/item=219331/боевой-пояс-с-руническим-клеймом?bonus=11303:8960:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
+              /> или <WH
+                text="Поручи с руническим клеймом"
+                href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=11304:8960:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
+              /> + <WH
+                text="Боевой пояс с руническим клеймом"
+                href="https://www.wowhead.com/ru/item=219331/боевой-пояс-с-руническим-клеймом?bonus=11304:8960:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
+              />. Это скорее вариант для ключей, где высокий аптайм и возможно
+              для фарма в рейде. Так же придется делать 2 крафта максимального
+              уровня, что потребует много эпохальных гребней. Симятся хуже 1-го
+              варианта даже при 100% аптайме.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <input
+        type="radio"
+        id="tab_three_3"
+        name="mytabs_equip"
+        class="peer/tab_three_3 hidden p-[20px]"
+      />
+      <label
+        for="tab_three_3"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three_3:text-assa peer-checked/tab_three_3:neon-assa text-center"
+        >Что фармить?</label
+      >
+      <div class="peer-checked/tab_three_3:block w-full order-1 hidden">
         <ul
-          class="list-inside list-decimal font-medium p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md mt-[10px]"
+          class="list-inside list-decimal font-medium p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
         >
           <li>
+            <WH
+              text="Шепчущая маска"
+              href="https://www.wowhead.com/ru/item=221163/шепчущая-маска?bonus=523&class=4&ilvl=639&spec=261"
+            /> [Ара-Кара], лучший вариант на замену вещи из комплекта
+          </li>
+          <li>
+            <WH
+              text="Связка ключей Аварийное отключение"
+              href="https://www.wowhead.com/ru/item=221077/связка-ключей-аварийное-отключение?bonus=8781&ilvl=639&spec=259"
+            /> [Каменный Свод] | <WH
+              text="Подвеска следоплета"
+              href="https://www.wowhead.com/ru/item=178707/подвеска-следоплета?bonus=4786:9948:10299:8781&ilvl=639&spec=261"
+            /> [Туманы Тирна Скитта]
+          </li>
+          <li>
+            <WH
+              text="Пояс поглотителя живицы"
+              href="https://www.wowhead.com/ru/item=178699/пояс-поглотителя-живицы?bonus=4786:9948:10299:523&class=4&ilvl=639&spec=259"
+            /> [Туманы Тирна Скитта], отличный пояс, пока не получите любой 639 для
+            катализатора (или с рейда)
+          </li>
+          <li>
+            <WH
+              text="Эхо шагов шептателя"
+              href="https://www.wowhead.com/ru/item=221169/эхо-шагов-шептателя?bonus=4786:3131:10299&class=4&ilvl=639&spec=261"
+            /> [Город Нитей], отличная замена рейдовым ступням
+          </li>
+          <li>
+            <WH
+              text="Накидка покрова кузни"
+              href="https://www.wowhead.com/ru/item=221088/накидка-покрова-кузни?bonus=4786:3131:10299&class=4&ilvl=639&spec=259"
+            /> [Каменный Свод] | <WH
+              text="Залатанная троггами пелерина"
+              href="https://www.wowhead.com/ru/item=133363/залатанная-троггами-пелерина?bonus=4786:11342:10299&class=4&ilvl=639&spec=261"
+            /> [Грим Батол]
+          </li>
+          <li>
+            <WH
+              text="Печатка высшего неруба"
+              href="https://www.wowhead.com/ru/item=221141/печатка-высшего-неруба"
+            /> [Сияющий Рассвет] (лучшее кольцо) +
+            <WH
+              text="Перстень Умбрисса"
+              href="https://www.wowhead.com/ru/item=133286/перстень-умбрисса?bonus=4786:11342:10299:8781&ilvl=639&spec=259"
+            /> [Грим Батол] | <WH
+              text="Печать городской стражи"
+              href="https://www.wowhead.com/ru/item=162542/печать-городской-стражи?bonus=4786:10047:10299:8781&ilvl=639&spec=259"
+            /> [Осада Боралуса], просто хорошие кольца, пока не получите рейдовые
+          </li>
+          <li>
+            <WH
+              text="Милость Скардина"
+              href="https://www.wowhead.com/ru/item=133282/милость-скардина?bonus=4786:11342:10299&class=4&ilvl=639&spec=259"
+            /> [Грим Батол], неплохой прожимной аксессуар для старта, но лучше пофармить
+            вылазки (delves) ради аксессуара ниже
+          </li>
+          <li>
+            <WH
+              text="Несовершенная сыворотка вознесения"
+              href="https://www.wowhead.com/ru/item=225654/несовершенная-сыворотка-вознесения?bonus=10274:10266:3155"
+            /> [Вылазки]
+          </li>
+          <li>
+            <WH
+              text="Кокон выводка Ара-Кары"
+              href="https://www.wowhead.com/ru/item=219314/кокон-выводка-ара-кары?ilvl=639&spec=259"
+            /> [Ара-Кара] (лучший аксессуар) |
+            <WH
+              text="Усиливающий кристалл Ануб'иккаджа"
+              href="https://www.wowhead.com/ru/item=219312/усиливающий-кристалл-анубиккаджа?bonus=4786:3131:10299&class=4&ilvl=639&spec=259"
+            /> [Сияющий Рассвет] | <WH
+              text="Подзорная труба зоркого глаза"
+              href="https://www.wowhead.com/ru/item=159623/подзорная-труба-зоркого-глаза?bonus=4786:10047:10299&class=4&ilvl=639&spec=259"
+            /> [Осада Боралуса], лучшие варианты для 2-го аксессуара
+          </li>
+          <li>Любой кинжал</li>
+        </ul>
+      </div>
+
+      <input
+        type="radio"
+        id="tab_four_4"
+        name="mytabs_equip"
+        class="peer/tab_four_4 hidden p-[20px]"
+      />
+      <label
+        for="tab_four_4"
+        class="p-[20px] w-[100%] sm:w-[50%] 2xl:w-[20%] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_four_4:text-hover peer-checked/tab_four_4:neon-hover"
+        >BiS</label
+      >
+      <div class="peer-checked/tab_four_4:block w-full order-1 hidden">
+        <ul
+          class="list-inside list-decimal font-medium p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
+        >
+          <li>
+            Голова:
+            <WH
+              text="Шепчущая маска"
+              href="https://www.wowhead.com/ru/item=221163/шепчущая-маска?bonus=523&class=4&ilvl=639&spec=261"
+            />
+          </li>
+          <li>
+            Шея: <WH
+              text="Милость шелкового советника"
+              href="https://www.wowhead.com/ru/item=225575/милость-шелкового-советника?bonus=8781&ilvl=639&spec=261"
+            />
+          </li>
+          <li>
             Плечи: <WH
-              text="Наплечные лезвия призрака теней"
-              href="https://www.wowhead.com/ru/item=217210/наплечные-лезвия-призрака-теней?class=4&ilvl=528&spec=261"
+              text="Наплечники фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212036/наплечники-фантома-кареши?ilvl=639"
             />
           </li>
           <li>
             Грудь: <WH
-              text="Панцирь призрака теней"
-              href="https://www.wowhead.com/ru/item=217206/панцирь-призрака-теней?class=4&ilvl=528&spec=261"
+              text="Обмотки нексуса фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212041/обмотки-нексуса-фантома-кареши?ilvl=639"
+            />
+          </li>
+          <li>
+            Пояс: <WH
+              text="Натянутые внутренности пожирателя"
+              href="https://www.wowhead.com/ru/item=212425/натянутые-внутренности-пожирателя?bonus=523&class=4&ilvl=639&spec=259"
             />
           </li>
           <li>
             Ноги: <WH
-              text="Трико призрака теней"
-              href="https://www.wowhead.com/ru/item=217209/трико-призрака-теней?class=4&ilvl=528&spec=261"
-            />
-          </li>
-          <li>
-            Кисти рук: <WH
-              text="Боевые перчатки призрака теней"
-              href="https://www.wowhead.com/ru/item=217207/боевые-перчатки-призрака-теней?class=4&ilvl=528&spec=261"
-            />
-          </li>
-          <li>Плащ: любой без скорости</li>
-          <li>
-            Запястья: <WH
-              text="Зачарованные жизнью путы"
-              href="https://www.wowhead.com/ru/item=193419/зачарованные-жизнью-путы?bonus=8932:8960:523&class=4&crafted-stats=40:49&ilvl=525&spec=261"
-            />
-          </li>
-          <li>
-            Кольцо 1: <WH
-              text="Печать избранного Денны"
-              href="https://www.wowhead.com/ru/item=195480/печать-избранного-денны?bonus=523&ilvl=528&spec=261"
-            />
-          </li>
-          <li>
-            Кольцо 2: <WH
-              text="Печатка мудрости титанов"
-              href="https://www.wowhead.com/ru/item=192999/печатка-мудрости-титанов?bonus=8932:8960:523&crafted-stats=40:49&ilvl=525&spec=261"
-            />. Если вы скрафтили ботинки с шелком, тогда <WH
-              text="Перстень последнего старейшины"
-              href="https://www.wowhead.com/ru/item=207162/перстень-последнего-старейшины?bonus=523&ilvl=528&spec=261"
-            /> или <WH
-              text="Окровавленное обручальное кольцо"
-              href="https://www.wowhead.com/ru/item=193671/окровавленное-обручальное-кольцо?bonus=523&ilvl=528&spec=261"
+              text="Поножи фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212037/поножи-фантома-кареши?ilvl=639"
             />
           </li>
           <li>
             Ступни: <WH
-              text="Гальванические краги"
-              href="https://www.wowhead.com/ru/item=202008/гальванические-краги?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Башмаки скованного пламенем охотника"
-              href="https://www.wowhead.com/ru/item=202574/башмаки-скованного-пламенем-охотника?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Ботфорты стремительности"
-              href="https://www.wowhead.com/ru/item=193817/ботфорты-стремительности?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Зачарованные жизнью сапоги"
-              href="https://www.wowhead.com/ru/item=193398/зачарованные-жизнью-сапоги?bonus=8840:8836:8902:10359:10249:1485:8932:8960&class=4&crafted-stats=49:40&crafting-quality=8&ilvl=525&spec=261"
-            /> (если не крафтили кольцо)
+              text="Башмаки мимолетного кровопролития"
+              href="https://www.wowhead.com/ru/item=225591/башмаки-мимолетного-кровопролития?class=4&ilvl=639&spec=261"
+            />
+          </li>
+          <li>
+            Запястья: <WH
+              text="Поручи с руническим клеймом"
+              href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=11109:8960:523&class=4&crafted-stats=40:49&ilvl=636&spec=261"
+            />
+          </li>
+          <li>
+            Кисти рук: <WH
+              text="Захваты фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212039/захваты-фантома-кареши?ilvl=639"
+            />
+          </li>
+          <li>
+            Кольцо 1: <WH
+              text="Печать отравленного соглашения"
+              href="https://www.wowhead.com/ru/item=225578/печать-отравленного-соглашения?bonus=8781&ilvl=639&spec=259"
+            />
+          </li>
+          <li>
+            Кольцо 2: <WH
+              text="Печатка высшего неруба"
+              href="https://www.wowhead.com/ru/item=221141/печатка-высшего-неруба?bonus=8781&ilvl=639&spec=261"
+            />
           </li>
           <li>
             Аксессуар 1: <WH
-              text="Прах души угля"
-              href="https://www.wowhead.com/ru/item=207167/прах-души-угля?ilvl=528&spec=261"
-            /> | <WH
-            text="Одержимый светоч горя"
-            href="https://www.wowhead.com/ru/item=194308/одержимый-светоч-горя?class=4&ilvl=528&spec=261"
-          />
+              text="Вероломный передатчик"
+              href="https://www.wowhead.com/ru/item=221023/вероломный-передатчик?bonus=1540:10870&ilvl=639&spec=259"
+            />
           </li>
           <li>
             Аксессуар 2: <WH
-              text="Благословение Пожирательницы Бурь"
-              href="https://www.wowhead.com/ru/item=194302/благословение-пожирательницы-бурь?class=4&ilvl=528&spec=261"
+              text="Контракт жнеца Бездны"
+              href="https://www.wowhead.com/ru/item=212456/контракт-жнеца-бездны?class=4&ilvl=639&spec=261"
+            />
+          </li>
+          <li>
+            Плащ: <WH
+              text="Королевская эмблема Неруб'ара."
+              href="https://www.wowhead.com/ru/item=212446/королевская-эмблема-нерубара?class=4&ilvl=639&spec=259"
             />
           </li>
           <li>
             Оружие 1: <WH
-              text="Коготь Расколотого Пламени"
-              href="https://www.wowhead.com/ru/item=202564/коготь-расколотого-пламени?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Жестокий резчик снов"
-              href="https://www.wowhead.com/ru/item=207783/жестокий-резчик-снов?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Расчленитель из огнекованной стали"
-              href="https://www.wowhead.com/ru/item=202557/расчленитель-из-огнекованной-стали?class=4&ilvl=528&spec=261"
-            /> | <WH
-              text="Прочный осколок Терроса"
-              href="https://www.wowhead.com/ru/item=195503/прочный-осколок-терроса?class=4&ilvl=528&spec=261"
+              text="Кукри кровавого поцелуя"
+              href="https://www.wowhead.com/ru/item=212395/кукри-кровавого-поцелуя?bonus=10256:11086:6652:11095:1514:10255&class=4&ilvl=639&spec=261"
+            /> или <WH
+              text="Скальпель Трупошва"
+              href="https://www.wowhead.com/ru/item=178743/скальпель-трупошва?bonus=4786:9948:10299&class=4&ilvl=639&spec=261"
             />
           </li>
           <li>
             Оружие 2: <WH
-              text="Последний момент"
-              href="https://www.wowhead.com/ru/item=207996/последний-момент?bonus=9526&class=4&ilvl=515&spec=261"
-            /> (с м0, 515 илвл)
+              text="Выкованный навеки пронзатель"
+              href="https://www.wowhead.com/ru/item=222438/выкованный-навеки-пронзатель?bonus=10421:9633:8902:11144:10222:1485:11300:8960&class=4&crafted-stats=40:49&ilvl=636&spec=261"
+            />
+          </li>
+        </ul>
+      </div>
+      <input
+        type="radio"
+        id="tab_four_5"
+        name="mytabs_equip"
+        class="peer/tab_four_5 hidden p-[20px]"
+      />
+      <label
+        for="tab_four_5"
+        class="p-[20px] w-[100%] sm:w-[50%] 2xl:w-[20%] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_four_5:text-hover peer-checked/tab_four_5:neon-hover text-center"
+        >BiS (ключи)</label
+      >
+      <div class="peer-checked/tab_four_5:block w-full order-1 hidden">
+        <ul
+          class="list-inside list-decimal font-medium p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
+        >
+          <li>
+            Голова:
+            <WH
+              text="Шепчущая маска"
+              href="https://www.wowhead.com/ru/item=221163/шепчущая-маска?bonus=523&class=4&ilvl=639&spec=261"
+            />
           </li>
           <li>
-            Голова + Шея + Пояс: <WH
-              text="Жуткая погребальная маска"
-              href="https://www.wowhead.com/ru/item=202602/жуткая-погребальная-маска?bonus=523&ilvl=528&spec=261"
-            /> + <WH
-              text="Комендантский медальон наваждения"
-              href="https://www.wowhead.com/ru/item=193647/комендантский-медальон-наваждения?bonus=6652:8783:8784:7936:7937:6808:4786:1643:8782&ilvl=528&spec=261"
-            /> + <WH
-              text="Пояс мстительного мечеклюва"
-              href="https://www.wowhead.com/ru/item=208432/пояс-мстительного-мечеклюва?bonus=523&ilvl=528&spec=261"
-            />.<br />
-            - <WH
-              text="Личина пожирающего пламени"
-              href="https://www.wowhead.com/ru/item=208420/личина-пожирающего-пламени?bonus=523&ilvl=528&spec=261"
+            Шея: <WH
+              text="Милость шелкового советника"
+              href="https://www.wowhead.com/ru/item=225575/милость-шелкового-советника?bonus=8781&ilvl=639&spec=261"
+            />
+          </li>
+          <li>
+            Плечи: <WH
+              text="Наплечники фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212036/наплечники-фантома-кареши?ilvl=639"
+            />
+          </li>
+          <li>
+            Грудь: <WH
+              text="Обмотки нексуса фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212041/обмотки-нексуса-фантома-кареши?ilvl=639"
+            />
+          </li>
+          <li>
+            Пояс: <WH
+              text="Натянутые внутренности пожирателя"
+              href="https://www.wowhead.com/ru/item=212425/натянутые-внутренности-пожирателя?bonus=523&class=4&ilvl=639&spec=259"
+            />
+          </li>
+          <li>
+            Ноги: <WH
+              text="Поножи фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212037/поножи-фантома-кареши?ilvl=639"
+            />
+          </li>
+          <li>
+            Ступни: <WH
+              text="Башмаки мимолетного кровопролития"
+              href="https://www.wowhead.com/ru/item=225591/башмаки-мимолетного-кровопролития?class=4&ilvl=639&spec=261"
+            />
+          </li>
+          <li>
+            Запястья: <WH
+              text="Поручи с руническим клеймом"
+              href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=11109:8960:523&class=4&crafted-stats=40:49&ilvl=636&spec=261"
+            />
+          </li>
+          <li>
+            Кисти рук: <WH
+              text="Захваты фантома К'ареши"
+              href="https://www.wowhead.com/ru/item=212039/захваты-фантома-кареши?ilvl=639"
+            />
+          </li>
+          <li>
+            Кольцо 1: <WH
+              text="Печать отравленного соглашения"
+              href="https://www.wowhead.com/ru/item=225578/печать-отравленного-соглашения?bonus=8781&ilvl=639&spec=259"
+            />
+          </li>
+          <li>
+            Кольцо 2: <WH
+              text="Печатка высшего неруба"
+              href="https://www.wowhead.com/ru/item=221141/печатка-высшего-неруба?bonus=8781&ilvl=639&spec=261"
+            />
+          </li>
+          <li>
+            Аксессуар 1: <WH
+              text="Вероломный передатчик"
+              href="https://www.wowhead.com/ru/item=221023/вероломный-передатчик?bonus=1540:10870&ilvl=639&spec=259"
+            />
+          </li>
+          <li>
+            Аксессуар 2: <WH
+              text="Переменчивое яйцо Ови'накса"
+              href="https://www.wowhead.com/ru/item=220305/переменчивое-яйцо-овинакса?bonus=4800:4786:1540:10299&ilvl=639&spec=261"
             /> или <WH
-              text="Корона ревущих бурь"
-              href="https://www.wowhead.com/ru/item=193751/корона-ревущих-бурь?bonus=6652:8783:8784:7936:7937:6808:4786:1643:523&ilvl=528&spec=261"
-            /> + <WH
-              text="Четвертый ошейник Магморакса"
-              href="https://www.wowhead.com/ru/item=204397/четвертый-ошейник-магморакса?bonus=8782&ilvl=528&spec=261"
-            /> + <WH
-              text="Боевой пояс из сросшегося сланца"
-              href="https://www.wowhead.com/ru/item=195501/боевой-пояс-из-сросшегося-сланца?bonus=523&ilvl=528&spec=261"
-            />.<br />
-            - <WH
-              text="Жуткая погребальная маска"
-              href="https://www.wowhead.com/ru/item=202602/жуткая-погребальная-маска?bonus=523&ilvl=528&spec=261"
-            /> + <WH
-              text="Ожерелье Уробороса"
-              href="https://www.wowhead.com/ru/item=210214/ожерелье-уробороса?bonus=8782&ilvl=528&spec=261"
-            /> + <WH
-              text="Пояс мстительного мечеклюва"
-              href="https://www.wowhead.com/ru/item=208432/пояс-мстительного-мечеклюва?bonus=523&ilvl=528&spec=261"
+              text="Усиливающий кристалл Ануб'иккаджа"
+              href="https://www.wowhead.com/ru/item=219312/усиливающий-кристалл-анубиккаджа?bonus=4786:3131:10299&class=4&ilvl=639&spec=261"
+            />
+          </li>
+          <li>
+            Плащ: <WH
+              text="Королевская эмблема Неруб'ара."
+              href="https://www.wowhead.com/ru/item=212446/королевская-эмблема-нерубара?class=4&ilvl=639&spec=259"
+            />
+          </li>
+          <li>
+            Оружие 1: <WH
+              text="Кукри кровавого поцелуя"
+              href="https://www.wowhead.com/ru/item=212395/кукри-кровавого-поцелуя?bonus=10256:11086:6652:11095:1514:10255&class=4&ilvl=639&spec=261"
             /> или <WH
-              text="Боевой пояс из сросшегося сланца"
-              href="https://www.wowhead.com/ru/item=195501/боевой-пояс-из-сросшегося-сланца?bonus=523&ilvl=528&spec=261"
-            />.
+              text="Скальпель Трупошва"
+              href="https://www.wowhead.com/ru/item=178743/скальпель-трупошва?bonus=4786:9948:10299&class=4&ilvl=639&spec=261"
+            />
+          </li>
+          <li>
+            Оружие 2: <WH
+              text="Выкованный навеки пронзатель"
+              href="https://www.wowhead.com/ru/item=222438/выкованный-навеки-пронзатель?bonus=10421:9633:8902:11144:10222:1485:11300:8960&class=4&crafted-stats=40:49&ilvl=636&spec=261"
+            />
           </li>
         </ul>
       </div>

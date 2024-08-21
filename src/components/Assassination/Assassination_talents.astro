@@ -3,6 +3,9 @@ import H2 from "../H2.astro";
 import WH from "../WH.astro";
 import { assaMenuItems } from "../../constants/content";
 import Tabs from "./Assassination_tabs.astro";
+import Sim from "../Sim.astro";
+import TalentsRaid from "../../assets/guide/assassination/sim/talents_raid.webp";
+import TalentsKeys from "../../assets/guide/assassination/sim/talents_keys.webp";
 ---
 
 <section
@@ -12,40 +15,61 @@ import Tabs from "./Assassination_tabs.astro";
   <H2 text={assaMenuItems[1].label} />
   <div class="text-clamp_text flex flex-col gap-[16px]">
     <p>
-      У ликвидации на данный момент 2 варианта рейдового билда с небольшими
-      изменениями под клив / аое. В ключах тоже два основных билда:
+      Ниже я представлю 2 варианта билдов для рейда и 2 для ключей (отличаются
+      только героическими талантами). Ловчий смерти на данный момент не только
+      сильнее чем Служитель судьбы, но и проще / стабильнее. Варианты билдов для
+      клива и аое практически не отличаются, о них я напишу в рейдовых вкладках
+      под талантами. Так же стоит учитывать большое количество багов с
+      героическими талантами и в целом ликвидации, фиксы (если будут) которых
+      могут повлиять на итоговый билд.
     </p>
-    <ul class="flex flex-col gap-[16px]">
-      <li>
-        1. DTB (Dragon-Tempered Blades) билд <WH
-          text="Закалка в огне драконов"
-          href="https://www.wowhead.com/ru/spell=381801/закалка-в-огне-драконов"
-        />
-      </li>
-      <li>
-        2. AP (Arterial Precision) билд <WH
-          text="Укол в артерию"
-          href="https://www.wowhead.com/ru/spell=400783/укол-в-артерию"
-        />
-      </li>
-      <li>
-        3. SBS (Serrated Bone Spike) билд <WH
-          text="Зазубренный костяной шипю"
-          href="https://www.wowhead.com/ru/spell=385424/зазубренный-костяной-шип"
-        />
-      </li>
-    </ul>
+    <p class="text-blue-500">
+      DS - Deathstalker - Ловчий смерти<br />
+      FB - Fatebound - Служитель судьбы
+    </p>
     <p>
-      Оба билда (DTB и AP) для ключей симятся и играются в целом одинаково, так
-      что можете выбирать любой. Билды для ключей без <WH
+      В ключах сейчас билд только через <WH
         text="Внезапная гибель"
         href="https://www.wowhead.com/ru/spell=423136/внезапная-гибель"
-      /> (например AP + DTB) я не рассматриваю, так как невозможно просимить <WH
+      /> + <WH
+        text="Закалку в огне драконов"
+        href="https://www.wowhead.com/ru/spell=381801/закалка-в-огне-драконов"
+      />, так как из-за почти обязательных <WH
+        text="Зазубренных костяных шипов"
+        href="https://www.wowhead.com/ru/spell=455352/зазубренные-костяные-шипы"
+      /> не хватает очков талантов для нормального билда через <WH
+        text="Укол в артерию"
+        href="https://www.wowhead.com/ru/spell=400783/укол-в-артерию"
+      />. Так же <WH
         text="Внезапная гибель"
         href="https://www.wowhead.com/ru/spell=423136/внезапная-гибель"
-      />, а в реальных ключах он дает 3-8%, что делает билды с ним намного
-      сильнее.
+      /> все еще не симится, поэтому нужно к симам прибавить 3-6%, которые он дает
+      в реальности. Ниже я предоставлю разные билды, чтобы показать разницу.
     </p>
     <Tabs />
+    <Sim title="Сим талантов в рейде">
+      <span class="text-center"
+        >Сим с <WH
+          text="Придание сил"
+          href="https://www.wowhead.com/ru/spell=10060/придание-сил"
+        /></span
+      >
+      <img
+        src={TalentsRaid.src}
+        alt="Сим рас в одну цель 5 минут"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
+    <Sim title="Сим талантов в ключе (15 тризна)">
+      <img
+        src={TalentsKeys.src}
+        alt="Сим рас в одну цель 5 минут"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
   </div>
 </section>

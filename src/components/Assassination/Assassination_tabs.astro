@@ -1,11 +1,17 @@
 ---
 import WH from "../WH.astro";
-import ST from "../../assets/guide/assassination/builds/ST.webp";
-import ST2 from "../../assets/guide/assassination/builds/ST2.webp";
-import Cleave from "../../assets/guide/assassination/builds/Cleave.webp";
-import Keys from "../../assets/guide/assassination/builds/Keys.webp";
-import Keys2AP from "../../assets/guide/assassination/builds/Keys2AP.webp";
-import Keys2DTB from "../../assets/guide/assassination/builds/Keys2DTB.webp";
+import ST_DS1 from "../../assets/guide/assassination/builds/assa_st_ds_1.webp";
+import ST_DS2 from "../../assets/guide/assassination/builds/assa_st_ds_2.webp";
+import ST_DS3 from "../../assets/guide/assassination/builds/assa_st_ds_3.webp";
+import ST_FB1 from "../../assets/guide/assassination/builds/assa_st_fb_1.webp";
+import ST_FB2 from "../../assets/guide/assassination/builds/assa_st_fb_2.webp";
+import ST_FB3 from "../../assets/guide/assassination/builds/assa_st_fb_3.webp";
+import KEYS_DS1 from "../../assets/guide/assassination/builds/assa_keys_ds_1.webp";
+import KEYS_DS2 from "../../assets/guide/assassination/builds/assa_keys_ds_2.webp";
+import KEYS_DS3 from "../../assets/guide/assassination/builds/assa_keys_ds_3.webp";
+import KEYS_FB1 from "../../assets/guide/assassination/builds/assa_keys_fb_1.webp";
+import KEYS_FB2 from "../../assets/guide/assassination/builds/assa_keys_fb_2.webp";
+import KEYS_FB3 from "../../assets/guide/assassination/builds/assa_keys_fb_3.webp";
 ---
 
 <div
@@ -21,58 +27,69 @@ import Keys2DTB from "../../assets/guide/assassination/builds/Keys2DTB.webp";
   <label
     for="tab_one"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one:text-assa peer-checked/tab_one:neon-assa"
-    >Рейд</label
+    >Рейд [DS]</label
   >
   <div class="peer-checked/tab_one:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">BMQAAAAAAAAAAAAAAAAAAAAAAEJJhkEEAAAAAASJJSJJAAAAAAgWSCSgkkSaJREEJJJRSTLSAA</code></pre>
+      class="mt-[16px]"><code class="text-base">CMQA27SZpS4XnmFfcXRqkppuwPzMzMMmxyMAAAAAAMLDWmBAAAAAgsNzMjHYmBzMzysNGjBzMzMzMmZz2YGglZWGbMmxs0Y2WGmsNMsA</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BMQAAAAAAAAAAAAAAAAAAAAAAEJJhkEEAAAAAASJJSJJAAAAAAgWSCSgkkSaJREEJJJRSTLSAA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CMQA27SZpS4XnmFfcXRqkppuwPzMzMMmxyMAAAAAAMLDWmBAAAAAgsNzMjHYmBzMzysNGjBzMzMzMmZz2YGglZWGbMmxs0Y2WGmsNMsA?width=972&hideHeader=1&locale=ru_RU"
     />
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
-    >
-      <img
-        src={ST.src}
-        alt="Стандартный рейдовый билд"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        loading="lazy"
-        decoding="async"
-      />
-      <img
-        src={ST2.src}
-        alt="Стандартный рейдовый билд"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        loading="lazy"
-        decoding="async"
-      />
-    </div>
-    <p class="pt-[16px]">
-      <WH
-        text="Внутреннее кровотечение"
-        href="https://www.wowhead.com/ru/spell=381627/внутреннее-кровотечение"
-      /> играется только в боях где одна цель (или для большего урона в босса,
-      если не нужно аое или клив). В текущем рейде это Вулкаросс, Нимуэ и
-      Пеплорон. На остальных боссах <WH
-        text="Едкие капли"
-        href="https://www.wowhead.com/ptr-2/spell=421975/caustic-spatter"
-      /> будут намного лучше. На Совете Снов можно заменить <WH
-        text="Лихой негодяй"
-        href="https://www.wowhead.com/ru/spell=381797/лихой-негодяй"
-      /> на <WH
-        text="Тотальная бойня"
-        href="https://www.wowhead.com/ru/spell=381802/тотальная-бойня"
-      />. Помните, что умные кровотечения работают относительно вашего
-      персонажа, поэтому нужно позиционироваться так, чтобы быть близко к обоим
-      целям.
-    </p>
-    <p class="pt-[30px]">
-      К сожалению, взять <WH
-        text="Акробатические удары"
-        href="https://www.wowhead.com/ru/spell=196924/акробатические-удары"
-      /> можно только с потерей огромного количества урона (~10к).
-    </p>
+    class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
+  >
+    <img
+      src={ST_DS1.src}
+      alt="Ловчий смерти рейдовый билд"
+      class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
+      loading="lazy"
+      decoding="async"
+    />
+    <img
+      src={ST_DS2.src}
+      alt="Ловчий смерти рейдовый билд"
+      class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+      loading="lazy"
+      decoding="async"
+    />
+    <img
+      src={ST_DS3.src}
+      alt="Ловчий смерти рейдовый билд"
+      class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
+      <li>
+        <WH
+          text="Внутреннее кровотечение"
+          href="https://www.wowhead.com/ru/spell=381627/внутреннее-кровотечение"
+        /> играется только в боях где одна цель (или для большего урона в босса,
+        если не нужно аое или клив). На остальных боссах <WH
+          text="Едкие капли"
+          href="https://www.wowhead.com/ptr-2/spell=421975/caustic-spatter"
+        /> будут намного лучше.
+      </li>
+      <li>
+        <WH
+          text="Призрачную мантия"
+          href="https://www.wowhead.com/ru/spell=457022/призрачная-мантия"
+        /> можно заменить на <WH
+          text="Обманный прием"
+          href="https://www.wowhead.com/ru/spell=457034/обманный-прием"
+        /> если есть необходимость в дополнительной выживаемости на боссе.
+      </li>
+      <li>
+        <WH
+          text="Тотальная бойня"
+          href="https://www.wowhead.com/ru/spell=381802"
+        /> сейчас не особо актуальный талант даже для клива в рейде из-за увеличенного
+        времени на усиленную гарроту до 6 сек.
+      </li>
+    </ul>
   </div>
 
   <input
@@ -84,38 +101,63 @@ import Keys2DTB from "../../assets/guide/assassination/builds/Keys2DTB.webp";
   <label
     for="tab_two"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two:text-assa peer-checked/tab_two:neon-assa"
-    >Рейд (SBS)</label
+    >Рейд [FB]</label
   >
   <div class="peer-checked/tab_two:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">BMQAAAAAAAAAAAAAAAAAAAAAAkWSSISQAAAAAAIlkIlkAAAAAAAaJJIBSSKpFREkkkkEJNtIBA</code></pre>
+      class="mt-[16px]"><code class="text-base">CMQA27SZpS4XnmFfcXRqkppuwPzMzMMmBAAAAAAYWGmlZAAAAAAIbzMzMzMDmZmlZbMGDmZmZmZMzmtxMALzsMWYMjZpxstMMZbYYD</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BMQAAAAAAAAAAAAAAAAAAAAAAkWSSISQAAAAAAIlkIlkAAAAAAAaJJIBSSKpFREkkkkEJNtIBA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CMQA27SZpS4XnmFfcXRqkppuwPzMzMMmBAAAAAAYWGmlZAAAAAAIbzMzMzMDmZmlZbMGDmZmZmZMzmtxMALzsMWYMjZpxstMMZbYYD?width=972&hideHeader=1&locale=ru_RU"
     />
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
-    >
-      <img
-        src={ST.src}
-        alt="Рейдовый билд через шип"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        loading="lazy"
-        decoding="async"
-      />
-      <img
-        src={Cleave.src}
-        alt="Рейдовый билд через шип"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        loading="lazy"
-        decoding="async"
-      />
-    </div>
-    <p class="pt-[30px]">
-      Этот билд симится в +- 0.4%, зависит от ваших характеристик. Если на боссе
-      имеются доп цели, через которых вы можете откатывать шип, этот билд может
-      быть лучше. Стандартный билд в свою очередь более "бурстовый".
-    </p>
+    class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
+  >
+    <img
+      src={ST_FB1.src}
+      alt="Служитель судьбы рейдовый билд"
+      class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
+      loading="lazy"
+      decoding="async"
+    />
+    <img
+      src={ST_FB2.src}
+      alt="Служитель судьбы рейдовый билд"
+      class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+      loading="lazy"
+      decoding="async"
+    />
+    <img
+      src={ST_FB3.src}
+      alt="Служитель судьбы рейдовый билд"
+      class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
+      <li>
+        Этот билд симится на 1.7% ниже, но при этом он еще и очень "рандомен"
+        из-за монеток.
+      </li>
+      <li>
+        <WH
+          text="Тотальная бойня"
+          href="https://www.wowhead.com/ru/spell=381802"
+        /> сейчас не особо актуальный талант даже для клива в рейде из-за увеличенного
+        времени на усиленную гарроту до 6 сек.
+      </li>
+      <li>
+        <WH
+          text="Призрачную мантия"
+          href="https://www.wowhead.com/ru/spell=457022/призрачная-мантия"
+        /> можно заменить на <WH
+          text="Обманный прием"
+          href="https://www.wowhead.com/ru/spell=457034/обманный-прием"
+        /> если есть необходимость в дополнительной выживаемости на боссе.
+      </li>
+    </ul>
   </div>
 
   <input
@@ -127,73 +169,127 @@ import Keys2DTB from "../../assets/guide/assassination/builds/Keys2DTB.webp";
   <label
     for="tab_three"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-r-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three:text-hover peer-checked/tab_three:neon-hover"
-    >М+ AP</label
+    >М+ [DS]</label
   >
   <div class="peer-checked/tab_three:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">BMQAcWb37Z8KXj8LlE1rTPXfsRSkkIQAAAAAAIlkIlkAAAAAAAtWkgEIJpkSQEJRSSSS0alkEA</code></pre>
+      class="mt-[16px]"><code class="text-base">CMQA27SZpS4XnmFfcXRqkppuwPjZmZGmxyMAAAAAAMLD2mBAAAAAg2WYGegZGjZmZZ2GjBzMzMDmZmttlZmBYxsMwAWCWGmADLA</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BMQAcWb37Z8KXj8LlE1rTPXfsRSkkIQAAAAAAIlkIlkAAAAAAAtWkgEIJpkSQEJRSSSS0alkEA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CMQA27SZpS4XnmFfcXRqkppuwPjZmZGmxyMAAAAAAMLD2mBAAAAAg2WYGegZGjZmZZ2GjBzMzMDmZmttlZmBYxsMwAWCWGmADLA?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
-    >
-      <img
-        src={Keys.src}
-        alt="Билд для ключей ликвидации через укол в артерию"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        loading="lazy"
-        decoding="async"
-      />
-      <img
-        src={Keys2AP.src}
-        alt="Билд для ключей ликвидации через укол в артерию"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        loading="lazy"
-        decoding="async"
-      />
-    </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
+    class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
+  >
+    <img
+      src={KEYS_DS1.src}
+      alt="Ловчий смерти билд для ключей"
+      class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
+      loading="lazy"
+      decoding="async"
+    />
+    <img
+      src={KEYS_DS2.src}
+      alt="Ловчий смерти билд для ключей"
+      class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+      loading="lazy"
+      decoding="async"
+    />
+    <img
+      src={KEYS_DS3.src}
+      alt="Ловчий смерти билд для ключей"
+      class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
-        К сожалению взять <WH
-          text="Акробатические удары"
-          href="https://www.wowhead.com/ru/spell=196924/акробатические-удары"
-        /> можно только потеряв 10к+ урона, поэтому не стоит их брать, да и в
-        ликвидации они не особо нужны из-за "умных" кровотечений
+        <WH
+          text="Импульс отчаяния"
+          href="https://www.wowhead.com/ru/spell=457067/импульс-отчаяния"
+        /> и <WH
+          text="По следу крови"
+          href="https://www.wowhead.com/ru/spell=457068/по-следу-крови"
+        /> примерно одинаковы для ключей. Чем больше будет крита - тем лучше <WH
+          text="Импульс отчаяния"
+          href="https://www.wowhead.com/ru/spell=457067/импульс-отчаяния"
+        />. Плюс <WH
+          text="Импульс отчаяния"
+          href="https://www.wowhead.com/ru/spell=457067/импульс-отчаяния"
+        /> улучшает генерацию комбо поинтов.
       </li>
       <li>
         <WH
-          text="Замедляющий яд"
-          href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
-        /> обычно используется на укрепленных неделях, а <WH
-          text="Атрофический яд"
-          href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
-        /> на тиранических или высоких укрепленных неделях.
-      </li>
-      <li>
-        <WH
-          text="Скрывающий покров"
-          href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
-        /> или <WH
-          text="Изящный обман"
-          href="https://www.wowhead.com/ru/spell=423647/изящный-обман"
-        /> можно заменить на <WH
-          text="Мастер ядоварения"
-          href="https://www.wowhead.com/ru/spell=378436/мастер-ядоварения"
-        /> при необходимости.
-      </li>
-      <li>
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        />
+        можно заменить на
         <WH
           text="Обман смерти"
           href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
-        /> можно заменить на <WH
+        /> в низких ключах. Но чем выше ключ, тем лучше <WH
           text="Неуловимость"
           href="https://www.wowhead.com/ru/spell=79008/неуловимость"
-        /> в высоких тиранических ключах, где не работает обычная <WH
-          text="Уловка"
-          href="https://www.wowhead.com/ru/spell=1966/уловка"
-        />.
+        />, а некоторые способности без нее просто не будут переживаться на
+        определенном уровне ключа.
+      </li>
+      <li>
+        <WH
+          text="Железная проволока"
+          href="https://www.wowhead.com/ru/spell=196861/железная-проволока"
+        />
+        очень сильный талант, хоть и приходится жертвовать из-за него дпс талантами.
+        Однако, благодаря немоте, пак быстрее собирается и вам проще повесить кровотечения,
+        радиус которых довольно мал. Поэтому не стоит вместо него брать другие дпс
+        таланты. Но, если вы всё-таки хотите его убрать, то рекомендую взять <WH
+          text="Легкую заточку"
+          href="https://www.wowhead.com/ru/spell=394983/легкая-заточка"
+        />, он упрощает отыгрыш <WH
+          text="Отравляющего укола"
+          href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+        /> и даёт больше всего урона в бою с боссами.
+      </li>
+      <li>
+        Правая ветка, через
+        <WH
+          text="Увертка"
+          href="https://www.wowhead.com/ru/spell=108208/увертка"
+        /> и <WH
+          text="Без следа"
+          href="https://www.wowhead.com/ru/spell=382513/без-следа"
+        /> довольно слабая. Нам не требуется <WH
+          text="Увертка"
+          href="https://www.wowhead.com/ru/spell=108208/увертка"
+        />, так как есть <WH
+          text="Улучшенная гаррота"
+          href="https://www.wowhead.com/ru/spell=381632/улучшенная-гаррота"
+        />, а второе <WH
+          text="Исчезновение"
+          href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+        /> дает нам по факту всего лишь 1 дополнительный заряд на весь ключ, так
+        как они не откатываются параллельно.
+      </li>
+      <li>
+        <WH
+          text="Темную поступь"
+          href="https://www.wowhead.com/ru/spell=457057/темная-поступьа"
+        />
+        можно заменить на <WH
+          text="Полог ночи"
+          href="https://www.wowhead.com/ru/spell=457063/полог-ночи"
+        /> если в роуте есть опасные скипы через шрауд (<WH
+          text="Скрывающий покров"
+          href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
+        />). А <WH
+          text="Призрачную мантия"
+          href="https://www.wowhead.com/ru/spell=457022/призрачная-мантия"
+        /> можно заменить на <WH
+          text="Обманный прием"
+          href="https://www.wowhead.com/ru/spell=457034/обманный-прием"
+        /> если есть необходимость в дополнительной выживаемости в ключе.
       </li>
     </ul>
   </div>
@@ -207,73 +303,93 @@ import Keys2DTB from "../../assets/guide/assassination/builds/Keys2DTB.webp";
   <label
     for="tab_four"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_four:text-hover peer-checked/tab_four:neon-hover"
-    >М+ DTB</label
+    >М+ [FB]</label
   >
   <div class="peer-checked/tab_four:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">BMQAcWb37Z8KXj8LlE1rTPXfsRSkkIQAAAAAAIlkIlkAAAAAAAtWkgEIJpkSERkEJhkk0alkEA</code></pre>
+      class="mt-[16px]"><code class="text-base">CMQA27SZpS4XnmFfcXRqkppuwPjZmZGmxyMAAAAAAMLD2mBAAAAAg2WYGegZGjZmZZ2GjBzMzMDmZmttlZmBYZmlxGjZMLNmtlhJbDDbA</code></pre>
     <embed
-      class="min-h-[650px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/BMQAcWb37Z8KXj8LlE1rTPXfsRSkkIQAAAAAAIlkIlkAAAAAAAtWkgEIJpkSERkEJhkk0alkEA?width=1024&hideHeader=1&locale=ru_RU"
+      class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
+      src="https://mimiron.raidbots.com/simbot/render/talents/CMQA27SZpS4XnmFfcXRqkppuwPjZmZGmxyMAAAAAAMLD2mBAAAAAg2WYGegZGjZmZZ2GjBzMzMDmZmttlZmBYZmlxGjZMLNmtlhJbDDbA?width=972&hideHeader=1&locale=ru_RU"
     />
+
     <div
-      class="grid grid-rows-1 xl:grid-cols-[43.5%_1fr] desktop:hidden justify-center items-center"
-    >
-      <img
-        src={Keys.src}
-        alt="Билд для ключей ликвидации через 4 яда"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        loading="lazy"
-        decoding="async"
-      />
-      <img
-        src={Keys2DTB.src}
-        alt="Билд для ключей ликвидации через 4 яда"
-        class="mt-[15px] max-w-full h-full object-contain justify-self-center"
-        loading="lazy"
-        decoding="async"
-      />
-    </div>
-    <ul class="flex flex-col list-disc list-inside gap-[16px] my-[16px]">
-      <li>
-        К сожалению взять <WH
-          text="Акробатические удары"
-          href="https://www.wowhead.com/ru/spell=196924/акробатические-удары"
-        /> можно только потеряв 10к+ урона, поэтому не стоит их брать, да и в
-        ликвидации они не особо нужны из-за "умных" кровотечений
-      </li>
-      <li>
-        <WH
-          text="Замедляющий яд"
-          href="https://www.wowhead.com/ru/spell=5761/замедляющий-яд"
-        /> обычно используется на укрепленных неделях, а <WH
-          text="Атрофический яд"
-          href="https://www.wowhead.com/ru/spell=381637/атрофический-яд"
-        /> на тиранических или высоких укрепленных неделях.
-      </li>
+    class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
+  >
+    <img
+      src={KEYS_FB1.src}
+      alt="Служитель судьбы билд для ключей"
+      class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
+      loading="lazy"
+      decoding="async"
+    />
+    <img
+      src={KEYS_FB2.src}
+      alt="Служитель судьбы билд для ключей"
+      class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
+      loading="lazy"
+      decoding="async"
+    />
+    <img
+      src={KEYS_FB3.src}
+      alt="Служитель судьбы билд для ключей"
+      class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+
+    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
         <WH
-          text="Скрывающий покров"
-          href="https://www.wowhead.com/ru/spell=114018/скрывающий-покров"
-        /> или <WH
-          text="Изящный обман"
-          href="https://www.wowhead.com/ru/spell=423647/изящный-обман"
-        /> можно заменить на <WH
-          text="Мастер ядоварения"
-          href="https://www.wowhead.com/ru/spell=378436/мастер-ядоварения"
-        /> при необходимости.
-      </li>
-      <li>
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        />
+        можно заменить на
         <WH
           text="Обман смерти"
           href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
-        /> можно заменить на <WH
+        /> в низких ключах. Но чем выше ключ, тем лучше <WH
           text="Неуловимость"
           href="https://www.wowhead.com/ru/spell=79008/неуловимость"
-        /> в высоких тиранических ключах, где не работает обычная <WH
-          text="Уловка"
-          href="https://www.wowhead.com/ru/spell=1966/уловка"
-        />.
+        />, а некоторые способности без нее просто не будут переживаться на
+        определенном уровне ключа.
+      </li>
+      <li>
+        <WH
+          text="Железная проволока"
+          href="https://www.wowhead.com/ru/spell=196861/железная-проволока"
+        />
+        очень сильный талант, хоть и приходится жертвовать из-за него дпс талантами.
+        Однако, благодаря немоте, пак быстрее собирается и вам проще повесить кровотечения,
+        радиус которых довольно мал. Поэтому не стоит вместо него брать другие дпс
+        таланты. Но, если вы всё-таки хотите его убрать, то рекомендую взять <WH
+          text="Легкую заточку"
+          href="https://www.wowhead.com/ru/spell=394983/легкая-заточка"
+        />, он упрощает отыгрыш <WH
+          text="Отравляющего укола"
+          href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+        /> и даёт больше всего урона в бою с боссами.
+      </li>
+      <li>
+        Правая ветка, через
+        <WH
+          text="Увертка"
+          href="https://www.wowhead.com/ru/spell=108208/увертка"
+        /> и <WH
+          text="Без следа"
+          href="https://www.wowhead.com/ru/spell=382513/без-следа"
+        /> довольно слабая. Нам не требуется <WH
+          text="Увертка"
+          href="https://www.wowhead.com/ru/spell=108208/увертка"
+        />, так как есть <WH
+          text="Улучшенная гаррота"
+          href="https://www.wowhead.com/ru/spell=381632/улучшенная-гаррота"
+        />, а второе <WH
+          text="Исчезновение"
+          href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+        /> дает нам по факту всего лишь 1 дополнительный заряд на весь ключ, так
+        как они не откатываются параллельно.
       </li>
     </ul>
   </div>

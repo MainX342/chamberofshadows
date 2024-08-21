@@ -7,7 +7,7 @@ import WH from "../WH.astro";
   <H3 text="Простым языком" />
   <div>
     <ul
-      class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+      class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
     >
       <span>Для одной цели:</span>
       <li>
@@ -25,7 +25,7 @@ import WH from "../WH.astro";
           text="Гаррота"
           href="https://www.wowhead.com/ru/spell=703/гаррота"
         />
-         и <WH
+        и <WH
           text="Рваная рана"
           href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
         />.
@@ -46,20 +46,15 @@ import WH from "../WH.astro";
         /> пока активен бафф от предыдущего <WH
           text="Отравления"
           href="https://www.wowhead.com/ru/spell=32645/отравление"
-        />, чтобы работал комплект.
+        /> (под самый конец), чтобы работал талант <WH
+          text="Быстрая инъекция"
+          href="https://www.wowhead.com/ru/spell=455072/быстрая-инъекция"
+        />.
       </li>
       <li>
-        Каждый 2-х минутный бурст повторяет опенер с 6-го пункта, каждый 1
-        минутный бурст также повторяет опенер с 6-го пункта, только без <WH
-          text="Знака смерти"
-          href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
-        />, <WH
-          text="Исчезновения"
-          href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-        /> и <WH
-          text="Ветвь Сухокожего"
-          href="https://www.wowhead.com/ru/item=109999/ветвь-сухокожего?class=4&ilvl=489&spec=259"
-        />.
+        Каждый 2-х минутный бурст повторяет опенер с 7-го пункта, каждый 1
+        минутный бурст также повторяет опенер с 10-го пункта (только без второго
+        чая).
       </li>
       <li>
         <WH
@@ -78,25 +73,37 @@ import WH from "../WH.astro";
         /> и как минимум 1 заряд <WH
           text="Скорополохового чая"
           href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
-        /> (который используется под конец дебаффа, чтобы последний тик ударил
-        под чаем).
+        /> (который используется под конец дебаффа, чтобы последний тик ударил под
+        чаем).
       </li>
     </ul>
     <ul
-      class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left mt-[16px]"
+      class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left mt-[16px]"
     >
       <span>Для нескольких целей:</span>
+      <li>
+        В каждом паке на ком-то должен висеть дебафф <WH
+          text="Метка ловчего смерти"
+          href="https://www.wowhead.com/ru/spell=457129/метка-ловчего-смерти"
+        />. Для этого вы должны либо открываться с <WH
+          text="Внезапный удар"
+          href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+        />, либо на вас должен быть бафф <WH
+          text="Непроглядная ночь"
+          href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+        />
+      </li>
       <li>
         Раскидывать
         <WH
           text="Гарроты"
           href="https://www.wowhead.com/ru/spell=703/гаррота"
-        /> на все цели, пока вы под действием <WH
+        /> на все (или почти все) цели, пока вы под действием <WH
           text="Тотальной бойни"
           href="https://www.wowhead.com/ptr-2/spell=385747/indiscriminate-carnage"
-        /> (в 10.2 имеет "smart targeting", то есть в приоритете вешается на
-        цели около вас без дебаффа). Обычные гарроты в большие паки можно не
-        вешать, лучше повесить дополнительные <WH
+        /> (имеет "smart targeting", то есть в приоритете вешается на цели около
+        вас без дебаффа). Обычные гарроты в большие паки можно не вешать, лучше повесить
+        дополнительные <WH
           text="Рваные раны"
           href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
         /> для регенерации энергии.
@@ -112,8 +119,8 @@ import WH from "../WH.astro";
         />, чтобы получить максимальную пользу от таланта <WH
           text="Запах крови"
           href="https://www.wowhead.com/ptr-2/spell=381799/scent-of-blood?def=117673"
-        /> (в 10.2 имеет "smart targeting", то есть в приоритете вешается на
-        цели около вас без дебаффа).
+        /> (имеет "smart targeting", то есть в приоритете вешается на цели около
+        вас без дебаффа).
       </li>
       <li>
         Всегда поддерживать <WH
@@ -129,15 +136,6 @@ import WH from "../WH.astro";
         /> только как ДоТ, не нужно им спамить.
       </li>
       <li>
-        Использовать <WH
-          text="Отравление"
-          href="https://www.wowhead.com/ru/spell=32645/отравление"
-        /> пока активен бафф от предыдущего <WH
-          text="Отравления"
-          href="https://www.wowhead.com/ru/spell=32645/отравление"
-        />, чтобы работал комплект
-      </li>
-      <li>
         Набирать кп с помощью
         <WH
           text="Веер клинков"
@@ -148,20 +146,14 @@ import WH from "../WH.astro";
         />
       </li>
       <li>
-        Каждый 2-х минутный бурст повторяет опенер с 7-го пункта, каждый 1
-        минутный бурст также повторяет опенер с 7-го пункта, только без <WH
-          text="Знака смерти"
-          href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
-        />, <WH
-          text="Исчезновения"
-          href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-        /> и <WH
-          text="Ветвь Сухокожего"
-          href="https://www.wowhead.com/ru/item=109999/ветвь-сухокожего?class=4&ilvl=489&spec=259"
-        />
+        Каждый бурст вы должны делать в самую живучую цель, чтобы она
+        максимально долго прожила под <WH
+          text="Погибелью королей"
+          href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+        /> (очень желательно до конца его действия).
       </li>
       <li>
-        Под каждый бурст (1 минутный и 2х минутный) у вас должно быть 2 заряда <WH
+        Под каждый бурст (1 минутный и 2х минутный) у вас должен быть заряд <WH
           text="Отравляющего укола"
           href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
         /> и как минимум 1 заряд <WH
@@ -173,12 +165,12 @@ import WH from "../WH.astro";
   </div>
   <H3 text="Приоритет способностей для набора кп (builders):" />
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
     <li>
       <WH text="Гаррота" href="https://www.wowhead.com/ru/spell=703/гаррота" />
-       - всегда должна быть на цели (если она одна). На всех целях, если вы под
-      баффом <WH
+      - всегда должна быть на цели (если она одна). На всех целях, если вы под баффом
+      <WH
         text="Тотальной бойни"
         href="https://www.wowhead.com/ptr-2/spell=385747/indiscriminate-carnage"
       />
@@ -187,37 +179,34 @@ import WH from "../WH.astro";
       <WH
         text="Расправа"
         href="https://www.wowhead.com/ru/spell=1329/расправа"
-      /> (если взят талант <WH
-        text="Едкие капли"
-        href="https://www.wowhead.com/ptr-2/spell=421975/caustic-spatter"
+      /> | <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> (если на цели нету <WH
+        text="Едких капель"
+        href="https://www.wowhead.com/ru/spell=421976/едкие-капли"
       /> и это не одна цель)
-    </li>
-    <li>
-      <WH
-        text="Зазубренного костяного шипа"
-        href="https://www.wowhead.com/ru/spell=385424/зазубренный-костяной-шип"
-      />, если взят и нету на цели
     </li>
     <li>
       <WH
         text="Продолжительная отповедь"
         href="https://www.wowhead.com/ru/spell=385616/продолжительная-отповедь"
-      />, если взят - по откату
+      /> (если взят, по откату)
     </li>
     <li>
       <WH
         text="Веер клинков"
         href="https://www.wowhead.com/ru/spell=51723/веер-клинков"
-      /> используется при 3 и больше целях
+      /> (если есть бафф <WH
+        text="Устранение свидетелей"
+        href="https://www.wowhead.com/ru/spell=457178/устранение-свидетелей"
+      />, либо 3 и больше целей)
     </li>
     <li>
       <WH
         text="Внезапный удар"
         href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-      /> (так же работает на <WH
-        text="Едкие капли"
-        href="https://www.wowhead.com/ptr-2/spell=421975/caustic-spatter"
-      />)
+      />
     </li>
     <li>
       <WH
@@ -229,7 +218,7 @@ import WH from "../WH.astro";
 
   <H3 text="Приоритет завершающих способностей (finishers):" />
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
     <li>
       <WH
@@ -241,25 +230,18 @@ import WH from "../WH.astro";
       <WH
         text="Рваная рана"
         href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
-      /> - должна быть весь бой на цели (если она одна). В АоЕ должно быть как
-      минимум 5 <WH
+      /> - должна быть весь бой на цели (если она одна). В АоЕ должно быть как минимум
+      5 <WH
         text="Рваных ран"
         href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
-      /> (либо на всех, если целей меньше 5). В одну цель нужно обновлять по
-      пандемику, но НИКОГДА нельзя обновлять усиленные <WH
-        text="Рваные раны"
-        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
-      /> (те, что вы вешаете под действием <WH
-        text="Ночного ловца"
-        href="https://www.wowhead.com/ru/spell=14062/ночной-ловец"
-      /> или ) обычными (так как на них работает механики снэпшота)
+      /> (либо на всех, если целей меньше 5). В одну цель нужно обновлять по пандемику.
     </li>
     <li>
       <WH
         text="Кровавый вихрь"
         href="https://www.wowhead.com/ru/spell=121411/кровавый-вихрь"
-      /> - используется только как ДоТ, поддерживать на всех целях, обновляя по
-      пандемику. В одну цель не используется.
+      /> - используется только на 3 и больше целей. Вешается как ДоТ, спамить им
+      не нужно, обновлять по пандемику.
     </li>
     <li>
       <WH
@@ -268,52 +250,84 @@ import WH from "../WH.astro";
       /> - в идеале всегда использовать пока действует предыдущий бафф от <WH
         text="Отравления"
         href="https://www.wowhead.com/ru/spell=32645/отравление"
-      />, чтобы работал комплект.
+      />, чтобы работал талант <WH
+        text="Быстрая инъекция"
+        href="https://www.wowhead.com/ru/spell=455072/быстрая-инъекция"
+      />. Если остается последняя секунда баффа, следует игнорировать энергию и
+      обновлять бафф (с 5+ кп конечно).
     </li>
   </ul>
   <H3 text="Приоритет кулдаунов (cooldowns):" />
   <ul
-    class="list-inside list-decimal flex flex-col gap-[5px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
+    <li>
+      <WH
+        text="Окровавленные клинки"
+        href="https://www.wowhead.com/ru/spell=200806/окровавленные-клинки"
+      /> хоть и не кулдаун, но логичнее его записать сюда. Когда вам НЕ НУЖНО следить
+      за энергией:
+      <ul
+        class="list-inside list-disc flex flex-col gap-[5px] p-[10px] text-left"
+      >
+        <li>
+          Активен любой бурст: <WH
+            text="Знак смерти"
+            href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
+          /> | <WH
+            text="Погибель королей"
+            href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+          /> | <WH
+            text="Отравляющий укол"
+            href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+          />
+        </li>
+        <li>
+          Бафф от <WH
+            text="Отравление"
+            href="https://www.wowhead.com/ru/spell=32645/отравление"
+          /> активен и его оставшееся время 1 сек и меньше
+        </li>
+        <li>До конца боя 20 и меньше секунд</li>
+      </ul>
+    </li>
     <li>
       <WH
         text="Знак смерти"
         href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
-      /> - используется по откату
+      /> - используется по откату в большинстве случаев. Если вы уверены, что это
+      последний бурст, можете его придержать до 35% босса или зелье / бл. На второй
+      минуте можно сдвинуть под усиленные гарроты с <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> (если вы не потеряете из-за этого одно использование)
     </li>
     <li>
       <WH
-        text="Танец теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> + <WH
         text="Погибель королей"
         href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-      /> - всегда используются вместе (и всегда после <WH
+      /> - используется по откату. Каждое нечетное использование строго с <WH
         text="Знака смерти"
         href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
-      />), так как работает механика снэпшота. Перед их использованием вы
-      обязательно должны использовать <WH
+      />. Перед использованием <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> вы обязательно должны использовать <WH
         text="Отравление"
         href="https://www.wowhead.com/ru/spell=32645/отравление"
       /> и <WH
         text="Отравляющий укол"
         href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-      />, чтобы максимизировать урон <WH
-        text="Погибель королей"
-        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-      />.
+      /> (если 2 заряда, если 1 заряд, то под последние 8 секунд действия)
     </li>
     <li>
       <WH
         text="Исчезновение"
         href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      /> - используется по откату, за 3 сек до конца действия <WH
-        text="Погибель королей"
-        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-      /> (из-за баффа <WH
-        text="Мастера-убийцы"
-        href="https://www.wowhead.com/ru/spell=256735/мастер-убийца"
-      />)
+      /> - используется для обновления усиленных <WH
+        text="Гаррот"
+        href="https://www.wowhead.com/ru/spell=703/гаррота"
+      /> на опенере и дальше под бурсты
     </li>
     <li>
       <WH
@@ -325,7 +339,26 @@ import WH from "../WH.astro";
       />. Один заряд перед <WH
         text="Погибель королей"
         href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-      /> (за 1-2 сек), второй сразу по спадению первого.
+      /> (за 1-2 сек), второй сразу по спадению первого. При игре с одним зарядом
+      используется за 8 сек до окончания <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      />, затем по откату и затем снова под конец <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      />
+    </li>
+    <li>
+      <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=456330/хладнокровие"
+      /> используется по откату. Во время действия <WH
+        text="Знака смерти"
+        href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
+      /> используется после поглощения баффа <WH
+        text="Крайний случай"
+        href="https://www.wowhead.com/ru/spell=453457/крайний-случай"
+      /> так как их взаимодействие баганое.
     </li>
   </ul>
 </div>

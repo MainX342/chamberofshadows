@@ -13,20 +13,60 @@ import WH from "../WH.astro";
   <ul
     class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
+    <span
+      ><WH
+        text="Ловкач (Trickster)"
+        href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
+      />:</span
+    >
     <li>
       <WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 3 и больше целей (2 и больше, если взят талант <WH
-        text="Улучшенный шквал сюрикэнов"
-        href="https://www.wowhead.com/ru/spell=319951/улучшенный-шквал-сюрикэнов"
+      /> если 2 и больше целей и на вас есть бафф <WH
+        text="Безупречная техника"
+        href="https://www.wowhead.com/ru/spell=441326/безупречная-техника"
+      /> (в противном случае переходим к п.2 чтобы повесить на цель <WH
+        text="Незримый клинок"
+        href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
       />)
     </li>
     <li>
       <WH
         text="Удар в спину"
         href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      /> если 1 цель
+      />
+    </li>
+  </ul>
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
+  >
+    <span
+      ><WH
+        text="Ловчий смерти (Deathstalker)"
+        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
+      />:</span
+    >
+    <li>
+      <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> под баффом <WH
+        text="Устранение свидетелей"
+        href="https://www.wowhead.com/ru/spell=457178/устранение-свидетелей"
+      />
+    </li>
+    <li>
+      <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> если 2 и больше целей
+    </li>
+    <li>
+      <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      />
     </li>
   </ul>
 
@@ -39,116 +79,322 @@ import WH from "../WH.astro";
   <ul
     class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
-    <li>
-      <WH
-        text="Удар в спину"
-        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      /> - используется только под <WH
-        text="Теневые клинки"
-        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
-      /> если осталось больше 3 секунд на <WH
-        text="Танце теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> и вы не получали стак <WH
-        text="Пляски смерти"
-        href="https://www.wowhead.com/ru/spell=393969/пляска-смерти"
-      /> с него
-    </li>
+    <span
+      ><WH
+        text="Ловкач (Trickster)"
+        href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
+      />:</span
+    >
     <li>
       <WH
         text="Удар Тьмы"
         href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      /> - если висит бафф <WH
-        text="Умысел"
-        href="https://www.wowhead.com/ru/spell=343173/умысел"
-      />
+      /> - да, ничего другого в <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> больше не используется ни в одну цель, ни в аое (из-за <WH
+        text="Неуловимого вихря"
+        href="https://www.wowhead.com/ru/spell=441367/неуловимый-вихрь"
+      />)
     </li>
+  </ul>
+
+  <ul
+    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
+  >
+    <span
+      ><WH
+        text="Ловчий смерти (Deathstalker)"
+        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
+      />:</span
+    >
     <li>
       <WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 3 и больше целей
+      /> если 4 и больше целей
     </li>
     <li>
       <WH
         text="Удар Тьмы"
         href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      /> - если 1-2 цели
+      /> - если 1-3 цели
     </li>
   </ul>
 
   <H3 text="Приоритет завершающих способностей (finishers):" />
-  <ul
-    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
+  <div
+    class="gap-[30px] flex flex-col p-[20px] border border-border rounded-md text-left"
   >
-    <li>
-      <WH
-        text="Тайный прием"
-        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      /> + <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> используются только в <WH
-        text="Танце теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />. <WH
-        text="Тайный прием"
-        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      /> может использоваться, если <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> откатывается, но <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> не может использоваться без <WH
-        text="Тайного приема"
-        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      />. Клоны с <WH
-        text="Тайного приема"
-        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      /> тоже должны попасть в бафф <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />, полный урон от них проходит через 1.3 сек после использования.
-    </li>
-    <li>
-      <WH
-        text="Мясорубка"
-        href="https://www.wowhead.com/ru/spell=315496/мясорубка"
-      /> должна быть всегда, обновлять под самый конец, когда вы НЕ В <WH
-        text="Танце теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> (в идеале)
-    </li>
-    <li>
-      <WH
-        text="Рваная рана"
-        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
-      /> - должна быть весь бой на цели (если она одна). Если на вас есть бафф <WH
-        text="Завершение: рваная рана"
-        href="https://www.wowhead.com/ru/spell=385951/завершение-рваная-рана"
-      />, то нужно обновить <WH
-        text="Рваную рану"
-        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
-      /> в <WH
-        text="Танце теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />, независимо от оставшегося времени действия. В АоЕ должна быть на всех
-      целях, которые проживут хотя бы 12 сек.
-    </li>
-    <li>
-      <WH
-        text="Черный порох"
-        href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-      /> если 3 и больше целей
-    </li>
-    <li>
-      <WH
-        text="Потрошение"
-        href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      />
-    </li>
-  </ul>
+    <ul class="list-inside list-decimal gap-[10px] flex flex-col">
+      <span
+        ><WH
+          text="Ловкач (Trickster)"
+          href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
+        /> (Одна цель):</span
+      >
+      <li>
+        <WH
+          text="Мясорубка"
+          href="https://www.wowhead.com/ru/spell=315496/мясорубка"
+        /> используется только 1 раз в начале боя, дальше обновляется автоматически
+      </li>
+      <li>
+        <WH
+          text="Тайный прием"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> используется только в <WH
+          text="Танце теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />. Каждый второй <WH
+          text="Тайный прием"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> используется без <WH
+          text="Хладнокровия"
+          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+        />, но <WH
+          text="Хладнокровие"
+          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+        /> не используется без <WH
+          text="Тайного приема"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        />. Клоны с <WH
+          text="Тайного приема"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> тоже должны попасть в бафф <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />, полный урон от них проходит через 1.3 сек после использования
+      </li>
+      <li>
+        <WH
+          text="Рваная рана"
+          href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+        /> должна быть весь бой на цели. Не используется в <WH
+          text="Танце теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> или под действием <WH
+          text="Скорополохового чая"
+          href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
+        />
+      </li>
+      <li>
+        <WH
+          text="Удар милосердия"
+          href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+        /> используется только в <WH
+          text="Танце теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> и когда цель под действием <WH
+          text="Незримого клинка"
+          href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
+        />. Делается это для того, чтобы получить 5 стаков <WH
+          text="Безупречной техники"
+          href="https://www.wowhead.com/ru/spell=441321/безупречная-техника"
+        /> в окно <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />
+      </li>
+      <li>
+        <WH
+          text="Черный порох"
+          href="https://www.wowhead.com/ru/spell=319175/черный-порох"
+        /> используется вне <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> когда у вас активен <WH
+          text="Удар милосердия"
+          href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+        />. Это нужно делать, чтобы не потерять стаки <WH
+          text="Безупречной техники"
+          href="https://www.wowhead.com/ru/spell=441321/безупречная-техника"
+        /> перед бурст окном <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />
+      </li>
+      <li>
+        <WH
+          text="Потрошение"
+          href="https://www.wowhead.com/ru/spell=196819/потрошение"
+        /> вне <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> используется пока неактивен
+        <WH
+          text="Удар милосердия"
+          href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+        />. В <WH
+          text="Танце теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> основной финишер после <WH
+          text="Тайного приема"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        />
+      </li>
+    </ul>
+    <ul class="list-inside list-decimal gap-[10px] flex flex-col">
+      <span
+        ><WH
+          text="Ловкач (Trickster)"
+          href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
+        /> (АоЕ):</span
+      >
+      <li>
+        <WH
+          text="Мясорубка"
+          href="https://www.wowhead.com/ru/spell=315496/мясорубка"
+        /> используется только 1 раз в начале боя, дальше обновляется автоматически.
+        Можно не использовать если это очень большой пулл (10+ целей)
+      </li>
+      <li>
+        <WH
+          text="Тайный прием"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> + <WH
+          text="Хладнокровие"
+          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+        /> используются только в <WH
+          text="Танце теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />. <WH
+          text="Тайный прием"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> может использоваться, если <WH
+          text="Хладнокровие"
+          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+        /> откатывается, но <WH
+          text="Хладнокровие"
+          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+        /> не может использоваться без <WH
+          text="Тайного приема"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        />. Клоны с <WH
+          text="Тайного приема"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> тоже должны попасть в бафф <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />, полный урон от них проходит через 1.3 сек после использования
+      </li>
+      <li>
+        <WH
+          text="Рваная рана"
+          href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+        /> должны висеть на всех целях, которые проживут хотя бы 12 сек. Однако раскидывать
+        <WH
+          text="Рваные раны"
+          href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+        /> нужно не в <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> и после бурстов (первая используется до бурст окна, на опенере)
+      </li>
+      <li>
+        <WH
+          text="Потрошение"
+          href="https://www.wowhead.com/ru/spell=196819/потрошение"
+        /> основной финишер в аое из-за <WH
+          text="Неуловимого вихря"
+          href="https://www.wowhead.com/ru/spell=441367/неуловимый-вихрь"
+        />
+      </li>
+      <li>
+        <WH
+          text="Черный порох"
+          href="https://www.wowhead.com/ru/spell=319175/черный-порох"
+        /> практически не используется в аое. Можно использовать только когда неактивен
+        бафф <WH
+          text="Безупречной техники"
+          href="https://www.wowhead.com/ru/spell=441326/безупречная-техника"
+        />. Вы можете играть как в одну цель (см. п.5 в разделе с одной целью),
+        чтобы нанести больше урона в окно <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />, но у вас будет меньше урона в целом
+      </li>
+    </ul>
+  </div>
+
+  <div
+    class="gap-[20px] flex flex-col p-[20px] border border-border rounded-md text-left"
+  >
+    <ul class="list-inside list-decimal gap-[10px] flex flex-col">
+      <span
+        ><WH
+          text="Ловчий смерти (Deathstalker)"
+          href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
+        />:</span
+      >
+      <li>
+        <WH
+          text="Мясорубка"
+          href="https://www.wowhead.com/ru/spell=315496/мясорубка"
+        /> используется только 1 раз в начале боя, дальше обновляется автоматически.
+        В аое не используется, если в пулле 6 и больше целей
+      </li>
+      <li>
+        <WH
+          text="Тайный прием"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> + <WH
+          text="Хладнокровие"
+          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+        /> используются только в <WH
+          text="Танце теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />. <WH
+          text="Тайный прием"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> может использоваться, если <WH
+          text="Хладнокровие"
+          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+        /> откатывается, но <WH
+          text="Хладнокровие"
+          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+        /> не может использоваться без <WH
+          text="Тайного приема"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        />. Клоны с <WH
+          text="Тайного приема"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> тоже должны попасть в бафф <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />, полный урон от них проходит через 1.3 сек после использования
+      </li>
+      <li>
+        <WH
+          text="Рваная рана"
+          href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+        /> - должна быть весь бой на цели (если она одна). В АоЕ должна быть на всех
+        целях, которые проживут хотя бы 12 сек. Используется вне <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> и когда бафф <WH
+          text="Непроглядная ночь"
+          href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+        /> неактивен
+      </li>
+      <li>
+        <WH
+          text="Черный порох"
+          href="https://www.wowhead.com/ru/spell=319175/черный-порох"
+        /> если 3 и больше целей и бафф <WH
+          text="Непроглядная ночь"
+          href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+        /> неактивен
+      </li>
+      <li>
+        <WH
+          text="Потрошение"
+          href="https://www.wowhead.com/ru/spell=196819/потрошение"
+        />
+      </li>
+    </ul>
+  </div>
+
   <H3 text="Приоритет кулдаунов (cooldowns):" />
   <ul
     class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
@@ -162,7 +408,7 @@ import WH from "../WH.astro";
         class="pl-[30px] list-inside list-disc flex flex-col gap-[10px] text-left"
       >
         <li>
-          Вы либо используете его после использования основных кулдаунов <WH
+          Вы либо используете его после использования основных кулдаунов: <WH
             text="Флагелляции"
             href="https://www.wowhead.com/ru/spell=384631/флагелляция"
           /> и <WH
@@ -203,6 +449,24 @@ import WH from "../WH.astro";
     </li>
     <li>
       <WH
+        text="Скорополоховый чай"
+        href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
+      /> используется под бурсты (<WH
+        text="Теневые клинки"
+        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+      /> или <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      />) во время <WH
+        text="Танца теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> (когда осталось больше 4+ секунд). В аое можно пить просто под <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />
+    </li>
+    <li>
+      <WH
         text="Флагелляция"
         href="https://www.wowhead.com/ru/spell=384631/флагелляция"
       /> - в большинстве случаев используется по откату (за исключением особых таймеров
@@ -228,6 +492,13 @@ import WH from "../WH.astro";
         text="Флагелляции"
         href="https://www.wowhead.com/ru/spell=384631/флагелляция"
       />.
+    </li>
+    <li>
+      <WH text="Сепсис" href="https://www.wowhead.com/ru/spell=385408/сепсис" />
+      - используется под <WH
+        text="Теневые клинки"
+        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+      />
     </li>
     <li>
       <WH
@@ -288,15 +559,15 @@ import WH from "../WH.astro";
     </li>
     <li>
       <WH
-        text="Тотем неистовства ветра"
-        href="https://www.wowhead.com/ru/spell=8512/тотем-неистовства-ветра"
+        text="Небесная ярость"
+        href="https://www.wowhead.com/ru/spell=462854/небесная-ярость"
       /> и <WH
         text="Жажда крови"
         href="https://www.wowhead.com/ru/spell=2825/жажда-крови"
       /> очень сильно увеличивают количество генерации зарядов <WH
         text="Теневой техники"
         href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
-      /> из-за быстрых автоатак (и дополнительных с тотема)
+      /> из-за быстрых автоатак (и дополнительных с баффа)
     </li>
     <span class="my-[10px]"
       >Под действием <WH
@@ -321,7 +592,7 @@ import WH from "../WH.astro";
       что после финишера у вас будет фулл кп. Вы можете получить мою на <a
         href="https://boosty.to/mainx"
         class="text-hover hover:opacity-80">Boosty</a
-      > (во всеми остальные WA) или взять бесплатные тут: <a
+      > (во всеми остальными WA) или взять бесплатные тут: <a
         href="https://wago.io/Mr-gSD7ru"
         class="text-hover hover:opacity-80">полоской</a
       > или <a

@@ -4,9 +4,8 @@ import WH from "../WH.astro";
 import { outlawMenuItems } from "../../constants/content";
 import Tabs from "./Outlaw_tabs.astro";
 import Sim from "../Sim.astro";
-import SimSt from "../../assets/guide/outlaw/sim/outlaw_st_builds.png";
-import SimForti from "../../assets/guide/outlaw/sim/outlaw_forti.png";
-import SimTyra from "../../assets/guide/outlaw/sim/outlaw_tyra.png";
+import SimSt from "../../assets/guide/outlaw/sim/outlaw_st.webp";
+import SimKey from "../../assets/guide/outlaw/sim/outlaw_key.webp";
 ---
 
 <section
@@ -34,33 +33,19 @@ import SimTyra from "../../assets/guide/outlaw/sim/outlaw_tyra.png";
         />
       </li>
     </ul>
-    <p>
-      Для рейда HO билд значительно сильнее. KiR в свою очередь сильнее во всех
-      подземельях (если использовать абуз). Без абуза костей, оба билда примерно
-      одинаковы и вы можете играть в том, который нравится. Подробнее про абузы в
-      обоих спеках тут:
+    <p class="text-blue-500">
+      T - Trickster - Ловкач<br />
+      FB - Fatebound - Служитель судьбы
     </p>
-    <div class="flex flex-col gap-[10px] items-center md:flex-row pb-[10px]">
-      <iframe
-        src="https://www.youtube.com/embed/HNfEKYVaaHs"
-        title="кир абуз"
-        class="w-full h-full aspect-video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      <iframe
-        src="https://www.youtube.com/embed/OWDYETtYpHk"
-        title="хо абуз"
-        class="w-full h-full aspect-video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-
+    <p>
+      В TWW KiR билд сильнее что в одну цель (~2%), что в ключах (~4%). При этом
+      он намного проще, но очень сильно рандомен. Тоже самое касается Ловкача
+      (Trickster), он намного слабее Служителя судеб (Fatebound), поэтому не
+      вижу смысла отдельно его рассматривать. Дам лишь комментарий и симы под
+      талантами, так как вариативности очень мало.
+    </p>
     <Tabs />
     <Sim title="Одна цель 5 минут">
-      <ul class="flex flex-col list-decimal list-inside gap-[10px] my-[10px]">
-        <li>В симе УЧИТЫВАЕТСЯ абуз ХО билда</li>
-        <li>В симе НЕ УЧИТЫВАЕТСЯ абуз костей КиР билда</li>
-      </ul>
       <img
         src={SimSt.src}
         alt="Сим талантов и билдов в одну цель 5 минут"
@@ -69,27 +54,10 @@ import SimTyra from "../../assets/guide/outlaw/sim/outlaw_tyra.png";
         decoding="async"
       />
     </Sim>
-    <Sim title="Ключ 26 Чаща (укреп)">
-      <ul class="flex flex-col list-decimal list-inside gap-[10px] my-[10px]">
-        <li>В симе УЧИТЫВАЕТСЯ абуз ХО билда</li>
-        <li>В симе НЕ УЧИТЫВАЕТСЯ абуз костей КиР билда</li>
-      </ul>
+    <Sim title="Ключ 15 Тризна">
       <img
-        src={SimForti.src}
-        alt="Сим талантов и билдов в укрепленном ключе"
-        class="mx-auto"
-        loading="lazy"
-        decoding="async"
-      />
-    </Sim>
-    <Sim title="Ключ 25 Чаща (тираник)">
-      <ul class="flex flex-col list-decimal list-inside gap-[10px] my-[10px]">
-        <li>В симе УЧИТЫВАЕТСЯ абуз ХО билда</li>
-        <li>В симе НЕ УЧИТЫВАЕТСЯ абуз костей КиР билда</li>
-      </ul>
-      <img
-        src={SimTyra.src}
-        alt="Сим талантов и билдов в тираническом ключе"
+        src={SimKey.src}
+        alt="Сим талантов и билдов в ключе"
         class="mx-auto"
         loading="lazy"
         decoding="async"
