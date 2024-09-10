@@ -4,8 +4,10 @@ import WH from "../WH.astro";
 import { subMenuItems } from "../../constants/content";
 import Tabs from "../Tabs.astro";
 import H3 from "../H3.astro";
-import SubOpenerSt from "./Subtlety_opener_st.astro";
-import SubOpenerAoe from "./Subtlety_opener_aoe.astro";
+import SubOpenerStDS from "./Subtlety_opener_st_ds.astro";
+import SubOpenerStT from "./Subtlety_opener_st_t.astro";
+import SubOpenerAoeDS from "./Subtlety_opener_aoe_ds.astro";
+import SubOpenerAoeT from "./Subtlety_opener_aoe_t.astro";
 import SubOpenerApl from "./Subtlety_apl.astro";
 ---
 
@@ -49,13 +51,22 @@ import SubOpenerApl from "./Subtlety_apl.astro";
   <div
     class="flex flex-wrap max-w-[1024px] min-h-[565px] w-full text-clamp_text content-baseline"
   >
-    <Tabs title="Рейд [T]" id="opener_0" checked="checked" name="opener">
-      <SubOpenerSt />
+    <Tabs title="Рейд [DS]" id="opener_0" checked="checked" name="opener">
+      <SubOpenerStDS />
     </Tabs>
 
-    <Tabs title="АоЕ [T]" id="opener_1" name="opener">
-      <SubOpenerAoe />
+    <Tabs title="Рейд [T]" id="opener_1" name="opener">
+      <SubOpenerStT />
     </Tabs>
+
+    <Tabs title="АоЕ [DS]" id="opener_2" name="opener">
+      <SubOpenerAoeDS />
+    </Tabs>
+
+    <Tabs title="АоЕ [T]" id="opener_3" name="opener">
+      <SubOpenerAoeT />
+    </Tabs>
+
   </div>
   <SubOpenerApl />
 </section>

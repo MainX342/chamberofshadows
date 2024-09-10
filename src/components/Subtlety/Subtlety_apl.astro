@@ -1,6 +1,7 @@
 ---
 import H3 from "../H3.astro";
 import WH from "../WH.astro";
+import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
 ---
 
 <div class="pt-[60px] flex flex-col gap-[20px] text-clamp_text">
@@ -182,13 +183,24 @@ import WH from "../WH.astro";
         <WH
           text="Удар милосердия"
           href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-        /> используется только в <WH
-          text="Танце теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> и когда цель под действием <WH
+        /> используется когда цель под действием <WH
           text="Незримого клинка"
           href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
-        />. Делается это для того, чтобы получить 5 стаков <WH
+        /> и активен <WH
+          text="Танец теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />. Так же вы можете использовать <WH
+          text="Удар милосердия"
+          href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+        /> если активны <WH
+          text="Символы смерти"
+          href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+        /> и до кулдауна / активации <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> осталось меньше 9 сек, либо больше 50 сек (чтобы снова успеть его настакать).
+        Делается это для того, чтобы получить 5 стаков
+        <WH
           text="Безупречной техники"
           href="https://www.wowhead.com/ru/spell=441321/безупречная-техника"
         /> в окно <WH
@@ -445,6 +457,14 @@ import WH from "../WH.astro";
             class="text-hover hover:opacity-80">Lorrgs.io</a
           >
         </li>
+        Пример базовых отыгрышей:
+        <img
+        src={Rotation.src}
+        alt="Отыгрыш кулдаунов саб"
+        class="w-auto h-auto"
+        loading="lazy"
+        decoding="async"
+      />
       </ul>
     </li>
     <li>

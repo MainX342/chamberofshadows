@@ -32,7 +32,7 @@ import { subMenuItems } from "../../constants/content";
       />
       <label
         for="tab_one_1"
-        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one_1:text-assa peer-checked/tab_one_1:neon-assa"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one_1:text-sub peer-checked/tab_one_1:neon-sub"
         >Комплект</label
       >
       <div class="peer-checked/tab_one_1:block w-full order-1 hidden">
@@ -103,7 +103,7 @@ import { subMenuItems } from "../../constants/content";
       />
       <label
         for="tab_two_2"
-        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two_2:text-assa peer-checked/tab_two_2:neon-assa"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two_2:text-sub peer-checked/tab_two_2:neon-sub"
         >Украшения</label
       >
       <div class="peer-checked/tab_two_2:block w-full order-1 hidden">
@@ -111,47 +111,103 @@ import { subMenuItems } from "../../constants/content";
           class="list-inside list-disc p-[20px] text-left flex flex-col gap-[16px] border border-border rounded-md"
         >
           <ul class="list-inside list-decimal gap-[20px] flex flex-col">
-            <span class="pb-[10px] text-red-600"
-              >На момент написания гайда (до релиза игры) многие украшения не
-              работают ни в игре, ни в симе. Поэтому здесь не будет топа, пока
-              не будут добавлены все украшения в сим. Я лишь напишу
-              предполагаемый топ крафтов и причину.</span
-            >
+            <span>
+              Я могу крафтить всё, что требуется разбойникам. Вы можете
+              ознакомиться с необходимыми реагентами и ценами в моих темах в
+              дискорде крафтеров. Сначала вступите в него: <a
+                href="https://discord.gg/H4hPwk5uvg"
+                class="text-hover hover:opacity-80"
+                target="_blank">Дискорд</a
+              >. А затем перейти в мои темы: <a
+                href="https://discord.com/channels/1048451177194459196/1281197039350448149"
+                class="text-hover hover:opacity-80"
+                target="_blank">Кузнечное дело</a
+              > и <a
+                href="https://discord.com/channels/1048451177194459196/1281201672001028096"
+                class="text-hover hover:opacity-80"
+                target="_blank">Кожевничество</a
+              >
+            </span>
             <li>
               <WH
                 text="Выкованный навеки пронзатель"
-                href="https://www.wowhead.com/ru/item=222438/выкованный-навеки-пронзатель?bonus=10421:9633:8902:11144:10222:1485:8795:11302:8960&class=4&crafted-stats=36:49&ilvl=636&spec=259"
+                href="https://www.wowhead.com/ru/item=222438/выкованный-навеки-пронзатель?bonus=10421:9633:8902:8791:11300:8960&ilvl=636&spec=259"
               /> + <WH
+                text="Символ Новолуния Вознесение"
+                href="https://www.wowhead.com/ru/item=226024/символ-новолуния-вознесение"
+              /> | <WH
+                text="Символ Новолуния Симбиоз"
+                href="https://www.wowhead.com/ru/item=226030/символ-новолуния-симбиоз"
+              /> и <WH
                 text="Поручи с руническим клеймом"
-                href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=11109:8960:8795:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
-              />. Выглядит как самый лучший первый крафт. Во первых, даггер
-              симится лучше всех украшений (у ликвидации даже 2, у остальных
-              специализаций по одному) + это самый сильный ап (по сравнению с
-              героическими вещами) и экономия гребней на оружии. Во вторых, мы
-              можем сделать наручи низкого уровня, чтобы сэкономить эпохальные
-              гребни и потратить их на улучшение других вещей (как было с
-              токсичной пластиной). Обязательно нужно крафтить Симбиоз или
-              Вознесение, так как они являются нерубским украшением и усиляются
-              пластиной. Желательно делать крит + универсальность, чтобы подошло
-              на все специализации.
+                href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=11109:8960:523&crafted-stats=36:49&ilvl=636&spec=259"
+              /> + <WH
+                text="Извивающаяся окантовка доспеха"
+                href="https://www.wowhead.com/ru/item=219506/извивающаяся-окантовка-доспеха"
+              /> выглядят как самые лучшие первые крафты. Во первых, сначала вы носите
+              кинжал в основной руке (мх), что уже дает самую большую прибавку среди
+              всех вещей. Затем, когда вы получите кинжал с хранилища или с эпохального
+              рейда, вы просто переставляете его во вторую руку (ох), тем самым ничего
+              не теряя (это все равно бис крафты). Во вторых, пластину можно сделать
+              низкого уровня из героического герба (который вам дадут за задание
+              на убийство последнего босса рейда, подойдет даже обычный уровень сложности).
+              Пластина не зависит от уровня предмета и всегда даёт +100% к эффекту.
+              Тем самым вам не придется тратить 90 эпохальных гребней на второй крафт
+              на старте и вы сможете потратить эти 90 гребней на ап других вещей,
+              которые дадут намного больший прирост нежели запяться с 619 до 636.
+              В основном это будет касаться кинжала с хранилища / эпохального рейда
+              или аксессуаров.
+            </li>
+            <span
+              >Выбор <WH
+                text="Символ Новолуния Вознесение"
+                href="https://www.wowhead.com/ru/item=226024/символ-новолуния-вознесение"
+              /> или <WH
+                text="Символ Новолуния Симбиоз"
+                href="https://www.wowhead.com/ru/item=226030/символ-новолуния-симбиоз"
+              /> индивидуальный. Симятся они идентично, что в рейде, что в ключах.
+              Разница лишь в специализации, в которой вы играете помимо скрытности.
+              Если вы играете скрытность + ликвидация - тогда <WH
+                text="Символ Новолуния Вознесение"
+                href="https://www.wowhead.com/ru/item=226024/символ-новолуния-вознесение"
+              /> немного лучше, если же скрытность + головорез, тогда <WH
+                text="Символ Новолуния Симбиоз"
+                href="https://www.wowhead.com/ru/item=226030/символ-новолуния-симбиоз"
+              /> немного лучше. Но в целом вы можете делать с любым из этих украшений.</span
+            >
+            <li>
+              <WH
+                text="Поручи с руническим клеймом"
+                href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=10421:9633:8902:8794:10520:8960:523&ilvl=636&crafting-quality=8&&spec=261"
+              /> + <WH
+                text="Боевой пояс с руническим клеймом"
+                href="https://www.wowhead.com/ru/item=219331/боевой-пояс-с-руническим-клеймом?bonus=10421:9633:8902:11144:10222:1485:1808:10520:8960&crafted-stats=49:40&crafting-quality=8&ilvl=636&spec=261"
+              /> со
+              <WH
+                text="Стихийной фокусирующей линзой"
+                href="https://www.wowhead.com/ru/item=213770/стихийная-фокусирующая-линза"
+              /> x2. Для работы нужен хотя бы 1 сокет. Это вариант практически аналогичный
+              первому, однако требует два эпохальных герба, так как украшение усиливается
+              от уровня предметов. Делать их первыми крафтами я не рекомендую, но
+              можно сделать их после получения 3-4 искры (переделав запястья из 1
+              варианта). Комбинация украшений кинжал + заплатка, 2 линзы или кинжал
+              + линза практически идентичны что в рейде, что в ключах.
             </li>
             <li>
               <WH
                 text="Поручи с руническим клеймом"
-                href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=11303:8960:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
+                href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=10421:9633:8902:8794:11304:8960:523&ilvl=636&spec=261"
               /> + <WH
                 text="Боевой пояс с руническим клеймом"
-                href="https://www.wowhead.com/ru/item=219331/боевой-пояс-с-руническим-клеймом?bonus=11303:8960:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
-              /> или <WH
-                text="Поручи с руническим клеймом"
-                href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=11304:8960:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
-              /> + <WH
-                text="Боевой пояс с руническим клеймом"
-                href="https://www.wowhead.com/ru/item=219331/боевой-пояс-с-руническим-клеймом?bonus=11304:8960:523&class=4&crafted-stats=36:49&ilvl=636&spec=259"
-              />. Это скорее вариант для ключей, где высокий аптайм и возможно
-              для фарма в рейде. Так же придется делать 2 крафта максимального
-              уровня, что потребует много эпохальных гребней. Симятся хуже 1-го
-              варианта даже при 100% аптайме.
+                href="https://www.wowhead.com/ru/item=219331/боевой-пояс-с-руническим-клеймом?bonus=10421:9633:8902:11144:10222:1485:1808:11304:8960&crafted-stats=49:40&crafting-quality=8&ilvl=636&spec=261"
+              /> с <WH
+                text="Закатная подкладка"
+                href="https://www.wowhead.com/ru/item=222873/закатная-подкладка"
+              />. Это скорее возможный вариант для ключей. Так же придется
+              делать 2 крафта максимального уровня, что потребует много
+              эпохальных гербов. Но проще бегать с линзами / кинжалом /
+              заплаткой. Возможно хороший вариант для высоких ключей, для
+              большей выживаемости.
             </li>
           </ul>
         </div>
@@ -165,7 +221,7 @@ import { subMenuItems } from "../../constants/content";
       />
       <label
         for="tab_three_3"
-        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three_3:text-assa peer-checked/tab_three_3:neon-assa text-center"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three_3:text-sub peer-checked/tab_three_3:neon-sub text-center"
         >Что фармить?</label
       >
       <div class="peer-checked/tab_three_3:block w-full order-1 hidden">
@@ -356,7 +412,7 @@ import { subMenuItems } from "../../constants/content";
             Оружие 1: <WH
               text="Кукри кровавого поцелуя"
               href="https://www.wowhead.com/ru/item=212395/кукри-кровавого-поцелуя?bonus=10256:11086:6652:11095:1514:10255&class=4&ilvl=639&spec=261"
-            /> или <WH
+            /> | <WH
               text="Скальпель Трупошва"
               href="https://www.wowhead.com/ru/item=178743/скальпель-трупошва?bonus=4786:9948:10299&class=4&ilvl=639&spec=261"
             />
@@ -365,6 +421,14 @@ import { subMenuItems } from "../../constants/content";
             Оружие 2: <WH
               text="Выкованный навеки пронзатель"
               href="https://www.wowhead.com/ru/item=222438/выкованный-навеки-пронзатель?bonus=10421:9633:8902:11144:10222:1485:11300:8960&class=4&crafted-stats=40:49&ilvl=636&spec=261"
+            />
+            +
+            <WH
+              text="Символ Новолуния Вознесение"
+              href="https://www.wowhead.com/ru/item=226024/символ-новолуния-вознесение"
+            /> | <WH
+              text="Символ Новолуния Симбиоз"
+              href="https://www.wowhead.com/ru/item=226030/символ-новолуния-симбиоз"
             />
           </li>
         </ul>
@@ -455,13 +519,16 @@ import { subMenuItems } from "../../constants/content";
             Аксессуар 1: <WH
               text="Вероломный передатчик"
               href="https://www.wowhead.com/ru/item=221023/вероломный-передатчик?bonus=1540:10870&ilvl=639&spec=259"
+            /> | <WH
+              text="Милость Скардина"
+              href="https://www.wowhead.com/ru/item=133282/милость-скардина?bonus=4786:11342:10299&class=4&ilvl=639&spec=259"
             />
           </li>
           <li>
             Аксессуар 2: <WH
               text="Переменчивое яйцо Ови'накса"
               href="https://www.wowhead.com/ru/item=220305/переменчивое-яйцо-овинакса?bonus=4800:4786:1540:10299&ilvl=639&spec=261"
-            /> или <WH
+            /> | <WH
               text="Усиливающий кристалл Ануб'иккаджа"
               href="https://www.wowhead.com/ru/item=219312/усиливающий-кристалл-анубиккаджа?bonus=4786:3131:10299&class=4&ilvl=639&spec=261"
             />
@@ -476,7 +543,7 @@ import { subMenuItems } from "../../constants/content";
             Оружие 1: <WH
               text="Кукри кровавого поцелуя"
               href="https://www.wowhead.com/ru/item=212395/кукри-кровавого-поцелуя?bonus=10256:11086:6652:11095:1514:10255&class=4&ilvl=639&spec=261"
-            /> или <WH
+            /> | <WH
               text="Скальпель Трупошва"
               href="https://www.wowhead.com/ru/item=178743/скальпель-трупошва?bonus=4786:9948:10299&class=4&ilvl=639&spec=261"
             />
@@ -485,6 +552,14 @@ import { subMenuItems } from "../../constants/content";
             Оружие 2: <WH
               text="Выкованный навеки пронзатель"
               href="https://www.wowhead.com/ru/item=222438/выкованный-навеки-пронзатель?bonus=10421:9633:8902:11144:10222:1485:11300:8960&class=4&crafted-stats=40:49&ilvl=636&spec=261"
+            />
+            +
+            <WH
+              text="Символ Новолуния Вознесение"
+              href="https://www.wowhead.com/ru/item=226024/символ-новолуния-вознесение"
+            /> | <WH
+              text="Символ Новолуния Симбиоз"
+              href="https://www.wowhead.com/ru/item=226030/символ-новолуния-симбиоз"
             />
           </li>
         </ul>
