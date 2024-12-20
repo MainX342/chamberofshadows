@@ -8,6 +8,10 @@ import KEYS_DB_T1 from "../../assets/guide/subtlety/builds/sub_keys_db_t_1.webp"
 import KEYS_DB_T3 from "../../assets/guide/subtlety/builds/sub_keys_db_t_3.webp";
 import KEYS_DB_DS1 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_1.webp";
 import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.webp";
+
+import Sim from "../Sim.astro";
+import ST from "../../assets/guide/subtlety/sim/ST.png";
+import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
 ---
 
 <div
@@ -23,14 +27,14 @@ import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.web
   <label
     for="tab_one"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one:text-sub peer-checked/tab_one:neon-sub"
-    >Рейд IS [T]</label
+    >Рейд [Trickster]</label
   >
   <div class="peer-checked/tab_one:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAWmZmlpxMLLzYYMMMzMzMGz2YMzYbmZmZmZAjlZbAAAAYGMAGzmhBGYW0CtYjZG</code></pre>
+      class="mt-[16px]"><code class="text-base">CUQAA0tw2gAD7pPTLoW5IGZDeAAM2mBAAAAAALjxy0YGzMGGjZYmZmZMmthZmx2MzMzMzAGLz2AAAAwMYYzsMjZbGGLMsMzy0CtMbYG</code></pre>
     <embed
       class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAWmZmlpxMLLzYYMMMzMzMGz2YMzYbmZmZmZAjlZbAAAAYGMAGzmhBGYW0CtYjZG?width=972&hideHeader=1&locale=ru_RU"
+      src="https://raidbots.com/simbot/render/talents/CUQAA0tw2gAD7pPTLoW5IGZDeAAM2mBAAAAAALjxy0YGzMGGjZYmZmZMmthZmx2MzMzMzAGLz2AAAAwMYYzsMjZbGGLMsMzy0CtMbYG?width=972&hideHeader=1&locale=ru_RU"
     />
 
     <div
@@ -61,13 +65,50 @@ import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.web
 
     <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
+        <WH text="Дым" href="ps://www.wowhead.com/ru/spell=441247/дым" /> можно заменить
+        на <WH
+          text="Зеркала"
+          href="https://www.wowhead.com/ru/spell=441250/зеркала"
+        /> при необходимости. Например на последнем боссе почти весь урон наносит
+        не босс (в окружение), поэтому <WH
+          text="Зеркала"
+          href="https://www.wowhead.com/ru/spell=441250/зеркала"
+        /> даст больше выживаемости.
+      </li>
+      <li>
         <WH
-          text="Уверенная поступь"
-          href="https://www.wowhead.com/ru/spell=400804/уверенная-поступь"
+          text="Размножающиеся тени"
+          href="https://www.wowhead.com/ru/spell=382506/размножающиеся-тени"
         /> можно заменить на <WH
-          text="Ослепление"
-          href="https://www.wowhead.com/ru/spell=2094/ослепление"
-        /> при необходимости
+          text="Клинок мрака"
+          href="https://www.wowhead.com/ru/spell=200758/клинок-мрака"
+        /> или <WH
+          text="Улучшенную теневую технику"
+          href="https://www.wowhead.com/ru/spell=394023/улучшенная-теневая-техника"
+        /> (потеря ~0.4% в одну цель, если есть дополнительные цели - то еще больше).
+        Из минусов таланта <WH
+          text="Размножающиеся тени"
+          href="https://www.wowhead.com/ru/spell=382506/размножающиеся-тени"
+        /> - он баганый и из-за него <WH
+          text="Теневая техника"
+          href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
+        /> срабатывает с задержкой, что иногда приводит к ситуации, когда вы видите
+        например 5 стаков, даете <WH
+          text="Удар Тьмы"
+          href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+        /> и вам в этот же момент прилетает еще 2 стака, срабатывает <WH
+          text="Незаметность"
+          href="https://www.wowhead.com/ru/spell=426594/незаметность"
+        /> (shadowcraft), который вам тут же заполняет полностью комбо поинты. Тем
+        самым кп с <WH
+          text="Удара Тьмы"
+          href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+        /> уходят в оверкап. Подробнее на <a
+          href="https://github.com/SimCMinMax/WoW-BugTracker/issues/1167"
+          class="text-hover hover:opacity-80"
+          target="_blank"
+          >Github
+        </a>
       </li>
     </ul>
   </div>
@@ -81,14 +122,14 @@ import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.web
   <label
     for="tab_two"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two:text-sub peer-checked/tab_two:neon-sub"
-    >Рейд IS [DS]</label
+    >Рейд [DS]</label
   >
   <div class="peer-checked/tab_two:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAWmZmlpxMLLzYYMMMzMzMGz2YMzYbmZmZmZAjlZbAAAAYGMsYWGYALglhJkZhZG</code></pre>
+      class="mt-[16px]"><code class="text-base">CUQAA0tw2gAD7pPTLoW5IGZDeAAM2mBAAAAAALjxy0MzYmxwYYYmZmZMmthZmx2MzMzMzAGLz2AAAAwMYYzsMjZbGGLMsMzy0CtMLYG</code></pre>
     <embed
       class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAWmZmlpxMLLzYYMMMzMzMGz2YMzYbmZmZmZAjlZbAAAAYGMsYWGYALglhJkZhZG?width=972&hideHeader=1&locale=ru_RU"
+      src="https://raidbots.com/simbot/render/talents/CUQAA0tw2gAD7pPTLoW5IGZDeAAM2mBAAAAAALjxy0MzYmxwYYYmZmZMmthZmx2MzMzMzAGLz2AAAAwMYYzsMjZbGGLMsMzy0CtMLYG?width=972&hideHeader=1&locale=ru_RU"
     />
 
     <div
@@ -116,18 +157,6 @@ import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.web
         decoding="async"
       />
     </div>
-
-    <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
-      <li>
-        <WH
-          text="Уверенная поступь"
-          href="https://www.wowhead.com/ru/spell=400804/уверенная-поступь"
-        /> можно заменить на <WH
-          text="Ослепление"
-          href="https://www.wowhead.com/ru/spell=2094/ослепление"
-        /> при необходимости
-      </li>
-    </ul>
   </div>
 
   <input
@@ -139,14 +168,14 @@ import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.web
   <label
     for="tab_three"
     class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-r-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three:text-hover peer-checked/tab_three:neon-hover"
-    >М+ DB [T]</label
+    >М+ Rotten [T|DS]</label
   >
   <div class="peer-checked/tab_three:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAzyYmlJYBmZGzMzMzMjZmxsNGzMbLMjZmZwYmlZbAAAAMzgBwY2MMwAziWoFbYG</code></pre>
+      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYmxMzYMDzMjhxsNMzMbLzMjZmZAjlZbAAAAYGMAGzmhBGYW0CtYDG</code></pre>
     <embed
       class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAzyYmlJYBmZGzMzMzMjZmxsNGzMbLMjZmZwYmlZbAAAAMzgBwY2MMwAziWoFbYG?width=972&hideHeader=1&locale=ru_RU"
+      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYmxMzYMDzMjhxsNMzMbLzMjZmZAjlZbAAAAYGMAGzmhBGYW0CtYDG?width=972&hideHeader=1&locale=ru_RU"
     />
 
     <div
@@ -176,6 +205,38 @@ import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.web
     </div>
 
     <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
+      <li>
+        <WH
+          text="Мастер боя"
+          href="https://www.wowhead.com/ru/spell=193537/мастер-боя?def=117633"
+        /> можно заменить на <WH
+          text="Первый танец"
+          href="https://www.wowhead.com/ru/spell=382505/первый-танец"
+        />. <WH
+          text="Первый танец"
+          href="https://www.wowhead.com/ru/spell=382505/первый-танец"
+        /> довольно сильный талант, но требует рестелс, который не всегда дают, но
+        с ним так же есть баг. Если использовать <WH
+          text="Исчезновение"
+          href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+        />, получить бафф <WH
+          text="Первого танца"
+          href="https://www.wowhead.com/ru/spell=382505/первый-танец"
+        />, а затем сразу нажать <WH
+          text="Танец теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />, то бафф продолжит висеть даже в бою, что сделает ваш следующий <WH
+          text="Танец теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> на 4 сек дольше. В среднем за ключ бафф срабатывает 12 раз (без использования
+        бага, но зависит от танка). Баг не 100%, поэтому посчитать количество сложно,
+        но в среднем это около 16 раз за ключ суммарно, что дает 64 сек дополнительного
+        времени <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />, что равно 8 дополнительным использованиям. На данный момент
+        просимить талант невозможно.
+      </li>
       <li>
         <WH
           text="Отравляющий укол"
@@ -215,10 +276,10 @@ import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.web
   >
   <div class="peer-checked/tab_four:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAzyYmlJYBmZGzMzMzMjZmxsNGzMbLMjZmZwYmlZbAAAAMzghFzyMmtZYswwyMLTL0ysgZA</code></pre>
+      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYwMzYMzMzMjhxsNMzMbLzMDmZwYmlZbAAAAYGMsZWGYALglhJkZBG</code></pre>
     <embed
       class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/CUQA27SZpS4XnmFfcXRqkppuwDAMAAAAAAAzyYmlJYBmZGzMzMzMjZmxsNGzMbLMjZmZwYmlZbAAAAMzghFzyMmtZYswwyMLTL0ysgZA?width=972&hideHeader=1&locale=ru_RU"
+      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYwMzYMzMzMjhxsNMzMbLzMDmZwYmlZbAAAAYGMsZWGYALglhJkZBG?width=972&hideHeader=1&locale=ru_RU"
     />
 
     <div
@@ -250,6 +311,38 @@ import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.web
     <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
         <WH
+          text="Мастер боя"
+          href="https://www.wowhead.com/ru/spell=193537/мастер-боя?def=117633"
+        /> можно заменить на <WH
+          text="Первый танец"
+          href="https://www.wowhead.com/ru/spell=382505/первый-танец"
+        />. <WH
+          text="Первый танец"
+          href="https://www.wowhead.com/ru/spell=382505/первый-танец"
+        /> довольно сильный талант, но требует рестелс, который не всегда дают, но
+        с ним так же есть баг. Если использовать <WH
+          text="Исчезновение"
+          href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+        />, получить бафф <WH
+          text="Первого танца"
+          href="https://www.wowhead.com/ru/spell=382505/первый-танец"
+        />, а затем сразу нажать <WH
+          text="Танец теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />, то бафф продолжит висеть даже в бою, что сделает ваш следующий <WH
+          text="Танец теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> на 4 сек дольше. В среднем за ключ бафф срабатывает 12 раз (без использования
+        бага, но зависит от танка). Баг не 100%, поэтому посчитать количество сложно,
+        но в среднем это около 16 раз за ключ суммарно, что дает 64 сек дополнительного
+        времени <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />, что равно 8 дополнительным использованиям. На данный момент
+        просимить талант невозможно.
+      </li>
+      <li>
+        <WH
           text="Отравляющий укол"
           href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
         /> можно заменить на любой другой талант если вам не требуется снимать исступления
@@ -274,3 +367,28 @@ import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.web
     </ul>
   </div>
 </div>
+<Sim title="ST сим (5 минут)">
+  <img
+    src={ST.src}
+    alt="Сим одной цели"
+    class="mx-auto"
+    loading="lazy"
+    decoding="async"
+  />
+</Sim>
+<Sim title="Сим ключа (15 каменный свод)">
+  <span
+    >В симе используется скликивание <WH
+      text="Непроглядной ночи"
+      href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+    />, что дает ~2.5% дпса, поэтому если вы не хотите это использовать, то
+    трикстер является лучшим выбором по всем параметрам</span
+  >
+  <img
+    src={KEYS.src}
+    alt="Сим ключа"
+    class="mx-auto"
+    loading="lazy"
+    decoding="async"
+  />
+</Sim>

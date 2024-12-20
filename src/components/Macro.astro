@@ -31,7 +31,7 @@ import Accordion from "./Accordion.astro";
 /cast [spec:1] Отравление
 /cast [spec:2] Устранение
 /cast [spec:3, known:280719] Тайный прием
-/cast [noknown:280719] Продолжительная отповедь</code></pre>
+</code></pre>
       </Accordion>
     </li>
     <li class="w-full">
@@ -50,19 +50,18 @@ import Accordion from "./Accordion.astro";
     <li class="w-full">
       <Accordion title="4. АоЕ способности на одну кнопку">
         <pre><code class="text-base">#showtooltip
-/cast
-[spec:1,nomod] Веер клинков; [spec:1,mod:shift] Кровавый вихрь;
-[spec:2,nomod] Шквал клинков; [spec:2,mod:shift,known:271877] Натиск клинка
-[spec:3,nomod] Шквал сюрикэнов; [spec:3,mod:shift] Черный порох</code></pre>
+/cast [spec:1,nomod] Веер клинков; [spec:1,mod:shift] Кровавый вихрь; [spec:2,nomod] Шквал клинков; [spec:2,mod:shift,known:271877] Натиск клинка; [spec:3,nomod] Шквал сюрикэнов; [spec:3,mod:shift] Черный порох</code></pre>
       </Accordion>
     </li>
     <li class="w-full">
       <Accordion title="5. Лечебный набор">
-        <pre><code class="text-base">#showtooltip
-/cast [nomod] Алый фиал
-/cast [mod:shift] Камень здоровья
-/cast [mod:ctrl] Лечебное зелье сновидца
-/cast [mod:alt] Скорополоховый чай
+        <p class="p-[5px]">
+          В первую очередь пьёт т3 зелье, если его нету, то т2
+        </p>
+        <pre><code class="text-base">#showooltip
+/cast [nomod] Алый фиал;[mod:shift] Камень здоровья; [mod:alt] Скорополоховый чай
+/use [mod:ctrl] item:211880
+/use [mod:ctrl] item:211879
 </code></pre>
       </Accordion>
     </li>
@@ -131,22 +130,21 @@ import Accordion from "./Accordion.astro";
         <pre
           class="text-start border-y-0"><code class="text-base">/cqs
 /cast Танец теней
+/cast [nomod:shift] Скорополоховый чай
+/cast [mod] Теневые клинки
 /cast Символы смерти
-/cast Теневые клинки
-/cast [mod:shift,noknown:382505] Удар тьмы;[mod:shift,known:382505] Удар в спину
+/cast [mod:shift] Удар тьмы
 /cast [mod:ctrl] Потрошение
-/cast [mod:alt] Рваная рана
+/cast [mod:alt] Тайный прием
 </code></pre>
         <p class="p-[5px]">
           Пояснения: /cqs - отменяет очередь окна заклинаний, чтобы ничего
           лишнего не нажалось. При нажатии без модификатора нажимается: Танец +
-          Символы + Клинки. При нажатии с SHIFT: Танец + Символы + Клинки + Удар
-          в спину (если взят талант Первый танец), либо Удар тьмы (если не взят
-          талант Первый танец). При нажатии с CTRL: Танец + Символы + Клинки +
-          Потрошение (оптимальный заход в танец, если у вас много кп + не нужно
-          обновлять Рваную рану). При нажатии с ALT: Танец + Символы + Клинки +
-          Рваная рана (для захода в танец, когда нужно повесить рваную рану под
-          баффаом Завершения)
+          Символы + Чай. При нажатии с SHIFT: Танец + Символы + Клинки + Удар
+          тьмы (стандартное начало бурст ротации). При нажатии с CTRL: Танец +
+          Символы + Клинки + Чай + Потрошение (оптимальный заход в танец, если у
+          вас много кп). При нажатии с ALT: Танец + Символы + Клинки + Чай +
+          Тайный прием.
         </p>
       </Accordion>
     </li>
@@ -162,28 +160,6 @@ import Accordion from "./Accordion.astro";
         </p>
         <pre><code class="text-base">/dump GetCVar("SpellQueueWindow")
 /console SpellQueueWindow 150</code></pre>
-      </Accordion>
-    </li>
-    <li class="w-full">
-      <Accordion title="11. Макросы для головореза">
-        <p class="p-[5px]">
-          Первый макрос убирает "лишние" нажатия при спаме, что позволит точно
-          использовать Промеж глаз, а не другую способность. Второй макрос -
-          казуальный вариант для филлеров, где Призрачный удар жмется вместе с
-          любой абилкой по откату. Это не идеальный макрос и будет приводить к
-          простоям энергии, если вы не будете отслеживать. Так что используйте
-          по своему усмотрению.
-        </p>
-        <pre><code class="text-base">
-#showtooltip
-/cqs
-/cast [known:423703, stance] Промеж глаз; [known:423703, nostance] Устранение; [noknown:423703] Устранение
-        </code></pre>
-        <pre><code class="text-base">
-#showtooltip
-/cast [known:196937] Призрачный удар
-/cast [known:381845, stance] Внезапный удар; [known:381845, nostance] Коварный удар; [noknown:381845] Коварный удар
-        </code></pre>
       </Accordion>
     </li>
   </ul>

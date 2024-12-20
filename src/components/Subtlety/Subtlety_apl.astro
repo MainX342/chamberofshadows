@@ -24,7 +24,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
       <WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 2 и больше целей и на вас есть бафф <WH
+      /> если 3 и больше целей и на вас есть бафф <WH
         text="Безупречная техника"
         href="https://www.wowhead.com/ru/spell=441326/безупречная-техника"
       /> (в противном случае переходим к п.2 чтобы повесить на цель <WH
@@ -88,15 +88,19 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
     >
     <li>
       <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> если 5 и больше целей и на вас 1 стак <WH
+        text="Мастер гнили"
+        href="https://www.wowhead.com/ru/spell=394203/мастер-гнили"
+      />. Не используется с 2мя стаками и без стаков, только с 1 стаком (из-за
+      бага, когда шквал поглощает сразу оба стака)
+    </li>
+    <li>
+      <WH
         text="Удар Тьмы"
         href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      /> - да, ничего другого в <WH
-        text="Танце теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> больше не используется ни в одну цель, ни в аое (из-за <WH
-        text="Неуловимого вихря"
-        href="https://www.wowhead.com/ru/spell=441367/неуловимый-вихрь"
-      />)
+      /> все остальное время
     </li>
   </ul>
 
@@ -113,13 +117,28 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
       <WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 4 и больше целей
+      /> под баффом <WH
+        text="Устранение свидетелей"
+        href="https://www.wowhead.com/ru/spell=457178/устранение-свидетелей"
+      />
+    </li>
+    <li>
+      <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> если 3 и больше целей и на вас нету баффа <WH
+        text="Умысла"
+        href="https://www.wowhead.com/ru/spell=343173/умысел"
+      />
     </li>
     <li>
       <WH
         text="Удар Тьмы"
         href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      /> - если 1-3 цели
+      /> - если 1-2 цели. В 3 цели используется 1 раз, когда активен бафф <WH
+        text="Умысла"
+        href="https://www.wowhead.com/ru/spell=343173/умысел"
+      />
     </li>
   </ul>
 
@@ -136,21 +155,25 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
       >
       <li>
         <WH
-          text="Мясорубка"
-          href="https://www.wowhead.com/ru/spell=315496/мясорубка"
-        /> используется только 1 раз в начале боя, дальше обновляется автоматически
-      </li>
-      <li>
-        <WH
           text="Тайный прием"
           href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-        /> используется только в <WH
+        /> в большинстве случаев используется только в <WH
           text="Танце теней"
           href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        />. Каждый второй <WH
+        />. Однако если до бурстов осталось ~20-40 сек, а <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        /> нету (0 зарядов) или 1 заряд и второй откатится только через 30+ секунд,
+        то стоит использовать <WH
           text="Тайный прием"
           href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-        /> используется без <WH
+        /> без <WH
+          text="Танца теней"
+          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+        />. <WH
+          text="Тайный прием"
+          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+        /> может использоваться без <WH
           text="Хладнокровия"
           href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
         />, но <WH
@@ -177,7 +200,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
         /> или под действием <WH
           text="Скорополохового чая"
           href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
-        />
+        />. В аое стоит раскидывать после бурстов.
       </li>
       <li>
         <WH
@@ -186,145 +209,33 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
         /> используется когда цель под действием <WH
           text="Незримого клинка"
           href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
-        /> и активен <WH
-          text="Танец теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        />. Так же вы можете использовать <WH
+        /> с 5+ кп. Если у вас скоро будут бурсты, то можно специально не сливать
+        <WH
           text="Удар милосердия"
           href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-        /> если активны <WH
-          text="Символы смерти"
-          href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-        /> и до кулдауна / активации <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> осталось меньше 9 сек, либо больше 50 сек (чтобы снова успеть его настакать).
-        Делается это для того, чтобы получить 5 стаков
-        <WH
-          text="Безупречной техники"
-          href="https://www.wowhead.com/ru/spell=441321/безупречная-техника"
-        /> в окно <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        />
+        />, а использовать <WH
+          text="Черный порох"
+          href="https://www.wowhead.com/ru/spell=319175/черный-порох"
+        /> даже в одну цель, а <WH
+          text="Удар милосердия"
+          href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+        /> реализовать прямо перед бурстами или в них.
       </li>
       <li>
         <WH
           text="Черный порох"
           href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-        /> используется вне <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> когда у вас активен <WH
+        /> в одну цель используется только чтобы заминмаксить <WH
           text="Удар милосердия"
           href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-        />. Это нужно делать, чтобы не потерять стаки <WH
-          text="Безупречной техники"
-          href="https://www.wowhead.com/ru/spell=441321/безупречная-техника"
-        /> перед бурст окном <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        />
+        /> (см. выше). В аое используется при 5+ целях (если не нужен приоритетный
+        урон).
       </li>
       <li>
         <WH
           text="Потрошение"
           href="https://www.wowhead.com/ru/spell=196819/потрошение"
-        /> вне <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> используется пока неактивен
-        <WH
-          text="Удар милосердия"
-          href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-        />. В <WH
-          text="Танце теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> основной финишер после <WH
-          text="Тайного приема"
-          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
         />
-      </li>
-    </ul>
-    <ul class="list-inside list-decimal gap-[10px] flex flex-col">
-      <span
-        ><WH
-          text="Ловкач (Trickster)"
-          href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
-        /> (АоЕ):</span
-      >
-      <li>
-        <WH
-          text="Мясорубка"
-          href="https://www.wowhead.com/ru/spell=315496/мясорубка"
-        /> используется только 1 раз в начале боя, дальше обновляется автоматически.
-        Можно не использовать если это очень большой пулл (10+ целей)
-      </li>
-      <li>
-        <WH
-          text="Тайный прием"
-          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-        /> + <WH
-          text="Хладнокровие"
-          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-        /> используются только в <WH
-          text="Танце теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        />. <WH
-          text="Тайный прием"
-          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-        /> может использоваться, если <WH
-          text="Хладнокровие"
-          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-        /> откатывается, но <WH
-          text="Хладнокровие"
-          href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-        /> не может использоваться без <WH
-          text="Тайного приема"
-          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-        />. Клоны с <WH
-          text="Тайного приема"
-          href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-        /> тоже должны попасть в бафф <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        />, полный урон от них проходит через 1.3 сек после использования
-      </li>
-      <li>
-        <WH
-          text="Рваная рана"
-          href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
-        /> должны висеть на всех целях, которые проживут хотя бы 12 сек. Однако раскидывать
-        <WH
-          text="Рваные раны"
-          href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
-        /> нужно не в <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> и после бурстов (первая используется до бурст окна, на опенере)
-      </li>
-      <li>
-        <WH
-          text="Потрошение"
-          href="https://www.wowhead.com/ru/spell=196819/потрошение"
-        /> основной финишер в аое из-за <WH
-          text="Неуловимого вихря"
-          href="https://www.wowhead.com/ru/spell=441367/неуловимый-вихрь"
-        />
-      </li>
-      <li>
-        <WH
-          text="Черный порох"
-          href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-        /> практически не используется в аое. Можно использовать только когда неактивен
-        бафф <WH
-          text="Безупречной техники"
-          href="https://www.wowhead.com/ru/spell=441326/безупречная-техника"
-        />. Вы можете играть как в одну цель (см. п.5 в разделе с одной целью),
-        чтобы нанести больше урона в окно <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        />, но у вас будет меньше урона в целом
       </li>
     </ul>
   </div>
@@ -339,13 +250,6 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
           href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
         />:</span
       >
-      <li>
-        <WH
-          text="Мясорубка"
-          href="https://www.wowhead.com/ru/spell=315496/мясорубка"
-        /> используется только 1 раз в начале боя, дальше обновляется автоматически.
-        В аое не используется, если в пулле 6 и больше целей
-      </li>
       <li>
         <WH
           text="Тайный прием"
@@ -393,11 +297,27 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
         <WH
           text="Черный порох"
           href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-        /> если 3 и больше целей и бафф <WH
+        /> если 2 и больше целей и бафф <WH
           text="Непроглядная ночь"
           href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
-        /> неактивен
+        /> неактивен. Если вариант минмакса для ключей, вам нужно снимать бафф
+        <WH
+          text="Непроглядной ночи"
+          href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+        />, чтобы не использовать в аое <WH
+          text="Потрошение"
+          href="https://www.wowhead.com/ru/spell=196819/потрошение"
+        />. Для этого вы можете воспользоваться макросом, который выставляется
+        вместо <WH
+          text="Черного пороха"
+          href="https://www.wowhead.com/ru/spell=319175/черный-порох"
+        />
       </li>
+      <span>
+        <pre><code class="text-base">#showtooltip
+/cancelaura Непроглядная ночь
+/cast Черный порох</code></pre></span
+      >
       <li>
         <WH
           text="Потрошение"
@@ -413,77 +333,47 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
   >
     <li>
       <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      /> - самый важный кулдаун. Основные правила использования:
-      <ul
-        class="pl-[30px] list-inside list-disc flex flex-col gap-[10px] text-left"
-      >
-        <li>
-          Вы либо используете его после использования основных кулдаунов: <WH
-            text="Флагелляции"
-            href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-          /> и <WH
-            text="Теневых клинков"
-            href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
-          />, либо между ними должно быть ~30 сек, чтобы после использования
-          одного из них + <WH
-            text="Исчезновение"
-            href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-          /> сразу был готов второй
-        </li>
-        <li>
-          По возможности нужно использовать все доступные кулдауны до <WH
-            text="Исчезновения"
-            href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-          />, такие как <WH
-            text="Символы смерти"
-            href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-          />, <WH
-            text="Тайный прием"
-            href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-          />, <WH
-            text="Хладнокровие"
-            href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-          />, <WH
-            text="Торнадо из сюрикэнов"
-            href="https://www.wowhead.com/ru/spell=277925/торнадо-из-сюрикэнов"
-          />
-        </li>
-        <li>
-          Тайминги сильно могут менять в зависимости от босса, таймера,
-          аксессуаров и прочего. Подробнее вы можете ознакомиться тут: <a
-            href="https://lorrgs.io/spec_ranking/rogue-subtlety/gnarlroot"
-            class="text-hover hover:opacity-80">Lorrgs.io</a
-          >
-        </li>
-        Пример базовых отыгрышей:
-        <img
-        src={Rotation.src}
-        alt="Отыгрыш кулдаунов саб"
-        class="w-auto h-auto"
-        loading="lazy"
-        decoding="async"
-      />
-      </ul>
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> наш основной бурст кд, используется под <WH
+        text="Тайный прием"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      /> (кроме исключений в трикстере, о них выше). Под <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> также используются все остальные бурст кд.
     </li>
     <li>
       <WH
-        text="Скорополоховый чай"
-        href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
-      /> используется под бурсты (<WH
-        text="Теневые клинки"
-        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
-      /> или <WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      />) во время <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> (когда осталось больше 4+ секунд). В аое можно пить просто под <WH
+      /> используется только вместе с <WH
+        text="Тайный прием"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      />. Сейчас в симе оно используется не на первый <WH
+        text="Тайный прием"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      />, а на второй, когда настакана <WH
+        text="Флагелляция"
+        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+      />, но это приводит к тому, что там простои по 1.5 минуты между
+      использованиями, так что не следуйте симу, просто жмите в макросе как и
+      раньше.
+    </li>
+    <li>
+      <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      /> используются под <WH
         text="Танец теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
+      />. Если до <WH
+        text="Флагелляции"
+        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+      /> осталось меньше 10 сек - нужно придержать <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      />.
     </li>
     <li>
       <WH
@@ -494,37 +384,33 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
     </li>
     <li>
       <WH
-        text="Символы смерти"
-        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-      /> используются по откату. Если до <WH
-        text="Флагелляции"
-        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-      /> осталось меньше 10 сек - нужно придержать <WH
-        text="Символы смерти"
-        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-      />.
-    </li>
-    <li>
-      <WH
-        text="Теневые клинки"
-        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
-      /> - используются под бафф (не обязательно с самого начала) <WH
-        text="Флагелляции"
-        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-      />.
-    </li>
-    <li>
-      <WH text="Сепсис" href="https://www.wowhead.com/ru/spell=385408/сепсис" />
-      - используется под <WH
-        text="Теневые клинки"
-        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> используется с пулла и по откату ради баффа <WH
+        text="Умысла"
+        href="https://www.wowhead.com/ru/spell=343173/умысел"
       />
     </li>
     <li>
       <WH
-        text="Продолжительная отповедь"
-        href="https://www.wowhead.com/ru/spell=385616/продолжительная-отповедь"
-      /> - по откату.
+        text="Скорополоховый чай"
+        href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
+      /> используется под <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />, когда <WH
+        text="Танца теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> осталось 4+ секунды.
+    </li>
+    <li>
+      <WH
+        text="Теневые клинки"
+        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+      /> - используются под <WH
+        text="Флагелляцию"
+        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+      />.
     </li>
     <li>
       <WH
@@ -605,7 +491,10 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
       фулл кп). То есть, если у вас 7+ зарядов <WH
         text="Теневой техники"
         href="https://www.wowhead.com/ru/spell=426595/теневая-техника"
-      />, то после использования любого финишера вы получите фулл кп.
+      />, то после использования любого финишера вы получите фулл кп (кроме <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      />, баг).
     </li>
     <li>
       Желательно иметь викауру для отслеживания количества зарядов, чтобы знать,

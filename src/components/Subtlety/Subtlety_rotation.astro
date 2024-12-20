@@ -24,28 +24,42 @@ import SubOpenerApl from "./Subtlety_apl.astro";
     class="text-clamp_text pt-[10px] list-inside list-square flex flex-col items-start gap-[5px] p-[20px] border border-border rounded-md text-left self-start"
   >
     <li>
-      Ловчий смерти: если активен бафф <WH
+      <WH
+        text="Ловчий смерти (Deathstalker)"
+        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
+      />: если активен бафф <WH
         text="Непроглядная ночь"
         href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
-      />, то только с 7-ми кп (пока не пофиксят баг с <WH
-        text="Продолжительная отповедь"
-        href="https://www.wowhead.com/ru/spell=385616/продолжительная-отповедь"
-      />, тогда можно будет разряжаться попадая в них)
+      />, то только с 7-ми кп. Заряженные кп считаются обычными. То есть, если у
+      вас взят талант <WH
+        text="Принудительная индукция"
+        href="https://www.wowhead.com/ru/spell=470668/принудительная-индукция"
+      />, то вы можете разряжаться с 4-х кп при активных заряженных кп (с 5-ти,
+      если взят <WH
+        text="Суперзарядка"
+        href="https://www.wowhead.com/ru/spell=470347/суперзарядка"
+      />, но не взят <WH
+        text="Принудительная индукция"
+        href="https://www.wowhead.com/ru/spell=470668/принудительная-индукция"
+      />)
     </li>
     <li>
-      Ловчий смерти: если бафф <WH
+      <WH
+        text="Ловчий смерти (Deathstalker)"
+        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
+      />: если бафф <WH
         text="Непроглядная ночь"
         href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
       /> неактивен, то всегда с 5+ кп
     </li>
-    <li>Ловкач: всегда с 6+ кп</li>
-    <li>Специально добивать 7-ой кп не нужно</li>
     <li>
-      В аое (4+ цели) можно разряжаться с 4+ кп (для ловчего бафф <WH
-        text="Непроглядная ночь"
-        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
-      /> должен быть неактивен)
+      <WH
+        text="Ловкач (Trickster)"
+        href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
+      />: всегда с 6+ кп. Вы можете разряжаться с 5-ти кп, но это будет -0.2%
+      дпса. В аое можно разряжаться с 5+ кп
     </li>
+    <li>Специально добивать 6-ой кп в ловчем или 7-ой кп в ловкаче не нужно</li>
   </ul>
   <H3 text="Начало боя (опенеры)" />
   <div
@@ -66,7 +80,6 @@ import SubOpenerApl from "./Subtlety_apl.astro";
     <Tabs title="АоЕ [T]" id="opener_3" name="opener">
       <SubOpenerAoeT />
     </Tabs>
-
   </div>
   <SubOpenerApl />
 </section>
