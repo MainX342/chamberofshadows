@@ -62,7 +62,7 @@ function SideBar() {
   return (
     <div>
       <button
-        onClick={handleScrollToTop}
+        onPointerDown={handleScrollToTop}
         className={`${
           isShow ? "flex" : "hidden"
         } z-50 w-[45px] h-[45px] border border-1 border-gray-500 rounded-lg fixed left-[12px] bottom-[12px] hover:border-white active:border-0`}
@@ -78,7 +78,7 @@ function SideBar() {
       </button>
       <button
         ref={buttonRef}
-        onClick={(e) => {
+        onPointerDown={(e) => {
           e.preventDefault();
           setIsOpen((prevIsOpen) => !prevIsOpen);
         }}
