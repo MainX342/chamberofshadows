@@ -5,14 +5,11 @@ import { outlawMenuItems } from "../../constants/content";
 import Sim from "../Sim.astro";
 import Race from "../Race.astro";
 
-import RacesRaid from "../../assets/guide/outlaw/sim/races_raid.webp";
-import RacesKeys from "../../assets/guide/outlaw/sim/races_keys.webp";
+import RacesRaid from "../../assets/guide/outlaw/sim/races_raid.png";
 import Dwarf from "../../assets/guide/races/race_dwarf.webp";
 import Tauren from "../../assets/guide/races/race_tauren.webp";
-import Human from "../../assets/guide/races/race_human.webp";
-import Orc from "../../assets/guide/races/race_orc.webp";
 import NightElf from "../../assets/guide/races/race_nightelf.webp";
-import VoidtElf from "../../assets/guide/races/race_voidelf.webp";
+import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
 ---
 
 <section
@@ -48,39 +45,26 @@ import VoidtElf from "../../assets/guide/races/race_voidelf.webp";
         однако с ростом значений критического удара становятся все сильнее (<WH
           text="Мощь гор"
           href="https://www.wowhead.com/ru/spell=59224/мощь-гор"
-        />). Расовая способность (<WH
+        />). Лучшая раса для ключей и рейда. Расовая способность (<WH
           text="Каменная форма"
           href="https://www.wowhead.com/ru/spell=20594/каменная-форма"
-        />) не раз спасёт вам жизнь, особенно в высоких ключах. Если вы не в
-        контроле, снимает всё, что могут способности других классов. Однако,
-        если у вас есть возможность / желание играть на "лучшей расе", то в 1
-        сезоне я бы не рекомендовал дворфа, даже для ключей (только если вы не
-        играете ключи в головорезе).
-        <li class="border border-1 p-[20px] rounded-md border-border">
-          <Race
-            title="Люди"
-            url={Human.src}
-            href="https://www.wowhead.com/ru/race=1/человек"
-          /> - с каждым новым рейдом становятся всё сильнее (<WH
-            text="Человеческий дух"
-            href="https://www.wowhead.com/ru/spell=20598/человеческий-дух"
-          />). Рассматривать стоит только в последних сезонах и только для
-          рейда.
-        </li>
+        />) не раз спасёт вам жизнь, особенно в высоких ключах, а так же может
+        упростить отыгрыш в рейде. Если вы не в контроле, снимает всё, что могут
+        способности других классов.
         <li class="border border-1 p-[20px] rounded-md border-border">
           <Race
             title="Таурены"
             url={Tauren.src}
             href="https://www.wowhead.com/ru/race=6/таурен"
-          /> - хоть и имеют такую же дпс способность <WH
-            text="Грубая сила"
-            href="https://www.wowhead.com/ru/spell=154743/грубая-сила"
-          /> как у дворфов, остальные способности у них намного слабее,
-          <WH
-            text="Громовая поступь"
-            href="https://www.wowhead.com/ru/spell=20549/громовая-поступь"
-          /> может немного помочь в ключах, но в большинстве случаев практически
-          бесполезна.
+          /> | <Race
+            title="Механогномы"
+            url={Mechagnome.src}
+            href="https://www.wowhead.com/ru/race=37/механогном"
+          /> - просто сильные по урону расы (на уровне <Race
+            title="Дворфов"
+            url={Dwarf.src}
+            href="https://www.wowhead.com/ru/race=3/дворф"
+          />), но не имеют других полезных способностей.
         </li>
         <li class="border border-1 p-[20px] rounded-md border-border">
           <Race
@@ -95,21 +79,6 @@ import VoidtElf from "../../assets/guide/races/race_voidelf.webp";
             href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
           /> не дает уйти в невидимость на боссах). Стоит выбрать если вам важнее
           ключи / пвп (в любых специализациях), а 1% дпса в рейде вас не беспокоит.
-        </li>
-        <li class="border border-1 p-[20px] rounded-md border-border">
-          <Race
-            title="Орки"
-            url={Orc.src}
-            href="https://www.wowhead.com/ru/race=2/орк"
-          /> - лучшая раса по урону для начала дополнения у ликвидации и скрытности
-          (<WH
-            text="Кровавое неистовство"
-            href="https://www.wowhead.com/ru/spell=20572/кровавое-неистовство"
-          />), однако по мере увеличения характеристик сильно теряет
-          актуальность к концу дополнения. Топ-2 вариант для пвп (<WH
-            text="Твердость	"
-            href="https://www.wowhead.com/ru/spell=20573/твердость"
-          />), но все равно хуже чем ночные эльфы.
         </li>
         <li>
           Остальные расы можно объединить, так как они не являются лучшими ни в

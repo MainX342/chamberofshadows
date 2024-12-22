@@ -4,8 +4,8 @@ import WH from "../WH.astro";
 import { outlawMenuItems } from "../../constants/content";
 import Tabs from "./Outlaw_tabs.astro";
 import Sim from "../Sim.astro";
-import SimSt from "../../assets/guide/outlaw/sim/outlaw_st.webp";
-import SimKey from "../../assets/guide/outlaw/sim/outlaw_key.webp";
+import SimSt from "../../assets/guide/outlaw/sim/outlaw_st.png";
+import SimKey from "../../assets/guide/outlaw/sim/outlaw_key.png";
 ---
 
 <section
@@ -16,8 +16,7 @@ import SimKey from "../../assets/guide/outlaw/sim/outlaw_key.webp";
   <div class="text-clamp_text flex flex-col gap-[16px]">
     <p>
       У головореза существует 2 основных билда, названия которых происходят от
-      сокращений главных способностей (капстоунов) на английском языке, все
-      остальные билды являются их производными с небольшими отличиями:
+      сокращений главных способностей (капстоунов) на английском языке:
     </p>
     <ul class="flex flex-col gap-[16px]">
       <li>
@@ -38,11 +37,11 @@ import SimKey from "../../assets/guide/outlaw/sim/outlaw_key.webp";
       FB - Fatebound - Служитель судьбы
     </p>
     <p>
-      В TWW KiR билд сильнее что в одну цель (~1.5%), что в ключах (~4%). При этом
-      он намного проще, но очень рандомен. Тоже самое касается Ловкача
-      (Trickster), он намного слабее Служителя судеб (Fatebound), поэтому не
-      вижу смысла отдельно его рассматривать. Дам лишь комментарий и симы под
-      талантами, так как вариативности очень мало.
+      В TWW KiR билд намного сильнее что в одну цель (~4%), что в ключах (~3%).
+      При этом он намного проще, но очень рандомен. Тоже самое касается Ловкача
+      (Trickster), он намного слабее Служителя судеб (Fatebound) (~6-8%),
+      поэтому не вижу смысла отдельно его рассматривать. Дам лишь комментарий и
+      симы под талантами, так как вариативности очень мало.
     </p>
     <Tabs />
     <Sim title="Одна цель 5 минут">
@@ -54,7 +53,7 @@ import SimKey from "../../assets/guide/outlaw/sim/outlaw_key.webp";
         decoding="async"
       />
     </Sim>
-    <Sim title="Ключ 15 Тризна">
+    <Sim title="Ключ 15 Каменный свод">
       <img
         src={SimKey.src}
         alt="Сим талантов и билдов в ключе"

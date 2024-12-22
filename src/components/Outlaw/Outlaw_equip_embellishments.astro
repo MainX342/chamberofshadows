@@ -1,0 +1,116 @@
+---
+import WH from "../WH.astro";
+import Sim from "../Sim.astro";
+import SimSt from "../../assets/guide/outlaw/sim/emb_raid.png";
+import SimKey from "../../assets/guide/outlaw/sim/emb_keys.png";
+---
+
+<input
+  type="radio"
+  id="tab_two_2"
+  name="mytabs_equip"
+  class="peer/tab_two_2 hidden p-[20px]"
+/>
+<label
+  for="tab_two_2"
+  class="p-[20px] w-[100%] sm:w-[calc(100%/3)] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two_2:text-outlaw peer-checked/tab_two_2:neon-outlaw"
+  >Украшения</label
+>
+<div class="peer-checked/tab_two_2:block w-full order-1 hidden">
+  <div
+    class="list-inside list-disc p-[20px] text-left flex flex-col gap-[16px] border border-border rounded-md"
+  >
+    <ul class="list-inside list-decimal gap-[20px] flex flex-col">
+      <span>
+        Я могу крафтить всё, что требуется разбойникам. Вы можете ознакомиться с
+        необходимыми реагентами и ценами в моих темах в дискорде крафтеров.
+        Сначала вступите в него: <a
+          href="https://discord.gg/H4hPwk5uvg"
+          class="text-hover hover:opacity-80"
+          target="_blank">Дискорд</a
+        >. А затем перейти в мои темы: <a
+          href="https://discord.com/channels/1048451177194459196/1281197039350448149"
+          class="text-hover hover:opacity-80"
+          target="_blank">Кузнечное дело</a
+        > и <a
+          href="https://discord.com/channels/1048451177194459196/1281201672001028096"
+          class="text-hover hover:opacity-80"
+          target="_blank">Кожевничество</a
+        >
+      </span>
+      <span class="py-[5px] text-hover"
+        >Все 3 варианта ниже идентичны по урону в рейде, в ключах тоже совсем
+        минимальные отличия (ниже будут симы), поэтому выбирайте что вам больше
+        нравится.</span
+      >
+      <li>
+        <WH
+          text="Бриджи с руническим клеймом"
+          href="https://www.wowhead.com/ru/item=219332/бриджи-с-руническим-клеймом?bonus=10421:9633:8902:1515:8792:11304:8960&crafted-stats=36:40&ilvl=636&spec=260"
+        /> + <WH
+          text="Поручи с руническим клеймом"
+          href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=10421:9633:8902:11144:10222:1485:8792:11304:8960:523&crafted-stats=32:40&ilvl=636&spec=260"
+        /> с <WH
+          text="Закатная подкладка"
+          href="https://www.wowhead.com/ru/item=222873/закатная-подкладка"
+        /> x2. Отличный вариант и для рейда и для ключей. По дпсу является лучшим
+        уже при 80%.
+      </li>
+      <li>
+        <WH
+          text="Поручи с руническим клеймом"
+          href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=10421:9633:8902:11144:10222:1485:10520:8960:8792:523&crafted-stats=32:40&ilvl=636&spec=260"
+        /> + <WH
+          text="Бриджи с руническим клеймом"
+          href="https://www.wowhead.com/ru/item=219332/бриджи-с-руническим-клеймом?bonus=10421:9633:8902:1515:10520:8960:8792&crafted-stats=36:40&ilvl=636&spec=260"
+        /> с
+        <WH
+          text="Стихийной фокусирующей линзой"
+          href="https://www.wowhead.com/ru/item=213770/стихийная-фокусирующая-линза"
+        /> x2. Так же отличный вариант и для рейда и для ключей.
+      </li>
+      <li>
+        <WH
+          text="Выкованный навеки пронзатель"
+          href="https://www.wowhead.com/ru/item=222438/выкованный-навеки-пронзатель?bonus=10421:9633:8902:11144:10222:1485:8795:11302:8960&crafted-stats=40:36&crafting-quality=8&ilvl=636&spec=260"
+        /> во вторую руку + <WH
+          text="Символ Новолуния Симбиоз"
+          href="https://www.wowhead.com/ru/item=226030/символ-новолуния-симбиоз"
+        /> и <WH
+          text="Бриджи с руническим клеймом"
+          href="https://www.wowhead.com/ru/item=219332/бриджи-с-руническим-клеймом?bonus=10421:9633:8902:1515:8792:11109:8960&crafted-stats=36:40&ilvl=636&spec=260"
+        /> + <WH
+          text="Извивающаяся окантовка доспеха"
+          href="https://www.wowhead.com/ru/item=219506/извивающаяся-окантовка-доспеха"
+        />. Хороший вариант, если вам нужен кинжал для другой специализации, в
+        противном случае лучше сделать 1 или 2 варианты.
+      </li>
+    </ul>
+    <Sim title="Одна цель 5 минут (KIR)">
+      <span class="text-hover"
+        >Аптайм подкладки 85%, что является обычным показателем в рейде (чаще
+        еще выше)</span
+      >
+      <img
+        src={SimSt.src}
+        alt="Сим украшений в одну цель 5 минут"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
+    <Sim title="Ключ 15 Каменный свод (KIR)">
+      <span class="text-hover"
+        >Аптайм подкладки 85%, что является обычным показателем в ключах (чаще
+        еще выше)</span
+      >
+      <img
+        src={SimKey.src}
+        alt="Сим украшений в ключе"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
+  </div>
+</div>

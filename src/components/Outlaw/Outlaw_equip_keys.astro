@@ -1,0 +1,66 @@
+---
+import WH from "../WH.astro";
+import Sim from "../Sim.astro";
+import RingOff from "../../assets/guide/outlaw/sim/ring_off.png";
+import RingOn from "../../assets/guide/outlaw/sim/ring_on.png";
+---
+
+<input
+  type="radio"
+  id="tab_six_6"
+  name="mytabs_equip"
+  class="peer/tab_six_6 hidden p-[20px]"
+/>
+<label
+  for="tab_six_6"
+  class="p-[20px] w-[100%] sm:w-[calc(100%/3)] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_six_6:text-hover peer-checked/tab_six_6:neon-hover text-center"
+  >BiS (ключи)</label
+>
+<div class="peer-checked/tab_six_6:block w-full order-1 hidden">
+  <ul
+    class="list-inside list-disc font-medium p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
+  >
+    <span class="text-hover"
+      >Комплекты никак не отличаются от рейдовых, так что смотрите
+      соответствующие разделы, за исключением момента с новым кольцом <WH
+        text="Перстень Цирци"
+        href="https://www.wowhead.com/ru/item=228411/перстень-цирци?bonus=8782&spec=261"
+      /></span
+    >
+    <li>
+      <WH
+        text="Цитрин легендарного шкипера"
+        href="https://www.wowhead.com/ru/spell=462528/цитрин-легендарного-шкипера?ilvl=658"
+      /> работает слишком рандомно и зависит от людей рядом, которые тоже используют
+      <WH
+        text="Цитрин легендарного шкипера"
+        href="https://www.wowhead.com/ru/spell=462528/цитрин-легендарного-шкипера?ilvl=658"
+      />. Я пока не знаю какое там расстояние, но если выключить "помощь" от
+      тиммейтов, то лучшим вариантом на замену будет <WH
+        text="Цитрин покорителя шквалов"
+        href="https://www.wowhead.com/ru/item=228635/цитрин-покорителя-шквалов"
+      /> или чуть хуже (но больше выживаемости) <WH
+        text="Рунный цитрин песни ветра"
+        href="https://www.wowhead.com/ru/item=228640/рунный-цитрин-песни-ветра"
+      />
+    </li>
+    <Sim title="15 каменный свод (вкл)">
+      <img
+        src={RingOn.src}
+        alt="Сим украшений в одну цель 5 минут"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
+    <Sim title="15 каменный свод (выкл)">
+      <img
+        src={RingOff.src}
+        alt="Сим украшений в одну цель 5 минут"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
+  </ul>
+</div>
