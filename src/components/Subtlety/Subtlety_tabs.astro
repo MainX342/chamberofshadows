@@ -1,17 +1,18 @@
 ---
 import WH from "../WH.astro";
-import T from "../../assets/guide/subtlety/builds/sub_trickster.webp";
-import DS from "../../assets/guide/subtlety/builds/sub_ds.webp";
-import ST_IS1 from "../../assets/guide/subtlety/builds/sub_st_is_t_1.webp";
-import ST_IS3 from "../../assets/guide/subtlety/builds/sub_st_is_t_3.webp";
-import KEYS_DB_T1 from "../../assets/guide/subtlety/builds/sub_keys_db_t_1.webp";
-import KEYS_DB_T3 from "../../assets/guide/subtlety/builds/sub_keys_db_t_3.webp";
-import KEYS_DB_DS1 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_1.webp";
-import KEYS_DB_DS3 from "../../assets/guide/subtlety/builds/sub_keys_db_ds_3.webp";
+import T from "../../assets/guide/subtlety/builds/Trickster.webp";
+import DS from "../../assets/guide/subtlety/builds/DS.webp";
+import ST from "../../assets/guide/subtlety/builds/ST.webp";
+import ST_T from "../../assets/guide/subtlety/builds/ST_Trickster.webp";
+import ST_DS from "../../assets/guide/subtlety/builds/ST_DS.webp";
+import KEYS_ROTTEN_1 from "../../assets/guide/subtlety/builds/Keys_Rotten_1.webp";
+import KEYS_ROTTEN_2 from "../../assets/guide/subtlety/builds/Keys_Rotten_2.webp";
+import KEYS_DB_1 from "../../assets/guide/subtlety/builds/Keys_DB_1.webp";
+import KEYS_DB_2 from "../../assets/guide/subtlety/builds/Keys_DB_2.webp";
 
 import Sim from "../Sim.astro";
-import ST from "../../assets/guide/subtlety/sim/ST.png";
-import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
+import ST_SIM from "../../assets/guide/subtlety/sim/ST.png";
+import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
 ---
 
 <div
@@ -41,7 +42,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
       class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={ST_IS1.src}
+        src={ST.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
@@ -55,7 +56,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
         decoding="async"
       />
       <img
-        src={ST_IS3.src}
+        src={ST_T.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
@@ -136,7 +137,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
       class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={ST_IS1.src}
+        src={ST.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
@@ -150,7 +151,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
         decoding="async"
       />
       <img
-        src={ST_IS3.src}
+        src={ST_DS.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
@@ -167,7 +168,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
   />
   <label
     for="tab_three"
-    class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-r-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three:text-hover peer-checked/tab_three:neon-hover"
+    class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 sm:border-r-0 lg:border-t-[1px] flex text-center items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three:text-hover peer-checked/tab_three:neon-hover"
     >М+ Rotten [T|DS]</label
   >
   <div class="peer-checked/tab_three:block w-full order-1 hidden">
@@ -182,7 +183,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
       class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={KEYS_DB_T1.src}
+        src={KEYS_ROTTEN_1.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
@@ -196,7 +197,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
         decoding="async"
       />
       <img
-        src={KEYS_DB_T3.src}
+        src={KEYS_ROTTEN_2.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
@@ -286,7 +287,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
       class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={KEYS_DB_DS1.src}
+        src={KEYS_DB_1.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
@@ -300,7 +301,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
         decoding="async"
       />
       <img
-        src={KEYS_DB_DS3.src}
+        src={KEYS_DB_2.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
@@ -369,7 +370,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
 </div>
 <Sim title="ST сим (5 минут)">
   <img
-    src={ST.src}
+    src={ST_SIM.src}
     alt="Сим одной цели"
     class="mx-auto"
     loading="lazy"
@@ -385,7 +386,7 @@ import KEYS from "../../assets/guide/subtlety/sim/KEY.png";
     трикстер является лучшим выбором по всем параметрам</span
   >
   <img
-    src={KEYS.src}
+    src={KEYS_SIM.src}
     alt="Сим ключа"
     class="mx-auto"
     loading="lazy"
