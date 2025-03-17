@@ -88,13 +88,28 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
     >
     <li>
       <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      /> если 1-6 целей, для стака <WH
+        text="Пляски смерти"
+        href="https://www.wowhead.com/ru/spell=382528/пляска-смерти"
+      />
+    </li>
+    <li>
+      <WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 5 и больше целей и на вас 1 стак <WH
+      /> если 7 и больше целей и на вас 1 стак <WH
         text="Мастер гнили"
         href="https://www.wowhead.com/ru/spell=394203/мастер-гнили"
       />. Не используется с 2мя стаками и без стаков, только с 1 стаком (из-за
-      бага, когда шквал поглощает сразу оба стака)
+      бага, когда шквал поглощает сразу оба стака). Если играете без <WH
+        text="Мастера гнили"
+        href="https://www.wowhead.com/ru/spell=394203/мастер-гнили"
+      />, то можете использовать при 7 и больше целях вместо <WH
+        text="Удара в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      /> первым филлером
     </li>
     <li>
       <WH
@@ -120,6 +135,15 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
       /> под баффом <WH
         text="Устранение свидетелей"
         href="https://www.wowhead.com/ru/spell=457178/устранение-свидетелей"
+      /> в 2 и больше целей
+    </li>
+    <li>
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      />, если на цели нету <WH
+        text="Метки ловчего смерти"
+        href="https://www.wowhead.com/ru/spell=457160/метка-ловчего-смерти"
       />
     </li>
     <li>
@@ -140,6 +164,28 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
         href="https://www.wowhead.com/ru/spell=343173/умысел"
       />
     </li>
+    <p>
+      В теории (и в симе), в аое вам не нужно чтобы срабатывал бафф <WH
+        text="Непроглядная ночь"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      />, поэтому стоит чередовать <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      /> в разные цели, чтобы он не сработал. Или просто сделать макрос на скликивание
+      баффа и продолжать использовать <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> (предварительно ударив <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      /> для <WH
+        text="Метки ловчего смерти"
+        href="https://www.wowhead.com/ru/spell=457160/метка-ловчего-смерти"
+      />)
+      <pre><code class="text-base">#showtooltip
+/cancelaura Непроглядная ночь
+/cast Черный порох</code></pre>
+    </p>
   </ul>
 
   <H3 text="Приоритет завершающих способностей (finishers):" />
@@ -228,7 +274,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
         /> в одну цель используется только чтобы заминмаксить <WH
           text="Удар милосердия"
           href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-        /> (см. выше). В аое используется при 5+ целях (если не нужен приоритетный
+        /> (см. выше). В аое используется при 7+ целях (если не нужен приоритетный
         урон).
       </li>
       <li>
@@ -285,7 +331,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
           text="Рваная рана"
           href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
         /> - должна быть весь бой на цели (если она одна). В АоЕ должна быть на всех
-        целях, которые проживут хотя бы 12 сек. Используется вне <WH
+        целях, которые проживут хотя бы 14 сек. Используется вне <WH
           text="Танца теней"
           href="https://www.wowhead.com/ru/spell=185313/танец-теней"
         /> и когда бафф <WH
@@ -357,8 +403,20 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
         text="Флагелляция"
         href="https://www.wowhead.com/ru/spell=384631/флагелляция"
       />, но это приводит к тому, что там простои по 1.5 минуты между
-      использованиями, так что не следуйте симу, просто жмите в макросе как и
-      раньше.
+      использованиями. Второй вариант использование "по старинке", но вам
+      обязательно нужно использовать <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      /> под 4ый <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> (50-60 сек боя), чтобы 3 <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      /> было под следующую <WH
+        text="Флагелляцию"
+        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+      />
     </li>
     <li>
       <WH
@@ -367,13 +425,10 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
       /> используются под <WH
         text="Танец теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />. Если до <WH
+      />. Не используется, если до <WH
         text="Флагелляции"
         href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-      /> осталось меньше 10 сек - нужно придержать <WH
-        text="Символы смерти"
-        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-      />.
+      /> осталось меньше 25 сек
     </li>
     <li>
       <WH

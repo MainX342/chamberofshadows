@@ -2,169 +2,256 @@
 import WH from "../WH.astro";
 ---
 
-<ul
-  class="list-inside list-decimal flex flex-col items-start p-[20px] border border-border rounded-md text-left gap-[10px]"
->
-  <li>
-    <WH
-      text="Удар Тьмы"
-      href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+<div class="p-4 border border-border rounded-md">
+  <label
+    for="spell"
+    class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
+  >
+    <input
+      type="checkbox"
+      id="spell"
+      name="spell"
+      class="peer hidden checkbox"
     />
-  </li>
-  <li>
-    <WH
-      text="Вероломный передатчик"
-      href="https://www.wowhead.com/ru/item=221023/вероломный-передатчик?bonus=1540:10870&ilvl=639&spec=259"
-    /> + <WH
-      text="Охлажденное зелье"
-      href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
-    />
-  </li>
-  <li>
-    <WH
-      text="Флагелляция"
-      href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-    />
-  </li>
-  <li>
-    <WH
-      text="Потрошение"
-      href="https://www.wowhead.com/ru/spell=196819/потрошение"
-    />
-  </li>
-  <li>
-    <WH
-      text="Исчезновение"
-      href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-    /> + <WH
-      text="Удар Тьмы"
-      href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-    />
-  </li>
-  <li>
-    <WH
-      text="Рваная рана"
-      href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
-    />
-  </li>
-  <li>
-    <WH
-      text="Символы смерти"
-      href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-    />
-  </li>
-  <li>
-    <WH
-      text="Танец теней"
-      href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-    />
-  </li>
-  <li>
-    <WH
-      text="Вероломный передатчик"
-      href="https://www.wowhead.com/ru/item=221023/вероломный-передатчик?bonus=1540:10870&ilvl=639&spec=259"
-    /> (активация)
-  </li>
-  <li>
-    <WH
-      text="Клинок мрака"
-      href="https://www.wowhead.com/ru/spell=200758/клинок-мрака"
-    /> (если взят, иначе <WH
-      text="Удар Тьмы"
-      href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-    />)
-  </li>
-  <li>
-    <WH
-      text="Теневые клинки"
-      href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
-    />
-  </li>
-  <li>
-    <WH
-      text="Тайный прием"
-      href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-    />
-  </li>
-  <li>
-    <WH
-      text="Удар Тьмы"
-      href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-    /> до 5+ кп | <WH
-      text="Потрошение"
-      href="https://www.wowhead.com/ru/spell=196819/потрошение"
-    /> в зависимости от проков до окончания <WH
-      text="Танца теней"
-      href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-    />
-  </li>
-  <li>
-    <WH
-      text="Танец теней"
-      href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-    />
-  </li>
-  <li>
-    <WH
-      text="Символы смерти"
-      href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-    /> (когда предыдущих осталось меньше 3 сек)
-  </li>
-  <li>
-    <WH
-      text="Клинок мрака"
-      href="https://www.wowhead.com/ru/spell=200758/клинок-мрака"
-    /> (если взят, иначе <WH
-      text="Удар Тьмы"
-      href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-    />)
-  </li>
-  <li>
-    <WH
-      text="Потрошение"
-      href="https://www.wowhead.com/ru/spell=196819/потрошение"
-    />
-  </li>
-  <li>
-    <WH
-      text="Удар Тьмы"
-      href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-    />
-  </li>
-  <li>
-    <WH
-      text="Хладнокровие"
-      href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-    /> + <WH
-      text="Тайный прием"
-      href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-    />
-  </li>
-</ul>
+    <span
+      class="w-4 h-4 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-sub peer-checked:border-gray-700"
+    ></span>
+    <span>
+      Играю с <WH
+        text="Мастер гнили"
+        href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
+      /> (а не с <WH
+        text="Завершением (1/2)"
+        href="https://www.wowhead.com/ru/spell=382525/завершение"
+      />)
+    </span>
+  </label>
 
-<p class="pt-[16px] text-left">
-  Опенер (финишеры / филлеры) может немного меняться в зависимости от проков
-  техники, но порядок важных кулдаунов не меняется. Вы отыгрываете 2 <WH
-    text="Танца теней"
-    href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-  />, в каждом из которых используется <WH
-    text="Тайный прием"
-    href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-  />. Из-за того, что в трикстере <WH
-    text="Тайный прием"
-    href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-  /> откатывается быстрее, происходит ситуация когда вы нажимаете его БЕЗ <WH
-    text="Танца теней"
-    href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-  />, это нужно делать если кд <WH
-  text="Флагелляция"
-  href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-/> 20-40 сек. Это делается для
-  того, чтобы под бурсты у вас было 2 <WH
-    text="Танца теней"
-    href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-  />, но при этом <WH
-    text="Тайный прием"
-    href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-  /> не простаивал. Аналогичная ситуация часто возникает в ключах.
-</p>
+  <label
+    for="commentsT"
+    class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
+  >
+    <input
+      type="checkbox"
+      id="commentsT"
+      name="commentsT"
+      class="peer hidden checkbox-3"
+    />
+    <span
+      class="w-4 h-4 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
+    ></span>
+    <span> Показать комментарии </span></label
+  >
+
+  <ul
+    class="peer-checked:hidden list-inside list-decimal flex flex-col items-start p-[20px] text-left gap-[10px]"
+  >
+    <li>
+      <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      /> за 25+ секунд до пулла босса
+    </li>
+    <span
+      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+      >В любое время, например как только пришли к боссу / после реса), чтобы
+      получить 2 заряженных кп от таланта <WH
+        text="Суперзарядка"
+        href="https://www.wowhead.com/ru/spell=470347/суперзарядка"
+      />, которые не спадают при пулле</span
+    >
+    <li>
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      />
+    </li>
+    <li>
+      <WH
+        text="Флагелляция"
+        href="https://www.wowhead.com/ru/spell=384631/флагелляция"
+      />
+    </li>
+    <li>
+      <WH
+        text="Потрошение"
+        href="https://www.wowhead.com/ru/spell=196819/потрошение"
+      />
+    </li>
+    <li>
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> + <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      />
+    </li>
+    <li>
+      <WH
+        text="Рваная рана"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      />
+    </li>
+    <li>
+      <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /><span class="hidden-item">
+        + <WH
+          text="Символы смерти"
+          href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+        /></span
+      >
+    </li>
+    <li>
+      <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      />
+    </li>
+    <span
+      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+      >Для стака <WH
+        text="Пляски смерти"
+        href="https://www.wowhead.com/ru/spell=382528/пляска-смерти"
+      /></span
+    >
+    <li>
+      <WH
+        text="Теневые клинки"
+        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+      /> + <WH
+        text="Охлажденное зелье"
+        href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
+      /> + <WH
+        text="Карточный домик"
+        href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&spec=261"
+      /><span class="hidden visible-item">
+        + <WH
+          text="Символы смерти"
+          href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+        /></span
+      >
+    </li>
+    <span
+      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+      >Жмутся после <WH
+        text="Удара в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      />, т.к. бафф <WH
+        text="Умысел"
+        href="https://www.wowhead.com/ru/spell=343173/умысел"
+      /> и так даст 7кп</span
+    ><span
+      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment-spell w-full hidden"
+    >
+      <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      /> используются после <WH
+        text="Удара в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      /> чтобы не потратить стак <WH
+        text="Мастера гнили"
+        href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
+      /> на <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      /></span
+    >
+    <li>
+      <WH
+        text="Тайный прием"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      />
+    </li>
+    <span
+      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+      >Сейчас, в симе, в первом <WH
+        text="Тайном приеме"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      /> не используется <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      />, но вы можете играть как раньше. Однако, вам нужно использовать второе <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      /> почти по откату (~на 50 секунде, под 4 <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />), возможно вам придется пару секунд придержать <WH
+        text="Тайный прием"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      /> для этого. 3 <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      /> уже будет в следующих бурстах, как и в симе, тем самым вы получите +1 использование
+      за бой</span
+    >
+    <li>
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      /> до 5+ кп | <WH
+        text="Потрошение"
+        href="https://www.wowhead.com/ru/spell=196819/потрошение"
+      /> в зависимости от проков до окончания <WH
+        text="Танца теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />
+    </li>
+    <li>
+      <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />
+    </li>
+    <li>
+      <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      />
+    </li>
+    <li>
+      <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      /> (когда предыдущих осталось меньше 3 сек)
+    </li>
+    <span
+      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+      >Пандемик тайм на
+      <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      /> составляет 10 (базовое время действия) * 30% ("pandemic time") = 3 сек.
+      То есть, если вы нажмете новые <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      /> когда предыдущих осталось меньше 3 секунд, оставшееся время прибавятся к
+      новым 10 сек (13 сек максимум)</span
+    >
+    <li>
+      <WH
+        text="Потрошение"
+        href="https://www.wowhead.com/ru/spell=196819/потрошение"
+      />
+    </li>
+    <li>
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      />
+    </li>
+    <li>
+      <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      /> + <WH
+        text="Тайный прием"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      />
+    </li>
+  </ul>
+</div>
