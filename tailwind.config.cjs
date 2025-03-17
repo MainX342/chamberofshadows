@@ -85,4 +85,12 @@ module.exports = {
       addUtilities(neonUtilities);
     }),
   ],
+  safelist: [
+    "hidden-item",
+    "visible-item",
+    "hidden-item-2",
+    "visible-item-2",
+    "visible-comment",
+    "visible-comment-spell"
+  ]
 };

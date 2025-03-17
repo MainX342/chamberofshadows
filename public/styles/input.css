@@ -37,6 +37,29 @@ pre copy-code-button {
 .q2,
 .q3,
 .q4 {
-  /* color: #a335ee !important; */
   color: #e5cc80 !important;
+}
+
+label:has(.checkbox:checked) ~ ul .hidden-item {
+  display: none;
+}
+
+label:has(.checkbox:checked) ~ ul .visible-item {
+  display: inline;
+}
+
+label:has(.checkbox-2:checked) ~ ul .hidden-item-2 {
+  display: none;
+}
+
+label:has(.checkbox-2:checked) ~ ul .visible-item-2 {
+  display: inline;
+}
+
+label:has(.checkbox-3:checked) ~ ul .visible-comment {
+  display: inline;
+}
+
+label:has(.checkbox:checked) + label:has(.checkbox-3:checked) ~ ul .visible-comment-spell {
+  display: inline;
 }
