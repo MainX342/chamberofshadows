@@ -1,5 +1,6 @@
 ---
 import WH from "../WH.astro";
+import Comment from "../Comment.astro";
 ---
 
 <div class="p-4 border border-border rounded-md">
@@ -14,9 +15,9 @@ import WH from "../WH.astro";
       class="peer hidden checkbox-2"
     />
     <span
-      class="w-4 h-4 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-yellow-400 peer-checked:border-gray-700"
+      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-yellow-400 peer-checked:border-gray-700"
     ></span>
-    <span>
+    <span class="text-left">
       Есть бафф <WH
         text="Мясорубки"
         href="https://www.wowhead.com/ru/spell=315496/мясорубка"
@@ -35,9 +36,9 @@ import WH from "../WH.astro";
       class="peer hidden checkbox"
     />
     <span
-      class="w-4 h-4 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-sub peer-checked:border-gray-700"
+      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-sub peer-checked:border-gray-700"
     ></span>
-    <span>
+    <span class="text-left">
       Играю с <WH
         text="Мастер гнили"
         href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
@@ -59,14 +60,28 @@ import WH from "../WH.astro";
       class="peer hidden checkbox-3"
     />
     <span
-      class="w-4 h-4 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
+      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
     ></span>
-    <span> Показать комментарии </span></label
+    <span class="text-left"> Показать комментарии </span></label
   >
 
   <ul
     class="peer-checked:hidden list-inside list-decimal flex flex-col items-start p-[20px] text-left gap-[10px]"
   >
+    <span
+      >ВАЖНО: Ниже в [ ] для финишеров, будет количество целей под <WH
+        text="Выявлением слабости"
+        href="https://www.wowhead.com/ru/spell=316220/выявление-слабости"
+      />. Для отслеживания можете использовать мою сборку WA на бусти: <a
+        href="https://boosty.to/mainx"
+        target="_blank"
+        class="text-hover hover:opacity-80">Boosty</a
+      > или отдельную WA: <a
+        href="https://wago.io/BrHbOxhS7"
+        target="_blank"
+        class="text-hover hover:opacity-80">Wago</a
+      >. Для филлеров в ( ) количество целей вокруг.
+    </span>
     <li>
       <WH
         text="Удар Тьмы"
@@ -115,10 +130,10 @@ import WH from "../WH.astro";
           text="Удар в спину"
           href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
         />
-        [2-6 целей] | <WH
+        (2-6 целей) | <WH
           text="Шквал сюрикэнов"
           href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-        /> [7+]</span
+        /> (7+ целей)</span
       ><span class="hidden visible-item"
         ><WH
           text="Удар Тьмы"
@@ -126,15 +141,13 @@ import WH from "../WH.astro";
         /></span
       >
     </li>
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+    <Comment class="visible-comment"
       >Для стака <WH
         text="Пляски смерти"
         href="https://www.wowhead.com/ru/spell=382528/пляска-смерти"
-      /></span
+      /></Comment
     >
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment-spell w-full hidden"
+    <Comment class="visible-comment-spell"
       >На 2-5 целях вы можете заменить первый филлер в <WH
         text="Танце теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
@@ -156,7 +169,7 @@ import WH from "../WH.astro";
       /> на <WH
         text="Удар в спину"
         href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      />. Это даст вам ~0.5% урона</span
+      />. Это даст вам ~0.5% урона</Comment
     >
     <li>
       <WH
@@ -170,26 +183,24 @@ import WH from "../WH.astro";
         href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&spec=261"
       />
     </li>
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+    <Comment class="visible-comment"
       >Жмутся после <WH
         text="Удара в спину"
         href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
       />, т.к. бафф <WH
         text="Умысел"
         href="https://www.wowhead.com/ru/spell=343173/умысел"
-      /> и так даст 7кп</span
-    ><span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment-spell w-full hidden"
+      /> и так даст 7кп</Comment
     >
-      Если не вы используете <WH
+    <Comment class="visible-comment-spell"
+      >Если не вы используете <WH
         text="Удар в спину"
         href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
       />, то можете нажимать все бурсты в макросе с <WH
         text="Танцем теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /></span
-    >
+      />
+    </Comment>
     <li>
       <WH
         text="Хладнокровие"
@@ -200,8 +211,7 @@ import WH from "../WH.astro";
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
       />
     </li>
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+    <Comment class="visible-comment"
       >В ключах не стоит держать<WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
@@ -211,7 +221,7 @@ import WH from "../WH.astro";
       /> в каждом бурсте, иначе вы сдадите намного меньше <WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> суммарно за ключ</span
+      /> суммарно за ключ</Comment
     >
     <li>
       <span class="hidden-item"
@@ -227,8 +237,7 @@ import WH from "../WH.astro";
         /></span
       >
     </li>
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment-spell w-full hidden"
+    <Comment class="visible-comment-spell"
       ><WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
@@ -244,16 +253,16 @@ import WH from "../WH.astro";
       /> тратит оба стака <WH
         text="Мастера гнили"
         href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
-      /></span
+      /></Comment
     >
     <li>
       <WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> [2-6 целей] | <WH
+      /> [2-4] | <WH
         text="Черный порох"
         href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-      /> [7+]
+      /> [5+]
     </li>
     <li>
       <WH
@@ -262,10 +271,10 @@ import WH from "../WH.astro";
       /> + <WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> [2-6 целей] | <WH
+      /> [2-4] | <WH
         text="Черный порох"
         href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-      /> [7+] пока не закончится <WH
+      /> [5+] пока не закончится <WH
         text="Танец теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
       />
@@ -282,10 +291,10 @@ import WH from "../WH.astro";
           text="Удар в спину"
           href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
         />
-        [2-6 целей] | <WH
+        (2-6 целей) | <WH
           text="Шквал сюрикэнов"
           href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-        /> [7+]</span
+        /> (7+ целей)</span
       ><span class="hidden visible-item"
         ><WH
           text="Удар Тьмы"
@@ -293,12 +302,11 @@ import WH from "../WH.astro";
         /></span
       >
     </li>
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+    <Comment class="visible-comment"
       >Для стака <WH
         text="Пляски смерти"
         href="https://www.wowhead.com/ru/spell=382528/пляска-смерти"
-      /></span
+      /></Comment
     >
     <li>
       <WH
@@ -306,8 +314,7 @@ import WH from "../WH.astro";
         href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
       /> (когда предыдущих осталось меньше 3 сек)
     </li>
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+    <Comment class="visible-comment"
       >Пандемик тайм на
       <WH
         text="Символы смерти"
@@ -317,16 +324,16 @@ import WH from "../WH.astro";
         text="Символы смерти"
         href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
       /> когда предыдущих осталось меньше 3 секунд, оставшееся время прибавятся к
-      новым 10 сек (13 сек максимум)</span
+      новым 10 сек (13 сек максимум)</Comment
     >
     <li>
       <WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> [2-6 целей] | <WH
+      /> [2-4] | <WH
         text="Черный порох"
         href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-      /> [7+]
+      /> [5+]
     </li>
     <li>
       <span class="hidden-item"
@@ -355,10 +362,10 @@ import WH from "../WH.astro";
       /> + <WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> [2-6 целей] | <WH
+      /> [2-4] | <WH
         text="Черный порох"
         href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-      /> [7+] пока не закончится <WH
+      /> [5+] пока не закончится <WH
         text="Танец теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
       />

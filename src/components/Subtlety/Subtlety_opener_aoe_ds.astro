@@ -1,5 +1,6 @@
 ---
 import WH from "../WH.astro";
+import Comment from "../Comment.astro";
 ---
 
 <div class="p-4 border border-border rounded-md">
@@ -14,9 +15,9 @@ import WH from "../WH.astro";
       class="peer hidden checkbox-2"
     />
     <span
-      class="w-4 h-4 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-yellow-400 peer-checked:border-gray-700"
+      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-yellow-400 peer-checked:border-gray-700"
     ></span>
-    <span>
+    <span class="text-left">
       Есть бафф <WH
         text="Мясорубки"
         href="https://www.wowhead.com/ru/spell=315496/мясорубка"
@@ -35,18 +36,16 @@ import WH from "../WH.astro";
       class="peer hidden checkbox-3"
     />
     <span
-      class="w-4 h-4 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
+      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
     ></span>
-    <span> Показать комментарии </span></label
+    <span class="text-left"> Показать комментарии </span></label
   >
 
   <ul
     class="peer-checked:hidden list-inside list-decimal flex flex-col items-start p-[20px] text-left gap-[10px]"
   >
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
-    >
-      <WH
+    <Comment class="visible-comment"
+      ><WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
       /> используется вместо любого <WH
@@ -58,24 +57,22 @@ import WH from "../WH.astro";
       /> если нужно обновить <WH
         text="Мясорубку"
         href="https://www.wowhead.com/ru/spell=315496/мясорубка"
-      /></span
+      /></Comment
     >
-
     <li>
       <WH
         text="Удар Тьмы"
         href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
       />
     </li>
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+    <Comment class="visible-comment"
       >Чтобы повесить <WH
         text="Выявление слабости"
         href="https://www.wowhead.com/ru/spell=316220/выявление-слабости"
       /> и <WH
         text="Метку ловчего смерти"
         href="https://www.wowhead.com/ru/spell=457160/метка-ловчего-смерти"
-      /> на цель</span
+      /> на цель</Comment
     >
     <li>
       <WH
@@ -141,8 +138,7 @@ import WH from "../WH.astro";
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
       />
     </li>
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+    <Comment class="visible-comment"
       >В ключах не стоит держать<WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
@@ -152,7 +148,7 @@ import WH from "../WH.astro";
       /> в каждом бурсте, иначе вы сдадите намного меньше <WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> суммарно за ключ</span
+      /> суммарно за ключ</Comment
     >
     <li>
       <WH
@@ -206,8 +202,7 @@ import WH from "../WH.astro";
         href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
       /> (когда предыдущих осталось меньше 3 сек)
     </li>
-    <span
-      class="mx-2 italic text-base leading-relaxed text-gray-400 visible-comment w-full hidden"
+    <Comment class="visible-comment"
       >Пандемик тайм на
       <WH
         text="Символы смерти"
@@ -217,7 +212,7 @@ import WH from "../WH.astro";
         text="Символы смерти"
         href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
       /> когда предыдущих осталось меньше 3 секунд, оставшееся время прибавятся к
-      новым 10 сек (13 сек максимум)</span
+      новым 10 сек (13 сек максимум)</Comment
     >
     <li>
       <WH
