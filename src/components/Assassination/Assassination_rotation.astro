@@ -6,8 +6,8 @@ import Tabs from "../Tabs.astro";
 import H3 from "../H3.astro";
 import AssaOpenerDs from "./Assassination_opener_ds.astro";
 import AssaOpenerFb from "./Assassination_opener_fb.astro";
-import AssaOpenerAoeDs from "./Assassination_opener_aoe_ds.astro";
-import AssaOpenerAoeFb from "./Assassination_opener_aoe_fb.astro";
+import AssaOpenerAoeKB from "./Assassination_opener_aoe_kb.astro";
+import AssaOpenerAoeBleed from "./Assassination_opener_aoe_bleed.astro";
 import AssaOpenerApl from "./Assassination_apl.astro";
 ---
 
@@ -38,15 +38,23 @@ import AssaOpenerApl from "./Assassination_apl.astro";
       />, но не взят <WH
         text="Принудительная индукция"
         href="https://www.wowhead.com/ru/spell=470668/принудительная-индукция"
-      />)
+      />). Если у вас 6 кп, то добивать 7-ой кп нужно <WH
+        text="Гарротой"
+        href="https://www.wowhead.com/ru/spell=703/гаррота"
+      />.
     </li>
     <li>
-      Если бафф <WH
-        text="Непроглядная ночь"
+      Если нету баффа <WH
+        text="Непроглядной ночи"
         href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
-      /> неактивен, то всегда с 5+ кп
+      />, то всегда с 5+ кп
     </li>
-    <li>Специально добивать 6-ой и 7-ой кп не нужно</li>
+    <li>
+      Специально добивать 6-ой и 7-ой кп без баффа <WH
+        text="Непроглядной ночи"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      /> не нужно
+    </li>
     <li>
       Нет, вам не нужно использовать финишеры на 1-4кп, чтобы удержать бафф
       энвенома
@@ -77,12 +85,12 @@ import AssaOpenerApl from "./Assassination_apl.astro";
       <AssaOpenerFb />
     </Tabs>
 
-    <Tabs title="АоЕ [DS]" id="opener_1" name="opener">
-      <AssaOpenerAoeDs />
+    <Tabs title="АоЕ [KB]" id="opener_1" name="opener">
+      <AssaOpenerAoeKB />
     </Tabs>
 
-    <Tabs title="АоЕ [FB]" id="opener_3" name="opener">
-      <AssaOpenerAoeFb />
+    <Tabs title="АоЕ [Bleed]" id="opener_3" name="opener">
+      <AssaOpenerAoeBleed />
     </Tabs>
   </div>
   <AssaOpenerApl />

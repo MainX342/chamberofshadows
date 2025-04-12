@@ -5,12 +5,14 @@ import { assaMenuItems } from "../../constants/content";
 import Sim from "../Sim.astro";
 import Race from "../Race.astro";
 
-import RacesRaid from "../../assets/guide/assassination/sim/races_raid.webp";
+import RacesRaid from "../../assets/guide/assassination/sim/races_raid.png";
 import Dwarf from "../../assets/guide/races/race_dwarf.webp";
 import Tauren from "../../assets/guide/races/race_tauren.webp";
 import Human from "../../assets/guide/races/race_human.webp";
 import Orc from "../../assets/guide/races/race_orc.webp";
 import NightElf from "../../assets/guide/races/race_nightelf.webp";
+import Maghar from "../../assets/guide/races/race_magharorc.webp";
+import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
 ---
 
 <section
@@ -20,13 +22,13 @@ import NightElf from "../../assets/guide/races/race_nightelf.webp";
   <H2 text={assaMenuItems[0].label} />
   <div class="text-clamp_text flex flex-col gap-[16px]">
     <p>
-      На данный момент разница между лучшей и худшей расой составляет ~2% (не
-      больше 1% среди "популярных рас"). Так что, если вы не стремитесь к
-      максимизации эффективности, смело можете выбирать того, кто нравится
-      визуально. Однако в каждом контенте (рейды | ключи | пвп) есть расы,
-      которые сильно упростят вашу жизнь благодаря утилити/защитным
-      способностям. Не существует лучшей расы для всего, и вам придется
-      выбирать, что вам важнее (рейд | ключи | пвп | визуальная составляющая).
+      На данный момент разница между лучшей и худшей расой составляет ~1%. Так
+      что, если вы не стремитесь к максимизации эффективности, смело можете
+      выбирать того, кто нравится визуально. Однако в каждом контенте (рейды |
+      ключи | пвп) есть расы, которые сильно упростят вашу жизнь благодаря
+      утилити/защитным способностям. Не существует лучшей расы для всего, и вам
+      придется выбирать, что вам важнее (рейд | ключи | пвп | визуальная
+      составляющая).
     </p>
     <p>
       Также стоит помнить, что с ростом характеристик в последующих патчах
@@ -39,88 +41,82 @@ import NightElf from "../../assets/guide/races/race_nightelf.webp";
     <ul class="flex flex-col gap-[16px]">
       <li class="border border-1 p-[20px] rounded-md border-border">
         <Race
+          title="Магхары"
+          url={Maghar.src}
+          href="https://www.wowhead.com/ru/race=36/магхар"
+        /> - после апа стали лучшей дпс расой для ликвидации и скрытности (и для
+        рейда и для ключей). <WH
+          text="Призыв предков"
+          href="https://www.wowhead.com/ru/spell=274738/призыв-предков"
+        /> является по сути вторым аксессуаром, поэтому бурст у магхаров самый сильный
+      </li>
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <Race
           title="Дворфы"
           url={Dwarf.src}
           href="https://www.wowhead.com/ru/race=3/дворф"
-        /> - на старте дополнения не являются лучшей расой по дпсу (только у головореза),
-        однако с ростом значений критического удара становятся все сильнее (<WH
+        /> - универсальный вариант для всех спеков во все пве активности. С ростом
+        критического удара <WH
           text="Мощь гор"
           href="https://www.wowhead.com/ru/spell=59224/мощь-гор"
-        />). Расовая способность (<WH
+        /> становится сильнее. Расовая способность (<WH
           text="Каменная форма"
           href="https://www.wowhead.com/ru/spell=20594/каменная-форма"
         />) не раз спасёт вам жизнь, особенно в высоких ключах. Если вы не в
-        контроле, снимает всё, что могут способности других классов. Однако,
-        если у вас есть возможность / желание играть на "лучшей расе", то в 1
-        сезоне я бы не рекомендовал дворфа, даже для ключей (только если вы не
-        играете ключи в головорезе).
-        <li class="border border-1 p-[20px] rounded-md border-border">
-          <Race
-            title="Люди"
-            url={Human.src}
-            href="https://www.wowhead.com/ru/race=1/человек"
-          /> - с каждым новым рейдом становятся всё сильнее (<WH
-            text="Человеческий дух"
-            href="https://www.wowhead.com/ru/spell=20598/человеческий-дух"
-          />). Рассматривать стоит только в последних сезонах и только для
-          рейда.
-        </li>
-        <li class="border border-1 p-[20px] rounded-md border-border">
-          <Race
-            title="Таурены"
-            url={Tauren.src}
-            href="https://www.wowhead.com/ru/race=6/таурен"
-          /> - хоть и имеют такую же дпс способность <WH
-            text="Грубая сила"
-            href="https://www.wowhead.com/ru/spell=154743/грубая-сила"
-          /> как у дворфов, остальные способности у них намного слабее,
-          <WH
-            text="Громовая поступь"
-            href="https://www.wowhead.com/ru/spell=20549/громовая-поступь"
-          /> может немного помочь в ключах, но в большинстве случаев практически
-          бесполезна.
-        </li>
-        <li class="border border-1 p-[20px] rounded-md border-border">
-          <Race
-            title="Ночные эльфы"
-            url={NightElf.src}
-            href="https://www.wowhead.com/ru/race=4/ночной-эльф"
-          /> - лучшая раса для пвп и ключей из-за дополнительной невидимости от <WH
-            text="Слиться с тенью"
-            href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
-          />. Для рейдов не имеет ничего полезного ни в одной специализации (<WH
-            text="Слиться с тенью"
-            href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
-          /> не дает уйти в невидимость на боссах). Стоит выбрать если вам важнее
-          ключи / пвп (в любых специализациях), а 1% дпса в рейде вас не беспокоит.
-        </li>
-        <li class="border border-1 p-[20px] rounded-md border-border">
-          <Race
-            title="Орки"
-            url={Orc.src}
-            href="https://www.wowhead.com/ru/race=2/орк"
-          /> - лучшая раса по урону для начала дополнения у ликвидации и скрытности
-          (<WH
-            text="Кровавое неистовство"
-            href="https://www.wowhead.com/ru/spell=20572/кровавое-неистовство"
-          />), однако по мере увеличения характеристик сильно теряет
-          актуальность к концу дополнения. Топ-2 вариант для пвп (<WH
-            text="Твердость	"
-            href="https://www.wowhead.com/ru/spell=20573/твердость"
-          />), но все равно хуже чем ночные эльфы.
-        </li>
-        <li>
-          Остальные расы можно объединить, так как они не являются лучшими ни в
-          пве, ни в пвп и обычно выбираются из-за визуальной составляющей.
-        </li>
+        контроле, снимает всё, что могут способности других классов.
+      </li>
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <Race
+          title="Люди"
+          url={Human.src}
+          href="https://www.wowhead.com/ru/race=1/человек"
+        /> - с каждым новым рейдом становятся всё сильнее (<WH
+          text="Человеческий дух"
+          href="https://www.wowhead.com/ru/spell=20598/человеческий-дух"
+        />). Уже во втором сезоне являются одной из топ рас по урону. Для
+        ликвидации, у которой все характеристики очень близки - отличный выбор
+        под 3 и последующие сезоны.
+      </li>
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <Race
+          title="Ночные эльфы"
+          url={NightElf.src}
+          href="https://www.wowhead.com/ru/race=4/ночной-эльф"
+        /> - лучшая раса для пвп и ключей из-за дополнительной невидимости от <WH
+          text="Слиться с тенью"
+          href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
+        />. Для рейдов не имеет ничего полезного ни в одной специализации (<WH
+          text="Слиться с тенью"
+          href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
+        /> не дает уйти в невидимость на боссах). Стоит выбрать если вам важнее ключи
+        / пвп (в любых специализациях), а 1% дпса в рейде вас не беспокоит.
+      </li>
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <Race
+          title="Орки"
+          url={Orc.src}
+          href="https://www.wowhead.com/ru/race=2/орк"
+        /> | <Race
+          title="Механогномы"
+          url={Mechagnome.src}
+          href="https://www.wowhead.com/ru/race=37/механогном"
+        /> | <Race
+          title="Таурены"
+          url={Tauren.src}
+          href="https://www.wowhead.com/ru/race=6/таурен"
+        /> - отличные расы по урону, но не имеют ничего особо полезного для активностей.
+      </li>
+      <li>
+        Остальные расы можно объединить, так как они не являются лучшими ни в
+        пве, ни в пвп и обычно выбираются из-за визуальной составляющей.
       </li>
     </ul>
     <Sim title="Сим рас (одна цель 5 минут)">
       <span class="text-center"
-        >Сим с <WH
-          text="Придание сил"
+        >Сим без <WH
+          text="Придания сил"
           href="https://www.wowhead.com/ru/spell=10060/придание-сил"
-        /></span
+        /> (~100к дпс)</span
       >
       <img
         src={RacesRaid.src}
@@ -134,7 +130,8 @@ import NightElf from "../../assets/guide/races/race_nightelf.webp";
       В симе рас для ключей нету особого смысла. Они все очень близки (~1%
       разницы). Однако стандартные симы не учитывают невозможность рестелса.
       Поэтому дополнительные рестелсы от ночных эльфов делают их сильно лучше
-      других рас, какой бы сим не был у них.
+      других рас. Магхары также являются одной из лучших рас для ключей из-за по
+      урона (и намного полезнее на боссах, чем ночные эльфы).
     </Sim>
   </div>
 </section>

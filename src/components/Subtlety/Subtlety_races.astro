@@ -13,6 +13,7 @@ import VoidElf from "../../assets/guide/races/race_voidelf.webp";
 import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
 import Maghar from "../../assets/guide/races/race_magharorc.webp";
 import Tauren from "../../assets/guide/races/race_tauren.webp";
+import Human from "../../assets/guide/races/race_human.webp";
 ---
 
 <section
@@ -32,9 +33,9 @@ import Tauren from "../../assets/guide/races/race_tauren.webp";
     </p>
     <p>
       Также стоит помнить, что с ростом характеристик в последующих патчах
-      некоторые расы становятся сильнее (дворфы, люди, таурены). При этом, если вы собираетесь играть в
-      других специализациях, желательно также ознакомиться с ними. Ниже я напишу
-      лучшие, по моему мнению, расы.
+      некоторые расы становятся сильнее (дворфы, люди, таурены). При этом, если
+      вы собираетесь играть в других специализациях, желательно также
+      ознакомиться с ними. Ниже я напишу лучшие, по моему мнению, расы.
     </p>
     <ul class="flex flex-col gap-[16px]">
       <li class="border border-1 p-[20px] rounded-md border-border">
@@ -42,61 +43,73 @@ import Tauren from "../../assets/guide/races/race_tauren.webp";
           title="Дворфы"
           url={Dwarf.src}
           href="https://www.wowhead.com/ru/race=3/дворф"
-        /> - одна из лучших рас по урону (<WH
+        /> - универсальный вариант для всех спеков во все пве активности. С ростом
+        критического удара <WH
           text="Мощь гор"
           href="https://www.wowhead.com/ru/spell=59224/мощь-гор"
-        />). Лучшая раса для ключей и рейда. Расовая способность (<WH
+        /> становится сильнее. Расовая способность (<WH
           text="Каменная форма"
           href="https://www.wowhead.com/ru/spell=20594/каменная-форма"
-        />) не раз спасёт вам жизнь, особенно в высоких ключах, а так же может
-        упростить отыгрыш в рейде. Если вы не в контроле, снимает всё, что могут
-        способности других классов.
-        <li class="border border-1 p-[20px] rounded-md border-border">
-          <Race
-            title="Ночные эльфы"
-            url={NightElf.src}
-            href="https://www.wowhead.com/ru/race=4/ночной-эльф"
-          /> - лучшая раса для пвп из-за дополнительной невидимости от <WH
-            text="Слиться с тенью"
-            href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
-          />. Дополнительная невидимость скрытности практически ничего не дает,
-          поэтому для ключей не является лучшим выбором. Также и для рейдов не
-          имеет ничего полезного ни в одной специализации (<WH
-            text="Слиться с тенью"
-            href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
-          /> не дает уйти в невидимость на боссах). Стоит выбрать если вам важнее
-          ключи / пвп (в любых специализациях), а 1% дпса в рейде вас не беспокоит.
-        </li>
-        <li class="border border-1 p-[20px] rounded-md border-border">
-          <Race
-            title="Магхары"
-            url={Maghar.src}
-            href="https://www.wowhead.com/ru/race=36/магхар"
-          /> | <Race
-            title="Орки"
-            url={Orc.src}
-            href="https://www.wowhead.com/ru/race=2/орк"
-          /> | <Race
-            title="Механогномы"
-            url={Mechagnome.src}
-            href="https://www.wowhead.com/ru/race=37/механогном"
-          /> | <Race
-            title="Дренеи"
-            url={Tauren.src}
-            href="https://www.wowhead.com/ru/race=6/таурен"
-          /> | <Race
-            title="Эльфы бездны"
-            url={VoidElf.src}
-            href="https://www.wowhead.com/ru/race=29/эльф-бездны"
-          />- лучшие расы по урону, но не имеют ничего особо полезного для
-          активностей.
-        </li>
-        <li>
-          Остальные расы можно объединить, так как они не являются лучшими ни в
-          пве, ни в пвп и обычно выбираются из-за визуальной составляющей.
-        </li>
+        />) не раз спасёт вам жизнь, особенно в высоких ключах. Если вы не в
+        контроле, снимает всё, что могут способности других классов.
+      </li>
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <Race
+          title="Магхары"
+          url={Maghar.src}
+          href="https://www.wowhead.com/ru/race=36/магхар"
+        /> - после апа стали лучшей дпс расой для ликвидации и скрытности (и для
+        рейда и для ключей). <WH
+          text="Призыв предков"
+          href="https://www.wowhead.com/ru/spell=274738/призыв-предков"
+        /> является по сути вторым аксессуаром, поэтому бурст у магхаров самый сильный
+      </li>
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <Race
+          title="Ночные эльфы"
+          url={NightElf.src}
+          href="https://www.wowhead.com/ru/race=4/ночной-эльф"
+        /> - лучшая раса для пвп из-за дополнительной невидимости от <WH
+          text="Слиться с тенью"
+          href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
+        />. Дополнительная невидимость скрытности практически ничего не дает,
+        поэтому для ключей не является лучшим выбором. Также и для рейдов не
+        имеет ничего полезного ни в одной специализации (<WH
+          text="Слиться с тенью"
+          href="https://www.wowhead.com/ru/spell=58984/слиться-с-тенью"
+        /> не дает уйти в невидимость на боссах). Стоит выбрать если вам важнее ключи
+        / пвп (в любых специализациях), а 1% дпса в рейде вас не беспокоит.
+      </li>
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <Race
+          title="Люди"
+          url={Human.src}
+          href="https://www.wowhead.com/ru/race=1/человек"
+        /> | <Race
+          title="Орки"
+          url={Orc.src}
+          href="https://www.wowhead.com/ru/race=2/орк"
+        /> | <Race
+          title="Механогномы"
+          url={Mechagnome.src}
+          href="https://www.wowhead.com/ru/race=37/механогном"
+        /> | <Race
+          title="Таурены"
+          url={Tauren.src}
+          href="https://www.wowhead.com/ru/race=6/таурен"
+        /> | <Race
+          title="Эльфы бездны"
+          url={VoidElf.src}
+          href="https://www.wowhead.com/ru/race=29/эльф-бездны"
+        />- лучшие расы по урону, но не имеют ничего особо полезного для
+        активностей.
+      </li>
+      <li>
+        Остальные расы можно объединить, так как они не являются лучшими ни в
+        пве, ни в пвп и обычно выбираются из-за визуальной составляющей.
       </li>
     </ul>
+
     <Sim title="Сим рас (одна цель 5 минут)">
       <img
         src={RacesRaid.src}

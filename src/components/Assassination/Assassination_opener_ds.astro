@@ -1,174 +1,217 @@
 ---
 import WH from "../WH.astro";
+import Comment from "../Comment.astro";
 ---
 
-<ul
-  class="list-inside list-decimal flex flex-col items-start p-[20px] border border-border rounded-md text-left gap-[10px]"
->
-  <li>
-    <WH
-      text="Внезапный удар"
-      href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-    /> (обязательно начинать с него, чтобы повесить <WH
-      text="Метку ловчего смерти"
-      href="https://www.wowhead.com/ru/spell=457129/метка-ловчего-смерти"
-    />)
-  </li>
-  <li>
-    <WH
-      text="Вероломный передатчик"
-      href="https://www.wowhead.com/ru/item=221023/вероломный-передатчик?bonus=1540:10870&ilvl=639&spec=259"
-    /> (только использование, не выполнение поручений). Вы можете использовать (не
-    активировать) его в любой момент до бурстов
-  </li>
-  <li>
-    <WH text="Гаррота" href="https://www.wowhead.com/ru/spell=703/гаррота" />
-  </li>
-  <li>
-    <WH
-      text="Веер клинков"
-      href="https://www.wowhead.com/ru/spell=51723/веер-клинков"
-    /> (из-за баффа <WH
-      text="Устранение свидетелей"
-      href="https://www.wowhead.com/ru/spell=457178/устранение-свидетелей"
-    />)
-  </li>
-  <li>
-    <WH
-      text="Рваная рана"
-      href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+<div class="p-4 border border-border rounded-md">
+  <label
+    for="commentsDS"
+    class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
+  >
+    <input
+      type="checkbox"
+      id="commentsDS"
+      name="commentsDS"
+      class="peer hidden checkbox-3"
     />
-  </li>
-  <li>
-    <WH text="Расправа" href="https://www.wowhead.com/ru/spell=1329/расправа" />
-    до 5+ кп
-  </li>
-  <li>
-    <WH
-      text="Отравление"
-      href="https://www.wowhead.com/ru/spell=32645/отравление"
-    />
-  </li>
-  <li>
-    <WH
-      text="Знак смерти"
-      href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
-    />
-  </li>
-  <li>
-    <WH
-      text="Вероломный передатчик"
-      href="https://www.wowhead.com/ru/item=221023/вероломный-передатчик?bonus=1540:10870&ilvl=639&spec=259"
-    /> (активация) | <WH
-      text="Милость Скардина"
-      href="https://www.wowhead.com/ru/item=133282/милость-скардина?bonus=4786:11342:10299&class=4&ilvl=639&spec=259"
-    />
-  </li>
-  <li>
-    <WH
-      text="Отравляющий укол"
-      href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-    />
-  </li>
-  <li>
-    <WH
-      text="Погибель королей"
-      href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-    />
-  </li>
-  <li>
-    <WH text="Расправа" href="https://www.wowhead.com/ru/spell=1329/расправа" />
-    до 5+ кп
-  </li>
-  <li>
-    <WH
-      text="Скорополоховый чай"
-      href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
-    /> за 12 секунд до конца <WH
-      text="Погибель королей"
-      href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-    />. Вы можете использовать чай немного раньше, например прямо перед
-    следующим <WH
-      text="Отравлением"
-      href="https://www.wowhead.com/ru/spell=32645/отравление"
-    />
-  </li>
-  <li>
-    <WH
-      text="Отравление"
-      href="https://www.wowhead.com/ru/spell=32645/отравление"
-    />
-  </li>
-  <li>
-    <WH text="Расправа" href="https://www.wowhead.com/ru/spell=1329/расправа" />
-    | <WH
-      text="Внезапный удар"
-      href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-    /> до 5+ кп и <WH
-      text="Отравление"
-      href="https://www.wowhead.com/ru/spell=32645/отравление"
-    />
-  </li>
-  <li>
-    <WH
-      text="Исчезновение"
-      href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-    /> + <WH
-      text="Гаррота"
-      href="https://www.wowhead.com/ru/spell=703/гаррота"
-    /> (когда <WH
-      text="Гаррота"
-      href="https://www.wowhead.com/ru/spell=703/гаррота"
-    /> осталось меньше 5.4 сек)
-  </li>
-  <li>
-    <WH
-      text="Отравляющий укол"
-      href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-    /> сразу после окончания предыдущего
-  </li>
-  <li>
-    <WH text="Расправа" href="https://www.wowhead.com/ru/spell=1329/расправа" />
-    | <WH
-      text="Внезапный удар"
-      href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-    /> до 5+ кп и <WH
-      text="Отравление"
-      href="https://www.wowhead.com/ru/spell=32645/отравление"
-    />
-  </li>
-  <li>
-    <WH
-      text="Скорополоховый чай"
-      href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
-    /> за 6 секунд до конца <WH
-      text="Погибель королей"
-      href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-    />
-  </li>
-</ul>
+    <span
+      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
+    ></span>
+    <span class="text-left"> Показать комментарии*</span></label
+  >
 
-<p class="pt-[16px] text-left">
-  На опенере вы можете выпить 2 <WH
-    text="Скорополохового чая"
-    href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
-  /> подряд (в последние 12 сек <WH
-    text="Погибели королей"
-    href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-  />), затем по 1 чаю каждую минуту под <WH
-    text="Погибель королей"
-    href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-  />, а на экзекуте выпить так же 2 <WH
-    text="Скорополохового чая"
-    href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
-  /> под последний бурст в бою.
-</p>
-<p class="pt-[16px] text-left">
-  Вы можете использовать <WH
-    text="Вероломный передатчик"
-    href="https://www.wowhead.com/ru/item=221023/вероломный-передатчик?bonus=1540:10870&ilvl=639&spec=259"
-  /> еще раньше, главное успеть выполнить задание на старте действия <WH
-    text="Знака смерти"
-    href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
-  /> (время на выполнения заданий - 15 сек).
-</p>
+  <ul
+    class="peer-checked:hidden list-inside list-decimal flex flex-col items-start p-[20px] text-left gap-[10px]"
+  >
+    <li>
+      <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      />*
+    </li>
+    <Comment class="visible-comment"
+      >Обязательно начинать с него, чтобы повесить <WH
+        text="Метку ловчего смерти"
+        href="https://www.wowhead.com/ru/spell=457129/метка-ловчего-смерти"
+      /></Comment
+    >
+    <li>
+      <WH text="Гаррота" href="https://www.wowhead.com/ru/spell=703/гаррота" />
+    </li>
+    <li>
+      <WH
+        text="Расправа"
+        href="https://www.wowhead.com/ru/spell=1329/расправа"
+      />
+      | <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      />
+    </li>
+    <li>
+      <WH
+        text="Рваная рана"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      />
+    </li>
+    <li>
+      <WH
+        text="Расправа"
+        href="https://www.wowhead.com/ru/spell=1329/расправа"
+      />
+      | <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      />
+      до 5+ кп
+    </li>
+    <li>
+      <WH
+        text="Отравление"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      />
+    </li>
+    <li>
+      <WH
+        text="Знак смерти"
+        href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
+      /> +
+      <WH
+        text="Перстень приората"
+        href="https://www.wowhead.com/ru/item=219308/перстень-приората?bonus=4786:3170:11996&ilvl=678&spec=259"
+      /> (если играете с ним)
+    </li>
+    <li>
+      <WH
+        text="Отравляющий укол"
+        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+      />
+    </li>
+    <li>
+      <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> + <WH
+        text="Карточный домик"
+        href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&ilvl=678&spec=261"
+      /> (если играете с ним) + <WH
+        text="Охлажденное зелье"
+        href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
+      /> + Расовая*
+    </li>
+    <Comment class="visible-comment"
+      ><WH
+        text="Карточный домик"
+        href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&ilvl=678&spec=261"
+      /> используется с <WH
+        text="Погибелью королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> потому что действует всего 15 сек. Нужно чтобы последние тики <WH
+        text="Погибели королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> попали под <WH
+        text="Карточный домик"
+        href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&ilvl=678&spec=261"
+      />. Зелье и расовые тоже лучше жать под <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> (это примерно на 0.1% лучше чем под <WH
+        text="Знак смерти"
+        href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
+      />)</Comment
+    >
+    <li>
+      <WH
+        text="Расправа"
+        href="https://www.wowhead.com/ru/spell=1329/расправа"
+      />
+      до 5+ кп
+    </li>
+    <li>
+      <WH
+        text="Скорополоховый чай"
+        href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
+      /> за 12 секунд до конца <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      />*
+    </li>
+    <Comment class="visible-comment"
+      >Вы можете использовать чай немного раньше, если активен бафф <WH
+        text="Непроглядная ночь"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      />, ради сильного <WH
+        text="Отравления"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      /></Comment
+    >
+    <li>
+      <WH
+        text="Отравление"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      />
+    </li>
+    <li>
+      <WH
+        text="Расправа"
+        href="https://www.wowhead.com/ru/spell=1329/расправа"
+      />
+      | <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> до 5+ кп и <WH
+        text="Отравление"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      />
+    </li>
+    <li>
+      <WH
+        text="Отравляющий укол"
+        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+      /> сразу после окончания предыдущего
+    </li>
+    <li>
+      <WH
+        text="Расправа"
+        href="https://www.wowhead.com/ru/spell=1329/расправа"
+      />
+      | <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> до 5+ кп и <WH
+        text="Отравление"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      />
+    </li>
+    <li>
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> + <WH
+        text="Гаррота"
+        href="https://www.wowhead.com/ru/spell=703/гаррота"
+      /> (когда <WH
+        text="Гаррота"
+        href="https://www.wowhead.com/ru/spell=703/гаррота"
+      /> осталось меньше 5.4 сек)*
+    </li>
+    <Comment class="visible-comment"
+      >Это обновит усиленную <WH
+        text="Гаррота"
+        href="https://www.wowhead.com/ru/spell=703/гаррота"
+      /> по пандемику, а так же повесит бафф <WH
+        text="Мастер-убийца"
+        href="https://www.wowhead.com/ru/spell=255989/мастер-убийца"
+      /></Comment
+    >
+    <li>
+      <WH
+        text="Скорополоховый чай"
+        href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
+      /> за 6 секунд до конца <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      />
+    </li>
+  </ul>
+</div>

@@ -101,7 +101,8 @@ import WH from "../WH.astro";
           text="Запах крови"
           href="https://www.wowhead.com/ptr-2/spell=381799/scent-of-blood?def=117673"
         /> (имеет "smart targeting", то есть в приоритете вешается на цели около
-        вас без дебаффа).
+        вас без дебаффа). Затем, после бурстов, раскидывать на все цели, которые
+        проживут хотя бы 15 сек.
       </li>
       <li>
         Всегда поддерживать <WH
@@ -114,17 +115,19 @@ import WH from "../WH.astro";
         <WH
           text="Кровавый вихрь"
           href="https://www.wowhead.com/ru/spell=121411/кровавый-вихрь"
-        /> только как ДоТ, не нужно им спамить.
+        /> только как ДоТ, не нужно им спамить. В bleed билде нужно использовать
+        даже в одну цель.
       </li>
       <li>
         Набирать кп с помощью
         <WH
           text="Веер клинков"
           href="https://www.wowhead.com/ru/spell=51723/веер-клинков"
-        /> если 3 и больше целей, в 2 цели - <WH
+        /> если 3 и больше целей (4 и больше в bleed билде), в 2 цели (в 3 цели в
+        bleed билде) - <WH
           text="Расправа"
           href="https://www.wowhead.com/ru/spell=1329/расправа"
-        />
+        />.
       </li>
       <li>
         Каждый бурст вы должны делать в самую живучую цель, чтобы она
@@ -172,7 +175,7 @@ import WH from "../WH.astro";
       /> (если на цели нету <WH
         text="Едких капель"
         href="https://www.wowhead.com/ru/spell=421976/едкие-капли"
-      /> и это не одна цель)
+      />)
     </li>
     <li>
       <WH
@@ -182,7 +185,10 @@ import WH from "../WH.astro";
         text="Устранение свидетелей"
         href="https://www.wowhead.com/ru/spell=457178/устранение-свидетелей"
       />, либо 3 и больше целей). Не нужно использовать во время бурста, даже с
-      баффом.
+      баффом. В bleed билде <WH
+        text="Веер клинков"
+        href="https://www.wowhead.com/ru/spell=51723/веер-клинков"
+      /> используется от 4 и больше целей.
     </li>
     <li>
       <WH
@@ -202,6 +208,7 @@ import WH from "../WH.astro";
   <ul
     class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
+    <span class="text-green-500">Рейд и KB билд:</span>
     <li>
       <WH
         text="Рваная рана"
@@ -234,8 +241,52 @@ import WH from "../WH.astro";
       <WH
         text="Кровавый вихрь"
         href="https://www.wowhead.com/ru/spell=121411/кровавый-вихрь"
-      /> - используется только если 2+ цели. Вешается как ДоТ, спамить им
-      не нужно, обновлять по пандемику.
+      /> - используется только если 2+ цели. Вешается как ДоТ, спамить им не нужно,
+      обновлять по пандемику.
+    </li>
+    <span class="text-red-500">Ключи Bleed билд:</span>
+    <li>
+      <WH
+        text="Рваная рана"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      /> - должна быть весь бой на цели (если она одна). В АоЕ должно быть на всех
+      возможных целях. В одну цель нужно обновлять по пандемику. Во время <WH
+        text="Непроглядной ночи"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      /> обновляется только если скоро закончится (меньше одной секунды)
+    </li>
+    <li>
+      <WH
+        text="Кровавый вихрь"
+        href="https://www.wowhead.com/ru/spell=121411/кровавый-вихрь"
+      /> используется даже в одну цель, в приоритете над <WH
+        text="Отравлением"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      />. Только как ДоТ, не спамить, обновлять по пандемику (меньше 30%
+      оставшегося времени действия). В кливе важно не перевешивать усиленный <WH
+        text="Кровавый вихрь"
+        href="https://www.wowhead.com/ru/spell=121411/кровавый-вихрь"
+      /> (за каждую задетую цель он получает +20%, вплоть до +100%), для этого можете
+      использовать WA: <a
+        href="https://wago.io/eSwGquCCh"
+        class="text-hover hover:opacity-80"
+        aria-label="Crimson Tempest">Crimson Tempest</a
+      >
+    </li>
+    <li>
+      <WH
+        text="Отравление"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      /> используется если на целях не требуется обновлять <WH
+        text="Рваные раны"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      /> и <WH
+        text="Кровавый вихрь"
+        href="https://www.wowhead.com/ru/spell=121411/кровавый-вихрь"
+      />. Под баффом <WH
+        text="Непроглядной ночи"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      /> имеет наивысший приоритет.
     </li>
   </ul>
   <H3 text="Приоритет кулдаунов (cooldowns):" />
@@ -262,12 +313,6 @@ import WH from "../WH.astro";
             text="Отравляющий укол"
             href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
           />
-        </li>
-        <li>
-          Бафф от <WH
-            text="Отравление"
-            href="https://www.wowhead.com/ru/spell=32645/отравление"
-          /> активен и его оставшееся время 1 сек и меньше
         </li>
         <li>До конца боя 20 и меньше секунд</li>
       </ul>
@@ -311,10 +356,11 @@ import WH from "../WH.astro";
       /> на опенере и дальше под бурсты
     </li>
     <li>
+      <span class="text-green-500">Рейд и KB билд:</span>
       <WH
         text="Отравляющий укол"
         href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-      /> - используется только под <WH
+      /> - используется под <WH
         text="Погибель королей"
         href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
       />. Один заряд перед <WH
@@ -327,12 +373,36 @@ import WH from "../WH.astro";
       />, затем по откату и затем снова под конец <WH
         text="Погибель королей"
         href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      />. Также может использоваться вне <WH
+        text="Погибели королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> если активны оба баффа <WH
+        text="Непроглядная ночь"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      /> и <WH
+        text="Остаточная тьма"
+        href="https://www.wowhead.com/ru/spell=457273/остаточная-тьма"
       />
+    </li>
+    <li>
+      <span class="text-red-500">Bleed билд:</span>
+      <WH
+        text="Отравляющий укол"
+        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+      /> в АоЕ можно придерживать до 35% здоровья целей, чтобы получить бонус от
+      <WH
+        text="Рецепт семейства Золдик"
+        href="https://www.wowhead.com/ru/spell=381798/рецепт-семейства-золдик"
+      />. Под <WH
+        text="Знак смерти"
+        href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
+      /> желательно иметь 2 заряда.
     </li>
     <li>
       <WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=456330/хладнокровие"
       /> используется по откату
+    </li>
   </ul>
 </div>

@@ -1,4 +1,4 @@
-import races from "../assets/guide/races/race_dwarf.webp";
+import races from "../assets/guide/races/race_magharorc.webp";
 import assa_talents from "../assets/guide/menu_icons/assassination.webp";
 import stats from "../assets/guide/menu_icons/stats.webp";
 import equipment from "../assets/guide/menu_icons/assa_sub_equip.webp";

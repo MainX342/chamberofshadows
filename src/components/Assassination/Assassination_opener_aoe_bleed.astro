@@ -1,0 +1,224 @@
+---
+import WH from "../WH.astro";
+import Comment from "../Comment.astro";
+---
+
+<div class="p-4 border border-border rounded-md">
+  <label
+    for="commentsBleed"
+    class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
+  >
+    <input
+      type="checkbox"
+      id="commentsBleed"
+      name="commentsBleed"
+      class="peer hidden checkbox-3"
+    />
+    <span
+      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
+    ></span>
+    <span class="text-left"> Показать комментарии*</span></label
+  >
+
+  <ul
+    class="peer-checked:hidden list-inside list-decimal flex flex-col items-start p-[20px] text-left gap-[10px]"
+  >
+    <Comment class="visible-comment"
+      >Основная "сложность" АоЕ ротации заключается в том, что вам нужно каждые
+      10 секунд использовать <WH
+        text="Расправа"
+        href="https://www.wowhead.com/ru/spell=1329/расправа"
+      /> (для активации <WH
+        text="Едких капель"
+        href="https://www.wowhead.com/ru/spell=421975/едкие-капли"
+      />) и это вас привязывает к цели. То есть, при смене цели вы первым делом
+      (или после того, как повесите кровотечения, если необходимо), должны
+      использовать <WH
+        text="Расправу"
+        href="https://www.wowhead.com/ru/spell=1329/расправа"
+      />. ОСОБЕННО ВАЖНО: никогда не использовать <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> в цель без <WH
+        text="Едких капель"
+        href="https://www.wowhead.com/ru/spell=421975/едкие-капли"
+      />, это ваш основной урон. Так же необходимо, чтобы в каждом паке, на
+      ком-то был дебафф от <WH
+        text="Метки ловчего смерти"
+        href="https://www.wowhead.com/ru/spell=457129/метка-ловчего-смерти"
+      />, чтобы работала сама метка и талант <WH
+        text="Исключительная концентрация"
+        href="https://www.wowhead.com/ru/spell=457055/исключительная-концентрация"
+      /></Comment
+    >
+    <Comment class="visible-comment"
+      >Bleed билд более активно перевешивает <WH
+        text="Гарроты"
+        href="https://www.wowhead.com/ru/spell=703/гаррота"
+      /> и <WH
+        text="Рваные рана"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      /> в аое, делается это для того, чтобы больше времени было под действием <WH
+        text="Рецепт семейства Золдик"
+        href="https://www.wowhead.com/ru/spell=381798/рецепт-семейства-золдик"
+      /> и сильнее ударила <WH
+        text="Внезапная гибель"
+        href="https://www.wowhead.com/ru/spell=423136/внезапная-гибель"
+      /></Comment
+    >
+    <li>
+      <WH text="Гаррота" href="https://www.wowhead.com/ru/spell=703/гаррота" />
+    </li>
+    <li>
+      <WH text="Гаррота" href="https://www.wowhead.com/ru/spell=703/гаррота" />
+    </li>
+    <li>
+      <WH
+        text="Рваная рана"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      />
+    </li>
+    <li>
+      <WH
+        text="Рваная рана"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      />*
+    </li>
+    <Comment class="visible-comment"
+      >Кп для второй <WH
+        text="Рваной раны"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      /> у вас появятся благодаря <WH
+        text="Зазубренному костяному шипу"
+        href="https://www.wowhead.com/ru/spell=455352/зазубренные-костяные-шипы"
+      /></Comment
+    >
+    <li>
+      <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      />*
+    </li>
+    <Comment class="visible-comment"
+      >Чтобы повесить <WH
+        text="Едкие капли"
+        href="https://www.wowhead.com/ru/spell=421975/едкие-капли"
+      /></Comment
+    >
+    <li>
+      <WH text="Гаррота" href="https://www.wowhead.com/ru/spell=703/гаррота" />
+    </li>
+    <li>
+      <WH
+        text="Рваная рана"
+        href="https://www.wowhead.com/ru/spell=1943/рваная-рана"
+      />
+    </li>
+    <li>
+      <WH text="Гаррота" href="https://www.wowhead.com/ru/spell=703/гаррота" />
+    </li>
+    <li>
+      <WH text="Гаррота" href="https://www.wowhead.com/ru/spell=703/гаррота" />
+    </li>
+    <li>
+      <WH
+        text="Кровавый вихрь"
+        href="https://www.wowhead.com/ru/spell=121411/кровавый-вихрь"
+      />
+    </li>
+    <li>
+      <WH
+        text="Знак смерти"
+        href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
+      /> +
+      <WH
+        text="Перстень приората"
+        href="https://www.wowhead.com/ru/item=219308/перстень-приората?bonus=4786:3170:11996&ilvl=678&spec=259"
+      /> (если играете с ним)
+    </li>
+    <li>
+      <WH text="Гаррота" href="https://www.wowhead.com/ru/spell=703/гаррота" />
+    </li>
+    <li>
+      <WH
+        text="Отравляющий укол"
+        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+      /> + <WH
+        text="Скорополоховый чай"
+        href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
+      />
+    </li>
+    <li>
+      <WH
+        text="Карточный домик"
+        href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&ilvl=678&spec=261"
+      /> (если играете с ним) + <WH
+        text="Охлажденное зелье"
+        href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
+      /> + Расовая
+    </li>
+    <li>
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />*
+    </li>
+    <Comment
+      >ВАЖНО: только после спадения баффа <WH
+        text="Мастер-убийца"
+        href="https://www.wowhead.com/ru/spell=255989/мастер-убийца"
+      />, иначе бафф не продлится (баг)</Comment
+    >
+    <li>
+      <WH
+        text="Отравление"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      />
+    </li>
+    <li>
+      <WH
+        text="Расправа"
+        href="https://www.wowhead.com/ru/spell=1329/расправа"
+      />*
+    </li>
+    <Comment class="visible-comment"
+      >Чтобы повесить <WH
+        text="Едкие капли"
+        href="https://www.wowhead.com/ru/spell=421975/едкие-капли"
+      /></Comment
+    >
+    <li>
+      <WH
+        text="Веер клинков"
+        href="https://www.wowhead.com/ru/spell=51723/веер-клинков"
+      /> до 5+ кп (или <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> для обновления <WH
+        text="Едких капель"
+        href="https://www.wowhead.com/ru/spell=421975/едкие-капли"
+      />) и <WH
+        text="Отравление"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      />
+    </li>
+    <li>
+      <WH
+        text="Отравляющий укол"
+        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+      /> + <WH
+        text="Скорополоховый чай"
+        href="https://www.wowhead.com/ru/spell=381623/скорополоховый-чай"
+      /> после окончания предыдущего <WH
+        text="Отравляющего укола"
+        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+      />
+    </li>
+    <li>
+      <WH
+        text="Кровавый вихрь"
+        href="https://www.wowhead.com/ru/spell=121411/кровавый-вихрь"
+      />
+    </li>
+  </ul>
+</div>
