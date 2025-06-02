@@ -6,6 +6,6 @@ type Props = {
 const { class: className = "" } = Astro.props;
 ---
 
-<span class={`mx-2 italic text-base leading-relaxed text-gray-400 w-full hidden ${className}`}>
+<span class={`mx-2 italic text-base leading-relaxed text-gray-400 w-full ${className}`}>
   <slot />
 </span>

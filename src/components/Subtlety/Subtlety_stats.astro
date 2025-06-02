@@ -51,22 +51,69 @@ import WH from "../WH.astro";
         target="_blank">Boosty</a
       >.
     </p>
-    <H3 text="Приоритет характеристик для рейда и ключей" />
+    <H3 text="Приоритет характеристик для рейда" />
     <ul
       class="list-inside list-decimal font-medium border border-border rounded-md p-[20px] text-left flex flex-col gap-[20px]"
     >
+      <span class="text-hover"
+        >Все характеристики указаны без баффов, настоев и прочих бонусов</span
+      >
       <li>
-        До 24-25% критического удара можно использовать вещи крит +
-        универсальность / искусность. Дальше все вещи универсальность +
-        искусность.
+        До 25-27% критического удара можно использовать вещи крит +
+        универсальность. Дальше все вещи универсальность + искусность.
       </li>
       <li>
         Скорость не требуется. В идеале должна быть только на <WH
           text="Проклятый лик призрачного игрока"
-          href="https://www.wowhead.com/ru/item=229289/проклятый-лик-призрачного-игрока?bonus=523&ilvl=678&spec=261"
+          href="https://www.wowhead.com/ru/item=229289/проклятый-лик-призрачного-игрока?bonus=523&ilvl=684&spec=261"
         /> и <WH
           text="Бриллиант 'Джастор'"
-          href="https://www.wowhead.com/ru/item=231265/бриллиант-джастор?bonus=8781&ilvl=678&spec=2619"
+          href="https://www.wowhead.com/ru/item=231265/бриллиант-джастор?bonus=8781&ilvl=684&spec=2619"
+        />
+      </li>
+    </ul>
+    <H3 text="Приоритет характеристик для ключей" />
+    <ul
+      class="list-inside list-decimal font-medium border border-border rounded-md p-[20px] text-left flex flex-col gap-[20px]"
+    >
+      <span class="text-hover"
+        >Все характеристики указаны без баффов, настоев и прочих бонусов. Для
+        ключей используется <WH
+          text="Импровизированный сефориевый стимулятор"
+          href="https://www.wowhead.com/ru/item=232541/импровизированный-сефориевый-стимулятор?ilvl=684"
+        /></span
+      >
+      <li>
+        Универсальность желательно должна быть на всех возможных вещах
+        (естественно за исключением аксессуаров / джастора / вещей из комплекта)
+      </li>
+      <li>
+        Для <WH
+          text="Мастер гнили"
+          href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
+        /> достаточно 22-23% критического удара. Крит нам нужен в основном для развешивания
+        <WH
+          text="Выявления слабости"
+          href="https://www.wowhead.com/ru/spell=316220/выявление-слабости"
+        /> в аое, а <WH
+          text="Мастер гнили"
+          href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
+        /> сильно это упрощает, поэтому и вес / значения крита ниже, чем при игре
+        с <WH
+          text="Завершением"
+          href="https://www.wowhead.com/ru/spell=382525/завершение"
+        />. Для <WH
+          text="Завершения"
+          href="https://www.wowhead.com/ru/spell=382525/завершение"
+        /> вам желательно иметь ~24-25% крита.
+      </li>
+      <li>
+        Скорость не требуется. В идеале должна быть только на <WH
+          text="Проклятый лик призрачного игрока"
+          href="https://www.wowhead.com/ru/item=229289/проклятый-лик-призрачного-игрока?bonus=523&ilvl=684&spec=261"
+        /> и <WH
+          text="Бриллиант 'Джастор'"
+          href="https://www.wowhead.com/ru/item=231265/бриллиант-джастор?bonus=8781&ilvl=684&spec=2619"
         />
       </li>
     </ul>
@@ -75,12 +122,38 @@ import WH from "../WH.astro";
       class="list-inside list-disc font-medium border border-border rounded-md p-[20px] text-left flex flex-col gap-[20px]"
     >
       <span class="text-hover"
-        >Все характеристики указаны без баффов, настоев и прочих бонусов</span
+        >Все характеристики указаны без баффов, настоев и прочих бонусов. Для
+        ключей используется <WH
+          text="Импровизированный сефориевый стимулятор"
+          href="https://www.wowhead.com/ru/item=232541/импровизированный-сефориевый-стимулятор?ilvl=684"
+        /></span
       >
-      <li>Критический удар 24.61%</li>
-      <li>Универсальность 23.34%</li>
-      <li>Скорость 3.07%</li>
-      <li>Искусность 80.88%</li>
+
+      <span class="text-purple-500">Рейд:</span>
+      <li>Критический удар 27.09%</li>
+      <li>Универсальность 21.68%</li>
+      <li>Скорость 3.15%</li>
+      <li>Искусность 77.42%</li>
+      <span class="text-yellow-500"
+        >Ключи <WH
+          text="Завершение"
+          href="https://www.wowhead.com/ru/spell=382525/завершение"
+        />:</span
+      >
+      <li>Критический удар 24.34%</li>
+      <li>Универсальность 20.14%</li>
+      <li>Скорость 3.15%</li>
+      <li>Искусность 85.23%</li>
+      <span class="text-green-500"
+        >Ключи <WH
+          text="Мастер гнили"
+          href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
+        />:</span
+      >
+      <li>Критический удар 22.91%</li>
+      <li>Универсальность 20.37%</li>
+      <li>Скорость 3.15%</li>
+      <li>Искусность 88.00%</li>
     </ul>
   </div>
 </section>
