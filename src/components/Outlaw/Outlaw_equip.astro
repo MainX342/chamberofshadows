@@ -1,36 +1,94 @@
 ---
 import H2 from "../H2.astro";
-import { outlawMenuItems } from "../../constants/content";
-import Outlaw_emb from "./Outlaw_equip_embellishments.astro";
-import Outlaw_set from "./Outlaw_equip_set.astro";
-import Outlaw_farm from "./Outlaw_equip_farm.astro";
-import Outlaw_kir from "./Outlaw_equip_kir.astro";
-import Outlaw_ho from "./Outlaw_equip_ho.astro";
-import Outlaw_keys from "./Outlaw_equip_keys.astro";
+import { subMenuItems } from "../../constants/content";
+import Set from "./Outlaw_equip_set.astro";
+import Embelishments from "./Outlaw_equip_emb.astro";
+import Farm from "./Outlaw_equip_farm.astro";
+import BisRaid from "./Outlaw_equip_bis_raid.astro";
+import BisKeys from "./Outlaw_equip_bis_keys.astro";
 ---
 
 <section
-  id={outlawMenuItems[3].to}
+  id={subMenuItems[3].to}
   class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-left"
 >
-  <H2 text={outlawMenuItems[3].label} />
+  <H2 text={subMenuItems[3].label} />
   <div class="flex flex-col gap-[16px] text-clamp_text">
     <p>
-      В первом сезоне, на удивление, у головореза довольно мало
-      "зафиксированных" вещей. Почти все вещи (даже редкие) можно заменить
-      аналогами с потерей очень незначительного урона (или вообще без потерь).
-      Для своего персонажа всегда пользуйтесь <a
+      Головорез сильнее ограничен в вещах нежели другие специализации, так как
+      все вещи должны быть в идеале с универсальностью. Однако из бонусов, можно
+      почти всё сделать через крафты и это почти не будет уступать 684 вещам (за
+      исключением оружия и аксессуаров). Для проверки своего персонажа, как
+      всего, используйте <a
         href="https://www.raidbots.com/simbot/topgear"
         class="text-hover hover:opacity-80">Raidbots - Top Gear</a
       >.
     </p>
     <div class="flex flex-wrap max-w-[1024px] text-secondary text-left">
-      <Outlaw_set />
-      <Outlaw_emb />
-      <Outlaw_farm />
-      <Outlaw_kir />
-      <Outlaw_ho />
-      <Outlaw_keys />
+      <input
+        type="radio"
+        id="tab_one_1"
+        name="mytabs_equip"
+        checked="checked"
+        class="peer/tab_one_1 hidden p-[20px]"
+      />
+      <label
+        for="tab_one_1"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one_1:text-sub peer-checked/tab_one_1:neon-sub"
+        >Комплект</label
+      >
+      <Set />
+      <input
+        type="radio"
+        id="tab_two_2"
+        name="mytabs_equip"
+        class="peer/tab_two_2 hidden p-[20px]"
+      />
+      <label
+        for="tab_two_2"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two_2:text-sub peer-checked/tab_two_2:neon-sub"
+        >Украшения</label
+      >
+      <Embelishments />
+
+      <input
+        type="radio"
+        id="tab_three_3"
+        name="mytabs_equip"
+        class="peer/tab_three_3 hidden p-[20px]"
+      />
+      <label
+        for="tab_three_3"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three_3:text-sub peer-checked/tab_three_3:neon-sub text-center"
+        >Что фармить?</label
+      >
+      <Farm />
+
+      <input
+        type="radio"
+        id="tab_four_4"
+        name="mytabs_equip"
+        class="peer/tab_four_4 hidden p-[20px]"
+      />
+      <label
+        for="tab_four_4"
+        class="p-[20px] w-[100%] sm:w-[50%] 2xl:w-[20%] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_four_4:text-hover peer-checked/tab_four_4:neon-hover"
+        >BiS (рейд)</label
+      >
+      <BisRaid />
+
+      <input
+        type="radio"
+        id="tab_four_5"
+        name="mytabs_equip"
+        class="peer/tab_four_5 hidden p-[20px]"
+      />
+      <label
+        for="tab_four_5"
+        class="p-[20px] w-[100%] sm:w-[50%] 2xl:w-[20%] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_four_5:text-hover peer-checked/tab_four_5:neon-hover text-center"
+        >BiS (ключи)</label
+      >
+      <BisKeys />
     </div>
   </div>
 </section>

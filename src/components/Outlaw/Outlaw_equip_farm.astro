@@ -2,96 +2,54 @@
 import WH from "../WH.astro";
 ---
 
-<input
-  type="radio"
-  id="tab_three_3"
-  name="mytabs_equip"
-  class="peer/tab_three_3 hidden p-[20px]"
-/>
-<label
-  for="tab_three_3"
-  class="p-[20px] w-[100%] sm:w-[calc(100%/3)] select-none border border-1 border-border lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three_3:text-outlaw peer-checked/tab_three_3:neon-outlaw text-center"
-  >Что фармить?</label
->
 <div class="peer-checked/tab_three_3:block w-full order-1 hidden">
   <ul
     class="list-inside list-decimal font-medium p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
   >
-    <span class="mb-[10px]"
-      >Для головореза очень много хороших (и даже лучших) выпадает с подземелий.
-      Основные подземелья для фарма - Грим Батол, Смертельная Тризна, Осада
-      Боралуса и Город Нитей
-    </span>
+    <span
+      >Сейчас нету смысла писать про именно фарм, так как уже конец сезона. Но
+      если вам все равно нужно что-то, то фармите любые вещи выше илвл чем ваши
+      без искусности. То, что вам действительно необходимо будет ниже.</span
+    >
     <li>
       <WH
-        text="Кюлоты морехода"
-        href="https://www.wowhead.com/ru/item=159322/кюлоты-морехода?class=4&ilvl=639&spec=260"
-      /> [Осада Боралуса] | <WH
-        text="Кюлоты из мерцающей нити"
-        href="https://www.wowhead.com/ru/item=133354/кюлоты-из-мерцающей-нити?bonus=4786:11342:10299&class=4&ilvl=639&spec=260"
-      /> [Грим Батол], лучший вариант на замену вещи из комплекта
+        text="Дубина сумеречного проклятого клинка"
+        href="https://www.wowhead.com/ru/item=237780/дубина-сумеречного-проклятого-клинка"
+      /> - лучший вариант оффхенда для ключей. Даже при наличии 684 оружия, вы можете
+      "свапать" ее на аое, а 684 на боссов. Это можно делать в бою, если вы не носите
+      <WH
+        text="Дубина добытчика"
+        href="https://www.wowhead.com/ru/item=228901/дубина-добытчика"
+      />, с ней нельзя. Суть заключается в том, что <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> сбрасывает бой и эффект снова срабатывает. Получить ее можно на эвенте в
+      Тайносводье. За выполнение эвенте вы получите 1 эмблему, и за нее покупаете
+      оружие у <WH
+        text="Веспер Чурнмоат"
+        href="https://www.wowhead.com/ru/npc=240979/веспер-чурнмоат"
+      />
     </li>
+    <span
+      >Для свапа вам может помочь <a
+        href="https://wago.io/HVujcpKwo"
+        class="text-hover hover:opacity-80"
+        target="_blank">WA</a
+      > и макрос (напишите название вашего оффхенда вместо Кумира толпы)
+      <pre><code class="text-base">#showtooltip 17
+/equipslot 17 Дубина сумеречного проклятого клинка
+/equipslot 17 Кумир толпы</code></pre></span
+    >
     <li>
       <WH
-        text="Подвеска гемолимфомного старейшины"
-        href="https://www.wowhead.com/ru/item=221181/подвеска-гемолимфомного-старейшины?bonus=3131:10870:8781&ilvl=639&spec=260"
-      /> [Город Нитей], лучшая шея
-    </li>
-    <li>
-      <WH
-        text="Пояс поглотителя живицы"
-        href="https://www.wowhead.com/ru/item=178699/пояс-поглотителя-живицы?bonus=4786:9948:10299:523&class=4&ilvl=639&spec=259"
-      /> [Туманы Тирна Скитта], отличный пояс, пока не получите любой 639 для катализатора
-      (или с рейда)
-    </li>
-    <li>
-      <WH
-        text="Сапоги осады"
-        href="https://www.wowhead.com/ru/item=159320/сапоги-осады?bonus=4786:10047:10299&class=4&ilvl=639&spec=260"
-      /> [Осада Боралуса] | <WH
-        text="Прошитые потрохами башмаки"
-        href="https://www.wowhead.com/ru/item=178731/прошитые-потрохами-башмаки?bonus=9948&class=4&ilvl=639&spec=260"
-      /> [Смертельная тризна], лучшие ботинки
-    </li>
-    <li>
-      <WH
-        text="Покров заклинателя роя"
-        href="https://www.wowhead.com/ru/item=221154/покров-заклинателя-роя?bonus=4786:3131:10299&class=4&ilvl=639&spec=260"
-      /> [Ара-Кара] | <WH
-        text="Накидка печальных воспоминаний"
-        href="https://www.wowhead.com/ru/item=133309/накидка-печальных-воспоминаний?bonus=4786:11342:10299&class=4&ilvl=639&spec=260"
-      /> [Грим Батол] | <WH
-        text="Плащ рожденного в лазури"
-        href="https://www.wowhead.com/ru/item=133292/плащ-рожденного-в-лазури?bonus=4786:11342:10299&class=4&ilvl=639&spec=260"
-      /> [Грим Батол]
-    </li>
-    <li>
-      <WH
-        text="Кольцо эксперимента 08752"
-        href="https://www.wowhead.com/ru/item=221189/кольцо-эксперимента-08752?bonus=3131:10870:8781&ilvl=639&spec=260"
-      /> [Город Нитей] | <WH
-        text="Потерянная печатка Трупошва"
-        href="https://www.wowhead.com/ru/item=178736/потерянная-печатка-трупошва?bonus=9948:10870:8781&ilvl=639&spec=260"
-      /> [Смертельная тризна], а так же для HO <WH
-        text="Кольцо Дун Альгаза"
-        href="https://www.wowhead.com/ru/item=133287/кольцо-дун-альгаза?bonus=3131:10870:8781&ilvl=639&spec=260"
-      /> [Грим Батол] | <WH
-        text="Ритуальный перстень командира"
-        href="https://www.wowhead.com/ru/item=178781/ритуальный-перстень-командира?bonus=4786:9948:10299:8781&ilvl=639&spec=260"
-      /> [Смертельная тризна]
-    </li>
-    <li>
-      <WH
-        text="Кокон выводка Ара-Кары"
-        href="https://www.wowhead.com/ru/item=219314/кокон-выводка-ара-кары?ilvl=639&spec=259"
-      /> [Ара-Кара] (лучший аксессуар) |
-      <WH
-        text="Усиливающий кристалл Ануб'иккаджа"
-        href="https://www.wowhead.com/ru/item=219312/усиливающий-кристалл-анубиккаджа?bonus=4786:3131:10299&class=4&ilvl=639&spec=259"
-      /> [Сияющий Рассвет] | <WH
-        text="Подзорная труба зоркого глаза"
-        href="https://www.wowhead.com/ru/item=159623/подзорная-труба-зоркого-глаза?bonus=4786:10047:10299&class=4&ilvl=639&spec=259"
-      /> [Осада Боралуса], лучшие варианты для 2-го аксессуара
+        text="Турбо-дренаж 5000"
+        href="https://www.wowhead.com/ru/item=232883/турбо-дренаж-5000"
+      /> и <WH
+        text="Крысиный токсин"
+        href="https://www.wowhead.com/ru/item=235359/крысиный-токсин"
+      /> - отличные варианты до получения эпохальных аксессуаров, которые можно нафармить
+      самостоятельно (очень желательно конечно получить их с карты для героического
+      трека)
     </li>
   </ul>
 </div>

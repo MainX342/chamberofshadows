@@ -2,76 +2,105 @@
 import WH from "../WH.astro";
 ---
 
-<input
-  type="radio"
-  id="tab_one_1"
-  name="mytabs_equip"
-  checked="checked"
-  class="peer/tab_one_1 hidden p-[20px]"
-/>
-<label
-  for="tab_one_1"
-  class="p-[20px] w-[100%] sm:w-[calc(100%/3)] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one_1:text-outlaw peer-checked/tab_one_1:neon-outlaw"
-  >Комплект</label
->
 <div class="peer-checked/tab_one_1:block w-full order-1 hidden">
   <ul
     class="list-inside list-decimal p-[20px] text-left flex flex-col gap-[10px] border border-border rounded-md"
   >
+    <span>Комплект:</span>
     <li>
       <WH
-        text="Пустота фантома К'ареши"
-        href="https://www.wowhead.com/ru/item=212038/пустота-фантома-кареши?bonus=1808&ilvl=639"
+        text="Проклятый лик призрачного игрока"
+        href="https://www.wowhead.com/ru/item=229289/проклятый-лик-призрачного-игрока?bonus=1808&ilvl=684"
       />
     </li>
     <li>
       <WH
-        text="Наплечники фантома К'ареши"
-        href="https://www.wowhead.com/ru/item=212036/наплечники-фантома-кареши?ilvl=639"
+        text="Оплечье с лезвиями призрачного игрока"
+        href="https://www.wowhead.com/ru/item=229287/оплечье-с-лезвиями-призрачного-игрока?ilvl=684"
       />
     </li>
     <li>
       <WH
-        text="Обмотки нексуса фантома К'ареши"
-        href="https://www.wowhead.com/ru/item=212041/обмотки-нексуса-фантома-кареши?ilvl=639"
+        text="Жилет призрачного игрока"
+        href="https://www.wowhead.com/ru/item=229292/жилет-призрачного-игрока?ilvl=684"
+      /> - худшая часть комплекта, именно ее лучше заменить на вещь не из комплекта
+    </li>
+    <li>
+      <WH
+        text="Кюлоты призрачного игрока"
+        href="https://www.wowhead.com/ru/item=229288/кюлоты-призрачного-игрока?ilvl=684"
       />
     </li>
     <li>
       <WH
-        text="Поножи фантома К'ареши"
-        href="https://www.wowhead.com/ru/item=212037/поножи-фантома-кареши?ilvl=639"
+        text="Перчатки призрачного игрока"
+        href="https://www.wowhead.com/ru/item=229290/перчатки-призрачного-игрока?bonus=11959:12179"
       />
+    </li>
+    <span>Вещи из катализатора (оффсеты):</span>
+    <li>
+      <WH
+        text="Кандалы призрачного игрока"
+        href="https://www.wowhead.com/ru/item=229285/кандалы-призрачного-игрока?bonus=4786:1527:11996:523&ilvl=684&spec=261"
+      /> - не используются
     </li>
     <li>
       <WH
-        text="Захваты фантома К'ареши"
-        href="https://www.wowhead.com/ru/item=212039/захваты-фантома-кареши?ilvl=639"
-      />
+        text="Козырь призрачного игрока"
+        href="https://www.wowhead.com/ru/item=229286/козырь-призрачного-игрока?bonus=4786:1527:11996:523&ilvl=684&spec=261"
+      /> - один из лучших поясов
+    </li>
+    <li>
+      <WH
+        text="Ботфорты призрачного игрока"
+        href="https://www.wowhead.com/ru/item=229291/ботфорты-призрачного-игрока?bonus=4786:1527:11996&ilvl=684&spec=261"
+      /> - лучшие ботинки
+    </li>
+    <li>
+      <WH
+        text="Шаль призрачного игрока"
+        href="https://www.wowhead.com/ru/item=229284/шаль-призрачного-игрока?bonus=4786:1527:11996&ilvl=684&spec=261"
+      /> - не используется
     </li>
     <span class="pt-[16px]">
-      2 части (1.2% урона): <WH
-        text="Коварный удар"
-        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
-      />, <WH
-        text="Выстрел из пистоли"
-        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> и <WH
-        text="Внезапный удар"
-        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-      /> с вероятностью 35% активируют <WH
-        text="Призрачное буйство"
-        href="https://www.wowhead.com/ru/spell=459002/призрачное-буйство"
-      />, нанося 30% дополнительного урона от темной магии. (Вероятность
-      срабатывания: 20%)
+      2 части (~3% урона): Ваши заклинания и способности с некоторой
+      вероятностью активируют <WH
+        text="Череду побед!"
+        href="https://www.wowhead.com/ru/spell=1217078/череда-побед"
+      />, увеличивающую урон от
+      <WH
+        text="Устранения"
+        href="https://www.wowhead.com/ru/spell=2098/устранение"
+      /> на 6%. Суммируется до 5 раз. <WH
+        text="Устранение"
+        href="https://www.wowhead.com/ru/spell=2098/устранение"
+      /> с вероятностью 15% прекращает действие <WH
+        text="Череды побед!"
+        href="https://www.wowhead.com/ru/spell=1217078/череда-побед"
+      />.
     </span>
     <span class="pt-[16px]">
-      4 части (5% урона): <WH
-        text="Призрачное буйство"
-        href="https://www.wowhead.com/ru/spell=459002/призрачное-буйство"
-      /> также увеличивает урон от следующей способности <WH
-        text="Промеж глаз"
-        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-      /> на 15%. Эффект суммируется до 4 раз.
+      4 части (~9% урона): <WH
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+      /> дает дополнительные усиления с повышенной на 40% вероятностью, а также дает
+      1 эффект <WH
+        text="Череды побед!"
+        href="https://www.wowhead.com/ru/spell=1217078/череда-побед"
+      /> за каждое усиление. Эффекты <WH
+        text="Череды побед!"
+        href="https://www.wowhead.com/ru/spell=1217078/череда-побед"
+      />, полученные за счет <WH
+        text="Броска костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+      />, могут превышать максимальное количество на 5.
+    </span>
+    <span class="pt-[16px]">
+      Полностью пассивный комплект, не требует никакого отслеживания. Просто
+      немного увеличивает урон и дает повышенный шанс на хороший <WH
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+      />
     </span>
   </ul>
 </div>

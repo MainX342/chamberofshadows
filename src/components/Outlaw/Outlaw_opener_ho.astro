@@ -1,172 +1,301 @@
 ---
 import WH from "../WH.astro";
+import Comment from "../Comment.astro";
 ---
 
-<ul
-  class="list-inside list-decimal flex flex-col items-start p-[20px] border border-border rounded-md text-left gap-[10px]"
->
-  <span
-    class="underline decoration-solid decoration-1 underline-offset-4 decoration-[#00D7B9]"
-    >Пре-пулл (до того как ударить босса):</span
+<div class="p-4 border border-border rounded-md">
+  <label
+    for="commentsHO"
+    class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
   >
-  <li>
-    <WH
-      text="Шквал клинков"
-      href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
-    /> (если в бою будут дополнительные цели, в одну цель больше не требуется)
-  </li>
-  <li>
-    <WH
-      text="Незаметность"
-      href="https://www.wowhead.com/ru/spell=1784/незаметность"
+    <input
+      type="checkbox"
+      id="commentsHO"
+      name="commentsHO"
+      class="peer hidden checkbox-3"
     />
-  </li>
-  <li>
-    <WH
-      text="Бросок костей"
-      href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
-    />
-  </li>
-  <li>
-    <WH
-      text="Выброс адреналина"
-      href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
-    />
-  </li>
-  <span class="py-[16px]"
-    >В HO билде, кости используются до <WH
-      text="Выброса адреналина"
-      href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
-    /></span
+    <span
+      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
+    ></span>
+    <span class="text-left"> Показать комментарии*</span></label
   >
-  <li>
-    <WH
-      text="Охлажденное зелье"
-      href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
-    />
-  </li>
-  <li>
-    <WH
-      text="Промеж глаз"
-      href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-    />
-  </li>
-  <li>
-    <WH
-      text="Призрачный удар"
-      href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
-    />
-  </li>
-  <li>
-    Чередование
-    <WH
-      text="Внезапный удар"
-      href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-    /> | <WH
-      text="Выстрел из пистоли"
-      href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-    /> (если 1-3 кп или 6 стаков <WH
-      text="Замечательной возможности"
-      href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-    />) и <WH
-      text="Промеж глаз"
-      href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-    /> пока не закончится бафф <WH
-      text="Увертки"
-      href="https://www.wowhead.com/ru/spell=115192/увертка"
-    />
-  </li>
-  <li>
-    <WH
-      text="Исчезновение"
-      href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-    /> на 5+ кп
-  </li>
-  <li>
-    <WH
-      text="Промеж глаз"
-      href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-    />
-  </li>
-  <li>
-    Чередование
-    <WH
-      text="Внезапный удар"
-      href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-    /> | <WH
-      text="Выстрел из пистоли"
-      href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-    /> (если 1-3 кп или 6 стаков <WH
-      text="Замечательной возможности"
-      href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-    />) и <WH
-      text="Промеж глаз"
-      href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-    /> пока не закончится бафф <WH
-      text="Увертки"
-      href="https://www.wowhead.com/ru/spell=115192/увертка"
-    />
-  </li>
-  <li>
-    <WH
-      text="Исчезновение"
-      href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-    /> на 5+ кп
-  </li>
-  <li>
-    <WH
-      text="Промеж глаз"
-      href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-    />
-  </li>
-  <li>
-    Чередование
-    <WH
-      text="Внезапный удар"
-      href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-    /> | <WH
-      text="Выстрел из пистоли"
-      href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-    /> (если 1-3 кп или 6 стаков <WH
-      text="Замечательной возможности"
-      href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-    />) и <WH
-      text="Промеж глаз"
-      href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-    /> пока не закончится бафф <WH
-      text="Увертки"
-      href="https://www.wowhead.com/ru/spell=115192/увертка"
-    />
-  </li>
-</ul>
-<p class="pt-[16px] text-left">
-  Благодаря синергии талантов <WH
-    text="Туз в рукаве"
-    href="https://www.wowhead.com/ru/spell=381828/туз-в-рукаве"
-  /> и <WH
-    text="Точно в цель"
-    href="https://www.wowhead.com/ru/spell=423703/точно-в-цель"
-  /> вы переодически будете получать 5кп от <WH
-    text="Промеж глаз"
-    href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-  />, поэтому опенер полностью зависит от проков. Основная суть заключается в
-  том, чтобы на 5+ кп всегда использовать <WH
-    text="Промеж глаз"
-    href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-  />, пока вы под <WH
-    text="Уверткой"
-    href="https://www.wowhead.com/ru/spell=115192/увертка"
-  />. Если <WH
-    text="Туз в рукаве"
-    href="https://www.wowhead.com/ru/spell=381828/туз-в-рукаве"
-  /> не сработал, то набиваем кп с помощью <WH
-    text="Внезапный удар"
-    href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-  /> или <WH
-    text="Выстрел из пистоли"
-    href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-  /> (если сработала <WH
-    text="Замечательной возможности"
-    href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-  /> и у вас 1-2 кп).
-</p>
+  <ul
+    class="peer-checked:hidden list-inside list-decimal flex flex-col items-start p-[20px] text-left gap-[10px]"
+  >
+    <span
+      class="underline decoration-solid decoration-1 underline-offset-4 decoration-[#00D7B9]"
+      >Пре-пулл (до того как ударить босса):</span
+    >
+    <li>
+      <WH
+        text="Шквал клинков"
+        href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
+      />*
+    </li>
+    <Comment class="hidden visible-comment"
+      >Если в бою будут дополнительные цели, в одну цель больше не требуется.
+      Если играете с талантом <WH
+        text="Ловкие маневры"
+        href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
+      /> используется по кд при 4 и больше целях на 1-2 кп.</Comment
+    >
+    <li>
+      <WH
+        text="Незаметность"
+        href="https://www.wowhead.com/ru/spell=1784/незаметность"
+      />
+    </li>
+    <li>
+      <WH
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+      />
+    </li>
+    <li>
+      <WH
+        text="Выброс адреналина"
+        href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
+      />
+    </li>
+    <li>
+      <WH
+        text="Охлажденное зелье"
+        href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
+      />
+    </li>
+    <li>
+      <WH
+        text="Призрачный удар"
+        href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
+      />
+    </li>
+    <li>
+      <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      />
+    </li>
+    <li>
+      Чередование
+      <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> | <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если нету баффа <WH
+        text="Дерзости"
+        href="https://www.wowhead.com/ru/spell=386270/дерзость"
+      /> и есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />) и <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      /> пока не закончится бафф <WH
+        text="Увертки"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />
+    </li>
+    <li>
+      <WH
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+      />* (если нужен)
+    </li>
+    <Comment class="hidden visible-comment"
+      >Вы смело можете использовать <WH
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+      /> даже в окне <WH
+        text="Увертки"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />, но желательно не последним гкд</Comment
+    >
+    <li>
+      <WH
+        text="Череда убийств"
+        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+      />* [5+ кп]
+    </li>
+    <Comment class="hidden visible-comment"
+      >Перед <WH
+        text="Чередой убийств"
+        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+      /> вам возможно нужно будет добить кп с помощью <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /> до 5-6 согласно условиям для финишеров. Помните, что <WH
+        text="Череда убийств"
+        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+      /> дает 100% активацию 2 стаков на <WH
+        text="Опережающий клинок"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      /> с последующих <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /> и <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /></Comment
+    >
+    <li>
+      <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /> | <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> | <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> |
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />* [5+ кп]
+    </li>
+    <Comment class="hidden visible-comment"
+      >Дальнейшие действия зависят от количества стаков на <WH
+        text="Опережающем клинке"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      /> и текущих проках <WH
+        text="Дерзости"
+        href="https://www.wowhead.com/ru/spell=386270/дерзость"
+      /> или <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />. Если у вас один стак на <WH
+        text="Опережающем клинке"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      /> (3 в сумме со стаками после <WH
+        text="Череды убийств"
+        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+      />), то нужно добить кп до 5+ и использовать <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />.</Comment
+    >
+    <Comment class="hidden visible-comment"
+      >Если же у вас 2 стака на <WH
+        text="Опережающем клинке"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      /> (4 в сумме), то перед использованием <WH
+        text="Исчезновения"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> нужно добить 4 стака и использовать <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      />, а затем снова добить кп и уже потом использовать <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />. Это основная суть, <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> всегда идет перед <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />, если он сработал</Comment
+    >
+    <li>
+      Чередование
+      <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> | <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если нету баффа <WH
+        text="Дерзости"
+        href="https://www.wowhead.com/ru/spell=386270/дерзость"
+      /> и есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />) и <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      /> пока не закончится бафф <WH
+        text="Увертки"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />
+    </li>
+    <li>
+      <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> |
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />* [5+ кп]
+    </li>
+    <Comment class="hidden visible-comment"
+      >Если за время действия первого <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> у вас сработал <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      />, то нужно реализовать его перед вторым <WH
+        text="Исчезновением"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />
+    </Comment>
+    <li>
+      Чередование
+      <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> | <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если нету баффа <WH
+        text="Дерзости"
+        href="https://www.wowhead.com/ru/spell=386270/дерзость"
+      /> и есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />) и <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      /> пока не закончится бафф <WH
+        text="Увертки"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />
+    </li>
+    <Comment
+      >Благодаря синергии талантов <WH
+        text="Туз в рукаве"
+        href="https://www.wowhead.com/ru/spell=381828/туз-в-рукаве"
+      /> и <WH
+        text="Точно в цель"
+        href="https://www.wowhead.com/ru/spell=423703/точно-в-цель"
+      /> вы периодически будете получать 5кп от <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      />, поэтому опенер полностью зависит от проков. Основная суть заключается
+      в том, чтобы на 5+ кп всегда использовать <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      />, пока вы под <WH
+        text="Уверткой"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />. Если <WH
+        text="Туз в рукаве"
+        href="https://www.wowhead.com/ru/spell=381828/туз-в-рукаве"
+      /> не сработал, то набиваем кп с помощью <WH
+        text="Внезапный удар"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> или <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если нету баффа <WH
+        text="Дерзости"
+        href="https://www.wowhead.com/ru/spell=386270/дерзость"
+      /> и есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />)</Comment
+    >
+  </ul>
+</div>

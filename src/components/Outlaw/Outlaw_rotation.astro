@@ -7,6 +7,8 @@ import H3 from "../H3.astro";
 import OutlawOpenerHo from "./Outlaw_opener_ho.astro";
 import OutlawOpenerKir from "./Outlaw_opener_kir.astro";
 import OutlawApl from "./Outlaw_apl.astro";
+import OutlawImp from "./Outlaw_important.astro";
+import Comment from "../Comment.astro";
 ---
 
 <section
@@ -44,11 +46,26 @@ import OutlawApl from "./Outlaw_apl.astro";
     </li>
     <li>На 6 кп в остальных случаях</li>
     <li>Добивать 7ой кп не нужно</li>
+    <li>
+      Заряженные кп не учитываются в цифрах выше, считайте их просто как бафф
+    </li>
+    <Comment
+      >То есть, если у вас 3 обычных кости и 3 заряженных - вы добиваете обычные
+      до 5-6 и только потом используете финишеры. Исключение может быть, если у
+      вас например мало энергии, не хватает на <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      />, а окно <WH
+        text="Увертки"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      /> заканчивается</Comment
+    >
   </ul>
   <H3 text="Начало боя (опенеры)" />
   <p class="text-clamp_text pt-[10px] pb-[40px]">
     Начало боя у головореза сильно отличается в зависимости от "проков" и
-    костей, поэтому ниже будут представлены усредненные опенеры с комментариями
+    костей, поэтому ниже будут представлены усредненные опенеры с комментариями.
+    Гораздо важнее изучить раздел приоритетов способностей.
   </p>
   <div
     class="flex flex-wrap max-w-[1024px] min-h-[565px] w-full text-clamp_text content-baseline"
@@ -60,5 +77,6 @@ import OutlawApl from "./Outlaw_apl.astro";
       <OutlawOpenerHo />
     </Tabs>
   </div>
+  <OutlawImp />
   <OutlawApl />
 </section>
