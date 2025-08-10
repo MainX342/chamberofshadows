@@ -30,6 +30,7 @@ import Comment from "../Comment.astro";
     class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
   >
     <input
+      checked
       type="checkbox"
       id="commentsDSM"
       name="commentsDSM"
@@ -38,7 +39,7 @@ import Comment from "../Comment.astro";
     <span
       class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
     ></span>
-    <span class="text-left"> Показать комментарии </span></label
+    <span class="text-left"> Показать комментарии*</span></label
   >
 
   <ul
@@ -130,26 +131,10 @@ import Comment from "../Comment.astro";
     </li>
     <li>
       <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> +
-      <WH
         text="Тайный прием"
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
       />
     </li>
-    <Comment class="hidden visible-comment"
-      >В ключах не стоит держать<WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> под второй <WH
-        text="Тайный прием"
-        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      /> в каждом бурсте, иначе вы сдадите намного меньше <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> суммарно за ключ</Comment
-    >
     <li>
       <WH
         text="Удар Тьмы"
@@ -233,6 +218,10 @@ import Comment from "../Comment.astro";
       />)
     </li>
     <li>
+      <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
+      /> +
       <WH
         text="Тайный прием"
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"

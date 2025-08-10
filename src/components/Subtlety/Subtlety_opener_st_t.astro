@@ -33,6 +33,7 @@ import Comment from "../Comment.astro";
     class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
   >
     <input
+      checked
       type="checkbox"
       id="commentsT"
       name="commentsT"
@@ -41,7 +42,7 @@ import Comment from "../Comment.astro";
     <span
       class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
     ></span>
-    <span class="text-left"> Показать комментарии </span></label
+    <span class="text-left"> Показать комментарии*</span></label
   >
 
   <ul
@@ -108,10 +109,7 @@ import Comment from "../Comment.astro";
       /> + <WH
         text="Охлажденное зелье"
         href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
-      /> + <WH
-        text="Карточный домик"
-        href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&spec=261"
-      /><span class="hidden visible-item">
+      /> + Аксессуар<span class="hidden visible-item">
         + <WH
           text="Символы смерти"
           href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
@@ -148,27 +146,51 @@ import Comment from "../Comment.astro";
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
       />
     </li>
+    <li>
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      />
+    </li>
+    <li>
+      <WH
+        text="Потрошение"
+        href="https://www.wowhead.com/ru/spell=196819/потрошение"
+      />
+    </li>
+    <li>
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      />
+    </li>
+    <li>
+      <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> x2*
+    </li>
     <Comment class="hidden visible-comment"
-      >Сейчас, в симе, в первом <WH
-        text="Тайном приеме"
-        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      /> не используется <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      />, но вы можете играть как раньше. Однако, вам нужно использовать второе <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> почти по откату (~на 50 секунде, под 4 <WH
-        text="Танец теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />), возможно вам придется пару секунд придержать <WH
-        text="Тайный прием"
-        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      /> для этого. 3 <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> уже будет в следующих бурстах, как и в симе, тем самым вы получите +1 использование
-      за бой</Comment
+      >2 подряд получится только если сработала теневая техника, если она не
+      сработала, то нужно использовать <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> (если у вас остались стаки от <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      />) на между <WH
+        text="Ударами милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      />. Если стаков от <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      /> нету - тогда можно использовать <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      /> между <WH
+        text="Ударами милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /></Comment
     >
     <li>
       <WH
@@ -177,28 +199,10 @@ import Comment from "../Comment.astro";
       /> до 5+ кп | <WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> в зависимости от проков до окончания <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
-    </li>
-    <li>
-      <WH
-        text="Танец теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
-    </li>
-    <li>
-      <WH
-        text="Удар в спину"
-        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      />
-    </li>
-    <li>
-      <WH
+      /> + <WH
         text="Символы смерти"
         href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-      /> (когда предыдущих осталось меньше 3 сек)
+      />* (когда предыдущих осталось меньше 3 сек)
     </li>
     <Comment class="hidden visible-comment"
       >Пандемик тайм на
@@ -214,132 +218,60 @@ import Comment from "../Comment.astro";
     >
     <li>
       <WH
-        text="Потрошение"
-        href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      />
-    </li>
-    <li>
-      <WH
-        text="Удар Тьмы"
-        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      />
-    </li>
-    <li>
-      <WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
       /> + <WH
         text="Тайный прием"
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      />
-    </li>
-    <li>
-      <WH
-        text="Удар Тьмы"
-        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      /> до 5+ кп | <WH
-        text="Потрошение"
-        href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> в зависимости от проков до окончания <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
-    </li>
-    <li>
-      Если после окончания второго <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> у вас 0 кп, то <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
       /> + <WH
-        text="Удар Тьмы"
-        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      />. Если фулл кп, то просто немного подождите, пока не откатится <WH
         text="Танец теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
+      />*
     </li>
     <Comment class="hidden visible-comment"
-      >Это нужно, чтобы не потерять стаки сета <WH
-        text="Череды побед!"
-        href="https://www.wowhead.com/ru/spell=1218143/череда-побед"
-      />. Вся суть быстрого третьего <WH
+      >Благодаря таланту <WH
+        text="Первый танец"
+        href="https://www.wowhead.com/ru/spell=382505/первый-танец"
+      /> в первом <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> мы сдаем 2 <WH
+        text="Тайных приема"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      />. Но обязательно нужно нажать второй <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> сразу после окончания первого, чтобы урон от клонов тоже был усилен</Comment
+    >
+    <li>...</li>
+    <Comment
+      >Расписывать дальше не имеет смысла, так как всё повторяется. Основная
+      суть - вы сдаете 3 <WH
         text="Танца теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> в том, чтобы успеть дать третий <WH
+      /> подряд. В каждом из них по 1 <WH
+        text="Тайному приему"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      /> (исключение только на оперене, что в первом <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> мы сдаем фактически 2 <WH
+        text="Тайных приема"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      />, а вот втором не сдаем, хотя клоны прилетают уже во втором <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />). 4 танец вы сдаете почти сразу после первых трёх, чтобы вы точно в нем
+      смогли сдать <WH
         text="Тайный прием"
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      /> в окно <WH
-        text="Флагелляции"
+      />. <WH
+        text="Удары милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> сдаются по откату (перестаем сдавать если до <WH
+        text="Флагелляция"
         href="https://www.wowhead.com/ru/spell=384631/флагелляция"
-      />. На манекенах у вас это не получится, требуется БЛ и бафф шамана.</Comment
+      /> осталось меньше 20 сек)</Comment
     >
-    <li>
-      <WH
-        text="Танец теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
-    </li>
-    <li>
-      <WH
-        text="Символы смерти"
-        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-      /> (когда предыдущих осталось меньше 3 сек)
-    </li>
-    <Comment class="hidden visible-comment"
-      >Пандемик тайм на
-      <WH
-        text="Символы смерти"
-        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-      /> составляет 10 (базовое время действия) * 30% ("pandemic time") = 3 сек.
-      То есть, если вы нажмете новые <WH
-        text="Символы смерти"
-        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-      /> когда предыдущих осталось меньше 3 секунд, оставшееся время прибавятся к
-      новым 10 сек (13 сек максимум)</Comment
-    >
-    <li>
-      <WH
-        text="Потрошение"
-        href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      />
-    </li>
-    <li>
-      <WH
-        text="Удар в спину"
-        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      />
-    </li>
-    <li>
-      <WH
-        text="Потрошение"
-        href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      />
-    </li>
-    <li>
-      <WH
-        text="Удар Тьмы"
-        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      />
-    </li>
-    <li>
-      <WH
-        text="Тайный прием"
-        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      />
-    </li>
-    <li>
-      <WH
-        text="Удар Тьмы"
-        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      /> до 5+ кп | <WH
-        text="Потрошение"
-        href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> в зависимости от проков до окончания <WH
-        text="Танца теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
-    </li>
   </ul>
 </div>

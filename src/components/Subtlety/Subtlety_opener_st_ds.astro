@@ -9,6 +9,7 @@ import Comment from "../Comment.astro";
     class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
   >
     <input
+      checked
       type="checkbox"
       id="commentsDS"
       name="commentsDS"
@@ -17,7 +18,7 @@ import Comment from "../Comment.astro";
     <span
       class="w-4 h-4 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
     ></span>
-    <span class="text-left"> Показать комментарии </span></label
+    <span class="text-left"> Показать комментарии*</span></label
   >
 
   <ul
@@ -79,10 +80,7 @@ import Comment from "../Comment.astro";
       /> + <WH
         text="Охлажденное зелье"
         href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
-      /> + <WH
-        text="Карточный домик"
-        href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&spec=261"
-      /><span>
+      /> + Аксессуар<span>
         + <WH
           text="Символы смерти"
           href="https://www.wowhead.com/ru/spell=212283/символы-смерти"

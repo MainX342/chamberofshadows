@@ -26,43 +26,20 @@ import Comment from "../Comment.astro";
   </label>
 
   <label
-    for="spellTM"
-    class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
-  >
-    <input
-      type="checkbox"
-      id="spellTM"
-      name="spellTM"
-      class="peer hidden checkbox"
-    />
-    <span
-      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-sub peer-checked:border-gray-700"
-    ></span>
-    <span class="text-left">
-      Играю с <WH
-        text="Мастер гнили"
-        href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
-      /> (а не с <WH
-        text="Завершением (1/2)"
-        href="https://www.wowhead.com/ru/spell=382525/завершение"
-      />)
-    </span></label
-  >
-
-  <label
     for="commentsTM"
     class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
   >
     <input
+      checked
       type="checkbox"
       id="commentsTM"
       name="commentsTM"
-      class="peer hidden checkbox-3"
+      class="peer hidden checkbox-3 checked"
     />
     <span
       class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
     ></span>
-    <span class="text-left"> Показать комментарии </span></label
+    <span class="text-left"> Показать комментарии*</span></label
   >
 
   <ul
@@ -125,51 +102,20 @@ import Comment from "../Comment.astro";
       />
     </li>
     <li>
-      <span class="hidden-item">
-        <WH
-          text="Удар в спину"
-          href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-        />
-        (2-6 целей) | <WH
-          text="Шквал сюрикэнов"
-          href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-        /> (7+ целей)</span
-      ><span class="hidden visible-item"
-        ><WH
-          text="Удар Тьмы"
-          href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-        /></span
-      >
+      <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      />
+      (2-6 целей) | <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> (7+ целей)
     </li>
     <Comment class="hidden visible-comment"
       >Для стака <WH
         text="Пляски смерти"
         href="https://www.wowhead.com/ru/spell=382528/пляска-смерти"
       /></Comment
-    >
-    <Comment class="hidden visible-comment-spell"
-      >На 2-5 целях вы можете заменить первый филлер в <WH
-        text="Танце теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> на <WH
-        text="Удар в спину"
-        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      />, вместо <WH
-        text="Удар Тьмы"
-        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      />. Но тогда придется использовать <WH
-        text="Символы смерти"
-        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
-      /> после <WH
-        text="Удар в спину"
-        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      />, чтобы не потратить стак <WH
-        text="Мастера гнили"
-        href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
-      /> на <WH
-        text="Удар в спину"
-        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      />. Это даст вам ~0.5% урона</Comment
     >
     <li>
       <WH
@@ -178,10 +124,7 @@ import Comment from "../Comment.astro";
       /> + <WH
         text="Охлажденное зелье"
         href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
-      /> + <WH
-        text="Карточный домик"
-        href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&spec=261"
-      />
+      /> + Аксессуар
     </li>
     <Comment class="hidden visible-comment"
       >Жмутся после <WH
@@ -192,77 +135,26 @@ import Comment from "../Comment.astro";
         href="https://www.wowhead.com/ru/spell=343173/умысел"
       /> и так даст 7кп</Comment
     >
-    <Comment class="hidden visible-comment-spell"
-      >Если не вы используете <WH
-        text="Удар в спину"
-        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      />, то можете нажимать все бурсты в макросе с <WH
-        text="Танцем теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
-    </Comment>
     <li>
-      <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> +
       <WH
         text="Тайный прием"
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
       />
     </li>
-    <Comment class="hidden visible-comment"
-      >В ключах не стоит держать<WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> под второй <WH
-        text="Тайный прием"
-        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      /> в каждом бурсте, иначе вы сдадите намного меньше <WH
-        text="Хладнокровие"
-        href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> суммарно за ключ</Comment
-    >
     <li>
-      <span class="hidden-item"
-        ><WH
-          text="Удар Тьмы"
-          href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-        /></span
-      >
-      <span class="hidden visible-item"
-        ><WH
-          text="Шквал сюрикэнов"
-          href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-        /></span
-      >
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      />
     </li>
-    <Comment class="hidden visible-comment-spell"
-      ><WH
-        text="Шквал сюрикэнов"
-        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> всегда используется вторым филлером в <WH
-        text="Танце теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> при игре с <WH
-        text="Мастером гнили"
-        href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
-      /> из-за того, что существует баг, при котором использование <WH
-        text="Шквал сюрикэнов"
-        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> тратит оба стака <WH
-        text="Мастера гнили"
-        href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
-      /></Comment
-    >
     <li>
       <WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> [2-4] | <WH
+      /> [1-2] | <WH
         text="Черный порох"
         href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-      /> [5+]
+      /> [3+]
     </li>
     <li>
       <WH
@@ -271,14 +163,29 @@ import Comment from "../Comment.astro";
       /> + <WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> [2-4] | <WH
+      /> [1-2] | <WH
         text="Черный порох"
         href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-      /> [5+] пока не закончится <WH
+      /> [3+] пока не закончится <WH
         text="Танец теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      />
+      />*
     </li>
+    <Comment class="hidden visible-comment"
+      ><WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> используется в <WH
+        text="Танце теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> ТОЛЬКО 1 РАЗ. <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> имеет самый высокий приоритет, если он сработал - жмём его, а не <WH
+        text="Черный порох"
+        href="https://www.wowhead.com/ru/spell=319175/черный-порох"
+      />, вне зависимости от количества целей.</Comment
+    >
     <li>
       <WH
         text="Танец теней"
@@ -286,21 +193,14 @@ import Comment from "../Comment.astro";
       />
     </li>
     <li>
-      <span class="hidden-item">
-        <WH
-          text="Удар в спину"
-          href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-        />
-        (2-6 целей) | <WH
-          text="Шквал сюрикэнов"
-          href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-        /> (7+ целей)</span
-      ><span class="hidden visible-item"
-        ><WH
-          text="Удар Тьмы"
-          href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-        /></span
-      >
+      <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      />
+      (2-6 целей) | <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> (7+ целей)
     </li>
     <Comment class="hidden visible-comment"
       >Для стака <WH
@@ -330,24 +230,16 @@ import Comment from "../Comment.astro";
       <WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> [2-4] | <WH
+      /> [1-2] | <WH
         text="Черный порох"
         href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-      /> [5+]
+      /> [3+]
     </li>
     <li>
-      <span class="hidden-item"
-        ><WH
-          text="Удар Тьмы"
-          href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-        /></span
-      >
-      <span class="hidden visible-item"
-        ><WH
-          text="Шквал сюрикэнов"
-          href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-        /></span
-      >
+      <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      />
     </li>
     <li>
       <WH
@@ -362,10 +254,10 @@ import Comment from "../Comment.astro";
       /> + <WH
         text="Потрошение"
         href="https://www.wowhead.com/ru/spell=196819/потрошение"
-      /> [2-4] | <WH
+      /> [1-2] | <WH
         text="Черный порох"
         href="https://www.wowhead.com/ru/spell=319175/черный-порох"
-      /> [5+] пока не закончится <WH
+      /> [3+] пока не закончится <WH
         text="Танец теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
       />

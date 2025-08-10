@@ -3,6 +3,13 @@ import H2 from "../H2.astro";
 import WH from "../WH.astro";
 import { subMenuItems } from "../../constants/content";
 import Tabs from "./Subtlety_tabs.astro";
+import DS from "../Hero_trees/DS.astro";
+import TR from "../Hero_trees/TR.astro";
+
+import Sim from "../Sim.astro";
+import ST_SIM from "../../assets/guide/subtlety/sim/ST.png";
+import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
+import KEYS_SIM_ST from "../../assets/guide/subtlety/sim/KEY_ST.png";
 ---
 
 <section
@@ -12,9 +19,9 @@ import Tabs from "./Subtlety_tabs.astro";
   <H2 text={subMenuItems[1].label} />
   <div class="text-clamp_text flex flex-col gap-[16px]">
     <p>У скрытности на данный момент 2 основных варианта билдов:</p>
-    <ul class="flex flex-col gap-[16px]">
-      <li>
-        1. Rotten билд (больше для ключей) <WH
+    <ul class="list-inside list-decimal flex flex-col items-start gap-[16px]">
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        Rotten билд (для ключей) <WH
           text="Мастер гнили"
           href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
         /> | Finality билд (для рейда) <WH
@@ -24,18 +31,56 @@ import Tabs from "./Subtlety_tabs.astro";
         отдельные билды. Подходят как для рейда, так и для ключей. Основной
         выбор на данный момент.
       </li>
-      <li>
-        2. DB (Dark Brew) <WH
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        DB (Dark Brew) <WH
           text="Темный отвар"
           href="https://www.wowhead.com/ru/spell=382504/темный-отвар"
         />. На данный момент, в 11.2, очень слаб из-за сета, оставлен тут на
         случай усиления сета / талантов.
       </li>
     </ul>
-    <p class="text-blue-500">
-      T - Trickster - Ловкач<br />
-      DS - Deathstalker - Ловчий смерти
+    <p><TR />- лучший вариант для рейдов и ключей</p>
+    <p>
+      <DS /> - очень слабая ветка на данный момент, нигде не играет. Билды оставлены
+      тут на случай апа сета / талантов.
     </p>
     <Tabs />
+    <Sim title="Сим талантов в одну цель (5 минут)">
+      <img
+        src={ST_SIM.src}
+        alt="Сим одной цели"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
+    <Sim title="Сим талантов в ключе">
+      <span
+        >Если вас интересуют цифры для сравнения с другими спеками, то к этим
+        симам можете смело прибавлять ~3-4% (если вам дают рестелс или удачно
+        багаете) из-за таланта <WH
+          text="Первый танец"
+          href="https://www.wowhead.com/ru/spell=382505/первый-танец"
+        /></span
+      >
+      <img
+        src={KEYS_SIM.src}
+        alt="Сим ключа"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
+    <Sim
+      title="Сим талантов в ST (билды для ключей, БЛ, баффы дх и шамана, 5 минут)"
+    >
+      <img
+        src={KEYS_SIM_ST.src}
+        alt="Сим ключа"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
   </div>
 </section>

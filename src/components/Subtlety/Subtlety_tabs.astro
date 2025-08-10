@@ -1,18 +1,15 @@
 ---
 import WH from "../WH.astro";
-import T from "../../assets/guide/subtlety/builds/Trickster.webp";
-import DS from "../../assets/guide/subtlety/builds/DS.webp";
-import ST from "../../assets/guide/subtlety/builds/ST.webp";
-import ST_T from "../../assets/guide/subtlety/builds/ST_Trickster.webp";
-import ST_DS from "../../assets/guide/subtlety/builds/ST_DS.webp";
-import KEYS_T_1 from "../../assets/guide/subtlety/builds/Keys_Trickster_1.webp";
-import KEYS_T_2 from "../../assets/guide/subtlety/builds/Keys_Trickster_2.webp";
-import KEYS_DB_1 from "../../assets/guide/subtlety/builds/Keys_DB_1.webp";
-import KEYS_DB_2 from "../../assets/guide/subtlety/builds/Keys_DB_2.webp";
-
-import Sim from "../Sim.astro";
-import ST_SIM from "../../assets/guide/subtlety/sim/ST.png";
-import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
+import T from "../../assets/guide/subtlety/builds/tr_2.png";
+import DS from "../../assets/guide/subtlety/builds/ds_2.png";
+import ST_TR_1 from "../../assets/guide/subtlety/builds/st_tr_1.png";
+import ST_TR_3 from "../../assets/guide/subtlety/builds/st_tr_3.png";
+import ST_DS_1 from "../../assets/guide/subtlety/builds/st_ds_1.png";
+import ST_DS_3 from "../../assets/guide/subtlety/builds/st_ds_1.png";
+import KEYS_TR_1 from "../../assets/guide/subtlety/builds/keys_tr_1.png";
+import KEYS_TR_3 from "../../assets/guide/subtlety/builds/keys_tr_3.png";
+import KEYS_DS_1 from "../../assets/guide/subtlety/builds/keys_ds_1.png";
+import KEYS_DS_3 from "../../assets/guide/subtlety/builds/keys_ds_3.png";
 ---
 
 <div
@@ -27,37 +24,37 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
   />
   <label
     for="tab_one"
-    class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one:text-sub peer-checked/tab_one:neon-sub"
+    class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one:text-hover peer-checked/tab_one:neon-hover"
     >Рейд [Trickster]</label
   >
   <div class="peer-checked/tab_one:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAALjxy0YGjxMGjZ8AzMzMMmthZmx2MzMzMzAGLz2AAAAwMYAMmNDDMwsoFaxGmB</code></pre>
+      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAALjxy0YmlxYGjhhZmZGGz2sMjZsNzMzMzMgxysNAAAAMDGAjZzwADMLahWshZA</code></pre>
     <embed
       class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAALjxy0YGjxMGjZ8AzMzMMmthZmx2MzMzMzAGLz2AAAAwMYAMmNDDMwsoFaxGmB?width=972&hideHeader=1&locale=ru_RU"
+      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAALjxy0YmlxYGjhhZmZGGz2sMjZsNzMzMzMgxysNAAAAMDGAjZzwADMLahWshZA?width=972&hideHeader=1&locale=ru_RU"
     />
 
     <div
       class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={ST.src}
-        alt="Ловчий смерти рейдовый билд"
+        src={ST_TR_1.src}
+        alt="Ловкач рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
         decoding="async"
       />
       <img
         src={T.src}
-        alt="Ловчий смерти рейдовый билд"
+        alt="Ловкач рейдовый билд"
         class="mt-[15px] w-auto h-auto object-none justify-self-center self-start md:col-span-1 md:row-auto"
         loading="lazy"
         decoding="async"
       />
       <img
-        src={ST_T.src}
-        alt="Ловчий смерти рейдовый билд"
+        src={ST_TR_3.src}
+        alt="Ловкач рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
         decoding="async"
@@ -66,30 +63,29 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
 
     <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
-        <WH
+        Если в бою несколько целей, то лучше поменять <WH
+          text="Улучшенная теневая техника"
+          href="https://www.wowhead.com/ru/spell=394023/улучшенная-теневая-техника"
+        /> и <WH
+          text="Запланированная казнь"
+          href="https://www.wowhead.com/ru/spell=382508/запланированная-казнь"
+        /> на <WH
           text="Завершение"
           href="https://www.wowhead.com/ru/spell=382525/завершение"
-        /> лучше <WH
-          text="Мастера гнили"
-          href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
-        /> примерно на 2%, разница увеличилась почти в 2 раза со 2-го сезона из-за
-        сета
+        /> и <WH
+          text="Размножающиеся тени"
+          href="https://www.wowhead.com/ru/spell=382506/размножающиеся-тени"
+        />. В одну цель эти 2 таланта хуже ~ на 0.2% дпса, так что в целом - вы
+        можете с ними бегать всегда, как и в предыдущем сезоне.
       </li>
       <li>
         <WH
           text="Улучшенный шквал сюрикэнов"
           href="https://www.wowhead.com/ru/spell=319951/улучшенный-шквал-сюрикэнов"
-        /> можно заменить на <WH
-          text="Теневую концентрацию"
-          href="https://www.wowhead.com/ru/spell=108209/теневая-концентрация"
-        /> только если это ЧИСТЫЙ СТ бой. Если вам хотя бы иногда приходится крутить
-        веер, то <WH
-          text="Улучшенный шквал сюрикэнов"
-          href="https://www.wowhead.com/ru/spell=319951/улучшенный-шквал-сюрикэнов"
-        /> - лучше. Сама по себе <WH
-          text="Теневая концентрация"
-          href="https://www.wowhead.com/ru/spell=108209/теневая-концентрация"
-        /> дает всего 5к дпс.
+        /> теперь стандартный выбор, так как мы используем <WH
+          text="Шквал сюрикэнов"
+          href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+        /> даже в одну цель.
       </li>
       <li>
         <WH text="Дым" href="https://www.wowhead.com/ru/spell=441247/дым" /> можно
@@ -124,7 +120,7 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
       class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={ST.src}
+        src={ST_DS_1.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
@@ -138,7 +134,7 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
         decoding="async"
       />
       <img
-        src={ST_DS.src}
+        src={ST_DS_3.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
@@ -160,17 +156,17 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
   >
   <div class="peer-checked/tab_three:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYmxMzYMDzMjhxsNMzMbLzMjZmZAjlZbAAAAYGMsZWmxsNDjFGWmZZahWmNYA</code></pre>
+      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYmxMzYMDzMjhxsNLGzstNzMmZmBMWmtBAAAgZwAYMbGGYgZRL0iNYA</code></pre>
     <embed
       class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYmxMzYMDzMjhxsNMzMbLzMjZmZAjlZbAAAAYGMsZWmxsNDjFGWmZZahWmNYA?width=972&hideHeader=1&locale=ru_RU"
+      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYmxMzYMDzMjhxsNLGzstNzMmZmBMWmtBAAAgZwAYMbGGYgZRL0iNYA?width=972&hideHeader=1&locale=ru_RU"
     />
 
     <div
       class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={KEYS_T_1.src}
+        src={KEYS_TR_1.src}
         alt="Ловкач билд для ключей"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
@@ -184,7 +180,7 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
         decoding="async"
       />
       <img
-        src={KEYS_T_2.src}
+        src={KEYS_TR_3.src}
         alt="Ловкач билд для ключей"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
@@ -195,15 +191,19 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
     <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
         <WH
-          text="Мастер гнили"
-          href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
-        />, после исправления, лучше чем <WH
           text="Завершение"
           href="https://www.wowhead.com/ru/spell=382525/завершение"
-        /> для ключей (всего на 0.2%), но при этом <WH
+        /> всё еще, по симам, лучше
+        <WH
+          text="Мастера гнили"
+          href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
+        /> ~ на 1%. Однако,<WH
           text="Мастер гнили"
           href="https://www.wowhead.com/ru/spell=382015/мастер-гнили"
-        /> сильно упрощает отыгрыш, так как не нужно следить за количеством <WH
+        />, особенно после исправления (больше не поглощается оба стака одним <WH
+          text="Шквалом сюрикэнов"
+          href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+        />) - сильно упрощает отыгрыш. Так как не нужно следить за количеством <WH
           text="Выявлением слабости"
           href="https://www.wowhead.com/ru/spell=316220/выявление-слабости"
         /> на целях (<WH
@@ -213,71 +213,52 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
       </li>
       <li>
         <WH
-          text="Мастер боя"
-          href="https://www.wowhead.com/ru/spell=193537/мастер-боя"
-        /> можно поменять на <WH
           text="Первый танец"
           href="https://www.wowhead.com/ru/spell=382505/первый-танец"
-        /> ради оверолла (благодаря багу). Этот талант на данный момент нельзя просимить,
-        да и в целом довольно сложно оценить его пользу. Многое зависит от рестелсов,
-        которые вам дают (даже без учета бага), а так же от того как сам талант сработает
-        (он работает очень криво и начинает отсчет далеко не сразу после спадения
-        боя). В любом случае, это бесполезный талант для ст, так как на боссах не
-        работает баг. Для реализации бага, надо использовать макрос ниже, вне <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> в бою, тогда отсчет начнется / продолжится в бою и следующий <WH
-          text="Танец теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> будет на 4 сек дольше
-        <pre><code class="text-base">#showtooltip Исчезновение
+        /> починили, теперь он корректно начинает работать после выхода из боя. На
+        момент обновления гайда, талант всё ещё не симится. Но если вам дают хоть
+        иногда рестелс или вам иногда удаётся забагать его, то он определенно лучше
+        чем <WH
+          text="Мастер боя"
+          href="https://www.wowhead.com/ru/spell=193537/мастер-боя"
+        />. Очень желательно чтобы вам давали рестелс перед боссами, так как это
+        сильно улучает стартовый бурст. Макрос для абуза бага (срабатывает не
+        всегда):
+        <pre
+          class="mt-[10px]"><code class="text-base">#showtooltip Исчезновение
 /cast Шквал сюрикэнов
 /cast Исчезновение</code></pre>
       </li>
       <li>
-        Обычно
-        <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        /> используется просто как способность для ускорения группы (помимо невидимости),
-        но если вы его не используете, то замените <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        /> и <WH
-          text="Темное сердце"
-          href="https://www.wowhead.com/ru/spell=455131/темное-сердце"
-        /> (или <WH
-          text="Быструю засаду"
-          href="https://www.wowhead.com/ru/spell=378803/быстрая-засадае"
-        />, так как <WH
-          text="Темное сердце"
-          href="https://www.wowhead.com/ru/spell=455131/темное-сердце"
-        /> работает ТОЛЬКО на обычную <WH
-          text="Незаметность"
-          href="https://www.wowhead.com/ru/spell=1784/незаметность"
-        />) на <WH
-          text="Омертвевшие нервы"
-          href="https://www.wowhead.com/ru/spell=231719/омертвевшие-нервы"
-        /> и <WH
-          text="Крепкий желудок"
-          href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
-        /> или наоборот
-      </li>
-      <li>
-        <WH
+        Вы можете поменять 2 любых таланта: <WH
           text="Отравляющий укол"
           href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-        /> можно заменить на любой другой талант если вам не требуется снимать исступления
+        /> | <WH
+          text="Омертвевшие нервы"
+          href="https://www.wowhead.com/ru/spell=231719/омертвевшие-нервы"
+        /> | <WH
+          text="Крепкий желудок"
+          href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
+        /> | <WH
+          text="Похищающий жизнь яд"
+          href="https://www.wowhead.com/ru/spell=280716/похищающий-жизнь-яд"
+        /> на <WH
+          text="Быструю засаду"
+          href="https://www.wowhead.com/ru/spell=378803/быстрая-засадае"
+        /> + <WH
+          text="Надежный покров"
+          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
+        /> и сдавать его просто для ускорения группы
       </li>
       <li>
-        <WH
-          text="Неуловимость"
-          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
-        /> можно заменить на
+        Учитывая текущую выживаемость разбойника, я рекомендую
         <WH
           text="Обман смерти"
           href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
-        /> в низких ключах. <a
+        /> как основной талант для большинства. <WH
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        /> может потребоваться только в очень высоких ключах. <a
           class="text-hover hover:opacity-80"
           href="https://not-even-close.vercel.app/"
           target="_blank">Здесь</a
@@ -297,22 +278,22 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
   />
   <label
     for="tab_four"
-    class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_four:text-hover peer-checked/tab_four:neon-hover"
+    class="p-[20px] w-[100%] sm:w-[50%] lg:w-[25%] select-none border border-1 border-border border-t-0 lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_four:text-sub peer-checked/tab_four:neon-sub"
     >Ключи [DS]</label
   >
   <div class="peer-checked/tab_four:block w-full order-1 hidden">
     <pre
-      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYwMzYMzMzMjhxsNMzMbLMDmZwYmlZbAAAAMzghNzyADYBsMMhMLYG</code></pre>
+      class="mt-[16px]"><code class="text-base">CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYwMzYMzMzMjhxsNLGzstNzMYmBjZWmtBAAAgZwwmZZgBsAWGmQmFYA</code></pre>
     <embed
       class="min-h-[550px] w-full pt-[16px] hidden desktop:block"
-      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYwMzYMzMzMjhxsNMzMbLMDmZwYmlZbAAAAMzghNzyADYBsMMhMLYG?width=972&hideHeader=1&locale=ru_RU"
+      src="https://raidbots.com/simbot/render/talents/CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYwMzYMzMzMjhxsNLGzstNzMYmBjZWmtBAAAgZwwmZZgBsAWGmQmFYA?width=972&hideHeader=1&locale=ru_RU"
     />
 
     <div
       class="grid grid-rows-[auto_auto_auto] md:grid-rows-[auto_auto] md:grid-cols-2 md:grid-flow-dense desktop:hidden justify-center items-center"
     >
       <img
-        src={KEYS_DB_1.src}
+        src={KEYS_DS_1.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-1"
         loading="lazy"
@@ -326,7 +307,7 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
         decoding="async"
       />
       <img
-        src={KEYS_DB_2.src}
+        src={KEYS_DS_3.src}
         alt="Ловчий смерти рейдовый билд"
         class="mt-[15px] max-w-full h-full object-contain justify-self-center md:col-span-2 md:row-start-2"
         loading="lazy"
@@ -337,71 +318,51 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
     <ul class="flex flex-col list-disc list-inside gap-[20px] my-[20px]">
       <li>
         <WH
-          text="Мастер боя"
-          href="https://www.wowhead.com/ru/spell=193537/мастер-боя"
-        /> можно поменять на <WH
           text="Первый танец"
           href="https://www.wowhead.com/ru/spell=382505/первый-танец"
-        /> ради оверолла (благодаря багу). Этот талант на данный момент нельзя просимить,
-        да и в целом довольно сложно оценить его пользу. Многое зависит от рестелсов,
-        которые вам дают (даже без учета бага), а так же от того как сам талант сработает
-        (он работает очень криво и начинает отсчет далеко не сразу после спадения
-        боя). В любом случае, это бесполезный талант для ст, так как на боссах не
-        работает баг. Для реализации бага, надо использовать макрос ниже, вне <WH
-          text="Танца теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> в бою, тогда отсчет начнется / продолжится в бою и следующий <WH
-          text="Танец теней"
-          href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-        /> будет на 4 сек дольше
-        <pre><code class="text-base">#showtooltip Исчезновение
+        /> починили, теперь он корректно начинает работать после выхода из боя. На
+        момент обновления гайда, талант всё ещё не симится. Но если вам дают хоть
+        иногда рестелс или вам иногда удаётся забагать его, то он определенно лучше
+        чем <WH
+          text="Мастер боя"
+          href="https://www.wowhead.com/ru/spell=193537/мастер-боя"
+        />. Очень желательно чтобы вам давали рестелс перед боссами, так как это
+        сильно улучает стартовый бурст (и он лучше чем <WH
+          text="Мастер боя"
+          href="https://www.wowhead.com/ru/spell=193537/мастер-боя"
+        /> в одну цель). Макрос для абуза бага (срабатывает не всегда):
+        <pre
+          class="mt-[10px]"><code class="text-base">#showtooltip Исчезновение
 /cast Шквал сюрикэнов
 /cast Исчезновение</code></pre>
       </li>
       <li>
-        Обычно
-        <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        /> используется просто как способность для ускорения группы (помимо невидимости),
-        но если вы его не используете, то замените <WH
-          text="Надежный покров"
-          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
-        /> и <WH
-          text="Темное сердце"
-          href="https://www.wowhead.com/ru/spell=455131/темное-сердце"
-        /> (или <WH
-          text="Быструю засаду"
-          href="https://www.wowhead.com/ru/spell=378803/быстрая-засадае"
-        />, так как <WH
-          text="Темное сердце"
-          href="https://www.wowhead.com/ru/spell=455131/темное-сердце"
-        /> работает ТОЛЬКО на обычную <WH
-          text="Незаметность"
-          href="https://www.wowhead.com/ru/spell=1784/незаметность"
-        />) на <WH
-          text="Омертвевшие нервы"
-          href="https://www.wowhead.com/ru/spell=231719/омертвевшие-нервы"
-        /> и <WH
-          text="Крепкий желудок"
-          href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
-        /> или наоборот
-      </li>
-      <li>
-        <WH
+        Вы можете поменять 2 любых таланта: <WH
           text="Отравляющий укол"
           href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
-        /> можно заменить на любой другой талант если вам не требуется снимать исступления
+        /> | <WH
+          text="Омертвевшие нервы"
+          href="https://www.wowhead.com/ru/spell=231719/омертвевшие-нервы"
+        /> | <WH
+          text="Крепкий желудок"
+          href="https://www.wowhead.com/ru/spell=193546/крепкий-желудок"
+        /> на <WH
+          text="Быструю засаду"
+          href="https://www.wowhead.com/ru/spell=378803/быстрая-засадае"
+        /> + <WH
+          text="Надежный покров"
+          href="https://www.wowhead.com/ru/spell=423662/надежный-покров"
+        /> и сдавать его просто для ускорения группы
       </li>
       <li>
-        <WH
-          text="Неуловимость"
-          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
-        /> можно заменить на
+        Учитывая текущую выживаемость разбойника, я рекомендую
         <WH
           text="Обман смерти"
           href="https://www.wowhead.com/ru/spell=31230/обман-смерти"
-        /> в низких ключах. <a
+        /> как основной талант для большинства. <WH
+          text="Неуловимость"
+          href="https://www.wowhead.com/ru/spell=79008/неуловимость"
+        /> может потребоваться только в очень высоких ключах. <a
           class="text-hover hover:opacity-80"
           href="https://not-even-close.vercel.app/"
           target="_blank">Здесь</a
@@ -413,21 +374,3 @@ import KEYS_SIM from "../../assets/guide/subtlety/sim/KEY.png";
     </ul>
   </div>
 </div>
-<Sim title="ST сим (5 минут)">
-  <img
-    src={ST_SIM.src}
-    alt="Сим одной цели"
-    class="mx-auto"
-    loading="lazy"
-    decoding="async"
-  />
-</Sim>
-<Sim title="Сим ключа (19 шлюз)">
-  <img
-    src={KEYS_SIM.src}
-    alt="Сим ключа"
-    class="mx-auto"
-    loading="lazy"
-    decoding="async"
-  />
-</Sim>

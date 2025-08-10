@@ -2,6 +2,8 @@
 import H3 from "../H3.astro";
 import WH from "../WH.astro";
 import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
+import DS from "../Hero_trees/DS.astro";
+import TR from "../Hero_trees/TR.astro";
 ---
 
 <div class="pt-[60px] flex flex-col gap-[20px] text-clamp_text">
@@ -14,12 +16,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
   <ul
     class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
-    <span
-      ><WH
-        text="Ловкач (Trickster)"
-        href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
-      />:</span
-    >
+    <TR />
     <li>
       <WH
         text="Шквал сюрикэнов"
@@ -38,16 +35,32 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
         href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
       />
     </li>
+    <li>
+      Если у вас сработал <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> (с 4 кусками) и всё еще активны <WH
+        text="Теневые клинки"
+        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+      />, но у вас еще остались заряды от <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      /> после <WH
+        text="Тайного приема"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      />, то чтобы не потерять эти заряды, нужно использовать <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> после первого <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> (если не сработала теневая техника на полные кп)
+    </li>
   </ul>
   <ul
     class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
-    <span
-      ><WH
-        text="Ловчий смерти (Deathstalker)"
-        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
-      />:</span
-    >
+    <DS />
     <li>
       <WH
         text="Шквал сюрикэнов"
@@ -80,12 +93,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
   <ul
     class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
-    <span
-      ><WH
-        text="Ловкач (Trickster)"
-        href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
-      />:</span
-    >
+    <TR />
     <li>
       <WH
         text="Удар в спину"
@@ -111,17 +119,34 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
       <WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 7 и больше целей и на вас 1 стак <WH
-        text="Мастер гнили"
-        href="https://www.wowhead.com/ru/spell=394203/мастер-гнили"
-      />. Не используется с 2мя стаками и без стаков, только с 1 стаком (из-за
-      бага, когда шквал поглощает сразу оба стака). Если играете без <WH
-        text="Мастера гнили"
-        href="https://www.wowhead.com/ru/spell=394203/мастер-гнили"
-      />, то можете использовать при 7 и больше целях вместо <WH
-        text="Удара в спину"
-        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      /> первым филлером
+      /> если 7 и больше целей. Максимум 1 раз за <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> (иначе вы будете терять стаки <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      />)
+    </li>
+    <li>
+      Если у вас сработал <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> (с 4 кусками) и всё еще активны <WH
+        text="Теневые клинки"
+        href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
+      />, но у вас еще остались заряды от <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      /> после <WH
+        text="Тайного приема"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      />, то чтобы не потерять эти заряды, нужно использовать <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> после первого <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> (если не сработала теневая техника на полные кп)
     </li>
     <li>
       <WH
@@ -134,12 +159,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
   <ul
     class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
-    <span
-      ><WH
-        text="Ловчий смерти (Deathstalker)"
-        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
-      />:</span
-    >
+    <DS />
     <li>
       <WH
         text="Шквал сюрикэнов"
@@ -205,12 +225,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
     class="gap-[30px] flex flex-col p-[20px] border border-border rounded-md text-left"
   >
     <ul class="list-inside list-decimal gap-[10px] flex flex-col">
-      <span
-        ><WH
-          text="Ловкач (Trickster)"
-          href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
-        /> (Одна цель):</span
-      >
+      <TR />
       <li>
         <WH
           text="Тайный прием"
@@ -285,8 +300,10 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
         /> в одну цель используется только чтобы заминмаксить <WH
           text="Удар милосердия"
           href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-        /> (см. выше). В аое используется при 7+ целях (если не нужен приоритетный
-        урон).
+        /> (см. выше). В аое используется при 3+ целях под дебаффом <WH
+          text="Выявление слабости"
+          href="https://www.wowhead.com/ru/spell=316220/выявление-слабости"
+        /> (если не нужен приоритетный урон).
       </li>
       <li>
         <WH
@@ -301,12 +318,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
     class="gap-[20px] flex flex-col p-[20px] border border-border rounded-md text-left"
   >
     <ul class="list-inside list-decimal gap-[10px] flex flex-col">
-      <span
-        ><WH
-          text="Ловчий смерти (Deathstalker)"
-          href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
-        />:</span
-      >
+      <DS />
       <li>
         <WH
           text="Тайный прием"
@@ -395,7 +407,7 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
       /> наш основной бурст кд, используется под <WH
         text="Тайный прием"
         href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
-      /> (кроме исключений в трикстере, о них выше). Под <WH
+      /> (кроме исключений в <TR />, о них выше). Под <WH
         text="Танец теней"
         href="https://www.wowhead.com/ru/spell=185313/танец-теней"
       /> также используются все остальные бурст кд.
@@ -414,14 +426,13 @@ import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
         text="Флагелляция"
         href="https://www.wowhead.com/ru/spell=384631/флагелляция"
       />, но это приводит к тому, что там простои по 1.5 минуты между
-      использованиями. Второй вариант использование "по старинке", но вам
-      обязательно нужно использовать <WH
+      использованиями. Чтобы сделать лучше, вам обязательно нужно использовать <WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
-      /> под 4ый <WH
-        text="Танец теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> (50-60 сек боя), чтобы 3 <WH
+      /> под <WH
+        text="Тайный прием"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      /> на 60 сек боя, чтобы 3 <WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=382245/хладнокровие"
       /> было под следующую <WH
