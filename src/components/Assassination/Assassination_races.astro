@@ -4,6 +4,8 @@ import WH from "../WH.astro";
 import { assaMenuItems } from "../../constants/content";
 import Sim from "../Sim.astro";
 import Race from "../Race.astro";
+import DS from "../Hero_trees/DS.astro";
+import FB from "../Hero_trees/FB.astro";
 
 import RacesRaid from "../../assets/guide/assassination/sim/races_raid.png";
 import Dwarf from "../../assets/guide/races/race_dwarf.webp";
@@ -22,7 +24,7 @@ import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
   <H2 text={assaMenuItems[0].label} />
   <div class="text-clamp_text flex flex-col gap-[16px]">
     <p>
-      На данный момент разница между лучшей и худшей расой составляет ~1%. Так
+      На данный момент разница между лучшей и худшей расой составляет ~1.5%. Так
       что, если вы не стремитесь к максимизации эффективности, смело можете
       выбирать того, кто нравится визуально. Однако в каждом контенте (рейды |
       ключи | пвп) есть расы, которые сильно упростят вашу жизнь благодаря
@@ -32,11 +34,9 @@ import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
     </p>
     <p>
       Также стоит помнить, что с ростом характеристик в последующих патчах
-      некоторые расы становятся сильнее (дворфы, люди, таурены) / слабее (все
-      расы с характеристиками и баффами, такие как орки, мехагномы, дворфы
-      черного железа, тролли, магхары). При этом, если вы собираетесь играть в
-      других специализациях, желательно также ознакомиться с ними. Ниже я напишу
-      лучшие, по моему мнению, расы.
+      некоторые расы становятся сильнее (дворфы, люди, таурены). При этом, если
+      вы собираетесь играть в других специализациях, желательно также
+      ознакомиться с ними. Ниже я напишу лучшие, по моему мнению, расы.
     </p>
     <ul class="flex flex-col gap-[16px]">
       <li class="border border-1 p-[20px] rounded-md border-border">
@@ -44,11 +44,13 @@ import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
           title="Магхары"
           url={Maghar.src}
           href="https://www.wowhead.com/ru/race=36/магхар"
-        /> - после апа стали лучшей дпс расой для ликвидации и скрытности (и для
-        рейда и для ключей). <WH
+        /> - после апа стали лучшей дпс расой для ликвидации (но только в <DS
+        />). <WH
           text="Призыв предков"
           href="https://www.wowhead.com/ru/spell=274738/призыв-предков"
-        /> является по сути вторым аксессуаром, поэтому бурст у магхаров самый сильный
+        /> является по сути вторым аксессуаром, поэтому бурст у магхаров самый сильный.
+        Для <FB /> тоже является хорошей расой, но уже не лучшей, из-за 1.5 минутных
+        бурстов.
       </li>
       <li class="border border-1 p-[20px] rounded-md border-border">
         <Race
@@ -63,7 +65,8 @@ import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
           text="Каменная форма"
           href="https://www.wowhead.com/ru/spell=20594/каменная-форма"
         />) не раз спасёт вам жизнь, особенно в высоких ключах. Если вы не в
-        контроле, снимает всё, что могут способности других классов.
+        контроле, снимает всё, что могут способности других классов. В 3 сезоне
+        является лучшей для всех спеков, кроме <DS /> ликвидации.
       </li>
       <li class="border border-1 p-[20px] rounded-md border-border">
         <Race
@@ -73,9 +76,15 @@ import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
         /> - с каждым новым рейдом становятся всё сильнее (<WH
           text="Человеческий дух"
           href="https://www.wowhead.com/ru/spell=20598/человеческий-дух"
-        />). Уже во втором сезоне являются одной из топ рас по урону. Для
-        ликвидации, у которой все характеристики очень близки - отличный выбор
-        под 3 и последующие сезоны.
+        />). в 3 сезоне - топ по дпсу для ликвидации, вместе с <Race
+          title="Тауренами"
+          url={Tauren.src}
+          href="https://www.wowhead.com/ru/race=6/таурен"
+        /> и <Race
+          title="Дворфами"
+          url={Dwarf.src}
+          href="https://www.wowhead.com/ru/race=3/дворф"
+        />
       </li>
       <li class="border border-1 p-[20px] rounded-md border-border">
         <Race
@@ -112,12 +121,6 @@ import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
       </li>
     </ul>
     <Sim title="Сим рас (одна цель 5 минут)">
-      <span class="text-center"
-        >Сим без <WH
-          text="Придания сил"
-          href="https://www.wowhead.com/ru/spell=10060/придание-сил"
-        /> (~100к дпс)</span
-      >
       <img
         src={RacesRaid.src}
         alt="Сим рас в одну цель 5 минут"
@@ -130,8 +133,8 @@ import Mechagnome from "../../assets/guide/races/race_mechagnome.webp";
       В симе рас для ключей нету особого смысла. Они все очень близки (~1%
       разницы). Однако стандартные симы не учитывают невозможность рестелса.
       Поэтому дополнительные рестелсы от ночных эльфов делают их сильно лучше
-      других рас. Магхары также являются одной из лучших рас для ключей из-за
-      урона (и намного полезнее на боссах, чем ночные эльфы).
+      других рас. Магхары и дворфы также являются отличными расами для ключей
+      из-за урона и выживаемости (дворфы).
     </Sim>
   </div>
 </section>

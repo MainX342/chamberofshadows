@@ -1,6 +1,8 @@
 ---
 import H3 from "../H3.astro";
 import WH from "../WH.astro";
+import DS from "../Hero_trees/DS.astro";
+import FB from "../Hero_trees/FB.astro";
 ---
 
 <div class="pt-[60px] flex flex-col gap-[20px] text-clamp_text">
@@ -44,8 +46,20 @@ import WH from "../WH.astro";
         /> используется только под <WH
           text="Погибель королей"
           href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-        />. Если 2 заряда, то на все время действия, если 1 заряд, то под конец
-        дебаффа.
+        /> (или под двойной бафф <WH
+          text="Непроглядная ночь"
+          href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+        /> + <WH
+          text="Остаточная тьма"
+          href="https://www.wowhead.com/ru/spell=457273/остаточная-тьма"
+        />). Если 2 заряда, то на все время действия <WH
+          text="Погибель королей"
+          href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+        />, если 1 заряд, то под конец
+        <WH
+          text="Погибель королей"
+          href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+        /> (за 8 сек)
       </li>
       <li>
         Под каждый бурст (1 минутный и 2х минутный) у вас должно быть 2 заряда <WH
@@ -147,6 +161,122 @@ import WH from "../WH.astro";
       </li>
     </ul>
   </div>
+
+  <H3 text="Особенности героических талантов" />
+  <ul
+    class="list-inside list-square flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
+  >
+    <DS />
+    <li>
+      <WH
+        text="Метка ловчего смерти"
+        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
+      /> всегда должна быть на цели (если она одна). В аое, в идеале, вы так же должны
+      играть через цель с <WH
+        text="Меткой ловчего смерти"
+        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
+      />. Но как минимум, она обязательно должна быть на ком-то в паке, чтобы
+      работал талант <WH
+        text="Исключительная концентрация"
+        href="https://www.wowhead.com/ru/spell=457055/исключительная-концентрация"
+      />
+    </li>
+    <li>
+      Под действием двойного баффа <WH
+        text="Непроглядная ночь"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      /> + <WH
+        text="Остаточная тьма"
+        href="https://www.wowhead.com/ru/spell=457273/остаточная-тьма"
+      /> нужно использовать <WH
+        text="Отравляющий укол"
+        href="https://www.wowhead.com/ru/spell=5938/отравляющий-укол"
+      />, так как там получаются самые сильные <WH
+        text="Отравления"
+        href="https://www.wowhead.com/ru/spell=32645/отравление"
+      />, именно их нужно разгонять.
+    </li>
+    <li>
+      <WH
+        text="По следу крови"
+        href="https://www.wowhead.com/ru/spell=457068/по-следу-крови"
+      /> сильный талант для Bleed билда. Он снэпшотит (то есть запоминает) урон для
+      <WH
+        text="Внезапная гибель"
+        href="https://www.wowhead.com/ru/spell=423136/внезапная-гибель"
+      />, но в тоже время талант ничего не дает в одну цель. <WH
+        text="Импульс отчаяния"
+        href="https://www.wowhead.com/ru/spell=457067/импульс-отчаяния"
+      /> в свою очередь даёт бонус и в одну цель, и в аое, и увеличивает кол-во кп
+      от веера. Я рекомендую именно <WH
+        text="Импульс отчаяния"
+        href="https://www.wowhead.com/ru/spell=457067/импульс-отчаяния"
+      />
+    </li>
+    <FB />
+    <li>
+      Основа игры строится вокруг получения <WH
+        text="Счастливой монетки"
+        href="https://www.wowhead.com/ru/spell=452562/счастливая-монетка"
+      />, для этого вам 7 раз подряд нужно бросить монетку одной стороной
+    </li>
+    <li>
+      Первые две мы получаем от таланта <WH
+        text="Двойной риск"
+        href="https://www.wowhead.com/ru/spell=454430/двойной-риск"
+      /> (еще 2 от <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />), так же по 2 монеты мы получаем от бурст кнопок (<WH
+        text="Знак смерти"
+        href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
+      /> | <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      />) из-за таланта <WH
+        text="Крайний случай"
+        href="https://www.wowhead.com/ru/spell=453457/крайний-случай"
+      />. И еще две от <WH
+        text="Неизбежный финал"
+        href="https://www.wowhead.com/ru/spell=454434/неизбежный-финал"
+      />. Всё это справедливо только при наличии нового комплекта 3 сезона, без
+      него не нужно играть в <FB />
+    </li>
+    <li>
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> в одну цель используется после <WH
+        text="Знак смерти"
+        href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
+      /> | <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> и пока активно <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=456330/хладнокровие"
+      />. Бурст даёт по 2 монетки каждого типа (2 орла и 2 решки), <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=456330/хладнокровие"
+      /> гарантирует что следующих монеток будет еще по +1 каждой, а <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> удваивает их (из-за <WH
+        text="Двойной риск"
+        href="https://www.wowhead.com/ru/spell=454430/двойной-риск"
+      />). Тем самым у вас будет по 4 стака каждой монетки
+    </li>
+    <li>
+      В ключах <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> лучше оставлять именно для получения <WH
+        text="Счастливой монетки"
+        href="https://www.wowhead.com/ru/spell=452562/счастливая-монетка"
+      />, а не для урона, как в одну цель.
+    </li>
+  </ul>
+
   <H3 text="Приоритет способностей для набора кп (builders):" />
   <ul
     class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
@@ -353,7 +483,19 @@ import WH from "../WH.astro";
       /> - используется для обновления усиленных <WH
         text="Гаррот"
         href="https://www.wowhead.com/ru/spell=703/гаррота"
-      /> на опенере и дальше под бурсты
+      /> (если взяты таланты) на опенере и дальше под бурсты. Без талантов на <WH
+        text="Гаррот"
+        href="https://www.wowhead.com/ru/spell=703/гаррота"
+      /> используется только в <FB /> билде после <WH
+        text="Знак смерти"
+        href="https://www.wowhead.com/ru/spell=360194/знак-смерти"
+      /> или <WH
+        text="Погибель королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> и пока активно <WH
+        text="Хладнокровие"
+        href="https://www.wowhead.com/ru/spell=456330/хладнокровие"
+      />
     </li>
     <li>
       <span class="text-green-500">Рейд и KB билд:</span>
@@ -366,23 +508,17 @@ import WH from "../WH.astro";
       />. Один заряд перед <WH
         text="Погибель королей"
         href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-      /> (за 1-2 сек), второй сразу по спадению первого. При игре с одним зарядом
-      используется за 8 сек до окончания <WH
-        text="Погибель королей"
-        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-      />, затем по откату и затем снова под конец <WH
-        text="Погибель королей"
-        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-      />. Также может использоваться вне <WH
-        text="Погибели королей"
-        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
-      /> если активны оба баффа <WH
+      /> (за 1-2 сек), второй сразу по спадению первого. Также нужно использовать
+      когда активны оба баффа <WH
         text="Непроглядная ночь"
         href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
       /> и <WH
         text="Остаточная тьма"
         href="https://www.wowhead.com/ru/spell=457273/остаточная-тьма"
-      />
+      /> (даже вне <WH
+        text="Погибели королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      />)
     </li>
     <li>
       <span class="text-red-500">Bleed билд:</span>
@@ -402,7 +538,10 @@ import WH from "../WH.astro";
       <WH
         text="Хладнокровие"
         href="https://www.wowhead.com/ru/spell=456330/хладнокровие"
-      /> используется по откату
+      /> используется по откату. Можно использовать в макросе с <WH
+        text="Погибелью королей"
+        href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
+      /> (см. раздел макросов)
     </li>
   </ul>
 </div>

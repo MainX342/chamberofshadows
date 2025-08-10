@@ -1,6 +1,8 @@
 ---
 import WH from "../WH.astro";
 import Comment from "../Comment.astro";
+import DS from "../Hero_trees/DS.astro";
+import FB from "../Hero_trees/FB.astro";
 ---
 
 <div class="p-4 border border-border rounded-md">
@@ -141,7 +143,7 @@ import Comment from "../Comment.astro";
       <WH
         text="Перстень приората"
         href="https://www.wowhead.com/ru/item=219308/перстень-приората?bonus=4786:3170:11996&ilvl=678&spec=259"
-      /> (если играете с ним)
+      /> (или любой другой 2м аксессуар)
     </li>
     <li>
       <WH
@@ -154,9 +156,9 @@ import Comment from "../Comment.astro";
         text="Погибель королей"
         href="https://www.wowhead.com/ru/spell=385627/погибель-королей"
       /> + <WH
-        text="Карточный домик"
-        href="https://www.wowhead.com/ru/item=230027/карточный-домик?class=4&ilvl=678&spec=261"
-      /> (если играете с ним)
+        text="Лилия вечного плетения"
+        href="https://www.wowhead.com/ru/item=242494/лилия-вечного-плетения?class=4&hero=52&ilvl=723&spec=259"
+      /> (или любой другой 1.5м аксессуар)
     </li>
     <li>
       <WH
@@ -168,11 +170,24 @@ import Comment from "../Comment.astro";
       <WH
         text="Исчезновение"
         href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      /> + <WH
+      />* + <WH
         text="Гаррота"
         href="https://www.wowhead.com/ru/spell=703/гаррота"
       /> x2
     </li>
+    <Comment class="hidden visible-comment"
+      >Если вы играете в <FB />, то поидее вы должны нажимать <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> как и в одну цель, под обе монетки. Но я рекомендую вообще не нажимать <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> для урона, лучше оставить его для получения новой монетки, если она дропнулась
+      между пуллами. Тем более, что в текущих билдах у нас нету талантов на <WH
+        text="Гарроту"
+        href="https://www.wowhead.com/ru/spell=703/гаррота"
+      />. Поэтому даже в <DS /> лучше оставлять его для рестелса.</Comment
+    >
     <li>
       <WH
         text="Отравление"
