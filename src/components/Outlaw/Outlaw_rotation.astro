@@ -4,8 +4,10 @@ import WH from "../WH.astro";
 import { outlawMenuItems } from "../../constants/content";
 import Tabs from "../Tabs.astro";
 import H3 from "../H3.astro";
-import OutlawOpenerHo from "./Outlaw_opener_ho.astro";
-import OutlawOpenerKir from "./Outlaw_opener_kir.astro";
+import OutlawOpenerHoFB from "./Outlaw_opener_ho_fb.astro";
+import OutlawOpenerHoTR from "./Outlaw_opener_ho_tr.astro";
+import OutlawOpenerKirFB from "./Outlaw_opener_kir_fb.astro";
+import OutlawOpenerKirTR from "./Outlaw_opener_kir_tr.astro";
 import OutlawApl from "./Outlaw_apl.astro";
 import OutlawImp from "./Outlaw_important.astro";
 import Comment from "../Comment.astro";
@@ -50,9 +52,9 @@ import Comment from "../Comment.astro";
       Заряженные кп не учитываются в цифрах выше, считайте их просто как бафф
     </li>
     <Comment
-      >То есть, если у вас 3 обычных кп и 3 заряженных - вы добиваете обычные
-      до 5-6 и только потом используете финишеры. Исключение может быть, если у
-      вас например мало энергии, не хватает на <WH
+      >То есть, если у вас 3 обычных кп и 3 заряженных - вы добиваете обычные до
+      5-6 и только потом используете финишеры. Исключение может быть, если у вас
+      например мало энергии, не хватает на <WH
         text="Коварный удар"
         href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
       />, а окно <WH
@@ -70,11 +72,20 @@ import Comment from "../Comment.astro";
   <div
     class="flex flex-wrap max-w-[1024px] min-h-[565px] w-full text-clamp_text content-baseline"
   >
-    <Tabs title="KiR билд" id="opener_0" checked="checked" name="opener">
-      <OutlawOpenerKir />
+    <Tabs title="FB KiR" id="opener_0" checked="checked" name="opener">
+      <OutlawOpenerKirFB />
     </Tabs>
-    <Tabs title="HO билд" id="opener_1" name="opener">
-      <OutlawOpenerHo />
+
+    <Tabs title="Trickster KiR" id="opener_1" name="opener">
+      <OutlawOpenerKirTR />
+    </Tabs>
+
+    <Tabs title="FB HO" id="opener_2" name="opener">
+      <OutlawOpenerHoFB />
+    </Tabs>
+
+    <Tabs title="Trickster HO" id="opener_3" name="opener">
+      <OutlawOpenerHoTR />
     </Tabs>
   </div>
   <OutlawImp />

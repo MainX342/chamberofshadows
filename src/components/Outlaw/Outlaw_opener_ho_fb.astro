@@ -5,13 +5,13 @@ import Comment from "../Comment.astro";
 
 <div class="p-4 border border-border rounded-md">
   <label
-    for="commentsHO"
+    for="commentsHOFB"
     class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
   >
     <input
       type="checkbox"
-      id="commentsHO"
-      name="commentsHO"
+      id="commentsHOFB"
+      name="commentsHOFB"
       class="peer hidden checkbox-3"
     />
     <span
@@ -33,11 +33,7 @@ import Comment from "../Comment.astro";
       />*
     </li>
     <Comment class="hidden visible-comment"
-      >Если в бою будут дополнительные цели, в одну цель больше не требуется.
-      Если играете с талантом <WH
-        text="Ловкие маневры"
-        href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
-      /> используется по кд при 4 и больше целях на 1-2 кп.</Comment
+      >Если в бою будут дополнительные цели</Comment
     >
     <li>
       <WH
@@ -47,14 +43,17 @@ import Comment from "../Comment.astro";
     </li>
     <li>
       <WH
-        text="Бросок костей"
-        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
-      />
-    </li>
-    <li>
-      <WH
         text="Выброс адреналина"
         href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
+      />
+    </li>
+    <Comment class="hidden visible-comment"
+      >Не выбирайте босса в цель, монетка при активации всё еще бьёт босса</Comment
+    >
+    <li>
+      <WH
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
       />
     </li>
     <li>
@@ -67,7 +66,7 @@ import Comment from "../Comment.astro";
       <WH
         text="Призрачный удар"
         href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
-      />
+      /> и далее по откату
     </li>
     <li>
       <WH
@@ -76,17 +75,14 @@ import Comment from "../Comment.astro";
       />
     </li>
     <li>
-      Чередование
-      <WH
+      Чередование <WH
         text="Внезапный удар"
         href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-      /> | <WH
+      /> |
+      <WH
         text="Выстрел из пистоли"
         href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> (если нету баффа <WH
-        text="Дерзости"
-        href="https://www.wowhead.com/ru/spell=386270/дерзость"
-      /> и есть бафф <WH
+      /> (если есть бафф <WH
         text="Замечательной возможности"
         href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
       />) и <WH
@@ -119,96 +115,26 @@ import Comment from "../Comment.astro";
       />* [5+ кп]
     </li>
     <Comment class="hidden visible-comment"
-      >Перед <WH
-        text="Чередой убийств"
-        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      /> вам возможно нужно будет добить кп с помощью <WH
-        text="Коварный удар"
-        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
-      /> до 5-6 согласно условиям для финишеров. Помните, что <WH
-        text="Череда убийств"
-        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      /> дает 100% активацию 2 стаков на <WH
-        text="Опережающий клинок"
-        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
-      /> с последующих <WH
-        text="Коварный удар"
-        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
-      /> и <WH
-        text="Внезапный удар"
-        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-      /></Comment
-    >
-    <li>
-      <WH
-        text="Коварный удар"
-        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
-      /> | <WH
-        text="Внезапный удар"
-        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-      /> | <WH
-        text="Выстрел из пистоли"
-        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> |
-      <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />* [5+ кп]
-    </li>
-    <Comment class="hidden visible-comment"
-      >Дальнейшие действия зависят от количества стаков на <WH
-        text="Опережающем клинке"
-        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
-      /> и текущих проках <WH
-        text="Дерзости"
-        href="https://www.wowhead.com/ru/spell=386270/дерзость"
-      /> или <WH
-        text="Замечательной возможности"
-        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-      />. Если у вас один стак на <WH
-        text="Опережающем клинке"
-        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
-      /> (3 в сумме со стаками после <WH
+      >Вы можете сбрасывать каст <WH
         text="Череды убийств"
         href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      />), то нужно добить кп до 5+ и использовать <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />.</Comment
-    >
-    <Comment class="hidden visible-comment"
-      >Если же у вас 2 стака на <WH
-        text="Опережающем клинке"
-        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
-      /> (4 в сумме), то перед использованием <WH
-        text="Исчезновения"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      /> нужно добить 4 стака и использовать <WH
-        text="Удар милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      />, а затем снова добить кп и уже потом использовать <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />. Это основная суть, <WH
-        text="Удар милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      /> всегда идет перед <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />, если он сработал</Comment
+      /> когда набёрете 7кп, это даст вам ~20к урона.</Comment
     >
     <li>
-      Чередование
       <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />
+    </li>
+    <li>
+      Чередование <WH
         text="Внезапный удар"
         href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-      /> | <WH
+      /> |
+      <WH
         text="Выстрел из пистоли"
         href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> (если нету баффа <WH
-        text="Дерзости"
-        href="https://www.wowhead.com/ru/spell=386270/дерзость"
-      /> и есть бафф <WH
+      /> (если есть бафф <WH
         text="Замечательной возможности"
         href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
       />) и <WH
@@ -221,38 +147,19 @@ import Comment from "../Comment.astro";
     </li>
     <li>
       <WH
-        text="Удар милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      /> |
-      <WH
         text="Исчезновение"
         href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />* [5+ кп]
+      /> [5+ кп]
     </li>
-    <Comment class="hidden visible-comment"
-      >Если за время действия первого <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      /> у вас сработал <WH
-        text="Удар милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      />, то нужно реализовать его перед вторым <WH
-        text="Исчезновением"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />
-    </Comment>
     <li>
-      Чередование
-      <WH
+      Чередование <WH
         text="Внезапный удар"
         href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
-      /> | <WH
+      /> |
+      <WH
         text="Выстрел из пистоли"
         href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> (если нету баффа <WH
-        text="Дерзости"
-        href="https://www.wowhead.com/ru/spell=386270/дерзость"
-      /> и есть бафф <WH
+      /> (если есть бафф <WH
         text="Замечательной возможности"
         href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
       />) и <WH
@@ -289,10 +196,7 @@ import Comment from "../Comment.astro";
       /> или <WH
         text="Выстрел из пистоли"
         href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> (если нету баффа <WH
-        text="Дерзости"
-        href="https://www.wowhead.com/ru/spell=386270/дерзость"
-      /> и есть бафф <WH
+      /> (если есть бафф <WH
         text="Замечательной возможности"
         href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
       />)</Comment

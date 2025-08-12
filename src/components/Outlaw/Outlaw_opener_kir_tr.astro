@@ -5,13 +5,13 @@ import Comment from "../Comment.astro";
 
 <div class="p-4 border border-border rounded-md">
   <label
-    for="commentsKIR"
+    for="commentsKIRTR"
     class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
   >
     <input
       type="checkbox"
-      id="commentsKIR"
-      name="commentsKIR"
+      id="commentsKIRTR"
+      name="commentsKIRTR"
       class="peer hidden checkbox-3"
     />
     <span
@@ -33,11 +33,7 @@ import Comment from "../Comment.astro";
       />*
     </li>
     <Comment class="hidden visible-comment"
-      >Если в бою будут дополнительные цели, в одну цель больше не требуется.
-      Если играете с талантом <WH
-        text="Ловкие маневры"
-        href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
-      /> используется по кд при 4 и больше целях на 1-2 кп.</Comment
+      >Если в бою будут дополнительные цели</Comment
     >
     <li>
       <WH
@@ -47,14 +43,14 @@ import Comment from "../Comment.astro";
     </li>
     <li>
       <WH
-        text="Бросок костей"
-        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+        text="Выброс адреналина"
+        href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
       />
     </li>
     <li>
       <WH
-        text="Выброс адреналина"
-        href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
       />
     </li>
     <li>
@@ -67,7 +63,7 @@ import Comment from "../Comment.astro";
       <WH
         text="Призрачный удар"
         href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
-      />
+      /> и далее по откату
     </li>
     <li>
       <WH
@@ -116,13 +112,13 @@ import Comment from "../Comment.astro";
       />* [5+ кп]
     </li>
     <Comment class="hidden visible-comment"
-      >Перед <WH
-        text="Чередой убийств"
+      >Вы можете сбрасывать каст <WH
+        text="Череды убийств"
         href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      /> вам возможно нужно будет добить кп с помощью <WH
-        text="Коварный удар"
-        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
-      /> до 5-6 согласно условиям для финишеров. Помните, что <WH
+      /> когда она даст 7кп, это даст вам ~20к урона.</Comment
+    >
+    <Comment class="hidden visible-comment"
+      >Помните, что <WH
         text="Череда убийств"
         href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
       /> дает 100% активацию 2 стаков на <WH
@@ -135,114 +131,72 @@ import Comment from "../Comment.astro";
     >
     <li>
       <WH
-        text="Коварный удар"
-        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
-      /> | <WH
-        text="Выстрел из пистоли"
-        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> |
-      <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />* [5+ кп]
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      />*
     </li>
     <Comment class="hidden visible-comment"
-      >Дальнейшие действия зависят от количества стаков на <WH
-        text="Опережающем клинке"
-        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
-      /> и текущих проках <WH
+      >Если на данном этапе у вас он не сработал, то просто добейте до него <WH
+        text="Коварным ударом"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /></Comment
+    >
+    <li>
+      <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если есть бафф <WH
         text="Замечательной возможности"
         href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-      />. Если у вас один стак на <WH
+      />) | <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /> до 5+ кп*
+    </li>
+    <Comment class="hidden visible-comment"
+      >В идеале между <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> добить кп до второго нужно с помощью <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />, чтобы не потерять стаки на <WH
         text="Опережающем клинке"
         href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
-      /> (3 в сумме со стаками после <WH
+      /></Comment
+    >
+    <li>
+      <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      />
+    </li>
+    <li>
+      Дальнейшая ротация строится на стаках <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      /> и <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      /> (для этого нужна WA, смотрите в разделе ниже). Если у вас в сумме будет
+      4 (например 2 от <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      /> и 2 оставшихся от <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      /> после <WH
         text="Череды убийств"
         href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      />), то нужно добить кп до 5+ и использовать <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />.</Comment
-    >
-    <Comment class="hidden visible-comment"
-      >Если же у вас 2 стака на <WH
-        text="Опережающем клинке"
-        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
-      /> (4 в сумме), то перед использованием <WH
-        text="Исчезновения"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      /> нужно добить 4 стака и использовать <WH
-        text="Удар милосердия"
+      />) то вам нужно добить до <WH
+        text="Ударов милосердия"
         href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      />, а затем снова добить кп и уже потом использовать <WH
-        text="Исчезновение"
+      />, отыграть их, а затем уже переходить к <WH
+        text="Исчезновению"
         href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />. Это основная суть, <WH
-        text="Удар милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      /> всегда идет перед <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />, если он сработал</Comment
-    >
-    <li>
-      Чередование <WH
-        text="Коварный удар"
-        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
-      /> |
-      <WH
-        text="Выстрел из пистоли"
-        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> (если есть бафф <WH
-        text="Замечательной возможности"
-        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-      />) и <WH
-        text="Промеж глаз"
-        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-      /> пока не закончится бафф <WH
-        text="Увертки"
-        href="https://www.wowhead.com/ru/spell=115192/увертка"
-      />
-    </li>
-    <li>
-      <WH
-        text="Удар милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      /> |
-      <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />* [5+ кп]
-    </li>
-    <Comment class="hidden visible-comment"
-      >Если за время действия первого <WH
-        text="Исчезновение"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      /> у вас сработал <WH
-        text="Удар милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      />, то нужно реализовать его перед вторым <WH
-        text="Исчезновением"
-        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
-      />
-    </Comment>
-    <li>
-      Чередование <WH
-        text="Коварный удар"
-        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
-      /> |
-      <WH
-        text="Выстрел из пистоли"
-        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
-      /> (если есть бафф <WH
-        text="Замечательной возможности"
-        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
-      />) и <WH
-        text="Промеж глаз"
-        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
-      /> пока не закончится бафф <WH
-        text="Увертки"
-        href="https://www.wowhead.com/ru/spell=115192/увертка"
       />
     </li>
     <Comment

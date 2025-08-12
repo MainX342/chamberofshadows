@@ -6,6 +6,10 @@ import Tabs from "./Outlaw_tabs.astro";
 import Sim from "../Sim.astro";
 import SimSt from "../../assets/guide/outlaw/sim/outlaw_st.png";
 import SimKey from "../../assets/guide/outlaw/sim/outlaw_key.png";
+import SimKeyST from "../../assets/guide/outlaw/sim/outlaw_key_st.png";
+
+import TR from "../Hero_trees/TR.astro";
+import FB from "../Hero_trees/FB.astro";
 ---
 
 <section
@@ -15,33 +19,29 @@ import SimKey from "../../assets/guide/outlaw/sim/outlaw_key.png";
   <H2 text={outlawMenuItems[1].label} />
   <div class="text-clamp_text flex flex-col gap-[16px]">
     <p>
-      У головореза существует 2 основных билда, названия которых происходят от
-      сокращений главных способностей (капстоунов) на английском языке:
+      В текущем сезоне, из-за изменения <WH
+        text="Череды убийств"
+        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+      />, <TR /> стал намного слабее и годится разве что для ключей и аое боёв. Так
+      как в одну цель отставание около 6% от <FB />. У головореза существует 2
+      архетипа билдов, а именно:
     </p>
-    <ul class="flex flex-col gap-[16px]">
-      <li>
-        1. HO (Hidden Opportunity) билд <WH
+    <ul class="list-inside list-decimal flex flex-col items-start gap-[16px]">
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <WH
           text="Скрытая возможность"
           href="https://www.wowhead.com/ru/spell=383281/скрытая-возможность"
-        />
+        /> [HO - Hidden Opportunity] - играл во 2 сезоне из-за комплекта. В 3 сезоне
+        не играет ни в ключах, ни в рейде. Билды оставлены на случай апа талантов
+        / комплекта или просто для разнообразия.
       </li>
-      <li>
-        2. KiR (Keep It Rolling) билд <WH
+      <li class="border border-1 p-[20px] rounded-md border-border">
+        <WH
           text="Призовая игра"
           href="https://www.wowhead.com/ru/spell=381989/призовая-игра"
-        />
+        /> [KiR - Keep it Rolling] - единственный играбельный билд в текущем сезоне.
       </li>
     </ul>
-    <p class="text-blue-500">
-      T - Trickster - Ловкач<br />
-      FB - Fatebound - Служитель судьбы
-    </p>
-    <p>
-      На данный момент играются оба билда (KiR и HO) и в ключах, и в рейде. В
-      ключах KiR билд более стабилен из-за постоянных костей. HO в свою очередь
-      сильнее в одну цель. Что касается героической ветки, то FB играется
-      приоритетно только на 5ом боссе.
-    </p>
     <Tabs />
     <Sim title="Одна цель 5 минут">
       <img
@@ -52,10 +52,21 @@ import SimKey from "../../assets/guide/outlaw/sim/outlaw_key.png";
         decoding="async"
       />
     </Sim>
-    <Sim title="Ключ 19 шлюз">
+    <Sim title="Сим талантов в ключе">
       <img
         src={SimKey.src}
         alt="Сим талантов и билдов в ключе"
+        class="mx-auto"
+        loading="lazy"
+        decoding="async"
+      />
+    </Sim>
+    <Sim
+      title="Сим талантов в ST (билды для ключей, БЛ, баффы дх и шамана, 5 минут)"
+    >
+      <img
+        src={SimKeyST.src}
+        alt="Сим талантов и билдов в одну цель в ключе"
         class="mx-auto"
         loading="lazy"
         decoding="async"

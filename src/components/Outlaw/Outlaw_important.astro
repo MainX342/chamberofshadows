@@ -2,86 +2,144 @@
 import H3 from "../H3.astro";
 import WH from "../WH.astro";
 import Comment from "../Comment.astro";
+import FB from "../Hero_trees/FB.astro";
+import TR from "../Hero_trees/TR.astro";
 ---
 
 <div class="pt-[60px] flex flex-col gap-[20px] text-clamp_text">
-  <H3 text="Важные замечания и уточнения" />
+  <H3 text="Особенности героических талантов" />
   <ul
-    class="list-inside list-decimal flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
+    class="list-inside list-square flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
   >
+    <FB />
     <li>
-      Текущий геймплей строится не вокруг стелс окон, хотя это база, а вокруг
-      стаков <WH
-        text="Опережающего клинка"
-        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      Основа ветки это <WH
+        text="Счастливая монетка"
+        href="https://www.wowhead.com/ru/spell=452562/счастливая-монетка"
+      />, для этого вам 7 раз подряд нужно бросить монетку одной стороной. У
+      головореза это происходит очень часто, поэтому даже не особо нужно ее
+      минмаксить и отслеживать
+    </li>
+    <li>
+      Первые две мы получаем от таланта <WH
+        text="Двойной риск"
+        href="https://www.wowhead.com/ru/spell=454430/двойной-риск"
+      /> (еще 2 от <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />), так же по 2 монеты мы получаем от бурст кнопок (<WH
+        text="Выброс адреналина"
+        href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
       /> | <WH
-        text="Дезориентирующих ударов"
-        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
-      /> (<WH
-        text="Череды убийств"
-        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      />) и <WH
-        text="Удара милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      />, поэтому вам может помочь <a
+        text="Призрачный удар"
+        href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
+      />) из-за таланта <WH
+        text="Крайний случай"
+        href="https://www.wowhead.com/ru/spell=453457/крайний-случай"
+      />. Всё это справедливо только при наличии нового комплекта 3 сезона
+    </li>
+    <li>
+      Никаких особых минмаксов в <FB /> нету, разве что при 5 монетах принудительно
+      нажать
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />, чтобы получить <WH
+        text="Счастливую монетку"
+        href="https://www.wowhead.com/ru/spell=452562/счастливая-монетка"
+      /> (если её еще нету)
+    </li>
+    <li>
+      Существует баг, когда вы перепрыгиваете с 6 на 8 стак монетки, вам не
+      даётся <WH
+        text="Счастливая монетка"
+        href="https://www.wowhead.com/ru/spell=452562/счастливая-монетка"
+      />, даже если потом вам выпадет хоть 20 монет одной стороной, монетка
+      должна смениться
+    </li>
+    <TR />
+    <li>
+      Рекомендую поставить WA: <a
         href="https://wago.io/gNf0y7O9P"
-        class="text-hover hover:opacity-80"
-        target="_blank">WA</a
-      > или моя сборка с <a
+        class="text-hover hover:opacity-80">wago</a
+      > или использовать мой пак: <a
         href="https://boosty.to/mainx"
         class="text-hover hover:opacity-80"
         target="_blank">Boosty</a
       >
     </li>
     <li>
-      Если вы не уверены на 100% в том, что не умрёте в <WH
-        text="Череде убийств"
+      Основа игры строится вокруг стаков <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      />. Их вы получаете при проке <WH
+        text="Незримого клинка"
+        href="https://www.wowhead.com/ru/spell=441144/незримый-клинок"
+      />, а так же гарантированно 2 стака будет после использования <WH
+        text="Череды убийств"
         href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      />, жмите перед ней как минимум <WH
-        text="Уловку"
-        href="https://www.wowhead.com/ru/spell=1966/уловка"
-      />, а возможно еще и <WH
-        text="Ускользание"
-        href="https://www.wowhead.com/ru/spell=5277/ускользание"
-      /> (-20% урона) или даже <WH
-        text="Плащ теней"
-        href="https://www.wowhead.com/ru/spell=31224/плащ-теней"
-      />
-    </li>
-    <li>
-      Если вы получили много урона, но не умерли, вы можете снять дебафф <WH
-        text="Плащом теней"
-        href="https://www.wowhead.com/ru/spell=31224/плащ-теней"
-      />. Если вы получите урон х3 от своего максимального здоровья
-      единовременно - вы умрёте (не всегда, иногда удается переживать урон и
-      больше). Для отслеживания полученного урона можете использовать <a
-        href="https://wago.io/A4MhvelaC"
-        class="text-hover hover:opacity-80"
-        target="_blank">WA</a
-      > или опять же мою сборку
-    </li>
-    <li>
-      Если на боссе очень рискованно нажимать <WH
-        text="Череду убийств"
-        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      /> на 5+ кп, вы можете нажать ее на 1 кп, тем самым вы просто дернитесь в одну
-      сторону и шансов выжить будет больше, но на всякий случай, в таких ситуациях
-      всегда жмите <WH
-        text="Уловку"
-        href="https://www.wowhead.com/ru/spell=1966/уловка"
-      /> | <WH
-        text="Ускользание"
-        href="https://www.wowhead.com/ru/spell=5277/ускользание"
-      />. Нужно это для получения 2 стаков <WH
+      /> (из-за <WH
         text="Дезориентирующих ударов"
         href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
-      />. Никогда не жмите <WH
-        text="Череду убийств"
-        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      /> без <WH
-        text="Плаща теней"
-        href="https://www.wowhead.com/ru/spell=31224/плащ-теней"
-      /> во время фазы на первом боссе Гнездовья, вы умрёте.
+      />). Стаки <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      /> от <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      /> не даются сразу (они как бы запоминаются), и для их получения надо 2 раза
+      ударить <WH
+        text="Коварным ударом"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /> | <WH
+        text="Внезапным ударом"
+        href="https://www.wowhead.com/ru/spell=8676/внезапный-удар"
+      /> (чтобы сработал <WH
+        text="Незримый клинок"
+        href="https://www.wowhead.com/ru/spell=441144/незримый-клинок"
+      />)
+    </li>
+    <li>
+      <WH
+        text="Незримый клинок"
+        href="https://www.wowhead.com/ru/spell=441144/незримый-клинок"
+      /> имеет кд 20 сек, но может сброситься от автоатак под действием <WH
+        text="Мясорубки"
+        href="https://www.wowhead.com/ru/spell=315496/мясорубка"
+      /> (<WH
+        text="Тысяча порезов"
+        href="https://www.wowhead.com/ru/spell=441346/тысяча-порезов"
+      />). Этот момент нельзя отследить WA
+    </li>
+    <li>
+      Ваша главная цель - минимизировать (а лучше избежать) потерь стаков <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      />. Если у вас активен <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      />, но есть еще стаки от <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      /> - в идеале добить кп <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />, чтобы не потерять эти стаки (особенно это касается двойного <WH
+        text="Удара милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> от комлпекта)
+    </li>
+    <li>
+      В аое на вас всегда должен быть бафф <WH
+        text="Безупречной техники"
+        href="https://www.wowhead.com/ru/spell=441321/безупречная-техника"
+      />, чтобы работал <WH
+        text="Неуловимый вихрь"
+        href="https://www.wowhead.com/ru/spell=441367/неуловимый-вихрь"
+      />
     </li>
   </ul>
 </div>

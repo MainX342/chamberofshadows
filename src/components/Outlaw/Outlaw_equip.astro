@@ -1,6 +1,6 @@
 ---
 import H2 from "../H2.astro";
-import { subMenuItems } from "../../constants/content";
+import { outlawMenuItems } from "../../constants/content";
 import Set from "./Outlaw_equip_set.astro";
 import Embelishments from "./Outlaw_equip_emb.astro";
 import Farm from "./Outlaw_equip_farm.astro";
@@ -9,10 +9,10 @@ import BisKeys from "./Outlaw_equip_bis_keys.astro";
 ---
 
 <section
-  id={subMenuItems[3].to}
+  id={outlawMenuItems[3].to}
   class="w-full h-full flex flex-col gap-[16px] justify-center items-center pb-[80px] text-clamp_heading text-secondary text-left"
 >
-  <H2 text={subMenuItems[3].label} />
+  <H2 text={outlawMenuItems[3].label} />
   <div class="flex flex-col gap-[16px] text-clamp_text">
     <p>
       Головорез сильнее ограничен в вещах нежели другие специализации, так как
@@ -34,7 +34,7 @@ import BisKeys from "./Outlaw_equip_bis_keys.astro";
       />
       <label
         for="tab_one_1"
-        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one_1:text-sub peer-checked/tab_one_1:neon-sub"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border sm:border-r-0 flex items-center justify-center bg-gray font-bold cursor-pointer hover:neon-gray peer-checked/tab_one_1:text-outlaw peer-checked/tab_one_1:neon-outlaw"
         >Комплект</label
       >
       <Set />
@@ -46,7 +46,7 @@ import BisKeys from "./Outlaw_equip_bis_keys.astro";
       />
       <label
         for="tab_two_2"
-        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two_2:text-sub peer-checked/tab_two_2:neon-sub"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border border-t-0 sm:border-t-[1px] lg:border-r-0 flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_two_2:text-outlaw peer-checked/tab_two_2:neon-outlaw"
         >Украшения</label
       >
       <Embelishments />
@@ -59,7 +59,7 @@ import BisKeys from "./Outlaw_equip_bis_keys.astro";
       />
       <label
         for="tab_three_3"
-        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three_3:text-sub peer-checked/tab_three_3:neon-sub text-center"
+        class="p-[20px] w-[100%] sm:w-[calc(100%/3)] 2xl:w-[20%] select-none border border-1 border-border lg:border-t-[1px] flex items-center justify-center font-bold cursor-pointer hover:neon-gray peer-checked/tab_three_3:text-outlaw peer-checked/tab_three_3:neon-outlaw text-center"
         >Что фармить?</label
       >
       <Farm />

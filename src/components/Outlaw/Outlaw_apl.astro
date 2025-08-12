@@ -2,6 +2,8 @@
 import H3 from "../H3.astro";
 import WH from "../WH.astro";
 import Comment from "../Comment.astro";
+import FB from "../Hero_trees/FB.astro";
+import TR from "../Hero_trees/TR.astro";
 ---
 
 <div class="pt-[60px] flex flex-col gap-[20px] text-clamp_text">
@@ -90,7 +92,7 @@ import Comment from "../Comment.astro";
       /> (с талантом <WH
         text="Ловкие маневры"
         href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
-      />) при 4 и больше целях на 1-2 кп
+      />) при 4 и больше целях на 0-2 кп
     </li>
     <Comment
       >Приоритет <WH
@@ -133,6 +135,28 @@ import Comment from "../Comment.astro";
       /> - используется по откату (в основную цель, желательно чтобы она прожила
       все время действия или хотя бы стелс окна), не имеет гкд
     </li>
+    <li>
+      <WH
+        text="Шквал клинков"
+        href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
+      /> (с талантом <WH
+        text="Ловкие маневры"
+        href="https://www.wowhead.com/ru/spell=381878/ловкие-маневры"
+      />) при 4 и больше целях на 0-2 кп
+    </li>
+    <Comment
+      ><FB /> может использовать <WH
+        text="Шквал клинков"
+        href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
+      /> даже в 2 цели, но при условии если это не приведет к оверкапу кп. То есть,
+      чтобы использовать <WH
+        text="Шквал клинков"
+        href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
+      /> в 2 цели, у вас должно быть 5 кп, или 4 кп с активным баффом <WH
+        text="Бортового залпа"
+        href="https://www.wowhead.com/ru/spell=193356/бортовой-залп"
+      />
+    </Comment>
     <li>
       <WH
         text="Коварный удар"
@@ -223,24 +247,6 @@ import Comment from "../Comment.astro";
         href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
       /> - только вне стелс окон
     </li>
-    <Comment
-      >Можно использовать на низких кп, чтобы не потерять стаки <WH
-        text="Дезориентирующих ударов"
-        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
-      />. Если у вас накопилось 5-6 кп, есть <WH
-        text="Череда убийств"
-        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      /> и активный <WH
-        text="Удар милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      />, то сначала вы используете <WH
-        text="Череда убийств"
-        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
-      />, а потом сразу <WH
-        text="Удар милосердия"
-        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
-      /> не добивая никаких кп.</Comment
-    >
     <li>
       <WH
         text="Промеж глаз"
@@ -335,9 +341,18 @@ import Comment from "../Comment.astro";
       /> используется по откату на 0-2 кп
     </li>
     <Comment
-      >Для минмакса вы можете использовать и на 3 целях, но на 0-3 кп. Главное
-      не уходить оверкап по кп.</Comment
-    >
+      ><FB /> может использовать <WH
+        text="Шквал клинков"
+        href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
+      /> даже в 2 цели, но при условии если это не приведет к оверкапу кп. То есть,
+      чтобы использовать <WH
+        text="Шквал клинков"
+        href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
+      /> в 2 цели, у вас должно быть 5 кп, или 4 кп с активным баффом <WH
+        text="Бортового залпа"
+        href="https://www.wowhead.com/ru/spell=193356/бортовой-залп"
+      />
+    </Comment>
     <li>
       <WH
         text="Череда убийств"

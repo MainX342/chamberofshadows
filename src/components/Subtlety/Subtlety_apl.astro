@@ -1,12 +1,138 @@
 ---
 import H3 from "../H3.astro";
 import WH from "../WH.astro";
-import Rotation from "../../assets/guide/subtlety/rotation_sub.png";
 import DS from "../Hero_trees/DS.astro";
 import TR from "../Hero_trees/TR.astro";
+import Comment from "../Comment.astro";
 ---
 
 <div class="pt-[60px] flex flex-col gap-[20px] text-clamp_text">
+  <H3 text="Особенности героических талантов" />
+  <ul
+    class="list-inside list-square flex flex-col gap-[10px] p-[20px] border border-border rounded-md text-left"
+  >
+    <DS />
+    <li>
+      <WH
+        text="Метка ловчего смерти"
+        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
+      /> всегда должна быть на цели (если она одна). В аое, она обязательно должна
+      быть на ком-то в паке, чтобы работал талант <WH
+        text="Исключительная концентрация"
+        href="https://www.wowhead.com/ru/spell=457055/исключительная-концентрация"
+      />
+    </li>
+    <li>
+      В аое вы не должны получать бафф <WH
+        text="Непроглядная ночь"
+        href="https://www.wowhead.com/ru/spell=457280/непроглядная-ночь"
+      /> (так как она не релизуется через <WH
+        text="Черный порох"
+        href="https://www.wowhead.com/ru/spell=319175/черный-порох"
+      />), для этого вы должны либо скликивать ее (макрос будет ниже), либо
+      чередовать цели, чтобы обновлять <WH
+        text="Метку ловчего смерти"
+        href="https://www.wowhead.com/ru/spell=457052/метка-ловчего-смерти"
+      />
+    </li>
+    <TR />
+    <li>
+      Рекомендую поставить WA: <a
+        href="https://wago.io/gNf0y7O9P"
+        class="text-hover hover:opacity-80">wago</a
+      > или использовать мой пак: <a
+        href="https://boosty.to/mainx"
+        class="text-hover hover:opacity-80"
+        target="_blank">Boosty</a
+      >
+    </li>
+    <li>
+      Основа игры строится вокруг стаков <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      />. Их вы получаете при проке <WH
+        text="Незримого клинка"
+        href="https://www.wowhead.com/ru/spell=441144/незримый-клинок"
+      />, а так же гарантированно 2 стака будет после использования <WH
+        text="Тайного приема"
+        href="https://www.wowhead.com/ru/spell=280719/тайный-прием"
+      /> (из-за <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      />). Стаки <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      /> от <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      /> не даются сразу (они как бы запоминаются), и для их получения надо 2 раза
+      ударить <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      /> | <WH
+        text="Удар Тьмы"
+        href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
+      /> (чтобы сработал <WH
+        text="Незримый клинок"
+        href="https://www.wowhead.com/ru/spell=441144/незримый-клинок"
+      />)
+    </li>
+    <li>
+      <WH
+        text="Незримый клинок"
+        href="https://www.wowhead.com/ru/spell=441144/незримый-клинок"
+      /> имеет кд 20 сек, но может сброситься от автоатак под действием <WH
+        text="Мясорубки"
+        href="https://www.wowhead.com/ru/spell=315496/мясорубка"
+      /> (<WH
+        text="Тысяча порезов"
+        href="https://www.wowhead.com/ru/spell=441346/тысяча-порезов"
+      />). Этот момент нельзя отследить WA
+    </li>
+    <li>
+      Ваша главная цель - минимизировать (а лучше избежать) потерь стаков <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      />. Если у вас активен <WH
+        text="Удар милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      />, но есть еще стаки от <WH
+        text="Дезориентирующих ударов"
+        href="https://www.wowhead.com/ru/spell=441274/дезориентирующие-удары"
+      /> - вам нужно использовать <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      />, чтобы не потерять эти стаки (особенно это касается двойного <WH
+        text="Удара милосердия"
+        href="https://www.wowhead.com/ru/spell=441776/удар-милосердия"
+      /> от комлпекта)
+    </li>
+    <li>
+      В аое на вас всегда должен быть бафф <WH
+        text="Безупречной техники"
+        href="https://www.wowhead.com/ru/spell=441321/безупречная-техника"
+      />, чтобы работал <WH
+        text="Неуловимый вихрь"
+        href="https://www.wowhead.com/ru/spell=441367/неуловимый-вихрь"
+      />
+    </li>
+    <li>
+      Именно из-за того что <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> не вызывает срабатывание <WH
+        text="Незримого клинка"
+        href="https://www.wowhead.com/ru/spell=441144/незримый-клинок"
+      />, а следовательно и не даёт бафф <WH
+        text="Безупречной техники"
+        href="https://www.wowhead.com/ru/spell=441321/безупречная-техника"
+      /> и стак <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      /> мы не можем им спамить в аое, сколько бы вокруг не было мобов.
+    </li>
+  </ul>
+
   <H3 text="Приоритет способностей для набора кп (builders) НЕ В ">
     <WH
       text="Танце теней"
@@ -27,7 +153,10 @@ import TR from "../Hero_trees/TR.astro";
       /> (в противном случае переходим к п.2 чтобы повесить на цель <WH
         text="Незримый клинок"
         href="https://www.wowhead.com/ru/spell=441146/незримый-клинок"
-      />)
+      />). Можно нажимать и в 2 цели, но только если нету баффа <WH
+        text="Символы смерти"
+        href="https://www.wowhead.com/ru/spell=212283/символы-смерти"
+      />, в 3+ цели бафф уже не важен
     </li>
     <li>
       <WH
@@ -96,12 +225,51 @@ import TR from "../Hero_trees/TR.astro";
     <TR />
     <li>
       <WH
-        text="Удар в спину"
-        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
-      /> если 1-6 целей, для стака <WH
+        text="Шквал сюрикэнов"
+        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
+      /> если 5 и больше целей вокруг без дебаффа <WH
+        text="Выявление слабости"
+        href="https://www.wowhead.com/ru/spell=316220/выявление-слабости"
+      />
+    </li>
+    <Comment
+      >Обычно <WH
+        text="Выявление слабости"
+        href="https://www.wowhead.com/ru/spell=316220/выявление-слабости"
+      /> развешивается еще до <WH
+        text="Танца теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      />, поэтому этот пункт очень редкий, но вам главное провесить <WH
+        text="Выявление слабости"
+        href="https://www.wowhead.com/ru/spell=316220/выявление-слабости"
+      /> в аое перед использованием <WH
+        text="Черного пороха"
+        href="https://www.wowhead.com/ru/spell=319175/черный-порох"
+      /></Comment
+    >
+    <Comment
+      >Максимум 1 раз за <WH
+        text="Танец теней"
+        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
+      /> для <WH
         text="Пляски смерти"
         href="https://www.wowhead.com/ru/spell=382528/пляска-смерти"
-      />. ВАЖНО: если на основной цели нету <WH
+      /> (иначе вы будете терять стаки <WH
+        text="Опережающего клинка"
+        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
+      />)</Comment
+    >
+    <li>
+      <WH
+        text="Удар в спину"
+        href="https://www.wowhead.com/ru/spell=53/удар-в-спину"
+      /> для стака <WH
+        text="Пляски смерти"
+        href="https://www.wowhead.com/ru/spell=382528/пляска-смерти"
+      />
+    </li>
+    <Comment
+      >Если на основной цели нету <WH
         text="Выявление слабости"
         href="https://www.wowhead.com/ru/spell=316220/выявление-слабости"
       />, то используйте <WH
@@ -113,20 +281,8 @@ import TR from "../Hero_trees/TR.astro";
       /> в этом случае используется вторым филлером, если активны <WH
         text="Теневые клинки"
         href="https://www.wowhead.com/ru/spell=121471/теневые-клинки"
-      />, либо не используется.
-    </li>
-    <li>
-      <WH
-        text="Шквал сюрикэнов"
-        href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 7 и больше целей. Максимум 1 раз за <WH
-        text="Танец теней"
-        href="https://www.wowhead.com/ru/spell=185313/танец-теней"
-      /> (иначе вы будете терять стаки <WH
-        text="Опережающего клинка"
-        href="https://www.wowhead.com/ru/spell=441786/опережающий-клинок"
-      />)
-    </li>
+      />, либо не используется.</Comment
+    >
     <li>
       Если у вас сработал <WH
         text="Удар милосердия"
@@ -182,19 +338,13 @@ import TR from "../Hero_trees/TR.astro";
       <WH
         text="Шквал сюрикэнов"
         href="https://www.wowhead.com/ru/spell=197835/шквал-сюрикэнов"
-      /> если 3 и больше целей и на вас нету баффа <WH
-        text="Умысла"
-        href="https://www.wowhead.com/ru/spell=343173/умысел"
-      />
+      /> если 5 и больше целей
     </li>
     <li>
       <WH
         text="Удар Тьмы"
         href="https://www.wowhead.com/ru/spell=185438/удар-тьмы"
-      /> - если 1-2 цели. В 3 цели используется 1 раз, когда активен бафф <WH
-        text="Умысла"
-        href="https://www.wowhead.com/ru/spell=343173/умысел"
-      />
+      /> - если 1-4 цели
     </li>
     <p>
       В теории (и в симе), в аое вам не нужно чтобы срабатывал бафф <WH

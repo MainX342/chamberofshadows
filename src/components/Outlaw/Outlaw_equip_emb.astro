@@ -1,5 +1,8 @@
 ---
 import WH from "../WH.astro";
+import Comment from "../Comment.astro";
+import Sim from "../Sim.astro";
+import craft from "../../assets/guide/outlaw/sim/craft.png";
 ---
 
 <div class="peer-checked/tab_two_2:block w-full order-1 hidden">
@@ -7,44 +10,65 @@ import WH from "../WH.astro";
     class="list-inside list-disc p-[20px] text-left flex flex-col gap-[16px] border border-border rounded-md"
   >
     <ul class="list-inside list-decimal gap-[20px] flex flex-col">
-      <span>
-        Я могу крафтить всё, что требуется разбойникам. Отправляйте на Мейникс
-        (Ревущий Фьорд), цена 3к. Если вы на другом сервере и вам нужен крафт
-        через гильдию - пишите в игре / дискорде / на стриме. У головореза нету
-        особо выбора, всего по сути 2 варианта, оба подходят и для ключей и для
-        рейда, по дпсу разница 0.1%. Линзы немного лучше в одну цель, заплатки
-        для ключей.
-      </span>
       <li>
-        <WH
-          text="Поручи с руническим клеймом"
-          href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=10421:1560:523&crafted-stats=36:40&crafting-quality=8&ilvl=681&spec=260"
-        /> | <WH
-          text="Освященный плащ"
-          href="https://www.wowhead.com/ru/item=222817/освященный-плащ?bonus=10421:1560&crafted-stats=36:40&crafting-quality=8&ilvl=681&spec=260"
-        /> | <WH
-          text="Амулет мастерства земельников"
-          href="https://www.wowhead.com/ru/item=215136/амулет-мастерства-земельников?bonus=10421:9633:8902:10396:9627:10222:12043:12040:8794:8781&crafted-stats=49:32&crafting-quality=8&ilvl=681&spec=259"
-        /> | <WH
-          text="Амулет мастерства земельников"
-          href="https://www.wowhead.com/ru/item=215135/кольцо-мастерства-земельников?bonus=10421:9633:8902:8792:8781:10520:8960&ilvl=681"
-        /> + <WH
+        Крафт МХ оружия (меч, кистевое, дубина, топор) + <WH
           text="Стихийная фокусирующая линза"
           href="https://www.wowhead.com/ru/item=213770/стихийная-фокусирующая-линза"
-        /> x2
+        /> - лучший вариант первого крафта, если головорез ваш основной спек. Но,
+        естественно, это не лучший вариант. Затем вам придется делать еще 2 крафта,
+        когда вы получите 723 оружие в мх. Если есть возможность убить 3 боссов в
+        эпохальной сложности без крафта ИЛИ пройти сложный режим тазавеша (за него
+        падает вещь с эпохальным треком), то лучше попробовать подождать перед крафтом.
       </li>
       <li>
         <WH
-          text="Поручи с руническим клеймом"
-          href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=10421:1560:523&crafted-stats=36:40&crafting-quality=8&ilvl=681&spec=260"
-        /> + <WH
-          text="Освященный плащ"
-          href="https://www.wowhead.com/ru/item=222817/освященный-плащ?bonus=10421:1560&crafted-stats=36:40&crafting-quality=8&ilvl=681&spec=260"
-        /> с <WH
-          text="Закатная подкладка"
-          href="https://www.wowhead.com/ru/item=222873/закатная-подкладка"
-        /> x2
+          text="Кольцо мастерства земельников"
+          href="https://www.wowhead.com/ru/item=215135/кольцо-мастерства-земельников?bonus=10421:9633:8902:12053:12050:1485:10520:8960:8781&crafted-stats=32:40&hero=52&ilvl=720&spec=260"
+        /> | <WH
+          text="Боевой пояс с руническим клеймом"
+          href="https://www.wowhead.com/ru/item=219331/боевой-пояс-с-руническим-клеймом?bonus=10421:9633:12053:12050:1485:10520:8960:8795:523&crafted-stats=32:40&hero=52&ilvl=720&spec=260"
+        /> + x2 <WH
+          text="Стихийная фокусирующая линза"
+          href="https://www.wowhead.com/ru/item=213770/стихийная-фокусирующая-линза"
+        /> - если хотите сэкономить
       </li>
+      <li>
+        <WH
+          text="Выкованный навеки пронзатель"
+          href="https://www.wowhead.com/ru/item=222438/выкованный-навеки-пронзатель?bonus=10421:9633:8902:12053:12050:1485:10520:8960:8792&crafted-stats=32:40&crafting-quality=8&hero=52&ilvl=720&spec=260"
+        /> | <WH
+          text="Поручи с руническим клеймом"
+          href="https://www.wowhead.com/ru/item=219334/поручи-с-руническим-клеймом?bonus=10421:9633:8902:12053:12050:1485:10520:8960:523&crafted-stats=40:36&crafting-quality=8&hero=52&ilvl=720&spec=260"
+        /> + x2 <WH
+          text="Стихийная фокусирующая линза"
+          href="https://www.wowhead.com/ru/item=213770/стихийная-фокусирующая-линза"
+        /> - если играете в других специализациях. Но в последствии вам придётся
+        либо купить БоЕ пояс и кольцо, либо делать еще 2 крафта.
+      </li>
+      <Comment
+        >Бис гир можно собрать с любой комбинацией крафтов. Единственная
+        проблема в том, что альтернативы крафтам в поясе и кольце - БоЕ предметы
+        из рейда, которые будут дорого стоить. А вот получить запястья и кинжал
+        в ох гораздо проще. Так же стоит учитывать, играете ли вы в других
+        специализациях.</Comment
+      >
+      <Sim title="Сравнение крафтов">
+        <img
+          src={craft.src}
+          alt="Сравнение крафтов"
+          class="mx-auto"
+          loading="lazy"
+          decoding="async"
+        />
+      </Sim>
     </ul>
+    <div class="flex justify-center items-center pb-[10px] max-w-lg mx-auto">
+      <iframe
+        src="https://www.youtube.com/embed/pS_88jtRHhc"
+        title="что крафтить?"
+        class="w-full h-full aspect-video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
   </div>
 </div>

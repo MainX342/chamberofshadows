@@ -1,0 +1,205 @@
+---
+import WH from "../WH.astro";
+import Comment from "../Comment.astro";
+---
+
+<div class="p-4 border border-border rounded-md">
+  <label
+    for="commentsKIRFB"
+    class="flex items-center gap-2 cursor-pointer px-[20px] pt-[10px] select-none"
+  >
+    <input
+      type="checkbox"
+      id="commentsKIRFB"
+      name="commentsKIRFB"
+      class="peer hidden checkbox-3"
+    />
+    <span
+      class="w-4 h-4 shrink-0 border border-gray-500 rounded-md flex items-center justify-center peer-checked:bg-hover peer-checked:border-gray-700"
+    ></span>
+    <span class="text-left"> Показать комментарии*</span></label
+  >
+  <ul
+    class="peer-checked:hidden list-inside list-decimal flex flex-col items-start p-[20px] text-left gap-[10px]"
+  >
+    <span
+      class="underline decoration-solid decoration-1 underline-offset-4 decoration-[#00D7B9]"
+      >Пре-пулл (до того как ударить босса):</span
+    >
+    <li>
+      <WH
+        text="Шквал клинков"
+        href="https://www.wowhead.com/ru/spell=13877/шквал-клинков"
+      />*
+    </li>
+    <Comment class="hidden visible-comment"
+      >Если в бою будут дополнительные цели</Comment
+    >
+    <li>
+      <WH
+        text="Незаметность"
+        href="https://www.wowhead.com/ru/spell=1784/незаметность"
+      />
+    </li>
+    <li>
+      <WH
+        text="Выброс адреналина"
+        href="https://www.wowhead.com/ru/spell=13750/выброс-адреналина"
+      />
+    </li>
+    <Comment class="hidden visible-comment"
+      >Не выбирайте босса в цель, монетка при активации всё еще бьёт босса</Comment
+    >
+    <li>
+      <WH
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+      />
+    </li>
+    <li>
+      <WH
+        text="Охлажденное зелье"
+        href="https://www.wowhead.com/ru/item=212265/охлажденное-зелье?crafting-quality=6"
+      />
+    </li>
+    <li>
+      <WH
+        text="Призрачный удар"
+        href="https://www.wowhead.com/ru/spell=196937/призрачный-удар"
+      /> и далее по откату
+    </li>
+    <li>
+      <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      />
+    </li>
+    <li>
+      Чередование <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /> |
+      <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />) и <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      /> пока не закончится бафф <WH
+        text="Увертки"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />
+    </li>
+    <li>
+      <WH
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+      />* (если нужен)
+    </li>
+    <Comment class="hidden visible-comment"
+      >Вы смело можете использовать <WH
+        text="Бросок костей"
+        href="https://www.wowhead.com/ru/spell=315508/бросок-костей"
+      /> даже в окне <WH
+        text="Увертки"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />, но желательно не последним гкд</Comment
+    >
+    <li>
+      <WH
+        text="Череда убийств"
+        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+      />* [5+ кп]
+    </li>
+    <Comment class="hidden visible-comment"
+      >Вы можете сбрасывать каст <WH
+        text="Череды убийств"
+        href="https://www.wowhead.com/ru/spell=51690/череда-убийств"
+      /> когда набёрете 7кп, это даст вам ~20к урона.</Comment
+    >
+    <li>
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      />
+    </li>
+    <li>
+      Чередование <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /> |
+      <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />) и <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      /> пока не закончится бафф <WH
+        text="Увертки"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />
+    </li>
+    <li>
+      <WH
+        text="Исчезновение"
+        href="https://www.wowhead.com/ru/spell=1856/исчезновение"
+      /> [5+ кп]
+    </li>
+    <li>
+      Чередование <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /> |
+      <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />) и <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      /> пока не закончится бафф <WH
+        text="Увертки"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />
+    </li>
+    <Comment
+      >Благодаря синергии талантов <WH
+        text="Туз в рукаве"
+        href="https://www.wowhead.com/ru/spell=381828/туз-в-рукаве"
+      /> и <WH
+        text="Точно в цель"
+        href="https://www.wowhead.com/ru/spell=423703/точно-в-цель"
+      /> вы периодически будете получать 5кп от <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      />, поэтому опенер полностью зависит от проков. Основная суть заключается
+      в том, чтобы на 5+ кп всегда использовать <WH
+        text="Промеж глаз"
+        href="https://www.wowhead.com/ru/spell=315341/промеж-глаз"
+      />, пока вы под <WH
+        text="Уверткой"
+        href="https://www.wowhead.com/ru/spell=115192/увертка"
+      />. Если <WH
+        text="Туз в рукаве"
+        href="https://www.wowhead.com/ru/spell=381828/туз-в-рукаве"
+      /> не сработал, то набиваем кп с помощью <WH
+        text="Коварный удар"
+        href="https://www.wowhead.com/ru/spell=193315/коварный-удар"
+      /> или <WH
+        text="Выстрел из пистоли"
+        href="https://www.wowhead.com/ru/spell=185763/выстрел-из-пистоли"
+      /> (если есть бафф <WH
+        text="Замечательной возможности"
+        href="https://www.wowhead.com/ru/spell=195627/замечательная-возможность"
+      />)</Comment
+    >
+  </ul>
+</div>
